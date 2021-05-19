@@ -1,0 +1,55 @@
+(function (_super) {
+	__extends(LoadingSSkin, _super);
+	function LoadingSSkin() {
+		_super.call(this);
+		
+		this.height = 1334;
+		this.width = 750;
+		this.elementsContent = [this._s1_i(),this._a1_i(),this.prbLoading_i(),this.lblProgress_i()];
+	}
+	var _proto = LoadingSSkin.prototype;
+
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x0097b2;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.source = "";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.prbLoading_i = function () {
+		var t = new eui.ProgressBar();
+		this.prbLoading = t;
+		t.bottom = 254;
+		t.horizontalCenter = 0;
+		t.skinName = "LoadingBSkin";
+		return t;
+	};
+	_proto.lblProgress_i = function () {
+		var t = new eui.Label();
+		this.lblProgress = t;
+		t.bottom = 326;
+		t.horizontalCenter = 0.5;
+		t.size = 54;
+		t.text = "Label";
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["prbLoading","lblProgress"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return LoadingSSkin;
+})(eui.Skin);

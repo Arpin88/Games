@@ -1,0 +1,273 @@
+(function (_super) {
+	__extends(CardSquareSkin, _super);
+	function CardSquareSkin() {
+		_super.call(this);
+		
+		this.height = 196;
+		this.width = 196;
+		this.elementsContent = [this.groupCS_i(),this.groupCSB_i()];
+	}
+	var _proto = CardSquareSkin.prototype;
+
+	_proto.groupCS_i = function () {
+		var t = new eui.Group();
+		this.groupCS = t;
+		t.height = 196;
+		t.touchChildren = false;
+		t.width = 196;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBG_i(),this.imgIcon_i(),this.imgRarity_i(),this.flag_i(),this.imgRound_i(),this.imgElement_i(),this.lblRound_i(),this.lblName_i(),this.lblCost_i(),this.groupLevel_i(),this.lblAtk_i(),this.lblHp_i(),this.imgChoose_i()];
+		return t;
+	};
+	_proto.imgBG_i = function () {
+		var t = new eui.Image();
+		this.imgBG = t;
+		t.source = "cardCommonImg0Sheet_json.tongyongb";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgIcon_i = function () {
+		var t = new eui.Image();
+		this.imgIcon = t;
+		t.source = "";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgRarity_i = function () {
+		var t = new eui.Image();
+		this.imgRarity = t;
+		t.source = "cardCommonImg0Sheet_json.s_rb1";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.flag_i = function () {
+		var t = new eui.Image();
+		this.flag = t;
+		t.source = "cardCommonImg0Sheet_json.s_cost";
+		t.x = 10;
+		t.y = 35;
+		return t;
+	};
+	_proto.imgRound_i = function () {
+		var t = new eui.Image();
+		this.imgRound = t;
+		t.source = "cardCommonImg0Sheet_json.s_r1";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgElement_i = function () {
+		var t = new eui.Image();
+		this.imgElement = t;
+		t.scaleX = 0.8;
+		t.scaleY = 0.8;
+		t.source = "cardCommonImg2Sheet_json.s_e1";
+		t.x = 155;
+		t.y = 5.4;
+		return t;
+	};
+	_proto.lblRound_i = function () {
+		var t = new eui.Label();
+		this.lblRound = t;
+		t.fontFamily = "SimHei";
+		t.height = 34;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "6";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.width = 33;
+		t.x = 7;
+		t.y = 4;
+		return t;
+	};
+	_proto.lblName_i = function () {
+		var t = new eui.Label();
+		this.lblName = t;
+		t.fontFamily = "SimHei";
+		t.size = 22;
+		t.stroke = 2;
+		t.text = "诸葛匹夫";
+		t.textAlign = "center";
+		t.width = 110;
+		t.x = 45;
+		t.y = 12;
+		return t;
+	};
+	_proto.lblCost_i = function () {
+		var t = new eui.Label();
+		this.lblCost = t;
+		t.fontFamily = "SimHei";
+		t.size = 18;
+		t.stroke = 1;
+		t.text = "66";
+		t.textAlign = "center";
+		t.width = 30;
+		t.x = 10;
+		t.y = 44;
+		return t;
+	};
+	_proto.groupLevel_i = function () {
+		var t = new eui.Group();
+		this.groupLevel = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.width = 134;
+		t.x = 40;
+		t.y = 35;
+		t.elementsContent = [this.imgGeneration_i(),this.imgLv1_i(),this.imgLv2_i(),this.imgLv3_i(),this.imgLv4_i(),this.imgLv5_i(),this.imgLv6_i()];
+		return t;
+	};
+	_proto.imgGeneration_i = function () {
+		var t = new eui.Image();
+		this.imgGeneration = t;
+		t.source = "cardCommonText0Sheet_json.s_g1";
+		t.width = 32;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgLv1_i = function () {
+		var t = new eui.Image();
+		this.imgLv1 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.s_star";
+		t.width = 17;
+		t.x = 32;
+		t.y = 2;
+		return t;
+	};
+	_proto.imgLv2_i = function () {
+		var t = new eui.Image();
+		this.imgLv2 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.s_star";
+		t.width = 17;
+		t.x = 49;
+		t.y = 2;
+		return t;
+	};
+	_proto.imgLv3_i = function () {
+		var t = new eui.Image();
+		this.imgLv3 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.s_star";
+		t.width = 17;
+		t.x = 66;
+		t.y = 2;
+		return t;
+	};
+	_proto.imgLv4_i = function () {
+		var t = new eui.Image();
+		this.imgLv4 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.s_star";
+		t.width = 17;
+		t.x = 83;
+		t.y = 2;
+		return t;
+	};
+	_proto.imgLv5_i = function () {
+		var t = new eui.Image();
+		this.imgLv5 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.s_star";
+		t.width = 17;
+		t.x = 100;
+		t.y = 2;
+		return t;
+	};
+	_proto.imgLv6_i = function () {
+		var t = new eui.Image();
+		this.imgLv6 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.s_star";
+		t.width = 17;
+		t.x = 117;
+		t.y = 2;
+		return t;
+	};
+	_proto.lblAtk_i = function () {
+		var t = new eui.Label();
+		this.lblAtk = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 21;
+		t.stroke = 1;
+		t.text = "6666";
+		t.textAlign = "center";
+		t.width = 50;
+		t.x = 30;
+		t.y = 166;
+		return t;
+	};
+	_proto.lblHp_i = function () {
+		var t = new eui.Label();
+		this.lblHp = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 21;
+		t.stroke = 1;
+		t.text = "6666";
+		t.textAlign = "center";
+		t.width = 50;
+		t.x = 115;
+		t.y = 166;
+		return t;
+	};
+	_proto.imgChoose_i = function () {
+		var t = new eui.Image();
+		this.imgChoose = t;
+		t.height = 112;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg2Sheet_json.a108x112";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 108;
+		t.x = -7;
+		t.y = -7;
+		return t;
+	};
+	_proto.groupCSB_i = function () {
+		var t = new eui.Group();
+		this.groupCSB = t;
+		t.height = 196;
+		t.touchChildren = false;
+		t.visible = false;
+		t.width = 196;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.s_rb0";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBG","imgIcon","imgRarity","flag","imgRound","imgElement","lblRound","lblName","lblCost","imgGeneration","imgLv1","imgLv2","imgLv3","imgLv4","imgLv5","imgLv6","groupLevel","lblAtk","lblHp","imgChoose","groupCS","groupCSB"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardSquareSkin;
+})(eui.Skin);

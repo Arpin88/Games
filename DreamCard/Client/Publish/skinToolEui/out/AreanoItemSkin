@@ -1,0 +1,52 @@
+(function (_super) {
+	__extends(AreanoItemSkin, _super);
+	function AreanoItemSkin() {
+		_super.call(this);
+		
+		this.height = 80;
+		this.width = 450;
+		this.elementsContent = [this.rectBG_i(),this.lblContent_i(),this.imgChoose_i()];
+	}
+	var _proto = AreanoItemSkin.prototype;
+
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.9;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.lblContent_i = function () {
+		var t = new eui.Label();
+		this.lblContent = t;
+		t.fontFamily = "SimHei";
+		t.size = 28;
+		t.text = "+86 中国（CN）";
+		t.textColor = 0x85a1bc;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.x = 25;
+		return t;
+	};
+	_proto.imgChoose_i = function () {
+		var t = new eui.Image();
+		this.imgChoose = t;
+		t.source = "loginSheet_json.xuanzhong";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.x = 388;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","lblContent","imgChoose"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return AreanoItemSkin;
+})(eui.Skin);

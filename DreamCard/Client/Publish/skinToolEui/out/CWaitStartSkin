@@ -1,0 +1,102 @@
+(function (_super) {
+	__extends(CWaitStartSkin, _super);
+	function CWaitStartSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = CWaitStartSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._s1_i(),this.groupStartCutDown_i(),this.groupWaitPlayer_i()];
+		return t;
+	};
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.2;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupStartCutDown_i = function () {
+		var t = new eui.Group();
+		this.groupStartCutDown = t;
+		t.horizontalCenter = 0;
+		t.visible = false;
+		t.y = 200;
+		t.elementsContent = [this._a1_i(),this.bitCutdown_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "combatText0Sheet_json.youxijijiangkaishi";
+		t.y = 0;
+		return t;
+	};
+	_proto.bitCutdown_i = function () {
+		var t = new eui.BitmapLabel();
+		this.bitCutdown = t;
+		t.font = "cd0Font_fnt";
+		t.horizontalCenter = 0;
+		t.text = "5";
+		t.y = 100;
+		return t;
+	};
+	_proto.groupWaitPlayer_i = function () {
+		var t = new eui.Group();
+		this.groupWaitPlayer = t;
+		t.horizontalCenter = 0;
+		t.y = 200;
+		t.elementsContent = [this._a2_i(),this.imgPoint0_i(),this.imgPoint1_i(),this.imgPoint2_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.source = "combatText0Sheet_json.ddwjjr";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgPoint0_i = function () {
+		var t = new eui.Image();
+		this.imgPoint0 = t;
+		t.source = "combatText0Sheet_json.dian";
+		t.x = 480;
+		t.y = 60;
+		return t;
+	};
+	_proto.imgPoint1_i = function () {
+		var t = new eui.Image();
+		this.imgPoint1 = t;
+		t.source = "combatText0Sheet_json.dian";
+		t.x = 510;
+		t.y = 60;
+		return t;
+	};
+	_proto.imgPoint2_i = function () {
+		var t = new eui.Image();
+		this.imgPoint2 = t;
+		t.source = "combatText0Sheet_json.dian";
+		t.x = 540;
+		t.y = 60;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["bitCutdown","groupStartCutDown","imgPoint0","imgPoint1","imgPoint2","groupWaitPlayer"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CWaitStartSkin;
+})(eui.Skin);

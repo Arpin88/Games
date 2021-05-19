@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CRFetterItemSkin" width="44" height="44" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="44" height="44">
+		<e:Image id="imgIcon" source="fetterIconImg0Sheet_json.xjb01" x="22" y="22" anchorOffsetX="22" anchorOffsetY="22"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,55 @@
+(function (_super) {
+	__extends(ButtonG1Skin, _super);
+	function ButtonG1Skin() {
+		_super.call(this);
+		
+		this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+		this.states = [
+			new eui.State ("up",
+				[
+				])
+			,
+			new eui.State ("down",
+				[
+					new eui.SetProperty("_a1","source","commonBtn0Sheet_json.c300x116_1")
+				])
+			,
+			new eui.State ("disabled",
+				[
+					new eui.SetProperty("_a1","source","commonBtn0Sheet_json.a300x116_2")
+				])
+		];
+	}
+	var _proto = ButtonG1Skin.prototype;
+
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		this._a1 = t;
+		t.percentHeight = 100;
+		t.source = "commonBtn0Sheet_json.g300x116_0";
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.labelDisplay_i = function () {
+		var t = new eui.Label();
+		this.labelDisplay = t;
+		t.bottom = 8;
+		t.fontFamily = "SimHei";
+		t.left = 8;
+		t.right = 8;
+		t.size = 48;
+		t.textAlign = "center";
+		t.textColor = 0xf0fcff;
+		t.top = 8;
+		t.verticalAlign = "middle";
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["labelDisplay"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return ButtonG1Skin;
+})(eui.Skin);

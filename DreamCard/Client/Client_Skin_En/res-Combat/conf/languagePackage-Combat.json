@@ -1,0 +1,53 @@
+{
+    "language": {
+        "CombatCommon":{
+            "lbl_0":"HP",
+            "lbl_1":"ATK",
+            "lbl_2":"MAX HP",
+            "lbl_3":"CD",
+            "lbl_4":"DR"
+        },
+        "CombatSkin":{
+            "lbl_0":"The room has been disbanded, please return to the lobby!"
+        },
+        "CSHeadSkin": {
+            "lbl_0": "Stars falling",
+            "lbl_1": "Star Down",
+            "lbl_2": "Star Up"
+        },
+        "CPopupSkin":{
+            "lbl_0":"Do you issue a quick battle request ?",
+            "lbl_1":"If the opponent agrees, will skip the battle flow, directly to the settlement!\n",
+            "lbl_2":"(A maximum of 3 applications can be made per game)\n",
+            "lbl_3":"Do you agree to the prompt settlement request from your counterparty?\nIf you agree to the request, you will skip the battle process and  directly to the battle settlement.",
+            "lbl_4":"The opponent agrees to settle quickly, the game is about to settle!",
+            "lbl_5":"Opponent refuses to settle quickly, game continues!"
+        },
+        "CCardDetailSkin":{
+            "lbl_0":"Properties",
+            "lbl_1":"Skill",
+            "lbl_2":"Bond",
+            "lbl_3":"%sGen %sStar",
+            "lbl_4":"Quality: ",
+            "lbl_5":"Lv: ",
+            "lbl_6":"Power: ",
+            "lbl_7":"Cost: ",
+            "lbl_8":"Waiting: ",
+            "lbl_9":"HP: ",
+            "lbl_10":"Atk: ",
+            "lbl_11":"Accuracy: ",
+            "lbl_12":"Dodge Rate: ",
+            "lbl_13":"Crit Rate: ",
+            "lbl_14":"Crit Multipler: ",
+            "lbl_15":"Recovery: "
+        },
+        "CCardSkillItemSkin":{
+            "lbl_0":"Passive Skill",
+            "lbl_1":"Active Skill"
+        },
+        "CCardFetterItemSkin":{
+            "lbl_0":"Effects：",
+            "lbl_1":"Formation："
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="cardskingroup" width="100%" height="100%" x="0" y="0">
+		<e:Image x="0" y="0" source="bj_jpg" width="100%" height="100%"/>
+		<e:Group width="100%" height="80" x="0" y="0" left="0" top="0">
+			<e:Image source="top_png" top="0" horizontalCenter="0" width="100%"/>
+			<e:Image horizontalCenter="0" verticalCenter="-5" source="hallText0Sheet_json.kapai"/>
+			<e:Button id="btnBack" label="" left="0" top="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Component id="comStar" skinName="StarSkin" scaleX="1" scaleY="1" verticalCenter="-5" y="343.00000000000006" right="32" x="880.0000000000001" visible="false"/>
+		</e:Group>
+		<e:Scroller id="scrOptionBtn" width="292" scrollPolicyH="off" height="640" left="0" y="100">
+			<e:Group id="groupOptionBtn" width="292" height="100%">
+			</e:Group>
+		</e:Scroller>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" height="640" y="100" left="288" right="26">
+			<e:Image id="imgRBG" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" top="0" x="0" width="100%"/>
+			<e:Scroller id="scrCardItem" scrollPolicyH="off" scaleX="1" scaleY="1" height="582.43" width="973.03" y="26" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="3.5">
+				<e:Group id="groupCardItem" anchorOffsetY="0" x="0" y="15.15" anchorOffsetX="0" width="974.54"/>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+</e:Skin>

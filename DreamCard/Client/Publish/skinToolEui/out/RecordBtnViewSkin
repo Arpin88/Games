@@ -1,0 +1,199 @@
+(function (_super) {
+	__extends(OptionBtnSkin, _super);
+	var OptionBtnSkin$Skin31 = 	(function (_super) {
+		__extends(OptionBtnSkin$Skin31, _super);
+		function OptionBtnSkin$Skin31() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","combatRecordSheet_json.zuoan00")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = OptionBtnSkin$Skin31.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "combatRecordSheet_json.zuoan00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return OptionBtnSkin$Skin31;
+	})(eui.Skin);
+
+	function OptionBtnSkin() {
+		_super.call(this);
+		
+		this.height = 76;
+		this.width = 278;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = OptionBtnSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 76;
+		t.touchEnabled = false;
+		t.width = 278;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.groupOB_i()];
+		return t;
+	};
+	_proto.groupOB_i = function () {
+		var t = new eui.Group();
+		this.groupOB = t;
+		t.height = 76;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.width = 278;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.btnRecord_i(),this.imgChooseState_i(),this.labTm_i(),this.labTm0_i(),this.imgReward_i(),this.imgJinYan_i(),this.labScore_i()];
+		return t;
+	};
+	_proto.btnRecord_i = function () {
+		var t = new eui.Button();
+		this.btnRecord = t;
+		t.height = 76;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 278;
+		t.x = 0;
+		t.y = 0;
+		t.skinName = OptionBtnSkin$Skin31;
+		return t;
+	};
+	_proto.imgChooseState_i = function () {
+		var t = new eui.Image();
+		this.imgChooseState = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 76;
+		t.scale9Grid = new egret.Rectangle(22,10,176,66);
+		t.source = "combatRecordSheet_json.zuoan01";
+		t.touchEnabled = false;
+		t.visible = false;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.labTm_i = function () {
+		var t = new eui.Label();
+		this.labTm = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 24;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.stroke = 1;
+		t.text = "Label";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.touchEnabled = false;
+		t.verticalAlign = "middle";
+		t.width = 76;
+		t.x = 186;
+		t.y = 12;
+		return t;
+	};
+	_proto.labTm0_i = function () {
+		var t = new eui.Label();
+		this.labTm0 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 23;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.stroke = 1;
+		t.text = "Label";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.touchEnabled = false;
+		t.verticalAlign = "middle";
+		t.width = 74;
+		t.x = 186;
+		t.y = 38;
+		return t;
+	};
+	_proto.imgReward_i = function () {
+		var t = new eui.Image();
+		this.imgReward = t;
+		t.height = 24;
+		t.source = "hallImg0Sheet_json.a36x36";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 24;
+		t.x = 24;
+		return t;
+	};
+	_proto.imgJinYan_i = function () {
+		var t = new eui.Image();
+		this.imgJinYan = t;
+		t.height = 24;
+		t.source = "combatRecordSheet_json.exp";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 24;
+		t.x = 24;
+		return t;
+	};
+	_proto.labScore_i = function () {
+		var t = new eui.Label();
+		this.labScore = t;
+		t.fontFamily = "SimHei";
+		t.height = 74;
+		t.size = 28;
+		t.stroke = 1;
+		t.text = "+2500";
+		t.textColor = 0xffe468;
+		t.touchEnabled = false;
+		t.verticalAlign = "middle";
+		t.verticalCenter = 0;
+		t.width = 88;
+		t.x = 55;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["btnRecord","imgChooseState","labTm","labTm0","imgReward","imgJinYan","labScore","groupOB"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return OptionBtnSkin;
+})(eui.Skin);

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardFetterItem" width="508" height="153" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupFetterItem" width="100%" height="100%" x="0" y="0">
+		<e:Image id="imgBG" width="100%" height="100%" x="0" y="0" source="hallImg1Sheet_json.a508x90" scale9Grid="16,49,476,30" scaleX="1" scaleY="1"/>
+		<e:Group id="groupFetterIcon" width="50" height="50" x="10" y="10" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="labFetterName" text="世界印记" x="74" y="4.5" height="32" size="26" verticalAlign="middle" fontFamily="SimHei" anchorOffsetX="0" width="178" textColor="0xffffff" stroke="2"/>
+		<e:Label id="labFetterTip1" text="所有上阵所有上阵所dsdfm.fmf.m .m . m立即释放连接看有上阵所有上阵所有上阵" x="74" y="50" size="20" fontFamily="SimHei" height="53" width="412" lineSpacing="10" anchorOffsetX="0" anchorOffsetY="0" textColor="0xededed"/>
+		<e:Label id="labFetterTip2" text="所有上阵所有上阵" x="74" y="116" size="20" fontFamily="SimHei" height="35" width="409" lineSpacing="10" anchorOffsetX="0" anchorOffsetY="0" textColor="0xededed"/>
+	</e:Group>
+</e:Skin>

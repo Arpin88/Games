@@ -1,0 +1,392 @@
+{
+	"groups": [
+		{
+			"keys": "gameConfig_json,combatDebug_json,error_json",
+			"name": "preload"
+		},
+		{
+			"keys": "commonBtn0Sheet_json,commonImg0Sheet_json,bjt_jpg,l2_png,l1_png,bg0_jpg,loginSheet_json,languagePackage_json,tanchukuang_mp3,click_mp3,walletConfig_json",
+			"name": "login"
+		}
+	],
+	"resources": [
+		{
+			"url": "conf/gameConfig.json",
+			"type": "json",
+			"name": "gameConfig_json"
+		},
+		{
+			"url": "res/commonBtn0Sheet.json",
+			"type": "sheet",
+			"name": "commonBtn0Sheet_json",
+			"subkeys": "a300x116_0,a300x116_1,a300x116_2,a78x78_0,a78x78_1,b300x116_0,b300x116_1,c300x116_0,c300x116_1"
+		},
+		{
+			"url": "res/bjt.jpg",
+			"type": "image",
+			"name": "bjt_jpg"
+		},
+		{
+			"url": "res/l1.png",
+			"type": "image",
+			"name": "l1_png"
+		},
+		{
+			"url": "res/l2.png",
+			"type": "image",
+			"name": "l2_png"
+		},
+		{
+			"url": "res/card/common/cardCommonImg2Sheet.json",
+			"type": "sheet",
+			"name": "cardCommonImg2Sheet_json",
+			"subkeys": "a108x112,r_e1,r_e2,r_e3,r_e4,r_e5,r_eb1,r_eb2,r_eb3,r_eb4,r_eb5,s_e1,s_e2,s_e3,s_e4,s_e5,s_eb1,s_eb2,s_eb3,s_eb4,s_eb5"
+		},
+		{
+			"url": "res/card/common/cardCommonImg1Sheet.json",
+			"type": "sheet",
+			"name": "cardCommonImg1Sheet_json",
+			"subkeys": "r_rb0,r_rb1,r_rb2,r_rb3,r_rb4,r_rb5"
+		},
+		{
+			"url": "res/card/common/cardCommonImg0Sheet.json",
+			"type": "sheet",
+			"name": "cardCommonImg0Sheet_json",
+			"subkeys": "r_dangban,r_star,s_cost,s_r1,s_r2,s_r3,s_r4,s_r5,s_rb0,s_rb1,s_rb2,s_rb3,s_rb4,s_rb5,s_star,tongyonga,tongyongb"
+		},
+		{
+			"url": "res/card/head/headImg0Sheet.json",
+			"type": "sheet",
+			"name": "headImg0Sheet_json",
+			"subkeys": "COL00000000,COL00000001,COL00000002,COL00000003,COL00000004,COL00000005,COL00000006,COL00000007,COL00000008,COL00000009,COL00000010,COL00000011,COL00000012,COL00000013,COL00000014,COL00000015,COL00000016,COL00000017,COL00000018,COL00000019,COL00000020,COL00000021,COL00000022,COL00000023,COL00000024,COL00000025,COL00000026,COL00000027,COL00000028,COL00000029,COL00000030,COL00000031,COL00000032,COL00000033,COL00000034,COL00000035,COL00000036,COL00000037,COL00000038,COL00000039"
+		},
+		{
+			"url": "conf/combatDebug.json",
+			"type": "json",
+			"name": "combatDebug_json"
+		},
+		{
+			"url": "res/commonImg0Sheet.json",
+			"type": "sheet",
+			"name": "commonImg0Sheet_json",
+			"subkeys": "a100x100,a288x64,a86x86"
+		},
+		{
+			"url": "conf/error.json",
+			"type": "json",
+			"name": "error_json"
+		},
+		{
+			"url": "res/bg0.jpg",
+			"type": "image",
+			"name": "bg0_jpg"
+		},
+		{
+			"url": "res/loginSheet.json",
+			"type": "sheet",
+			"name": "loginSheet_json",
+			"subkeys": "ba00,ba01,back00,back01,bb00,bb01,biyan,dq,huoqu,jiantou00,jiantou01,jt00,jt01,kaishiyouxi00,kaishiyouxi01,kaiyan,kuang,l1,l2,line,logo,mm,queding00,queding01,shuru,sjdl00,sjdl01,sjh,smxz,wjmm00,wjmm01,xuankuang00,xuankuang01,xuanzhong,yonghuming,yx,yxdl00,yxdl01,yzm,zczh,zczh00,zczh01,zhezhao,zhmm,zhuce00,zhuce01"
+		},
+		{
+			"url": "res/card/common/cardCommonText0Sheet.json",
+			"type": "sheet",
+			"name": "cardCommonText0Sheet_json",
+			"subkeys": "r_g1,r_g2,r_g3,s_g1,s_g2,s_g3"
+		},
+		{
+			"url": "conf/languagePackage.json",
+			"type": "json",
+			"name": "languagePackage_json"
+		},
+		{
+			"url": "sound/click.mp3",
+			"type": "sound",
+			"name": "click_mp3"
+		},
+		{
+			"url": "sound/tanchukuang.mp3",
+			"type": "sound",
+			"name": "tanchukuang_mp3"
+		},
+		{
+			"url": "conf/walletConfig.json",
+			"type": "json",
+			"name": "walletConfig_json"
+		},
+		{
+			"url": "res/card/fetter/fetterCommonImg0Sheet.json",
+			"type": "sheet",
+			"name": "fetterCommonImg0Sheet_json",
+			"subkeys": "daoyin,jbB_0,jbB_1,jbG_0,jbG_1,jbR_0,jbR_1,jbY_0,jbY_1,kuang00"
+		},
+		{
+			"url": "res/card/fetter/fetterSheet.json",
+			"type": "sheet",
+			"name": "fetterSheet_json",
+			"subkeys": "djb01,djb02,djb03,djb04,djb05,djb06,djb07,djb08,djb09,djb10,djb11,djb12,djb13,djb14,djb15,djb16,djb17,djb18,djb19,djb20,djb21"
+		},
+		{
+			"url": "res/card/skill/skillCommonImg0Sheet.json",
+			"type": "sheet",
+			"name": "skillCommonImg0Sheet_json",
+			"subkeys": "jineng1,jineng2,jineng3,jineng4,jineng5"
+		},
+		{
+			"url": "res/card/skill/skillSheet.json",
+			"type": "sheet",
+			"name": "skillSheet_json",
+			"subkeys": "baoji,bendai,bingdong,busi,chaofeng,chenmo,chongfeng,chonghui,chongsheng,chujue,cisha,dazhiliaoshu,duochonggongji,fangxue,fangyuhudun,fanji,fantan,fuchou,fudaigongji,fuhuoshu,gedang,guhua,guwu,huoli,huti,huzhu,jianshegongji,jiaoxie,jiaozheng,jikui,jinji,jinjidun,jinjiguanghuan,juduwaike,juji,lianji,lingqiaoshu,meihuo,pikan,qiangji,qiangjiguanghuan,qidao,qinwang,qishe,quantui,rechen,rechenguanghuan,shanghaifengyin,shanghaijiashen,shengmingchouqu,shenmingqianghua,shiguangjiasu,shixue,shouhu,shuaijie,shuaijieguanghuan,shuailao,tainxuanzhizi,toudu,wanqiang,xianzuxuemai,xingfen,xisheng,xixue,xixueguanghuan,xueji,xueruo,xuhua,xuruo,xuruoguanghuan,xushi,yazhi,yazhiguanghuan,yuxue,zhanyi,zhiliaoqianghua,zhiliaoshu,zhimang,zhimingyiji,zhongji,zuzhou"
+		},
+		{
+			"url": "res/card/role/COL00000000.json",
+			"type": "sheet",
+			"name": "COL00000000_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000002.json",
+			"type": "sheet",
+			"name": "COL00000002_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000005.json",
+			"type": "sheet",
+			"name": "COL00000005_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000003.json",
+			"type": "sheet",
+			"name": "COL00000003_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000001.json",
+			"type": "sheet",
+			"name": "COL00000001_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000006.json",
+			"type": "sheet",
+			"name": "COL00000006_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000007.json",
+			"type": "sheet",
+			"name": "COL00000007_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000004.json",
+			"type": "sheet",
+			"name": "COL00000004_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000009.json",
+			"type": "sheet",
+			"name": "COL00000009_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000008.json",
+			"type": "sheet",
+			"name": "COL00000008_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000011.json",
+			"type": "sheet",
+			"name": "COL00000011_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000010.json",
+			"type": "sheet",
+			"name": "COL00000010_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000012.json",
+			"type": "sheet",
+			"name": "COL00000012_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000017.json",
+			"type": "sheet",
+			"name": "COL00000017_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000016.json",
+			"type": "sheet",
+			"name": "COL00000016_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000015.json",
+			"type": "sheet",
+			"name": "COL00000015_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000013.json",
+			"type": "sheet",
+			"name": "COL00000013_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000014.json",
+			"type": "sheet",
+			"name": "COL00000014_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000018.json",
+			"type": "sheet",
+			"name": "COL00000018_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000020.json",
+			"type": "sheet",
+			"name": "COL00000020_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000019.json",
+			"type": "sheet",
+			"name": "COL00000019_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000021.json",
+			"type": "sheet",
+			"name": "COL00000021_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000024.json",
+			"type": "sheet",
+			"name": "COL00000024_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000025.json",
+			"type": "sheet",
+			"name": "COL00000025_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000022.json",
+			"type": "sheet",
+			"name": "COL00000022_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000023.json",
+			"type": "sheet",
+			"name": "COL00000023_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000026.json",
+			"type": "sheet",
+			"name": "COL00000026_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000027.json",
+			"type": "sheet",
+			"name": "COL00000027_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000031.json",
+			"type": "sheet",
+			"name": "COL00000031_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000030.json",
+			"type": "sheet",
+			"name": "COL00000030_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000028.json",
+			"type": "sheet",
+			"name": "COL00000028_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000029.json",
+			"type": "sheet",
+			"name": "COL00000029_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000032.json",
+			"type": "sheet",
+			"name": "COL00000032_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000034.json",
+			"type": "sheet",
+			"name": "COL00000034_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000033.json",
+			"type": "sheet",
+			"name": "COL00000033_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000037.json",
+			"type": "sheet",
+			"name": "COL00000037_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000035.json",
+			"type": "sheet",
+			"name": "COL00000035_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000039.json",
+			"type": "sheet",
+			"name": "COL00000039_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000036.json",
+			"type": "sheet",
+			"name": "COL00000036_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/card/role/COL00000038.json",
+			"type": "sheet",
+			"name": "COL00000038_json",
+			"subkeys": "r,s"
+		},
+		{
+			"url": "res/linshitouxiang.jpg",
+			"type": "image",
+			"name": "linshitouxiang_jpg"
+		},
+		{
+			"url": "res/headicon.json",
+			"type": "sheet",
+			"name": "headicon_json",
+			"subkeys": "head_00,head_01,head_02,head_03,head_04,head_05,head_06,head_07,head_08,head_09,head_10,head_11,head_12,head_13,head_14,head_15,head_16,head_17,head_18,head_19,head_20,head_21,head_22,head_23,head_24,head_25,head_26,head_27,head_28,head_29,head_30,head_31,head_32,head_33,head_34,head_35,head_36,head_37,head_38,head_39,head_40,head_41,head_42,head_43,head_44,head_45"
+		}
+	]
+}

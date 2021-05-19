@@ -1,0 +1,12 @@
+{
+    "servers":[
+        {
+            "sname":"192.168.0.68:8081",
+            "host":"192.168.0.68",
+            "port":"8081",
+            "hurl":"http://192.168.0.68:8081/CenterServer/gateway.do"
+        }
+    ],
+    "agreementUrl":"https://shimo.im/docs/CRHHcXgg8xdCpvqp/read",
+    "walletUrl":"http://wallet.xwgapi.com/"
+}

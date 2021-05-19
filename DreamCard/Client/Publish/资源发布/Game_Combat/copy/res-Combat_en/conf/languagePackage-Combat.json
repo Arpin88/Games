@@ -1,0 +1,27 @@
+{
+    "language": {
+        "CombatCommon":{
+            "lbl_0":"HP",
+            "lbl_1":"ATK",
+            "lbl_2":"MAX HP",
+            "lbl_3":"CD",
+            "lbl_4":"DR"
+        },
+        "CombatSkin":{
+            "lbl_0":"The room has been disbanded, please return to the lobby!"
+        },
+        "CSHeadSkin": {
+            "lbl_0": "Stars falling",
+            "lbl_1": "Level drop",
+            "lbl_2": "Gen"
+        },
+        "CPopupSkin":{
+            "lbl_0":"Do you issue a quick battle request ?",
+            "lbl_1":"If the opponent agrees, will skip the battle flow, directly to the settlement!\n",
+            "lbl_2":"(A maximum of 3 applications can be made per game)\n",
+            "lbl_3":"Do you agree to the prompt settlement request from your counterparty?\nIf you agree to the request, you will skip the battle process and  directly to the battle settlement.",
+            "lbl_4":"The opponent agrees to settle quickly, the game is about to settle!",
+            "lbl_5":"Opponent refuses to settle quickly, game continues!"
+        }
+    }
+}

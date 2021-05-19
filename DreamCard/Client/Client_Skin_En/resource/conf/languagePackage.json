@@ -1,0 +1,46 @@
+{
+    "language": {
+        "Common":{
+            "lbl_0":"Common",
+            "lbl_1":"Rare",
+            "lbl_2":"Epic",
+            "lbl_3":"Legend",
+            "lbl_4":"Myth",
+            "lbl_5":"Metal",
+            "lbl_6":"Wood",
+            "lbl_7":"Water",
+            "lbl_8":"Fire",
+            "lbl_9":"Earth"
+        },
+        "LoginSkin": {
+            "lbl_0": "",
+            "lbl_1":"version:",
+            "lbl_2":"Please read and agree to the license and service agreement!",
+            "lbl_3":"Mobile phone number does not meet the requirements!",
+            "lbl_4":"Captcha code cannot be empty!",
+            "lbl_5":"The user name does not meet the requirements! \n(6-22 digits or letter combination, no special characters)",
+            "lbl_6":"Password does not meet the requirements! \n(6-18 digits or letter combination)",
+            "lbl_7":"The mailbox does not meet the requirements!"
+        },
+        "RegisterSkin":{
+            "lbl_0":"The user name does not meet the requirements! \n(6-22 digits or letter combination, no special characters)",
+            "lbl_1":"Mobile phone number does not meet the requirements!",
+            "lbl_2":"Captcha code cannot be empty!",
+            "lbl_3":"Password does not meet the requirements! \n(6-18 digits or letter combination)",
+            "lbl_4":"The two passwords are not the same!",
+            "lbl_5":"The mailbox does not meet the requirements!"
+        },
+        "ForgotSkin":{
+            "lbl_0":"Success！",
+            "lbl_1":"Mobile phone number does not meet the requirements!",
+            "lbl_2":"Captcha code cannot be empty!",
+            "lbl_3":"Password does not meet the requirements! \n(6-18 digits or letter combination)",
+            "lbl_4":"The two passwords are not the same!",
+            "lbl_5":"The mailbox does not meet the requirements!"
+        },
+        "PromptBoxSkin":{
+            "lbl_0":"Ok",
+            "lbl_1":"Cancel"
+        }
+    }
+}

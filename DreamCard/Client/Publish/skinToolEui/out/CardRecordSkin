@@ -1,0 +1,428 @@
+(function (_super) {
+	__extends(DailogSkin, _super);
+	var DailogSkin$Skin63 = 	(function (_super) {
+		__extends(DailogSkin$Skin63, _super);
+		function DailogSkin$Skin63() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.guanbi01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin$Skin63.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "shezhisheet_json.guanbi00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin$Skin63;
+	})(eui.Skin);
+
+	function DailogSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._c3_i()];
+	}
+	var _proto = DailogSkin.prototype;
+
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c2_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 636;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 1215;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this._a3_i(),this._a4_i(),this.btnBack_i(),this.scrPropItem_i(),this._c1_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.y = 0;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 600;
+		t.scale9Grid = new egret.Rectangle(15,15,64,70);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.tanchukuang2";
+		t.visible = false;
+		t.width = 1181;
+		t.x = 15;
+		t.y = 15;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 607;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(13,14,75,72);
+		t.source = "hallImg1Sheet_json.shopback";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 1188;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 55;
+		t.scale9Grid = new egret.Rectangle(12,10,76,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "shezhisheet_json.lan";
+		t.touchEnabled = false;
+		t.width = 1181;
+		t.x = 17.66;
+		t.y = 13.02;
+		return t;
+	};
+	_proto.btnBack_i = function () {
+		var t = new eui.Button();
+		this.btnBack = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 1162;
+		t.y = -29;
+		t.skinName = DailogSkin$Skin63;
+		return t;
+	};
+	_proto.scrPropItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrPropItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 547;
+		t.horizontalCenter = 1;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyH = "off";
+		t.width = 1175;
+		t.y = 68.18;
+		t.viewport = this.groupPropItem_i();
+		return t;
+	};
+	_proto.groupPropItem_i = function () {
+		var t = new eui.Group();
+		this.groupPropItem = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 51.15;
+		t.width = 1180.15;
+		t.x = 21;
+		t.y = 13.71;
+		t.elementsContent = [this.lblDes2_i(),this.lblDes9_i(),this.lblDes10_i(),this.lblDes0_i(),this.lblDes1_i(),this.lblDes3_i(),this.lblDes4_i(),this.lblDes5_i(),this.lblDes6_i(),this.lblDes7_i(),this.lblDes2e1_i(),this.lblDes8_i()];
+		return t;
+	};
+	_proto.lblDes2_i = function () {
+		var t = new eui.Label();
+		this.lblDes2 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "编号";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 52.4;
+		t.wordWrap = true;
+		t.x = 40;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes9_i = function () {
+		var t = new eui.Label();
+		this.lblDes9 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "订单号";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 96.23;
+		t.wordWrap = true;
+		t.x = 148;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes10_i = function () {
+		var t = new eui.Label();
+		this.lblDes10 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "类型";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 50.4;
+		t.wordWrap = true;
+		t.x = 281;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes0_i = function () {
+		var t = new eui.Label();
+		this.lblDes0 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "卡牌名称";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 80.5;
+		t.wordWrap = true;
+		t.x = 416;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes1_i = function () {
+		var t = new eui.Label();
+		this.lblDes1 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "品质";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 74.9;
+		t.wordWrap = true;
+		t.x = 525;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes3_i = function () {
+		var t = new eui.Label();
+		this.lblDes3 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "五行";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 74.9;
+		t.wordWrap = true;
+		t.x = 592;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes4_i = function () {
+		var t = new eui.Label();
+		this.lblDes4 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "星级";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 74.9;
+		t.wordWrap = true;
+		t.x = 673;
+		t.y = 16.5;
+		return t;
+	};
+	_proto.lblDes5_i = function () {
+		var t = new eui.Label();
+		this.lblDes5 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "攻击";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 74.9;
+		t.wordWrap = true;
+		t.x = 750;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes6_i = function () {
+		var t = new eui.Label();
+		this.lblDes6 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "生命";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 74.9;
+		t.wordWrap = true;
+		t.x = 817;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes7_i = function () {
+		var t = new eui.Label();
+		this.lblDes7 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "手续费";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 111.9;
+		t.wordWrap = true;
+		t.x = 901;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes2e1_i = function () {
+		var t = new eui.Label();
+		this.lblDes2e1 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "完成时间";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 154.9;
+		t.wordWrap = true;
+		t.x = 1040;
+		t.y = 17;
+		return t;
+	};
+	_proto.lblDes8_i = function () {
+		var t = new eui.Label();
+		this.lblDes8 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "状态";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.width = 50.4;
+		t.wordWrap = true;
+		t.x = 348;
+		t.y = 17;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","btnBack","groupPropItem","scrPropItem","lblDes2","lblDes9","lblDes10","lblDes0","lblDes1","lblDes3","lblDes4","lblDes5","lblDes6","lblDes7","lblDes2e1","lblDes8"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return DailogSkin;
+})(eui.Skin);

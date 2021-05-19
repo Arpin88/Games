@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadingHSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0xBFBFBF"/>
+	<e:Image x="0" y="0" width="100%" height="100%" source="bjt_jpg"/>
+	<e:ProgressBar id="prbLoading" skinName="LoadingBSkin" horizontalCenter="0" bottom="27" value="0"/>
+	<e:Label id="lblProgress" text="0%" size="30" textColor="0xf7dfb2" y="670" horizontalCenter="37.5"/>
+	<e:Label id="lblProgress0" text="Loading" size="30" textColor="0xf2af43" y="670" horizontalCenter="-60.5"/>
+</e:Skin>

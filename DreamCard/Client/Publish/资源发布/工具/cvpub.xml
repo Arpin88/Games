@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cvpub>
+	<common src="..\client" dest="..\patch\webver">
+	</common>
+	<version name="webver">
+		<include>
+			<folder name="resource"/>
+			<folder name="tmp"/>
+		</include>
+	</version>
+</cvpub>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FetterItemSkin" width="210" height="230" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" width="100%" height="100%">
+		<e:Image id="imgBg" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="tasksheet_json.kuang"/>
+		<e:Image id="imgIcon" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0" source="tasksheet_json.jinbi"/>
+		<e:Image id="imgGet" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0" source="tasksheet_json.gou" visible="false"/>
+
+
+		<e:Image id="lightFrame" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0.5" source="tasksheet_json.guanghuan" width="223" height="244" visible="false"/>
+		<e:Label id="labelNum" text="XWG*10" y="189.92" scaleX="1" scaleY="1" width="177.31" textAlign="center" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" textColor="0xFFFFFF" rotation="0.03" horizontalCenter="-0.5" x="12"/>
+		<e:Label id="labelDays" text="第三天" y="13.92" scaleX="1" scaleY="1" width="177.31" textAlign="center" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" textColor="0xFFFFFF" rotation="0.03" horizontalCenter="0" x="2" verticalAlign="middle"/>
+	</e:Group>
+</e:Skin>

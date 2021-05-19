@@ -1,0 +1,410 @@
+(function (_super) {
+	__extends(CGDetailSkin, _super);
+	var CGDetailSkin$Skin28 = 	(function (_super) {
+		__extends(CGDetailSkin$Skin28, _super);
+		function CGDetailSkin$Skin28() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","commonBtn0Sheet_json.a78x78_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CGDetailSkin$Skin28.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "commonBtn0Sheet_json.a78x78_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CGDetailSkin$Skin28;
+	})(eui.Skin);
+
+	var CGDetailSkin$Skin29 = 	(function (_super) {
+		__extends(CGDetailSkin$Skin29, _super);
+		function CGDetailSkin$Skin29() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a96x90_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CGDetailSkin$Skin29.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a96x90_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CGDetailSkin$Skin29;
+	})(eui.Skin);
+
+	function CGDetailSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupCGDetail_i()];
+		
+		eui.Binding.$bindProperties(this, ["hostComponent.lbl_0"],[0],this._e1,"text")
+		eui.Binding.$bindProperties(this, ["hostComponent.lbl_1"],[0],this._e2,"text")
+		eui.Binding.$bindProperties(this, ["hostComponent.lbl_2"],[0],this._e3,"text")
+	}
+	var _proto = CGDetailSkin.prototype;
+
+	_proto.groupCGDetail_i = function () {
+		var t = new eui.Group();
+		this.groupCGDetail = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c3_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = -1;
+		return t;
+	};
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.height = 630;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 1015;
+		t.elementsContent = [this._a1_i(),this.btnClose_i(),this.groupCard_i(),this._c1_i(),this._c2_i(),this.btnUnload_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.btnClose_i = function () {
+		var t = new eui.Button();
+		this.btnClose = t;
+		t.label = "";
+		t.x = 975;
+		t.y = -40;
+		t.skinName = CGDetailSkin$Skin28;
+		return t;
+	};
+	_proto.groupCard_i = function () {
+		var t = new eui.Group();
+		this.groupCard = t;
+		t.percentHeight = 100;
+		t.left = 0;
+		t.width = 430;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 580;
+		t.right = 30;
+		t.verticalCenter = 0;
+		t.width = 555;
+		t.elementsContent = [this._a2_i(),this._a3_i(),this._a4_i(),this.groupAttribute_i(),this.groupSkill_i(),this.groupFetter_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(14,14,67,70);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.tanchukuang2";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 95;
+		t.y = 30;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.scaleX = -1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 465;
+		t.y = 30;
+		return t;
+	};
+	_proto.groupAttribute_i = function () {
+		var t = new eui.Group();
+		this.groupAttribute = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._e1_i(),this.groupAttTextField_i()];
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		this._e1 = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 24;
+		t.textColor = 0x91e1ff;
+		t.y = 20;
+		return t;
+	};
+	_proto.groupAttTextField_i = function () {
+		var t = new eui.Group();
+		this.groupAttTextField = t;
+		t.horizontalCenter = 0;
+		t.width = 410;
+		t.y = 110;
+		return t;
+	};
+	_proto.groupSkill_i = function () {
+		var t = new eui.Group();
+		this.groupSkill = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._e2_i(),this.scrSkillItem_i()];
+		return t;
+	};
+	_proto._e2_i = function () {
+		var t = new eui.Label();
+		this._e2 = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 24;
+		t.textColor = 0x91e1ff;
+		t.y = 20;
+		return t;
+	};
+	_proto.scrSkillItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrSkillItem = t;
+		t.height = 490;
+		t.horizontalCenter = 0;
+		t.scrollPolicyH = "off";
+		t.width = 510;
+		t.y = 65;
+		t.viewport = this.groupSkillItem_i();
+		return t;
+	};
+	_proto.groupSkillItem_i = function () {
+		var t = new eui.Group();
+		this.groupSkillItem = t;
+		t.layout = this._VerticalLayout1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		return t;
+	};
+	_proto.groupFetter_i = function () {
+		var t = new eui.Group();
+		this.groupFetter = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._e3_i(),this.scrFetterItem_i()];
+		return t;
+	};
+	_proto._e3_i = function () {
+		var t = new eui.Label();
+		this._e3 = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 24;
+		t.textColor = 0x91e1ff;
+		t.y = 20;
+		return t;
+	};
+	_proto.scrFetterItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrFetterItem = t;
+		t.height = 490;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyH = "off";
+		t.width = 510;
+		t.y = 65;
+		t.viewport = this.groupFetterItem_i();
+		return t;
+	};
+	_proto.groupFetterItem_i = function () {
+		var t = new eui.Group();
+		this.groupFetterItem = t;
+		t.layout = this._VerticalLayout2_i();
+		return t;
+	};
+	_proto._VerticalLayout2_i = function () {
+		var t = new eui.VerticalLayout();
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.height = 428;
+		t.right = -83;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.width = 86;
+		t.y = 65;
+		t.elementsContent = [this.imgAttribute_i(),this.imgAttributeLabel_i(),this.imgSkill_i(),this.imgSkillLabel_i(),this.imgFetter_i(),this.imgFetterLabel_i()];
+		return t;
+	};
+	_proto.imgAttribute_i = function () {
+		var t = new eui.Image();
+		this.imgAttribute = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallBtn1Sheet_json.a86x114_0";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgAttributeLabel_i = function () {
+		var t = new eui.Image();
+		this.imgAttributeLabel = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.sx_0";
+		t.touchEnabled = false;
+		t.x = 20;
+		t.y = 20;
+		return t;
+	};
+	_proto.imgSkill_i = function () {
+		var t = new eui.Image();
+		this.imgSkill = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallBtn1Sheet_json.a86x114_0";
+		t.y = 135;
+		return t;
+	};
+	_proto.imgSkillLabel_i = function () {
+		var t = new eui.Image();
+		this.imgSkillLabel = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.jn_0";
+		t.touchEnabled = false;
+		t.x = 20;
+		t.y = 155;
+		return t;
+	};
+	_proto.imgFetter_i = function () {
+		var t = new eui.Image();
+		this.imgFetter = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallBtn1Sheet_json.a86x114_0";
+		t.y = 270;
+		return t;
+	};
+	_proto.imgFetterLabel_i = function () {
+		var t = new eui.Image();
+		this.imgFetterLabel = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.jb_0";
+		t.touchEnabled = false;
+		t.x = 20;
+		t.y = 290;
+		return t;
+	};
+	_proto.btnUnload_i = function () {
+		var t = new eui.Button();
+		this.btnUnload = t;
+		t.label = "";
+		t.x = 1050;
+		t.y = 530;
+		t.skinName = CGDetailSkin$Skin29;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","btnClose","groupCard","groupAttTextField","groupAttribute","groupSkillItem","scrSkillItem","groupSkill","groupFetterItem","scrFetterItem","groupFetter","imgAttribute","imgAttributeLabel","imgSkill","imgSkillLabel","imgFetter","imgFetterLabel","btnUnload","groupCGDetail"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CGDetailSkin;
+})(eui.Skin);

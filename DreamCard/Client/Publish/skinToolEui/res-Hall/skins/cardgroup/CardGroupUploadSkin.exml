@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardGroupUploadSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCardGroupSet" width="100%" height="100%" x="0" y="0">
+		<e:Image x="0" y="0" source="bj_jpg" width="100%" height="100%"/>
+		<e:Group width="288" height="640" anchorOffsetX="0" anchorOffsetY="0" x="10.64" y="100" scaleX="1" scaleY="1">
+			<e:Scroller id="scrOptionBtn" width="100%" scrollPolicyH="off" height="100%" anchorOffsetX="0" scaleX="1" scaleY="1" top="0" x="0">
+			<e:Group id="groupOptionBtn" anchorOffsetX="0" width="100%" height="100%"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group width="100%" height="80" left="0" top="0">
+		<e:Image source="top_png" top="0" horizontalCenter="0" width="100%"/>
+		<e:Image horizontalCenter="0" verticalCenter="-5" source="hallText0Sheet_json.t_zhuanyi"/>
+		<e:Button id="btnBack" label="" left="0" top="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		</e:Group>
+
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" top="100" left="308" right="12">
+		<e:Group width="100%" height="285" y="0" horizontalCenter="0">
+			<e:Image width="100%" height="100%" left="0" top="0" x="0" y="0" scaleX="1" scaleY="1" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59"/>
+			<e:Scroller id="scrSCardItem" width="640" scrollPolicyH="off" scaleX="1" scaleY="1" height="250" y="15" horizontalCenter="-167">
+			<e:Group id="groupSCardItem"/>
+			</e:Scroller>
+			<e:Group width="328" height="250" y="15" horizontalCenter="327">
+			<e:Image width="100%" y="0" scaleX="1" scaleY="1" height="100%" x="0" source="hallImg1Sheet_json.tanchukuang2" scale9Grid="12,12,76,76"/>
+				<e:Label id="lblCCost" text="说明" y="15" size="20" fontFamily="SimHei" verticalAlign="middle" textAlign="left" height="30" scaleX="1" scaleY="1" touchEnabled="false" x="17" width="130" textColor="0xfcc728"/>
+				<e:Label id="lblCCost0" text="  1.转入：钱包内的卡牌只有通过转入功能导进游戏，才能在线下进行游戏。转入游戏内的卡牌在钱包内暂时冻结，不能进行交易。" y="47.66" size="20" fontFamily="SimHei" textColor="0xFFFFFF" verticalAlign="top" textAlign="left" height="96.66" scaleX="1" scaleY="1" touchEnabled="false" x="15.67" width="298" anchorOffsetX="0" anchorOffsetY="0"/>
+				<e:Label id="lblCCost1" text="  2.转出：游戏内的卡牌只有通过转出功能导进钱包，才能在线上进行交易。转出游戏内的卡牌，会从游戏里消失。" y="149.66" size="20" fontFamily="SimHei" textColor="0xFFFFFF" verticalAlign="top" textAlign="left" height="92.66" scaleX="1" scaleY="1" touchEnabled="false" x="19" width="298" anchorOffsetX="0" anchorOffsetY="0"/>
+
+			</e:Group>
+		</e:Group>
+		<e:Group width="1014" y="290" scaleX="1" scaleY="1" horizontalCenter="0">
+			<e:Group width="100%" left="0" top="0">
+			<e:Image x="240" scaleX="1" scaleY="1" anchorOffsetX="0" width="785" anchorOffsetY="0" source="hallImg2Sheet_json.a132x288" scale9Grid="71,36,45,216" y="17"/>
+				<e:Image scaleX="1" anchorOffsetX="0" anchorOffsetY="0" y="47" source="hallImg2Sheet_json.a450x6" x="414"/>
+				<e:Image scaleX="1" anchorOffsetX="0" anchorOffsetY="0" source="hallImg2Sheet_json.a450x6" y="294" x="414" scaleY="-1"/>
+			<e:Image left="0" x="-230" y="0" scaleX="1" scaleY="1" touchEnabled="false" source="hallImg2Sheet_json.b246x348"/>
+				<e:Scroller id="scrCCardItem" width="1015" scaleX="1" scaleY="1" height="314" x="10" y="27.63" scrollPolicyV="off" anchorOffsetY="0">
+					<e:Group id="groupCCardItem" y="-11" anchorOffsetY="0" height="344.67" x="-1"/>
+				</e:Scroller>
+				<e:Button id="btnProgress" label="进度" y="295.62" x="673.33" skinName="ButtonB1Skin" anchorOffsetX="0" width="242" anchorOffsetY="0" height="88.67" scaleX="0.6" scaleY="0.6"/>
+				<e:Button id="btnRecord" label="记录" y="295.62" x="506.32" anchorOffsetX="0" width="242" anchorOffsetY="0" height="88.67" scaleX="0.6" scaleY="0.6" skinName="ButtonR1Skin"/>
+				<e:Button id="btnSort1" label="转出" y="295.62" x="669" anchorOffsetX="0" width="242" anchorOffsetY="0" height="88.67" scaleX="0.6" scaleY="0.6" skinName="ButtonR1Skin" visible="false"/>
+
+
+				<e:Button id="btnConfirm" label="确定" y="295.62" x="838" anchorOffsetX="0" width="242" anchorOffsetY="0" height="88.67" scaleX="0.6" scaleY="0.6" skinName="ButtonY1Skin"/>
+			<e:Image scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" right="-12" source="hallImg2Sheet_json.a40x250" y="45"/>
+			<e:Image left="0" x="-240" y="0" scaleX="1" scaleY="1" touchEnabled="false" source="hallImg2Sheet_json.a246x348"/>
+			</e:Group>
+			<e:Group id="groupBCardItem" width="244" y="0" left="0" touchEnabled="false" height="100%">
+				<e:Button id="btnDetails" label="" scaleX="1" scaleY="1" left="0" top="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a78x80_0" source.down="hallBtn1Sheet_json.a78x80_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" y="20" size="30" fontFamily="SimHei" textColor="0xd9f2ff" stroke="2"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Image id="imgChoose" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" x="463" y="132" touchEnabled="false" source="" visible="false"/>
+			</e:Group>
+
+		</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,16 @@
+.pc_icon{position: fixed;top: 0px;right: 0px;width: 64px;height: 64px;background: url(../images/xf.png) 0% 0% / cover;cursor: pointer;z-index: 98;}
+
+
+.pc_window{position: fixed;right: 0;top: 0;z-index: 99;max-height: 667px;overflow: hidden;background-color: #343643;-webkit-transition: all 0.3s linear;transition: all 0.3s linear;-webkit-animation: pc_window 0.3s linear; animation: pc_window 0.3s linear}
+.pagewindow{width: 375px;height: 667px}
+.pc_window_mask{position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 0;cursor: pointer;}
+
+@-webkit-keyframes pc_window{0%{-webkit-transform: translate(375px)}100%{-webkit-transform: translate(0)}}
+@keyframes pc_window{0%{transform: translate(375px)}100%{transform: translate(0)}}
+.pc_windowhide{-webkit-transform: translate(375px);transform: translate(375px)}
+.pc_fadeindown{-webkit-animation:fadeindown 0.3s;animation:fadeindown 0.3s;opacity: 0;}
+
+.pc_window.pc_mobile,.pc_mobile .pc_bj{width: 100vw;height: 100vh;max-height: inherit;}
+
+.iframe_pc{height:667px;width: 375px;z-index:66;position:relative;border-width:0;}
+.iframe_mobile{height:100vh;width: 100vw;z-index:66;position:relative;border-width:0;}

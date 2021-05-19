@@ -1,0 +1,98 @@
+(function (_super) {
+	__extends(FetterItemSkin, _super);
+	function FetterItemSkin() {
+		_super.call(this);
+		
+		this.height = 236;
+		this.width = 180;
+		this.elementsContent = [this.groupPI_i()];
+	}
+	var _proto = FetterItemSkin.prototype;
+
+	_proto.groupPI_i = function () {
+		var t = new eui.Group();
+		this.groupPI = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.bgClr_i(),this.imgItem_i(),this.txtBg1_i(),this.txtBg2_i(),this.labItemName_i()];
+		return t;
+	};
+	_proto.bgClr_i = function () {
+		var t = new eui.Image();
+		this.bgClr = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "fetterCommonImg0Sheet_json.jbR_0";
+		t.touchEnabled = false;
+		t.verticalCenter = -28;
+		return t;
+	};
+	_proto.imgItem_i = function () {
+		var t = new eui.Image();
+		this.imgItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "fetterSheet_json.djb01";
+		t.touchEnabled = false;
+		t.verticalCenter = -28;
+		return t;
+	};
+	_proto.txtBg1_i = function () {
+		var t = new eui.Image();
+		this.txtBg1 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "fetterCommonImg0Sheet_json.kuang00";
+		t.touchEnabled = false;
+		t.y = 191;
+		return t;
+	};
+	_proto.txtBg2_i = function () {
+		var t = new eui.Image();
+		this.txtBg2 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "fetterCommonImg0Sheet_json.daoyin";
+		t.touchEnabled = false;
+		t.visible = false;
+		t.y = 185;
+		return t;
+	};
+	_proto.labItemName_i = function () {
+		var t = new eui.Label();
+		this.labItemName = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.horizontalCenter = 0.5;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "混沌印记";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.width = 177.31;
+		t.x = 2;
+		t.y = 196.98;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["bgClr","imgItem","txtBg1","txtBg2","labItemName","groupPI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return FetterItemSkin;
+})(eui.Skin);

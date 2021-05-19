@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DebugSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0xBFBFBF" scaleX="1" scaleY="1"/>
+		<e:Image x="0" y="0" width="100%" height="100%" source="mbj_jpg" scaleX="1" scaleY="1"/>
+		<e:Group id="group1" width="100%" height="100%" x="0" y="0" touchEnabled="false" visible="false">
+			<e:Button id="btnCreate" label="创建房间" anchorOffsetX="0" skinName="ButtonB1Skin" y="480" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Button id="btnOpen" label="打开窗口" anchorOffsetX="0" skinName="ButtonB1Skin" y="400" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Button id="btnClose" label="关闭房间" anchorOffsetX="0" skinName="ButtonB1Skin" y="530" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Label id="lblAccount0" text="用户1：" x="0" y="50" scaleX="1" scaleY="1"/>
+			<e:Label id="lblAccount1" text="用户2：" x="0" y="100" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="group2" width="100%" height="100%" x="0" y="0" touchEnabled="false">
+			<e:Group id="groupRData" width="100%" height="100%" x="0" y="0" touchEnabled="false" visible="false">
+				<e:Scroller id="scrRoom" width="100%" y="80" horizontalCenter="0" x="0" scaleX="1" scaleY="1" height="670">
+					<e:Group id="groupRoom">
+					<e:layout>
+						<e:TileLayout/>
+					</e:layout>
+					</e:Group>
+				</e:Scroller>
+				<e:Label id="lblTime" text="刷新倒计时: 00:00" x="0" y="20" scaleX="1" scaleY="1"/>
+				<e:Label text="当前测试下标:" x="260" y="20" scaleX="1" scaleY="1"/>
+				<e:EditableText id="editCurCSIndex" height="50" text="0" x="465" y="20" width="150"/>
+			</e:Group>
+			<e:Group id="groupRDetail" width="100%" height="100%" y="0" horizontalCenter="0" touchEnabled="false" x="0" scaleX="1" scaleY="1" visible="false">
+				<e:Label text="房间信息：" x="0" y="10" scaleX="1" scaleY="1"/>
+				<e:Label id="lblRAccount0" text="用户1：" x="0" y="50" scaleX="1" scaleY="1"/>
+				<e:Label id="lblRAccount1" text="用户2：" x="0" y="100" scaleX="1" scaleY="1"/>
+				<e:Label id="lblRState" text="状态：" x="0" y="150" scaleX="1" scaleY="1"/>
+				<e:Group width="100%" y="200" horizontalCenter="0" touchEnabled="false">
+				<e:Label text="卡牌json：" x="0" y="200" verticalAlign="middle"/>
+				<e:EditableText id="editJson" width="100%" height="150" y="-50" size="24" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="middle" prompt="点击选择复制" promptColor="0xf9bf4a" scaleX="1" scaleY="1" textColor="0xFFFFFF" x="100" anchorOffsetX="0"/>
+					<e:layout>
+						<e:VerticalLayout/>
+					</e:layout>
+				</e:Group>
+				<e:Button id="btnROpen" label="打开窗口" anchorOffsetX="0" skinName="ButtonB1Skin" y="400" scaleX="1" scaleY="1" horizontalCenter="0" x="491"/>
+				<e:Button id="btnRClose" label="关闭房间" anchorOffsetX="0" skinName="ButtonB1Skin" y="530" scaleX="1" scaleY="1" horizontalCenter="0" x="491"/>
+				<e:Button id="btnRRecovery" label="回收房间" anchorOffsetX="0" skinName="ButtonB1Skin" y="400" scaleX="1" scaleY="1" right="0"/>
+				<e:Button id="btnRGetBattleInfo" label="获取战斗信息" anchorOffsetX="0" skinName="ButtonB1Skin" y="530" scaleX="1" scaleY="1" right="0" x="10"/>
+				<e:Button id="btnRBack" label="返回" anchorOffsetX="0" skinName="ButtonB1Skin" y="400" scaleX="1" scaleY="1" left="0"/>
+				<e:EditableText id="editBattleInfo" width="100%" height="100" y="640" size="24" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="middle" prompt="点击获取战斗信息按钮获取" promptColor="0xF9BF4A" scaleX="1" scaleY="1" textColor="0xFFFFFF" x="0" anchorOffsetX="0"/>
+			</e:Group>
+			<e:Group id="groupRCreate" width="100%" height="100%" horizontalCenter="0" touchEnabled="false" visible="false">
+				<e:Button id="btnRCreate" label="创建房间" anchorOffsetX="0" skinName="ButtonB1Skin" y="480" scaleX="1" scaleY="1" horizontalCenter="0" x="491"/>
+				<e:Button id="btnChangeCurCSIndex" label="修改下标" anchorOffsetX="0" skinName="ButtonB1Skin" y="71" scaleX="1" scaleY="1" x="10"/>
+				<e:Label text="当前测试下标:" x="0" y="20" scaleX="1" scaleY="1"/>
+				<e:EditableText id="editCCurCSIndex" height="50" text="0" x="207" y="20" width="150" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

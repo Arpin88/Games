@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CCardDetailSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17714652c99"/>
+	<e:Group id="groupCCardDetail" width="100%" height="100%" x="0" y="0">
+		<e:Rect id="rectBG" width="100%" height="100%" x="0" y="-1" fillAlpha="0.7"/>
+		<e:Group width="1015" height="630" verticalCenter="0" horizontalCenter="0">
+			<e:Image width="100%" height="100%" x="0" y="0" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59"/>
+			<e:Button id="btnClose" label="" x="975" y="-40">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="commonBtn0Sheet_json.a78x78_0" source.down="commonBtn0Sheet_json.a78x78_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group id="groupCard" y="0" width="430" height="100%" left="0">
+			</e:Group>
+			<e:Group width="555" right="30" height="580" verticalCenter="0">
+				<e:Image width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="14,14,67,70" source="combatImg1Sheet_json.tanchukuang2"/>
+				<e:Image y="30" scaleX="1" scaleY="1" x="95" source="combatImg1Sheet_json.a129x10"/>
+				<e:Image y="30" scaleX="-1" scaleY="1" x="465" source="combatImg1Sheet_json.a129x10"/>
+				<e:Group id="groupAttribute" width="100%" height="100%" x="0" y="0">
+					<e:Label text="{lbl_0}" y="20" fontFamily="SimHei" size="24" horizontalCenter="0" textColor="0x91e1ff"/>
+					<e:Group id="groupAttTextField" width="410" y="110" horizontalCenter="0"/>
+				</e:Group>
+				<e:Group id="groupSkill" width="100%" height="100%" x="0" y="0">
+					<e:Label text="{lbl_1}" y="20" fontFamily="SimHei" size="24" horizontalCenter="0" textColor="0x91e1ff"/>
+					<e:Scroller id="scrSkillItem" width="510" height="490" y="65" scrollPolicyH="off" horizontalCenter="0">
+						<e:Group id="groupSkillItem">
+							<e:layout>
+								<e:VerticalLayout/>
+							</e:layout>
+						</e:Group>
+					</e:Scroller>
+				</e:Group>
+				<e:Group id="groupFetter" width="100%" height="100%" x="0" y="0">
+					<e:Label text="{lbl_2}" y="20" fontFamily="SimHei" size="24" horizontalCenter="0" textColor="0x91e1ff"/>
+					<e:Scroller id="scrFetterItem" width="510" height="490" y="65" scrollPolicyH="off" scaleX="1" scaleY="1" horizontalCenter="0">
+						<e:Group id="groupFetterItem">
+							<e:layout>
+								<e:VerticalLayout/>
+							</e:layout>
+						</e:Group>
+					</e:Scroller>
+				</e:Group>
+			</e:Group>
+			<e:Group y="65" scaleX="1" scaleY="1" right="-83" height="428" touchEnabled="false" width="86">
+				<e:Image id="imgAttribute" x="0" y="0" scaleX="1" scaleY="1" source="combatBtn0Sheet_json.a86x114_0"/>
+				<e:Image id="imgAttributeLabel" y="20" scaleX="1" scaleY="1" x="20" touchEnabled="false" source="combatText0Sheet_json.sx_0"/>
+				<e:Image id="imgSkill" scaleX="1" scaleY="1" y="135" source="combatBtn0Sheet_json.a86x114_0"/>
+				<e:Image id="imgSkillLabel" y="155" scaleX="1" scaleY="1" x="20" source="combatText0Sheet_json.jn_0" touchEnabled="false"/>
+				<e:Image id="imgFetter" scaleX="1" scaleY="1" y="270" source="combatBtn0Sheet_json.a86x114_0"/>
+				<e:Image id="imgFetterLabel" y="290" scaleX="1" scaleY="1" x="20" source="combatText0Sheet_json.jb_0" touchEnabled="false"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

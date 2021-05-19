@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MPropItemSkin2" width="134" height="133" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" width="134" height="135" x="0" y="0" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image x="0" y="0" touchEnabled="false" source="hallImg0Sheet_json.a248x300" visible="false"/>
+		<e:Image y="11" horizontalCenter="1" touchEnabled="false" source="hallImg1Sheet_json.a128x128"/>
+		<e:Image y="3" horizontalCenter="0" touchEnabled="false" source="hallImg1Sheet_json.k128x129"/>
+		<e:Label id="thename" text="经验书" y="15" horizontalCenter="0" width="240" textAlign="center" stroke="2" textColor="0xffdaba" size="24" fontFamily="SimHei" touchEnabled="false" visible="false"/>
+		<e:Image y="185" horizontalCenter="0" touchEnabled="false" source="hallImg0Sheet_json.a160x35" visible="false"/>
+		<e:Label id="labItemNum" text="6666" y="97" width="117" textAlign="right" stroke="2" size="28" fontFamily="SimHei" touchEnabled="false" textColor="0xffffff" x="10.5" anchorOffsetX="0"/>
+		<e:Button id="btnBuy" label="购买" y="237" horizontalCenter="0.5" skinName="ButtonB1Skin" scaleX="0.45" scaleY="0.45" visible="false">
+		</e:Button>
+	</e:Group>
+</e:Skin>

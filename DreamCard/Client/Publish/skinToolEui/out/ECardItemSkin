@@ -1,0 +1,78 @@
+(function (_super) {
+	__extends(ECardItemSkin, _super);
+	function ECardItemSkin() {
+		_super.call(this);
+		
+		this.height = 177;
+		this.width = 177;
+		this.elementsContent = [this.groupCI_i()];
+	}
+	var _proto = ECardItemSkin.prototype;
+
+	_proto.groupCI_i = function () {
+		var t = new eui.Group();
+		this.groupCI = t;
+		t.height = 177;
+		t.width = 177;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.groupCard_i(),this.groupNotOwn_i()];
+		return t;
+	};
+	_proto.groupCard_i = function () {
+		var t = new eui.Group();
+		this.groupCard = t;
+		t.height = 177;
+		t.width = 177;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupNotOwn_i = function () {
+		var t = new eui.Group();
+		this.groupNotOwn = t;
+		t.height = 177;
+		t.touchChildren = false;
+		t.touchEnabled = false;
+		t.touchThrough = true;
+		t.width = 177;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._s1_i(),this._e1_i()];
+		return t;
+	};
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.5;
+		t.height = 177;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 177;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "未拥有";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.x = 47;
+		t.y = 73;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["groupCard","groupNotOwn","groupCI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return ECardItemSkin;
+})(eui.Skin);

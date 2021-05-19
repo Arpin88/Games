@@ -1,0 +1,90 @@
+(function (_super) {
+	__extends(RoleUpgradeMaterialSkin, _super);
+	function RoleUpgradeMaterialSkin() {
+		_super.call(this);
+		
+		this.height = 135;
+		this.width = 110;
+		this.elementsContent = [this.groupRUM_i()];
+	}
+	var _proto = RoleUpgradeMaterialSkin.prototype;
+
+	_proto.groupRUM_i = function () {
+		var t = new eui.Group();
+		this.groupRUM = t;
+		t.height = 135;
+		t.touchChildren = false;
+		t.width = 110;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this.imgIcon_i(),this.lblCount_i(),this.imgSelect_i(),this.lblName_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.height = 90;
+		t.source = "hallImg1Sheet_json.k150x150";
+		t.width = 90;
+		t.x = 5;
+		t.y = 15;
+		return t;
+	};
+	_proto.imgIcon_i = function () {
+		var t = new eui.Image();
+		this.imgIcon = t;
+		t.anchorOffsetX = 40;
+		t.anchorOffsetY = 40;
+		t.height = 80;
+		t.source = "";
+		t.width = 80;
+		t.x = 50;
+		t.y = 60;
+		return t;
+	};
+	_proto.lblCount_i = function () {
+		var t = new eui.Label();
+		this.lblCount = t;
+		t.fontFamily = "SimHei";
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "0";
+		t.textAlign = "right";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.width = 75;
+		t.x = 12;
+		t.y = 80;
+		return t;
+	};
+	_proto.imgSelect_i = function () {
+		var t = new eui.Image();
+		this.imgSelect = t;
+		t.right = 0;
+		t.source = "hallBtn1Sheet_json.a40x40_0";
+		t.top = 0;
+		return t;
+	};
+	_proto.lblName_i = function () {
+		var t = new eui.Label();
+		this.lblName = t;
+		t.fontFamily = "SimHei";
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "经验药水";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.width = 95;
+		t.x = 0;
+		t.y = 115;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgIcon","lblCount","imgSelect","lblName","groupRUM"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return RoleUpgradeMaterialSkin;
+})(eui.Skin);

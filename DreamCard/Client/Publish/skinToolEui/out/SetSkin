@@ -1,0 +1,629 @@
+(function (_super) {
+	__extends(CardSkin, _super);
+	var CardSkin$Skin10 = 	(function (_super) {
+		__extends(CardSkin$Skin10, _super);
+		function CardSkin$Skin10() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.zhaoxiangji")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.zhaoxiangji")
+					])
+			];
+		}
+		var _proto = CardSkin$Skin10.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "shezhisheet_json.zhaoxiangji";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardSkin$Skin10;
+	})(eui.Skin);
+
+	var CardSkin$Skin11 = 	(function (_super) {
+		__extends(CardSkin$Skin11, _super);
+		function CardSkin$Skin11() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.tuichudenglu_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.tuichudenglu_1")
+					])
+			];
+		}
+		var _proto = CardSkin$Skin11.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.tuichudenglu_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardSkin$Skin11;
+	})(eui.Skin);
+
+	var CardSkin$Skin12 = 	(function (_super) {
+		__extends(CardSkin$Skin12, _super);
+		function CardSkin$Skin12() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.on")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.off")
+					])
+			];
+		}
+		var _proto = CardSkin$Skin12.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "shezhisheet_json.off";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardSkin$Skin12;
+	})(eui.Skin);
+
+	var CardSkin$Skin13 = 	(function (_super) {
+		__extends(CardSkin$Skin13, _super);
+		function CardSkin$Skin13() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.on")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.off")
+					])
+			];
+		}
+		var _proto = CardSkin$Skin13.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "shezhisheet_json.off";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardSkin$Skin13;
+	})(eui.Skin);
+
+	var CardSkin$Skin14 = 	(function (_super) {
+		__extends(CardSkin$Skin14, _super);
+		function CardSkin$Skin14() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.guanbi01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CardSkin$Skin14.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "shezhisheet_json.guanbi00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardSkin$Skin14;
+	})(eui.Skin);
+
+	function CardSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._c3_i()];
+	}
+	var _proto = CardSkin.prototype;
+
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c2_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.alpha = 50;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.height = 512;
+		t.horizontalCenter = 0;
+		t.verticalCenter = -2;
+		t.width = 760;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this._a3_i(),this._a4_i(),this._c1_i(),this.btnBack_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.y = 0;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 308;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(15,15,64,70);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.tanchukuang2";
+		t.width = 708;
+		t.y = 58;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.biaotiban";
+		t.y = -31;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "hallText0Sheet_json.shezhi";
+		t.y = -14.32;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.headgroup_i(),this.soundImg_i(),this.musicImg_i(),this._a6_i(),this.useridtxt_i(),this.versiontxt_i(),this.nicknametxt_i(),this.BtnZhuXiao_i(),this.soundtxt_i(),this.SwitchSound_i(),this.SwitchMusic_i(),this.kefuwxLabel_i(),this.musictxt_i(),this.kefuqqLabel_i(),this.label1_i(),this.label2_i(),this.label3_i()];
+		return t;
+	};
+	_proto.headgroup_i = function () {
+		var t = new eui.Group();
+		this.headgroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 120;
+		t.width = 120;
+		t.x = 48;
+		t.y = 90;
+		t.elementsContent = [this.headImg_i(),this._a5_i(),this.changeIconBtn_i()];
+		return t;
+	};
+	_proto.headImg_i = function () {
+		var t = new eui.Image();
+		this.headImg = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 0.95;
+		t.scaleY = 0.95;
+		t.source = "headicon_json.head_00";
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "shezhisheet_json.headkuang";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.changeIconBtn_i = function () {
+		var t = new eui.Button();
+		this.changeIconBtn = t;
+		t.label = "";
+		t.x = -0.5;
+		t.y = 0.5;
+		t.skinName = CardSkin$Skin10;
+		return t;
+	};
+	_proto.soundImg_i = function () {
+		var t = new eui.Image();
+		this.soundImg = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.sy00";
+		t.touchEnabled = false;
+		t.x = 74;
+		t.y = 274.02;
+		return t;
+	};
+	_proto.musicImg_i = function () {
+		var t = new eui.Image();
+		this.musicImg = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.yy00";
+		t.touchEnabled = false;
+		t.x = 435;
+		t.y = 274.02;
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 120;
+		t.scale9Grid = new egret.Rectangle(13,10,136,30);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 505;
+		t.x = 198;
+		t.y = 90;
+		return t;
+	};
+	_proto.useridtxt_i = function () {
+		var t = new eui.Label();
+		this.useridtxt = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.size = 24;
+		t.stroke = 0;
+		t.text = "ID:123456789";
+		t.textColor = 0xffffff;
+		t.x = 218;
+		t.y = 140.34;
+		return t;
+	};
+	_proto.versiontxt_i = function () {
+		var t = new eui.Label();
+		this.versiontxt = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.size = 24;
+		t.stroke = 0;
+		t.text = "版本:1.0.1";
+		t.textColor = 0xfdd047;
+		t.x = 218;
+		t.y = 174.66;
+		return t;
+	};
+	_proto.nicknametxt_i = function () {
+		var t = new eui.Label();
+		this.nicknametxt = t;
+		t.fontFamily = "SimHei";
+		t.size = 24;
+		t.stroke = 0;
+		t.text = "的房间里空间";
+		t.textColor = 0xffffff;
+		t.x = 218;
+		t.y = 105.33;
+		return t;
+	};
+	_proto.BtnZhuXiao_i = function () {
+		var t = new eui.Button();
+		this.BtnZhuXiao = t;
+		t.label = "";
+		t.scaleX = 0.55;
+		t.scaleY = 0.55;
+		t.x = 512;
+		t.y = 118;
+		t.skinName = CardSkin$Skin11;
+		return t;
+	};
+	_proto.soundtxt_i = function () {
+		var t = new eui.Label();
+		this.soundtxt = t;
+		t.fontFamily = "Arial";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "声音";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.visible = false;
+		t.x = 61;
+		t.y = 289.26;
+		return t;
+	};
+	_proto.SwitchSound_i = function () {
+		var t = new eui.ToggleSwitch();
+		this.SwitchSound = t;
+		t.anchorOffsetY = 0.5;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.selected = true;
+		t.x = 155.55;
+		t.y = 256.67;
+		t.skinName = CardSkin$Skin12;
+		return t;
+	};
+	_proto.SwitchMusic_i = function () {
+		var t = new eui.ToggleSwitch();
+		this.SwitchMusic = t;
+		t.anchorOffsetY = 0.5;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.selected = true;
+		t.x = 513.5;
+		t.y = 255.36;
+		t.skinName = CardSkin$Skin13;
+		return t;
+	};
+	_proto.kefuwxLabel_i = function () {
+		var t = new eui.Label();
+		this.kefuwxLabel = t;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "客服微信： 1234567";
+		t.textColor = 0xFFFFFF;
+		t.x = 130;
+		t.y = 403;
+		return t;
+	};
+	_proto.musictxt_i = function () {
+		var t = new eui.Label();
+		this.musictxt = t;
+		t.fontFamily = "Arial";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "音乐";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.visible = false;
+		t.x = 424.5;
+		t.y = 289.26;
+		return t;
+	};
+	_proto.kefuqqLabel_i = function () {
+		var t = new eui.Label();
+		this.kefuqqLabel = t;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "客服QQ：  1234567";
+		t.textColor = 0xFFFFFF;
+		t.x = 418;
+		t.y = 403;
+		return t;
+	};
+	_proto.label1_i = function () {
+		var t = new eui.Label();
+		this.label1 = t;
+		t.fontFamily = "Arial";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 18;
+		t.text = "发行商：科技有限公司";
+		t.textAlign = "center";
+		t.textColor = 0x8bc2d5;
+		t.x = 26;
+		t.y = 470;
+		return t;
+	};
+	_proto.label2_i = function () {
+		var t = new eui.Label();
+		this.label2 = t;
+		t.anchorOffsetX = 0.5;
+		t.fontFamily = "Arial";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 18;
+		t.text = "开发商：科技有限公司";
+		t.textAlign = "center";
+		t.textColor = 0x8bc2d5;
+		t.x = 281;
+		t.y = 470;
+		return t;
+	};
+	_proto.label3_i = function () {
+		var t = new eui.Label();
+		this.label3 = t;
+		t.anchorOffsetX = 1;
+		t.fontFamily = "Arial";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 18;
+		t.text = "著作权：科技有限公司";
+		t.textAlign = "center";
+		t.textColor = 0x8bc2d5;
+		t.x = 550.03;
+		t.y = 470;
+		return t;
+	};
+	_proto.btnBack_i = function () {
+		var t = new eui.Button();
+		this.btnBack = t;
+		t.horizontalCenter = 379;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 1150;
+		t.y = -39.01;
+		t.skinName = CardSkin$Skin14;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","headImg","changeIconBtn","headgroup","soundImg","musicImg","useridtxt","versiontxt","nicknametxt","BtnZhuXiao","soundtxt","SwitchSound","SwitchMusic","kefuwxLabel","musictxt","kefuqqLabel","label1","label2","label3","btnBack"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardSkin;
+})(eui.Skin);

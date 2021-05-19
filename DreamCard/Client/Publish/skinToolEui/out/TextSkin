@@ -1,0 +1,37 @@
+(function (_super) {
+	__extends(LoadingRSkin, _super);
+	function LoadingRSkin() {
+		_super.call(this);
+		
+		this.height = 270;
+		this.width = 270;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = LoadingRSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.text_i()];
+		return t;
+	};
+	_proto.text_i = function () {
+		var t = new eui.Label();
+		this.text = t;
+		t.text = "tishitishi";
+		t.x = 47;
+		t.y = 105;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["text"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return LoadingRSkin;
+})(eui.Skin);

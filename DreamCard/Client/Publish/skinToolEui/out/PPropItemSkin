@@ -1,0 +1,88 @@
+(function (_super) {
+	__extends(PPropItemSkin, _super);
+	function PPropItemSkin() {
+		_super.call(this);
+		
+		this.height = 206;
+		this.width = 170;
+		this.elementsContent = [this.groupPI_i()];
+	}
+	var _proto = PPropItemSkin.prototype;
+
+	_proto.groupPI_i = function () {
+		var t = new eui.Group();
+		this.groupPI = t;
+		t.height = 206;
+		t.width = 170;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this.imgItem_i(),this.labItemName_i(),this._a2_i(),this.labItemNum_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.source = "hallImg0Sheet_json.a170x206";
+		t.touchEnabled = false;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgItem_i = function () {
+		var t = new eui.Image();
+		this.imgItem = t;
+		t.horizontalCenter = 0;
+		t.source = "hallImg1Sheet_json.a128x128";
+		t.touchEnabled = false;
+		t.y = 20;
+		return t;
+	};
+	_proto.labItemName_i = function () {
+		var t = new eui.Label();
+		this.labItemName = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 32;
+		t.stroke = 2;
+		t.text = "经验书";
+		t.textAlign = "center";
+		t.textColor = 0xffdaba;
+		t.touchEnabled = false;
+		t.width = 150;
+		t.y = 160;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 1;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.k128x129";
+		t.touchEnabled = false;
+		t.x = 20;
+		t.y = 11;
+		return t;
+	};
+	_proto.labItemNum_i = function () {
+		var t = new eui.Label();
+		this.labItemNum = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 28;
+		t.text = "1000";
+		t.textAlign = "right";
+		t.textColor = 0xffffff;
+		t.touchEnabled = false;
+		t.width = 110;
+		t.x = 32;
+		t.y = 103;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgItem","labItemName","labItemNum","groupPI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return PPropItemSkin;
+})(eui.Skin);

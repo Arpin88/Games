@@ -1,0 +1,867 @@
+(function (_super) {
+	__extends(RegisterSkin, _super);
+	var RegisterSkin$Skin16 = 	(function (_super) {
+		__extends(RegisterSkin$Skin16, _super);
+		function RegisterSkin$Skin16() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","commonBtn0Sheet_json.a78x78_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = RegisterSkin$Skin16.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "commonBtn0Sheet_json.a78x78_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return RegisterSkin$Skin16;
+	})(eui.Skin);
+
+	var RegisterSkin$Skin17 = 	(function (_super) {
+		__extends(RegisterSkin$Skin17, _super);
+		function RegisterSkin$Skin17() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.zhuce01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = RegisterSkin$Skin17.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.zhuce00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return RegisterSkin$Skin17;
+	})(eui.Skin);
+
+	var RegisterSkin$Skin18 = 	(function (_super) {
+		__extends(RegisterSkin$Skin18, _super);
+		function RegisterSkin$Skin18() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.huoqu")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = RegisterSkin$Skin18.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.huoqu";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return RegisterSkin$Skin18;
+	})(eui.Skin);
+
+	var RegisterSkin$Skin19 = 	(function (_super) {
+		__extends(RegisterSkin$Skin19, _super);
+		function RegisterSkin$Skin19() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.huoqu")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = RegisterSkin$Skin19.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.huoqu";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return RegisterSkin$Skin19;
+	})(eui.Skin);
+
+	function RegisterSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupRegister_i()];
+	}
+	var _proto = RegisterSkin.prototype;
+
+	_proto.groupRegister_i = function () {
+		var t = new eui.Group();
+		this.groupRegister = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c1_i(),this.groupAreano_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 675;
+		t.horizontalCenter = 0;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 760;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this._a3_i(),this.btnClose_i(),this.btnRegister_i(),this.groupPhone_i(),this.groupEmail_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.y = 0;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a288x64";
+		t.y = -28;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.zczh";
+		t.y = -10;
+		return t;
+	};
+	_proto.btnClose_i = function () {
+		var t = new eui.Button();
+		this.btnClose = t;
+		t.label = "";
+		t.x = 715;
+		t.y = -40;
+		t.skinName = RegisterSkin$Skin16;
+		return t;
+	};
+	_proto.btnRegister_i = function () {
+		var t = new eui.Button();
+		this.btnRegister = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.y = 565;
+		t.skinName = RegisterSkin$Skin17;
+		return t;
+	};
+	_proto.groupPhone_i = function () {
+		var t = new eui.Group();
+		this.groupPhone = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.width = 480;
+		t.y = 65;
+		t.elementsContent = [this._a4_i(),this._a5_i(),this.editUsername_i(),this._a6_i(),this._a7_i(),this.editPhone_i(),this._a8_i(),this._a9_i(),this._a10_i(),this.lblAreano_i(),this._a11_i(),this._a12_i(),this.btnGetVCode_i(),this.lblVCodeTime_i(),this.editVCode_i(),this._a13_i(),this._a14_i(),this.editPassword0_i(),this.imgWatch_i(),this._a15_i(),this._a16_i(),this.editPassword1_i()];
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.yonghuming";
+		t.x = 0;
+		t.y = 15.000000000000014;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 0;
+		return t;
+	};
+	_proto.editUsername_i = function () {
+		var t = new eui.EditableText();
+		this.editUsername = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.maxChars = 22;
+		t.prompt = "请输入用户名";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 300;
+		t.x = 150.00000000000006;
+		t.y = 0;
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.sjh";
+		t.x = 0;
+		t.y = 175;
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 160;
+		return t;
+	};
+	_proto.editPhone_i = function () {
+		var t = new eui.EditableText();
+		this.editPhone = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.maxChars = 11;
+		t.prompt = "请输入手机号";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 300;
+		t.x = 150.00000000000006;
+		t.y = 160;
+		return t;
+	};
+	_proto._a8_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.dq";
+		t.x = 0;
+		t.y = 95;
+		return t;
+	};
+	_proto._a9_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 130;
+		t.y = 80;
+		return t;
+	};
+	_proto._a10_i = function () {
+		var t = new eui.Image();
+		t.right = 25;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.jt00";
+		t.touchEnabled = false;
+		t.y = 99;
+		return t;
+	};
+	_proto.lblAreano_i = function () {
+		var t = new eui.Label();
+		this.lblAreano = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.size = 28;
+		t.text = "请选择地区";
+		t.textAlign = "left";
+		t.textColor = 0xd8d8d8;
+		t.verticalAlign = "middle";
+		t.width = 300;
+		t.x = 150;
+		t.y = 80;
+		return t;
+	};
+	_proto._a11_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.yzm";
+		t.x = 0;
+		t.y = 255;
+		return t;
+	};
+	_proto._a12_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 240;
+		return t;
+	};
+	_proto.btnGetVCode_i = function () {
+		var t = new eui.Button();
+		this.btnGetVCode = t;
+		t.label = "";
+		t.right = 15;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 410.00000000000006;
+		t.y = 255;
+		t.skinName = RegisterSkin$Skin18;
+		return t;
+	};
+	_proto.lblVCodeTime_i = function () {
+		var t = new eui.Label();
+		this.lblVCodeTime = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.height = 30;
+		t.right = 15;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.text = "60S";
+		t.textAlign = "center";
+		t.textColor = 0x09DB22;
+		t.touchEnabled = false;
+		t.verticalAlign = "middle";
+		t.width = 60;
+		t.x = 410.00000000000006;
+		t.y = 257;
+		return t;
+	};
+	_proto.editVCode_i = function () {
+		var t = new eui.EditableText();
+		this.editVCode = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.maxChars = 8;
+		t.prompt = "请输入验证码";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 250;
+		t.x = 150.00000000000006;
+		t.y = 240;
+		return t;
+	};
+	_proto._a13_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.mm";
+		t.x = 0;
+		t.y = 335;
+		return t;
+	};
+	_proto._a14_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 320;
+		return t;
+	};
+	_proto.editPassword0_i = function () {
+		var t = new eui.EditableText();
+		this.editPassword0 = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.maxChars = 18;
+		t.prompt = "请输入密码";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 275;
+		t.x = 150.00000000000006;
+		t.y = 320;
+		return t;
+	};
+	_proto.imgWatch_i = function () {
+		var t = new eui.Image();
+		this.imgWatch = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.biyan";
+		t.x = 430.00000000000017;
+		t.y = 335;
+		return t;
+	};
+	_proto._a15_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.mm";
+		t.x = 0;
+		t.y = 415;
+		return t;
+	};
+	_proto._a16_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 400;
+		return t;
+	};
+	_proto.editPassword1_i = function () {
+		var t = new eui.EditableText();
+		this.editPassword1 = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.maxChars = 18;
+		t.prompt = "请确定密码";
+		t.promptColor = 0xd8d8d8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 275;
+		t.x = 150.00000000000006;
+		t.y = 400;
+		return t;
+	};
+	_proto.groupEmail_i = function () {
+		var t = new eui.Group();
+		this.groupEmail = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.width = 480;
+		t.y = 105;
+		t.elementsContent = [this._a17_i(),this._a18_i(),this.editUsername0_i(),this._a19_i(),this._a20_i(),this.editEmail_i(),this._a21_i(),this._a22_i(),this.btnGetEmailVCode_i(),this.lblEmailVCodeTime_i(),this.editEmailVCode_i(),this._a23_i(),this._a24_i(),this.editPassword2_i(),this.imgWatch0_i(),this._a25_i(),this._a26_i(),this.editPassword3_i()];
+		return t;
+	};
+	_proto._a17_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.yonghuming";
+		t.x = 0;
+		t.y = 15.000000000000014;
+		return t;
+	};
+	_proto._a18_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 0;
+		return t;
+	};
+	_proto.editUsername0_i = function () {
+		var t = new eui.EditableText();
+		this.editUsername0 = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.maxChars = 22;
+		t.prompt = "请输入用户名";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 300;
+		t.x = 150.00000000000006;
+		t.y = 0;
+		return t;
+	};
+	_proto._a19_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.yx";
+		t.x = 0;
+		t.y = 95;
+		return t;
+	};
+	_proto._a20_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 80;
+		return t;
+	};
+	_proto.editEmail_i = function () {
+		var t = new eui.EditableText();
+		this.editEmail = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.prompt = "请输入邮箱";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 300;
+		t.x = 150.00000000000006;
+		t.y = 80;
+		return t;
+	};
+	_proto._a21_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.yzm";
+		t.x = 0;
+		t.y = 175;
+		return t;
+	};
+	_proto._a22_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 160;
+		return t;
+	};
+	_proto.btnGetEmailVCode_i = function () {
+		var t = new eui.Button();
+		this.btnGetEmailVCode = t;
+		t.label = "";
+		t.right = 15;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 410.00000000000006;
+		t.y = 175;
+		t.skinName = RegisterSkin$Skin19;
+		return t;
+	};
+	_proto.lblEmailVCodeTime_i = function () {
+		var t = new eui.Label();
+		this.lblEmailVCodeTime = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.height = 30;
+		t.right = 15;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.text = "60S";
+		t.textAlign = "center";
+		t.textColor = 0x09DB22;
+		t.touchEnabled = false;
+		t.verticalAlign = "middle";
+		t.width = 60;
+		t.x = 410.00000000000006;
+		t.y = 177;
+		return t;
+	};
+	_proto.editEmailVCode_i = function () {
+		var t = new eui.EditableText();
+		this.editEmailVCode = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.maxChars = 8;
+		t.prompt = "请输入验证码";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 250;
+		t.x = 150.00000000000006;
+		t.y = 160;
+		return t;
+	};
+	_proto._a23_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.mm";
+		t.x = 0;
+		t.y = 255;
+		return t;
+	};
+	_proto._a24_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 240;
+		return t;
+	};
+	_proto.editPassword2_i = function () {
+		var t = new eui.EditableText();
+		this.editPassword2 = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.maxChars = 18;
+		t.prompt = "请输入密码";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 275;
+		t.x = 150.00000000000006;
+		t.y = 240;
+		return t;
+	};
+	_proto.imgWatch0_i = function () {
+		var t = new eui.Image();
+		this.imgWatch0 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.biyan";
+		t.x = 430.00000000000017;
+		t.y = 255;
+		return t;
+	};
+	_proto._a25_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.mm";
+		t.x = 0;
+		t.y = 335;
+		return t;
+	};
+	_proto._a26_i = function () {
+		var t = new eui.Image();
+		t.scale9Grid = new egret.Rectangle(15,13,72,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.shuru";
+		t.width = 350;
+		t.x = 129.99999999999994;
+		t.y = 320;
+		return t;
+	};
+	_proto.editPassword3_i = function () {
+		var t = new eui.EditableText();
+		this.editPassword3 = t;
+		t.fontFamily = "SimHei";
+		t.height = 60;
+		t.maxChars = 18;
+		t.prompt = "请确定密码";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 275;
+		t.x = 150.00000000000006;
+		t.y = 320;
+		return t;
+	};
+	_proto.groupAreano_i = function () {
+		var t = new eui.Group();
+		this.groupAreano = t;
+		t.percentHeight = 100;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.scrAreanoList_i()];
+		return t;
+	};
+	_proto.scrAreanoList_i = function () {
+		var t = new eui.Scroller();
+		this.scrAreanoList = t;
+		t.height = 400;
+		t.horizontalCenter = 60;
+		t.scaleX = 0.8;
+		t.scaleY = 0.8;
+		t.verticalCenter = 45;
+		t.width = 450;
+		t.viewport = this.groupAreanoList_i();
+		return t;
+	};
+	_proto.groupAreanoList_i = function () {
+		var t = new eui.Group();
+		this.groupAreanoList = t;
+		t.y = 127;
+		t.layout = this._VerticalLayout1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","btnClose","btnRegister","editUsername","editPhone","lblAreano","btnGetVCode","lblVCodeTime","editVCode","editPassword0","imgWatch","editPassword1","groupPhone","editUsername0","editEmail","btnGetEmailVCode","lblEmailVCodeTime","editEmailVCode","editPassword2","imgWatch0","editPassword3","groupEmail","groupAreanoList","scrAreanoList","groupAreano","groupRegister"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return RegisterSkin;
+})(eui.Skin);

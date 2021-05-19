@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CRBuffItemSkin" width="32" height="32" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupBufftem" width="32" height="32" x="0" y="0">
+		<e:Image id="imgIcon" source="buffIconImg0Sheet_json.b1" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label id="lblName" text="0" size="16" horizontalCenter="0" verticalCenter="0" stroke="1"/>
+	</e:Group>
+</e:Skin>

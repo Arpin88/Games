@@ -1,0 +1,160 @@
+(function (_super) {
+	__extends(MatchingSkin, _super);
+	var MatchingSkin$Skin107 = 	(function (_super) {
+		__extends(MatchingSkin$Skin107, _super);
+		function MatchingSkin$Skin107() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a272x102_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = MatchingSkin$Skin107.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a272x102_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return MatchingSkin$Skin107;
+	})(eui.Skin);
+
+	function MatchingSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = MatchingSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this.groupCenter_i(),this.groupHint_i(),this.btnStop_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.source = "mbj_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupCenter_i = function () {
+		var t = new eui.Group();
+		this.groupCenter = t;
+		t.height = 400;
+		t.horizontalCenter = 0;
+		t.width = 400;
+		t.y = 50;
+		t.elementsContent = [this._a2_i(),this.imgRotate_i(),this._a3_i(),this.lblTime_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 100;
+		t.anchorOffsetY = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.c200x200";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.imgRotate_i = function () {
+		var t = new eui.Image();
+		this.imgRotate = t;
+		t.anchorOffsetX = 100;
+		t.anchorOffsetY = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.b200x200";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 100;
+		t.anchorOffsetY = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a200x200";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.lblTime_i = function () {
+		var t = new eui.Label();
+		this.lblTime = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 40;
+		t.text = "00:00";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.verticalCenter = 0;
+		t.width = 140;
+		return t;
+	};
+	_proto.groupHint_i = function () {
+		var t = new eui.Group();
+		this.groupHint = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.y = 420;
+		return t;
+	};
+	_proto.btnStop_i = function () {
+		var t = new eui.Button();
+		this.btnStop = t;
+		t.bottom = 115;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.skinName = MatchingSkin$Skin107;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgRotate","lblTime","groupCenter","groupHint","btnStop"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return MatchingSkin;
+})(eui.Skin);

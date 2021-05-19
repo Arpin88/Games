@@ -1,0 +1,606 @@
+(function (_super) {
+	__extends(MPropExplainSkin, _super);
+	var MPropExplainSkin$Skin78 = 	(function (_super) {
+		__extends(MPropExplainSkin$Skin78, _super);
+		function MPropExplainSkin$Skin78() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.quxiao_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = MPropExplainSkin$Skin78.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.quxiao_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return MPropExplainSkin$Skin78;
+	})(eui.Skin);
+
+	var MPropExplainSkin$Skin79 = 	(function (_super) {
+		__extends(MPropExplainSkin$Skin79, _super);
+		function MPropExplainSkin$Skin79() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.queding_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.queding_2")
+					])
+			];
+		}
+		var _proto = MPropExplainSkin$Skin79.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.queding_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return MPropExplainSkin$Skin79;
+	})(eui.Skin);
+
+	var MPropExplainSkin$Skin80 = 	(function (_super) {
+		__extends(MPropExplainSkin$Skin80, _super);
+		function MPropExplainSkin$Skin80() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.b74x54_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = MPropExplainSkin$Skin80.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.b74x54_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return MPropExplainSkin$Skin80;
+	})(eui.Skin);
+
+	var MPropExplainSkin$Skin81 = 	(function (_super) {
+		__extends(MPropExplainSkin$Skin81, _super);
+		function MPropExplainSkin$Skin81() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a74x54_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = MPropExplainSkin$Skin81.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a74x54_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return MPropExplainSkin$Skin81;
+	})(eui.Skin);
+
+	var MPropExplainSkin$Skin82 = 	(function (_super) {
+		__extends(MPropExplainSkin$Skin82, _super);
+		function MPropExplainSkin$Skin82() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a98x54_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = MPropExplainSkin$Skin82.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a98x54_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return MPropExplainSkin$Skin82;
+	})(eui.Skin);
+
+	function MPropExplainSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupMPropExplain_i()];
+	}
+	var _proto = MPropExplainSkin.prototype;
+
+	_proto.groupMPropExplain_i = function () {
+		var t = new eui.Group();
+		this.groupMPropExplain = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c2_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.height = 513;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 762;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this._a3_i(),this.namstring_i(),this._a4_i(),this.imgItem_i(),this._a5_i(),this._a6_i(),this._a7_i(),this.price_i(),this.nameandnum_i(),this.price0_i(),this.price1_i(),this.descstring_i(),this.totalnum_i(),this.btnCancel_i(),this.btnConfirm_i(),this._c1_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 311;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(15,11,64,75);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.tanchukuang2";
+		t.width = 711;
+		t.y = 58;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 1.25;
+		t.anchorOffsetY = 1.2;
+		t.height = 130;
+		t.scale9Grid = new egret.Rectangle(15,11,122,25);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 514;
+		t.x = 198;
+		t.y = 96;
+		return t;
+	};
+	_proto.namstring_i = function () {
+		var t = new eui.Label();
+		this.namstring = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "天工号角";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.x = 218;
+		t.y = 110;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 143.33;
+		t.source = "hallImg1Sheet_json.k150x150";
+		t.touchEnabled = false;
+		t.width = 143.33;
+		t.x = 48;
+		t.y = 89;
+		return t;
+	};
+	_proto.imgItem_i = function () {
+		var t = new eui.Image();
+		this.imgItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 130;
+		t.horizontalCenter = -261;
+		t.source = "propSheet_json.1";
+		t.width = 130;
+		t.y = 95.65;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.source = "hallText0Sheet_json.goumaishuliang";
+		t.x = 48;
+		t.y = 284;
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "hallImg1Sheet_json.biaotiban";
+		t.y = -31;
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "hallText0Sheet_json.spgm";
+		t.y = -13;
+		return t;
+	};
+	_proto.price_i = function () {
+		var t = new eui.Label();
+		this.price = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "120XWG";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.width = 142;
+		t.x = 290.71;
+		t.y = 150;
+		return t;
+	};
+	_proto.nameandnum_i = function () {
+		var t = new eui.Label();
+		this.nameandnum = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "22";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.visible = false;
+		t.width = 142;
+		t.x = 523;
+		t.y = 150;
+		return t;
+	};
+	_proto.price0_i = function () {
+		var t = new eui.Label();
+		this.price0 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "单价：";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.width = 85;
+		t.x = 218;
+		t.y = 150;
+		return t;
+	};
+	_proto.price1_i = function () {
+		var t = new eui.Label();
+		this.price1 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "已有：";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.visible = false;
+		t.width = 81;
+		t.x = 446.5;
+		t.y = 150;
+		return t;
+	};
+	_proto.descstring_i = function () {
+		var t = new eui.Label();
+		this.descstring = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "使用可获得120经验值";
+		t.textAlign = "left";
+		t.textColor = 0xfdd047;
+		t.width = 488;
+		t.x = 218;
+		t.y = 190;
+		return t;
+	};
+	_proto.totalnum_i = function () {
+		var t = new eui.Label();
+		this.totalnum = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "(花费：100)";
+		t.textColor = 0xf72222;
+		t.width = 244;
+		t.x = 506;
+		t.y = 284.69;
+		return t;
+	};
+	_proto.btnCancel_i = function () {
+		var t = new eui.Button();
+		this.btnCancel = t;
+		t.label = "";
+		t.scaleX = 0.66;
+		t.scaleY = 0.66;
+		t.x = 64;
+		t.y = 400;
+		t.skinName = MPropExplainSkin$Skin78;
+		return t;
+	};
+	_proto.btnConfirm_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "";
+		t.scaleX = 0.66;
+		t.scaleY = 0.66;
+		t.x = 498;
+		t.y = 400;
+		t.skinName = MPropExplainSkin$Skin79;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.touchEnabled = false;
+		t.width = 308;
+		t.x = 199.91;
+		t.y = 272.65;
+		t.elementsContent = [this._a8_i(),this.btnReduce_i(),this.btnAdd_i(),this.btnMax_i(),this.editCount_i()];
+		return t;
+	};
+	_proto._a8_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.scale9Grid = new egret.Rectangle(12,10,78,45);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.shurukuang";
+		t.width = 306;
+		t.x = 0;
+		t.y = -4.29;
+		return t;
+	};
+	_proto.btnReduce_i = function () {
+		var t = new eui.Button();
+		this.btnReduce = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.x = 0;
+		t.y = 0;
+		t.skinName = MPropExplainSkin$Skin80;
+		return t;
+	};
+	_proto.btnAdd_i = function () {
+		var t = new eui.Button();
+		this.btnAdd = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.x = 230;
+		t.y = 0;
+		t.skinName = MPropExplainSkin$Skin81;
+		return t;
+	};
+	_proto.btnMax_i = function () {
+		var t = new eui.Button();
+		this.btnMax = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.x = 320;
+		t.y = 0;
+		t.skinName = MPropExplainSkin$Skin82;
+		return t;
+	};
+	_proto.editCount_i = function () {
+		var t = new eui.EditableText();
+		this.editCount = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.backgroundColor = 0xffc000;
+		t.borderColor = 0xffc000;
+		t.fontFamily = "SimHei";
+		t.height = 56.67;
+		t.size = 30;
+		t.stroke = 0;
+		t.text = "999";
+		t.textAlign = "center";
+		t.textColor = 0xffc000;
+		t.verticalAlign = "middle";
+		t.width = 303.33;
+		t.x = 1;
+		t.y = -1.63;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","namstring","imgItem","price","nameandnum","price0","price1","descstring","totalnum","btnCancel","btnConfirm","btnReduce","btnAdd","btnMax","editCount","groupMPropExplain"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return MPropExplainSkin;
+})(eui.Skin);

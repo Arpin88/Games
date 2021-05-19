@@ -1,0 +1,102 @@
+(function (_super) {
+	__extends(CardFetterItem, _super);
+	function CardFetterItem() {
+		_super.call(this);
+		
+		this.height = 153;
+		this.width = 508;
+		this.elementsContent = [this.groupFetterItem_i()];
+	}
+	var _proto = CardFetterItem.prototype;
+
+	_proto.groupFetterItem_i = function () {
+		var t = new eui.Group();
+		this.groupFetterItem = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBG_i(),this.groupFetterIcon_i(),this.labFetterName_i(),this.labFetterTip1_i(),this.labFetterTip2_i()];
+		return t;
+	};
+	_proto.imgBG_i = function () {
+		var t = new eui.Image();
+		this.imgBG = t;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(16,49,476,30);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a508x90";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupFetterIcon_i = function () {
+		var t = new eui.Group();
+		this.groupFetterIcon = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 50;
+		t.width = 50;
+		t.x = 10;
+		t.y = 10;
+		return t;
+	};
+	_proto.labFetterName_i = function () {
+		var t = new eui.Label();
+		this.labFetterName = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.height = 32;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "世界印记";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.width = 178;
+		t.x = 74;
+		t.y = 4.5;
+		return t;
+	};
+	_proto.labFetterTip1_i = function () {
+		var t = new eui.Label();
+		this.labFetterTip1 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 53;
+		t.lineSpacing = 10;
+		t.size = 20;
+		t.text = "所有上阵所有上阵所dsdfm.fmf.m .m . m立即释放连接看有上阵所有上阵所有上阵";
+		t.textColor = 0xededed;
+		t.width = 412;
+		t.x = 74;
+		t.y = 50;
+		return t;
+	};
+	_proto.labFetterTip2_i = function () {
+		var t = new eui.Label();
+		this.labFetterTip2 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 35;
+		t.lineSpacing = 10;
+		t.size = 20;
+		t.text = "所有上阵所有上阵";
+		t.textColor = 0xededed;
+		t.width = 409;
+		t.x = 74;
+		t.y = 116;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBG","groupFetterIcon","labFetterName","labFetterTip1","labFetterTip2","groupFetterItem"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardFetterItem;
+})(eui.Skin);

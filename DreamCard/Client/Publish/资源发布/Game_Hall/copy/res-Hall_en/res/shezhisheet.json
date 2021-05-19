@@ -1,0 +1,17 @@
+{"file":"shezhisheet.png","frames":{
+"anniu00":{"x":677,"y":0,"w":253,"h":99,"offX":1,"offY":1,"sourceW":254,"sourceH":100},
+"anniu01":{"x":422,"y":0,"w":253,"h":99,"offX":1,"offY":1,"sourceW":254,"sourceH":100},
+"bankuai":{"x":0,"y":0,"w":420,"h":156,"offX":0,"offY":0,"sourceW":420,"sourceH":156},
+"fengexian":{"x":1016,"y":0,"w":2,"h":100,"offX":0,"offY":0,"sourceW":2,"sourceH":100},
+"gonggaokuang":{"x":0,"y":158,"w":718,"h":34,"offX":0,"offY":0,"sourceW":718,"sourceH":34},
+"guanbi00":{"x":858,"y":233,"w":78,"h":78,"offX":0,"offY":0,"sourceW":78,"sourceH":78},
+"guanbi01":{"x":932,"y":0,"w":78,"h":78,"offX":0,"offY":0,"sourceW":78,"sourceH":78},
+"headkuang":{"x":246,"y":194,"w":120,"h":120,"offX":0,"offY":0,"sourceW":120,"sourceH":120},
+"linshitouxiang":{"x":858,"y":101,"w":130,"h":130,"offX":0,"offY":0,"sourceW":130,"sourceH":130},
+"off":{"x":515,"y":194,"w":145,"h":70,"offX":2,"offY":0,"sourceW":154,"sourceH":70},
+"on":{"x":368,"y":194,"w":145,"h":70,"offX":7,"offY":0,"sourceW":154,"sourceH":70},
+"touxiangkuang":{"x":0,"y":194,"w":122,"h":122,"offX":0,"offY":0,"sourceW":122,"sourceH":122},
+"txkuang":{"x":124,"y":194,"w":120,"h":120,"offX":0,"offY":0,"sourceW":120,"sourceH":120},
+"xiugai":{"x":990,"y":80,"w":24,"h":24,"offX":0,"offY":0,"sourceW":24,"sourceH":24},
+"xuanzhongtouxiang":{"x":720,"y":101,"w":136,"h":136,"offX":0,"offY":0,"sourceW":136,"sourceH":136},
+"zhaoxiangji":{"x":422,"y":101,"w":54,"h":54,"offX":62,"offY":62,"sourceW":120,"sourceH":120}}}

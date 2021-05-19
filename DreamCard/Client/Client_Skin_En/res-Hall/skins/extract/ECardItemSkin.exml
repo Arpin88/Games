@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ECardItemSkin" width="177" height="177" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCI" width="177" height="177" x="0" y="0">
+		<e:Group id="groupCard" width="177" height="177" x="0" y="0">
+		</e:Group>
+		<e:Group id="groupNotOwn" width="177" height="177" x="0" y="0" touchEnabled="false" touchChildren="false" touchThrough="true">
+			<e:Rect width="177" height="177" x="0" y="0" fillAlpha="0.5" scaleX="1" scaleY="1"/>
+			<e:Label text="Not Owned" y="73" verticalAlign="middle" textAlign="center" horizontalCenter="0" fontFamily="SimHei" size="28" stroke="2" x="47" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

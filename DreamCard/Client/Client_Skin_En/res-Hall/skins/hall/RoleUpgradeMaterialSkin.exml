@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoleUpgradeMaterialSkin" width="110" height="135" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupRUM" x="0" y="0" width="110" touchChildren="false" height="135">
+		<e:Image height="90" y="15" x="5" source="hallImg1Sheet_json.k150x150" width="90"/>
+		<e:Image id="imgIcon" width="80" height="80" y="60" x="50" anchorOffsetX="40" anchorOffsetY="40" source=""/>
+		<e:Label id="lblCount" text="0" y="80" size="20" fontFamily="SimHei" stroke="1" textAlign="right" verticalAlign="middle" textColor="0xffffff" x="12" width="75"/>
+		<e:Image id="imgSelect" source="hallBtn1Sheet_json.a40x40_0" right="0" top="0"/>
+		<e:Label id="lblName" text="经验药水" x="7" y="115" size="20" fontFamily="SimHei" stroke="1" textAlign="left" verticalAlign="middle" textColor="0xffffff"/>
+	</e:Group>
+</e:Skin>

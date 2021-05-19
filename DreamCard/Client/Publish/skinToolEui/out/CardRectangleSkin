@@ -1,0 +1,256 @@
+(function (_super) {
+	__extends(CardRectangleSkin, _super);
+	function CardRectangleSkin() {
+		_super.call(this);
+		
+		this.height = 572;
+		this.width = 382;
+		this.elementsContent = [this.groupCR_i(),this.groupCRB_i()];
+	}
+	var _proto = CardRectangleSkin.prototype;
+
+	_proto.groupCR_i = function () {
+		var t = new eui.Group();
+		this.groupCR = t;
+		t.height = 572;
+		t.touchChildren = false;
+		t.width = 382;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBG_i(),this.imgIcon_i(),this.imgRarity_i(),this.levelbg_i(),this.imgElement_i(),this.lblRound_i(),this.lblName_i(),this.lblAtk_i(),this.lblHp_i(),this.groupLevel_i(),this.imgChoose_i()];
+		return t;
+	};
+	_proto.imgBG_i = function () {
+		var t = new eui.Image();
+		this.imgBG = t;
+		t.source = "cardCommonImg0Sheet_json.tongyonga";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgIcon_i = function () {
+		var t = new eui.Image();
+		this.imgIcon = t;
+		t.source = "";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgRarity_i = function () {
+		var t = new eui.Image();
+		this.imgRarity = t;
+		t.source = "cardCommonImg1Sheet_json.r_rb1";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.levelbg_i = function () {
+		var t = new eui.Image();
+		this.levelbg = t;
+		t.horizontalCenter = 0;
+		t.source = "cardCommonImg0Sheet_json.r_dangban";
+		t.y = 85;
+		return t;
+	};
+	_proto.imgElement_i = function () {
+		var t = new eui.Image();
+		this.imgElement = t;
+		t.source = "cardCommonImg2Sheet_json.r_e1";
+		t.x = 302;
+		t.y = 8;
+		return t;
+	};
+	_proto.lblRound_i = function () {
+		var t = new eui.Label();
+		this.lblRound = t;
+		t.fontFamily = "SimHei";
+		t.height = 55;
+		t.size = 52;
+		t.stroke = 2;
+		t.text = "6";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.width = 55;
+		t.x = 21;
+		t.y = 22;
+		return t;
+	};
+	_proto.lblName_i = function () {
+		var t = new eui.Label();
+		this.lblName = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 34;
+		t.stroke = 2;
+		t.text = "诸葛村夫";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.width = 200;
+		t.y = 30;
+		return t;
+	};
+	_proto.lblAtk_i = function () {
+		var t = new eui.Label();
+		this.lblAtk = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 34;
+		t.stroke = 2;
+		t.text = "6666";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.width = 90;
+		t.x = 75;
+		t.y = 514;
+		return t;
+	};
+	_proto.lblHp_i = function () {
+		var t = new eui.Label();
+		this.lblHp = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 34;
+		t.stroke = 2;
+		t.text = "6666";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.width = 90;
+		t.x = 270;
+		t.y = 514;
+		return t;
+	};
+	_proto.groupLevel_i = function () {
+		var t = new eui.Group();
+		this.groupLevel = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.width = 230;
+		t.x = 80;
+		t.y = 85;
+		t.elementsContent = [this.imgGeneration_i(),this.imgLv1_i(),this.imgLv2_i(),this.imgLv3_i(),this.imgLv4_i(),this.imgLv5_i(),this.imgLv6_i()];
+		return t;
+	};
+	_proto.imgGeneration_i = function () {
+		var t = new eui.Image();
+		this.imgGeneration = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonText0Sheet_json.r_g1";
+		t.width = 48;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgLv1_i = function () {
+		var t = new eui.Image();
+		this.imgLv1 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.r_star";
+		t.width = 30;
+		t.x = 50;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgLv2_i = function () {
+		var t = new eui.Image();
+		this.imgLv2 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.r_star";
+		t.width = 30;
+		t.x = 80;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgLv3_i = function () {
+		var t = new eui.Image();
+		this.imgLv3 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.r_star";
+		t.width = 30;
+		t.x = 110;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgLv4_i = function () {
+		var t = new eui.Image();
+		this.imgLv4 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.r_star";
+		t.width = 30;
+		t.x = 140;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgLv5_i = function () {
+		var t = new eui.Image();
+		this.imgLv5 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.r_star";
+		t.width = 30;
+		t.x = 170;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgLv6_i = function () {
+		var t = new eui.Image();
+		this.imgLv6 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg0Sheet_json.r_star";
+		t.width = 30;
+		t.x = 200;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgChoose_i = function () {
+		var t = new eui.Image();
+		this.imgChoose = t;
+		t.height = 112;
+		t.horizontalCenter = 0;
+		t.scaleX = 1.85;
+		t.scaleY = 1.85;
+		t.source = "cardCommonImg2Sheet_json.a108x112";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 108;
+		t.x = 463;
+		t.y = 132;
+		return t;
+	};
+	_proto.groupCRB_i = function () {
+		var t = new eui.Group();
+		this.groupCRB = t;
+		t.height = 572;
+		t.touchChildren = false;
+		t.visible = false;
+		t.width = 382;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "cardCommonImg1Sheet_json.r_rb0";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBG","imgIcon","imgRarity","levelbg","imgElement","lblRound","lblName","lblAtk","lblHp","imgGeneration","imgLv1","imgLv2","imgLv3","imgLv4","imgLv5","imgLv6","groupLevel","imgChoose","groupCR","groupCRB"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardRectangleSkin;
+})(eui.Skin);

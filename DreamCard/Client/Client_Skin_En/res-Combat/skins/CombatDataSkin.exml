@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CombatDataSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCombatData" width="100%" height="100%" x="0" y="0">
+		<e:Rect width="100%" height="100%" x="1" y="0" fillAlpha="0.7"/>
+		<e:Image y="90" source="combatText0Sheet_json.wofang" x="450"/>
+		<e:Image y="90" x="760" source="combatText0Sheet_json.duifang"/>
+		<e:Image y="90" source="combatText0Sheet_json.vs" horizontalCenter="0"/>
+		<e:Label text="Click anywhere on screen to exit" y="686" width="400" height="28" size="22" fontFamily="SimHei" horizontalCenter="0" textAlign="center" verticalAlign="middle"/>
+		<e:Group id="groupLeft" width="300" height="480" y="124" horizontalCenter="-150">
+		</e:Group>
+		<e:Group id="groupRight" width="300" height="480" y="124" horizontalCenter="150"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,72 @@
+(function (_super) {
+	__extends(CCardFetterItemSkin, _super);
+	function CCardFetterItemSkin() {
+		_super.call(this);
+		
+		this.width = 510;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = CCardFetterItemSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.width = 510;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBG_i(),this.groupFetterIcon_i(),this.lblName_i(),this.lblDes_i()];
+		return t;
+	};
+	_proto.imgBG_i = function () {
+		var t = new eui.Image();
+		this.imgBG = t;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(16,49,476,30);
+		t.source = "combatImg1Sheet_json.a508x90";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupFetterIcon_i = function () {
+		var t = new eui.Group();
+		this.groupFetterIcon = t;
+		t.left = 15;
+		t.top = 10;
+		return t;
+	};
+	_proto.lblName_i = function () {
+		var t = new eui.Label();
+		this.lblName = t;
+		t.fontFamily = "SimHei";
+		t.left = 75;
+		t.size = 22;
+		t.stroke = 2;
+		t.text = "羁绊名称";
+		t.textColor = 0xffffff;
+		t.top = 10;
+		return t;
+	};
+	_proto.lblDes_i = function () {
+		var t = new eui.Label();
+		this.lblDes = t;
+		t.fontFamily = "SimHei";
+		t.left = 75;
+		t.lineSpacing = 10;
+		t.size = 18;
+		t.stroke = 2;
+		t.text = "羁绊介绍羁绊介绍羁绊介绍羁绊介绍羁绊介绍羁绊介绍羁绊介绍羁绊介绍羁绊介绍羁绊介绍";
+		t.textColor = 0xffffff;
+		t.top = 50;
+		t.width = 420;
+		t.wordWrap = true;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBG","groupFetterIcon","lblName","lblDes"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CCardFetterItemSkin;
+})(eui.Skin);

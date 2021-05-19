@@ -1,0 +1,37 @@
+(function (_super) {
+	__extends(CHLoadSkin, _super);
+	function CHLoadSkin() {
+		_super.call(this);
+		
+		this.height = 12;
+		this.width = 90;
+		this.elementsContent = [this._a1_i(),this.thumb_i()];
+	}
+	var _proto = CHLoadSkin.prototype;
+
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.source = "combatImg0Sheet_json.b90x12";
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.thumb_i = function () {
+		var t = new eui.Image();
+		this.thumb = t;
+		t.percentHeight = 100;
+		t.source = "combatImg0Sheet_json.a90x12";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["thumb"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CHLoadSkin;
+})(eui.Skin);

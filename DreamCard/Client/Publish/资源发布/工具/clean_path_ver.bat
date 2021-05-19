@@ -1,0 +1,1 @@
+del ..\client\res\path_version.ver /s

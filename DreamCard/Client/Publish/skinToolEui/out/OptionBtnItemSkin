@@ -1,0 +1,122 @@
+(function (_super) {
+	__extends(OptionBtnItemSkin, _super);
+	var OptionBtnItemSkin$Skin7 = 	(function (_super) {
+		__extends(OptionBtnItemSkin$Skin7, _super);
+		function OptionBtnItemSkin$Skin7() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn0Sheet_json.a258x86_3")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = OptionBtnItemSkin$Skin7.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn0Sheet_json.a258x86_2";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return OptionBtnItemSkin$Skin7;
+	})(eui.Skin);
+
+	function OptionBtnItemSkin() {
+		_super.call(this);
+		
+		this.width = 278;
+		this.elementsContent = [this.groupOIB_i()];
+	}
+	var _proto = OptionBtnItemSkin.prototype;
+
+	_proto.groupOIB_i = function () {
+		var t = new eui.Group();
+		this.groupOIB = t;
+		t.touchEnabled = false;
+		t.width = 278;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.btnOptionItem_i(),this.imgChooseState_i(),this.lblDes_i()];
+		return t;
+	};
+	_proto.btnOptionItem_i = function () {
+		var t = new eui.Button();
+		this.btnOptionItem = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 10;
+		t.y = 0;
+		t.skinName = OptionBtnItemSkin$Skin7;
+		return t;
+	};
+	_proto.imgChooseState_i = function () {
+		var t = new eui.Image();
+		this.imgChooseState = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallBtn0Sheet_json.a258x86_3";
+		t.touchEnabled = false;
+		t.visible = false;
+		t.x = 10;
+		t.y = 0;
+		return t;
+	};
+	_proto.lblDes_i = function () {
+		var t = new eui.Label();
+		this.lblDes = t;
+		t.fontFamily = "SimHei";
+		t.height = 86;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 1;
+		t.strokeColor = 0x13131B;
+		t.text = "Label";
+		t.textAlign = "center";
+		t.textColor = 0x9c6f43;
+		t.touchEnabled = false;
+		t.verticalAlign = "middle";
+		t.width = 228;
+		t.x = 25;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["btnOptionItem","imgChooseState","lblDes","groupOIB"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return OptionBtnItemSkin;
+})(eui.Skin);

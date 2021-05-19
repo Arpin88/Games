@@ -1,0 +1,1500 @@
+(function (_super) {
+	__extends(ExchangeSkin, _super);
+	var ExchangeSkin$Skin72 = 	(function (_super) {
+		__extends(ExchangeSkin$Skin72, _super);
+		function ExchangeSkin$Skin72() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a26x42_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = ExchangeSkin$Skin72.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a26x42_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return ExchangeSkin$Skin72;
+	})(eui.Skin);
+
+	var ExchangeSkin$Skin73 = 	(function (_super) {
+		__extends(ExchangeSkin$Skin73, _super);
+		function ExchangeSkin$Skin73() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.queding_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = ExchangeSkin$Skin73.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.queding_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return ExchangeSkin$Skin73;
+	})(eui.Skin);
+
+	var ExchangeSkin$Skin74 = 	(function (_super) {
+		__extends(ExchangeSkin$Skin74, _super);
+		function ExchangeSkin$Skin74() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.queding_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = ExchangeSkin$Skin74.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.queding_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return ExchangeSkin$Skin74;
+	})(eui.Skin);
+
+	var ExchangeSkin$Skin75 = 	(function (_super) {
+		__extends(ExchangeSkin$Skin75, _super);
+		function ExchangeSkin$Skin75() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.queding_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = ExchangeSkin$Skin75.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.queding_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return ExchangeSkin$Skin75;
+	})(eui.Skin);
+
+	var ExchangeSkin$Skin76 = 	(function (_super) {
+		__extends(ExchangeSkin$Skin76, _super);
+		function ExchangeSkin$Skin76() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.queding_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = ExchangeSkin$Skin76.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.queding_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return ExchangeSkin$Skin76;
+	})(eui.Skin);
+
+	function ExchangeSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.mallskingroup_i()];
+	}
+	var _proto = ExchangeSkin.prototype;
+
+	_proto.mallskingroup_i = function () {
+		var t = new eui.Group();
+		this.mallskingroup = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this._c1_i(),this._c2_i(),this.InGroup_i(),this.OutGroup_i(),this.ChargeGroup_i(),this.CashGroup_i(),this.RecordGroup_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "bj_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 80;
+		t.left = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a2_i(),this._a3_i(),this.btnBack_i(),this.comStar_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "top_png";
+		t.top = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "hallText0Sheet_json.t_duihuan";
+		t.verticalCenter = -3;
+		return t;
+	};
+	_proto.btnBack_i = function () {
+		var t = new eui.Button();
+		this.btnBack = t;
+		t.label = "";
+		t.left = 0;
+		t.top = 0;
+		t.skinName = ExchangeSkin$Skin72;
+		return t;
+	};
+	_proto.comStar_i = function () {
+		var t = new eui.Component();
+		this.comStar = t;
+		t.right = 31;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "StarSkin";
+		t.verticalCenter = -6;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 288;
+		t.x = 0;
+		t.y = 100;
+		t.elementsContent = [this.scrOptionBtn_i()];
+		return t;
+	};
+	_proto.scrOptionBtn_i = function () {
+		var t = new eui.Scroller();
+		this.scrOptionBtn = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyH = "off";
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.viewport = this.groupOptionBtn_i();
+		return t;
+	};
+	_proto.groupOptionBtn_i = function () {
+		var t = new eui.Group();
+		this.groupOptionBtn = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.InGroup_i = function () {
+		var t = new eui.Group();
+		this.InGroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.left = 288;
+		t.right = 26;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 100;
+		t.elementsContent = [this.imgRBG_i(),this._a4_i(),this._a5_i(),this._a6_i(),this._a7_i(),this._a8_i(),this._a9_i(),this._a10_i(),this.editCount_i(),this.btnInConfirm_i(),this.btnInAll_i(),this.namstring_i(),this.namstring0_i(),this.InGameNum_i(),this.btnInCharge_i(),this.namstring17_i()];
+		return t;
+	};
+	_proto.imgRBG_i = function () {
+		var t = new eui.Image();
+		this.imgRBG = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.visible = false;
+		t.width = 940;
+		t.x = 37;
+		t.y = 115.88;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 940;
+		t.x = 44;
+		t.y = 93;
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 940;
+		t.x = 44;
+		t.y = 196;
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,78,45);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.shurukuang";
+		t.width = 415.18;
+		t.x = 44;
+		t.y = 332;
+		return t;
+	};
+	_proto._a8_i = function () {
+		var t = new eui.Image();
+		t.source = "hallText0Sheet_json.qbye00";
+		t.x = 66;
+		t.y = 117;
+		return t;
+	};
+	_proto._a9_i = function () {
+		var t = new eui.Image();
+		t.source = "hallText0Sheet_json.yxye01";
+		t.x = 66;
+		t.y = 220;
+		return t;
+	};
+	_proto._a10_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 34;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.qbdz";
+		t.visible = false;
+		t.width = 146.67;
+		t.x = 66;
+		t.y = 139.88;
+		return t;
+	};
+	_proto.editCount_i = function () {
+		var t = new eui.EditableText();
+		this.editCount = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.backgroundColor = 0xFFC000;
+		t.borderColor = 0xFFC000;
+		t.fontFamily = "SimHei";
+		t.height = 56.67;
+		t.size = 30;
+		t.stroke = 0;
+		t.text = "1";
+		t.textAlign = "center";
+		t.textColor = 0xFFC000;
+		t.verticalAlign = "middle";
+		t.width = 413.03;
+		t.x = 37;
+		t.y = 343.7;
+		return t;
+	};
+	_proto.btnInConfirm_i = function () {
+		var t = new eui.Button();
+		this.btnInConfirm = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 95;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 240;
+		t.y = 506;
+		t.skinName = ExchangeSkin$Skin73;
+		return t;
+	};
+	_proto.btnInAll_i = function () {
+		var t = new eui.Button();
+		this.btnInAll = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 134;
+		t.label = "全部";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonR1Skin";
+		t.width = 270;
+		t.x = 490;
+		t.y = 334;
+		return t;
+	};
+	_proto.namstring_i = function () {
+		var t = new eui.Label();
+		this.namstring = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "dfjslfjerlgjerlgjwlkf";
+		t.textAlign = "left";
+		t.textColor = 0x87c1ea;
+		t.verticalAlign = "middle";
+		t.visible = false;
+		t.width = 718.33;
+		t.x = 242;
+		t.y = 130.88;
+		return t;
+	};
+	_proto.namstring0_i = function () {
+		var t = new eui.Label();
+		this.namstring0 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "123456789";
+		t.textAlign = "left";
+		t.textColor = 0x87C1EA;
+		t.verticalAlign = "middle";
+		t.width = 718.33;
+		t.x = 250;
+		t.y = 108;
+		return t;
+	};
+	_proto.InGameNum_i = function () {
+		var t = new eui.Label();
+		this.InGameNum = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "123456789";
+		t.textAlign = "left";
+		t.textColor = 0xffc23d;
+		t.verticalAlign = "middle";
+		t.width = 515.66;
+		t.x = 250;
+		t.y = 211;
+		return t;
+	};
+	_proto.btnInCharge_i = function () {
+		var t = new eui.Button();
+		this.btnInCharge = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 134;
+		t.label = "充值";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonB1Skin";
+		t.visible = false;
+		t.width = 270;
+		t.x = 814;
+		t.y = 222;
+		return t;
+	};
+	_proto.namstring17_i = function () {
+		var t = new eui.Label();
+		this.namstring17 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.italic = true;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "转入：把XWG从游戏钱包转入到游戏余额";
+		t.textAlign = "left";
+		t.textColor = 0xFFC23D;
+		t.verticalAlign = "middle";
+		t.width = 664.75;
+		t.x = 44;
+		t.y = 28;
+		return t;
+	};
+	_proto.OutGroup_i = function () {
+		var t = new eui.Group();
+		this.OutGroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.left = 288;
+		t.right = 26;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 100;
+		t.visible = false;
+		t.elementsContent = [this.imgRBG0_i(),this.namstring16_i(),this._a11_i(),this._a12_i(),this._a13_i(),this._a14_i(),this._a15_i(),this._a16_i(),this._a17_i(),this.editCountOut_i(),this.btnOutConfirm_i(),this.btnOutAll_i(),this.namstring2_i(),this.namstring5_i(),this.namstring7_i(),this.ourRatestring_i(),this.namstring3_i(),this.OutGameNum_i(),this.btnOutCharge_i(),this._a18_i(),this.btnInCharge0_i()];
+		return t;
+	};
+	_proto.imgRBG0_i = function () {
+		var t = new eui.Image();
+		this.imgRBG0 = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		return t;
+	};
+	_proto.namstring16_i = function () {
+		var t = new eui.Label();
+		this.namstring16 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.italic = true;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "转出：把XWG从游戏余额转出到游戏钱包";
+		t.textAlign = "left";
+		t.textColor = 0xFFC23D;
+		t.verticalAlign = "middle";
+		t.width = 664.75;
+		t.x = 44;
+		t.y = 28;
+		return t;
+	};
+	_proto._a11_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.visible = false;
+		t.width = 940;
+		t.x = 37;
+		t.y = 28;
+		return t;
+	};
+	_proto._a12_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 940;
+		t.x = 44;
+		t.y = 196;
+		return t;
+	};
+	_proto._a13_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 940;
+		t.x = 44;
+		t.y = 93;
+		return t;
+	};
+	_proto._a14_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,78,45);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.shurukuang";
+		t.width = 415.18;
+		t.x = 44;
+		t.y = 332;
+		return t;
+	};
+	_proto._a15_i = function () {
+		var t = new eui.Image();
+		t.source = "hallText0Sheet_json.qbye01";
+		t.x = 66;
+		t.y = 220;
+		return t;
+	};
+	_proto._a16_i = function () {
+		var t = new eui.Image();
+		t.source = "hallText0Sheet_json.yxye00";
+		t.x = 66;
+		t.y = 117;
+		return t;
+	};
+	_proto._a17_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.height = 34;
+		t.source = "hallText0Sheet_json.qbdz";
+		t.visible = false;
+		t.width = 143;
+		t.x = 66;
+		t.y = 52;
+		return t;
+	};
+	_proto.editCountOut_i = function () {
+		var t = new eui.EditableText();
+		this.editCountOut = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.backgroundColor = 0xFFC000;
+		t.borderColor = 0xFFC000;
+		t.fontFamily = "SimHei";
+		t.height = 56.67;
+		t.size = 30;
+		t.stroke = 0;
+		t.text = "1";
+		t.textAlign = "center";
+		t.textColor = 0xFFC000;
+		t.verticalAlign = "middle";
+		t.width = 402.42;
+		t.x = 42.64;
+		t.y = 343.7;
+		return t;
+	};
+	_proto.btnOutConfirm_i = function () {
+		var t = new eui.Button();
+		this.btnOutConfirm = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 95;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 240;
+		t.y = 506;
+		t.skinName = ExchangeSkin$Skin74;
+		return t;
+	};
+	_proto.btnOutAll_i = function () {
+		var t = new eui.Button();
+		this.btnOutAll = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 134;
+		t.label = "全部";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonR1Skin";
+		t.width = 270;
+		t.x = 490;
+		t.y = 331.84;
+		return t;
+	};
+	_proto.namstring2_i = function () {
+		var t = new eui.Label();
+		this.namstring2 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "dfjslfjerlgjerlgjwlkf";
+		t.textAlign = "left";
+		t.textColor = 0x87c1ea;
+		t.verticalAlign = "middle";
+		t.visible = false;
+		t.width = 718.33;
+		t.x = 242;
+		t.y = 43;
+		return t;
+	};
+	_proto.namstring5_i = function () {
+		var t = new eui.Label();
+		this.namstring5 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 47.34;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "手续费：";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.width = 127.66;
+		t.x = 41.33;
+		t.y = 443;
+		return t;
+	};
+	_proto.namstring7_i = function () {
+		var t = new eui.Label();
+		this.namstring7 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 47.34;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "（注:转出时将收取5%的手续费）";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 441.3;
+		t.x = 372.7;
+		t.y = 443;
+		return t;
+	};
+	_proto.ourRatestring_i = function () {
+		var t = new eui.Label();
+		this.ourRatestring = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 47.34;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "1200XWG";
+		t.textAlign = "left";
+		t.textColor = 0x1fff59;
+		t.verticalAlign = "middle";
+		t.width = 207.97;
+		t.x = 150;
+		t.y = 443;
+		return t;
+	};
+	_proto.namstring3_i = function () {
+		var t = new eui.Label();
+		this.namstring3 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "123456789";
+		t.textAlign = "left";
+		t.textColor = 0xffc23d;
+		t.verticalAlign = "middle";
+		t.width = 664.75;
+		t.x = 250;
+		t.y = 211;
+		return t;
+	};
+	_proto.OutGameNum_i = function () {
+		var t = new eui.Label();
+		this.OutGameNum = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "123456789";
+		t.textAlign = "left";
+		t.textColor = 0x87c1ea;
+		t.verticalAlign = "middle";
+		t.width = 694.21;
+		t.x = 250;
+		t.y = 108;
+		return t;
+	};
+	_proto.btnOutCharge_i = function () {
+		var t = new eui.Button();
+		this.btnOutCharge = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 134;
+		t.label = "提现";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonB1Skin";
+		t.visible = false;
+		t.width = 270;
+		t.x = 814;
+		t.y = 120.67;
+		return t;
+	};
+	_proto._a18_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 34;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.qbdz";
+		t.visible = false;
+		t.width = 146.67;
+		t.x = 66;
+		t.y = 139.88;
+		return t;
+	};
+	_proto.btnInCharge0_i = function () {
+		var t = new eui.Button();
+		this.btnInCharge0 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 134;
+		t.label = "充值";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonB1Skin";
+		t.visible = false;
+		t.width = 270;
+		t.x = 814;
+		t.y = 222;
+		return t;
+	};
+	_proto.ChargeGroup_i = function () {
+		var t = new eui.Group();
+		this.ChargeGroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.left = 288;
+		t.right = 26;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 100;
+		t.visible = false;
+		t.elementsContent = [this.imgRBG1_i(),this._a19_i(),this._a20_i(),this._a21_i(),this.btnCharge_i(),this.lbgamewalletaddr_i(),this.namstring15_i(),this.lbchargewalletnum_i(),this._a22_i()];
+		return t;
+	};
+	_proto.imgRBG1_i = function () {
+		var t = new eui.Image();
+		this.imgRBG1 = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		return t;
+	};
+	_proto._a19_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 940;
+		t.x = 44;
+		t.y = 93;
+		return t;
+	};
+	_proto._a20_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 940;
+		t.x = 44;
+		t.y = 196;
+		return t;
+	};
+	_proto._a21_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.youxiqbdz";
+		t.x = 66;
+		t.y = 117;
+		return t;
+	};
+	_proto.btnCharge_i = function () {
+		var t = new eui.Button();
+		this.btnCharge = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 95;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 240;
+		t.y = 506;
+		t.skinName = ExchangeSkin$Skin75;
+		return t;
+	};
+	_proto.lbgamewalletaddr_i = function () {
+		var t = new eui.Label();
+		this.lbgamewalletaddr = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "dfjslfjerlgjerlgjwlkf";
+		t.textAlign = "left";
+		t.textColor = 0x87C1EA;
+		t.verticalAlign = "middle";
+		t.width = 666.33;
+		t.x = 294;
+		t.y = 108;
+		return t;
+	};
+	_proto.namstring15_i = function () {
+		var t = new eui.Label();
+		this.namstring15 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.italic = true;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "充值：把XWG从其他链上钱包充值到游戏钱包";
+		t.textAlign = "left";
+		t.textColor = 0xFFC23D;
+		t.verticalAlign = "middle";
+		t.width = 664.75;
+		t.x = 44;
+		t.y = 28;
+		return t;
+	};
+	_proto.lbchargewalletnum_i = function () {
+		var t = new eui.Label();
+		this.lbchargewalletnum = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "123456789";
+		t.textAlign = "left";
+		t.textColor = 0x87C1EA;
+		t.verticalAlign = "middle";
+		t.width = 694.21;
+		t.x = 236.89;
+		t.y = 211;
+		return t;
+	};
+	_proto._a22_i = function () {
+		var t = new eui.Image();
+		t.source = "hallText0Sheet_json.qbye00";
+		t.x = 66;
+		t.y = 220;
+		return t;
+	};
+	_proto.CashGroup_i = function () {
+		var t = new eui.Group();
+		this.CashGroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.left = 288;
+		t.right = 26;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 100;
+		t.visible = false;
+		t.elementsContent = [this.imgRBG2_i(),this._a23_i(),this._a24_i(),this._a25_i(),this.btnCash_i(),this.lbcashaddr_i(),this.namstring11_i(),this.lbcashwalletnum_i(),this._a26_i()];
+		return t;
+	};
+	_proto.imgRBG2_i = function () {
+		var t = new eui.Image();
+		this.imgRBG2 = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		return t;
+	};
+	_proto._a23_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 940;
+		t.x = 44;
+		t.y = 93;
+		return t;
+	};
+	_proto._a24_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 82;
+		t.scale9Grid = new egret.Rectangle(12,10,137,29);
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 940;
+		t.x = 44;
+		t.y = 196;
+		return t;
+	};
+	_proto._a25_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.source = "hallText0Sheet_json.tixianqbdz";
+		t.x = 66;
+		t.y = 117;
+		return t;
+	};
+	_proto.btnCash_i = function () {
+		var t = new eui.Button();
+		this.btnCash = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 95;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 240;
+		t.y = 506;
+		t.skinName = ExchangeSkin$Skin76;
+		return t;
+	};
+	_proto.lbcashaddr_i = function () {
+		var t = new eui.Label();
+		this.lbcashaddr = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "dfjslfjerlgjerlgjwlkf";
+		t.textAlign = "left";
+		t.textColor = 0x87C1EA;
+		t.verticalAlign = "middle";
+		t.width = 644.33;
+		t.x = 308.19;
+		t.y = 108;
+		return t;
+	};
+	_proto.namstring11_i = function () {
+		var t = new eui.Label();
+		this.namstring11 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.italic = true;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "提现：把XWG从游戏钱包提现到绑定地址";
+		t.textAlign = "left";
+		t.textColor = 0xFFC23D;
+		t.verticalAlign = "middle";
+		t.width = 664.75;
+		t.x = 44;
+		t.y = 28;
+		return t;
+	};
+	_proto.lbcashwalletnum_i = function () {
+		var t = new eui.Label();
+		this.lbcashwalletnum = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 52.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 30;
+		t.stroke = 2;
+		t.text = "123456789";
+		t.textAlign = "left";
+		t.textColor = 0x87C1EA;
+		t.verticalAlign = "middle";
+		t.width = 694.21;
+		t.x = 234.19;
+		t.y = 211;
+		return t;
+	};
+	_proto._a26_i = function () {
+		var t = new eui.Image();
+		t.source = "hallText0Sheet_json.qbye00";
+		t.x = 66;
+		t.y = 220;
+		return t;
+	};
+	_proto.RecordGroup_i = function () {
+		var t = new eui.Group();
+		this.RecordGroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.left = 288;
+		t.right = 26;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 100;
+		t.visible = false;
+		t.elementsContent = [this._a27_i(),this._a28_i(),this._a29_i(),this._a30_i(),this.scrPropItem_i(),this._c3_i()];
+		return t;
+	};
+	_proto._a27_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 607;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(13,14,75,72);
+		t.source = "hallImg1Sheet_json.shopback";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 951;
+		return t;
+	};
+	_proto._a28_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.y = 0;
+		return t;
+	};
+	_proto._a29_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 600;
+		t.scale9Grid = new egret.Rectangle(15,15,64,70);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.tanchukuang2";
+		t.visible = false;
+		t.width = 941.6;
+		t.x = 37.73;
+		t.y = 15;
+		return t;
+	};
+	_proto._a30_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 55;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(12,10,76,36);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "shezhisheet_json.lan";
+		t.touchEnabled = false;
+		t.width = 945;
+		t.y = 15.02;
+		return t;
+	};
+	_proto.scrPropItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrPropItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 547;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyH = "off";
+		t.width = 940;
+		t.y = 68.18;
+		t.viewport = this.groupPropItem_i();
+		return t;
+	};
+	_proto.groupPropItem_i = function () {
+		var t = new eui.Group();
+		this.groupPropItem = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 51.15;
+		t.horizontalCenter = 0;
+		t.width = 938.82;
+		t.y = 13.71;
+		t.elementsContent = [this.lblDes3_i(),this.lblDes2_i(),this.lblDes4_i(),this.lblDes5_i(),this.lblDes0_i(),this.lblDes6_i(),this.lblDes2e0_i(),this.lblDes1_i()];
+		return t;
+	};
+	_proto.lblDes3_i = function () {
+		var t = new eui.Label();
+		this.lblDes3 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "编号";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 52.4;
+		t.wordWrap = true;
+		t.x = 43;
+		t.y = 16;
+		return t;
+	};
+	_proto.lblDes2_i = function () {
+		var t = new eui.Label();
+		this.lblDes2 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "订单号";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 96.23;
+		t.wordWrap = true;
+		t.x = 150;
+		t.y = 16;
+		return t;
+	};
+	_proto.lblDes4_i = function () {
+		var t = new eui.Label();
+		this.lblDes4 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "类型";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 50.4;
+		t.wordWrap = true;
+		t.x = 275;
+		t.y = 16;
+		return t;
+	};
+	_proto.lblDes5_i = function () {
+		var t = new eui.Label();
+		this.lblDes5 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "金额";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 80.5;
+		t.wordWrap = true;
+		t.x = 437;
+		t.y = 16;
+		return t;
+	};
+	_proto.lblDes0_i = function () {
+		var t = new eui.Label();
+		this.lblDes0 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "手续费";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 111.9;
+		t.wordWrap = true;
+		t.x = 640;
+		t.y = 16;
+		return t;
+	};
+	_proto.lblDes6_i = function () {
+		var t = new eui.Label();
+		this.lblDes6 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "燃油费";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 111.9;
+		t.wordWrap = true;
+		t.x = 520;
+		t.y = 16;
+		return t;
+	};
+	_proto.lblDes2e0_i = function () {
+		var t = new eui.Label();
+		this.lblDes2e0 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "完成时间";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 154.9;
+		t.wordWrap = true;
+		t.x = 784;
+		t.y = 16;
+		return t;
+	};
+	_proto.lblDes1_i = function () {
+		var t = new eui.Label();
+		this.lblDes1 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.stroke = 1;
+		t.text = "状态";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 50.4;
+		t.wordWrap = true;
+		t.x = 350;
+		t.y = 16;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["btnBack","comStar","groupOptionBtn","scrOptionBtn","imgRBG","editCount","btnInConfirm","btnInAll","namstring","namstring0","InGameNum","btnInCharge","namstring17","InGroup","imgRBG0","namstring16","editCountOut","btnOutConfirm","btnOutAll","namstring2","namstring5","namstring7","ourRatestring","namstring3","OutGameNum","btnOutCharge","btnInCharge0","OutGroup","imgRBG1","btnCharge","lbgamewalletaddr","namstring15","lbchargewalletnum","ChargeGroup","imgRBG2","btnCash","lbcashaddr","namstring11","lbcashwalletnum","CashGroup","groupPropItem","scrPropItem","lblDes3","lblDes2","lblDes4","lblDes5","lblDes0","lblDes6","lblDes2e0","lblDes1","RecordGroup","mallskingroup"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return ExchangeSkin;
+})(eui.Skin);

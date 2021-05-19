@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CombatRecordSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="recordskingroup" width="100%" height="100%" x="0" y="0">
+		<e:Image id="imgBG" x="0" y="0" source="bj_jpg" width="100%" height="100%"/>
+		<e:Rect width="100%" height="670" anchorOffsetX="0" anchorOffsetY="0" fillColor="0x000000" fillAlpha="0.5" horizontalCenter="-1" bottom="0"/>
+		<e:Group width="100%" height="80" anchorOffsetY="0" left="0" top="0">
+		<e:Image id="imgTitleBG" source="top_png" horizontalCenter="0" anchorOffsetY="0" height="90" top="0" width="100%"/>
+		<e:Button id="btnBack" label="" left="0" top="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+			<e:Image id="imgTitle" horizontalCenter="0" source="combatRecordSheet_json.t_duizhanjilu" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="groupDetails" height="630" right="30" top="100" left="292">
+			<e:Image id="imgRBG" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" anchorOffsetX="0" x="1.52" width="100%" y="-1.52" scaleX="1" scaleY="1"/>
+			<e:Image source="combatRecordSheet_json.line" width="100%" x="0" y="132"/>
+			<e:Image x="0" y="448" width="100%" source="combatRecordSheet_json.line"/>
+			<e:Label text="羁绊:" y="468" size="20" fontFamily="Microsoft YaHei" textColor="0xFFFFFF" verticalAlign="middle" height="25" horizontalCenter="-458.5"/>
+			<e:Label text="羁绊:" y="468" size="20" fontFamily="Microsoft YaHei" textColor="0xFFFFFF" height="25" verticalAlign="middle" width="45" horizontalCenter="45.5"/>
+			<e:Group width="1012" height="132" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="0">
+				<e:Group id="groupLeftHeadFrame" width="92" height="92" y="26.330000000000013" x="29" scaleX="1" scaleY="1">
+					<e:Image id="imgLeftHead" width="92" height="92" source="combatRecordSheet_json.a130x130_0" scaleX="0.97" scaleY="0.97" horizontalCenter="0" verticalCenter="0"/>
+					<e:Image touchEnabled="false" scaleX="1" scaleY="1" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" horizontalCenter="0" verticalCenter="0" source="shezhisheet_json.headkuang" x="0" y="0"/>
+					<e:Image x="100" y="1.2999999999999972" anchorOffsetX="0" width="187" anchorOffsetY="0" height="41" source="hallImg0Sheet_json.w162x50" scaleX="1" scaleY="1" scale9Grid="11,10,140,31"/>
+					<e:Image x="100" y="51.51999999999997" anchorOffsetX="0" width="188" anchorOffsetY="0" height="41" source="hallImg0Sheet_json.w162x50" scaleX="1" scaleY="1" scale9Grid="10,10,141,31"/>
+					<e:Label id="labLeftName" text="我的名字七个字" y="5.989999999999995" height="30.01" width="158.67" verticalAlign="middle" fontFamily="SimHei" size="22" anchorOffsetY="0" x="110" scaleX="1" scaleY="1" textColor="0xffffff" anchorOffsetX="0"/>
+					<e:Label id="labLeftName0" text="战力" y="55.67" height="30.01" width="64" verticalAlign="middle" textColor="0xFFFFFF" fontFamily="SimHei" size="22" anchorOffsetY="0" x="110" scaleX="1" scaleY="1" anchorOffsetX="0"/>
+					<e:Label id="labLeftCombat" text="3000" y="59" size="24" fontFamily="SimHei" height="26" textAlign="left" verticalAlign="middle" anchorOffsetX="0" width="92.67" x="170" scaleX="1" scaleY="1" textColor="0xffbd1f"/>
+				</e:Group>
+				<e:Group id="groupRightHeadFrame" width="92" height="92" y="26.330000000000013" x="699" scaleX="1" scaleY="1">
+					<e:Image id="imgRightHead" source="combatRecordSheet_json.a130x130_0" width="92" height="92" scaleX="0.97" scaleY="0.97" horizontalCenter="0" verticalCenter="0"/>
+					<e:Image id="rightFrame" touchEnabled="false" scaleX="1" scaleY="1" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" horizontalCenter="0" verticalCenter="0" source="shezhisheet_json.headkuang" x="-699" y="-26.33"/>
+					<e:Image x="100" y="1.2999999999999972" anchorOffsetX="0" width="187" anchorOffsetY="0" height="41" source="hallImg0Sheet_json.w162x50" scaleX="1" scaleY="1" scale9Grid="11,10,140,31"/>
+					<e:Image x="100" y="51.62999999999998" anchorOffsetX="0" width="187" anchorOffsetY="0" height="41" source="hallImg0Sheet_json.w162x50" scaleX="1" scaleY="1" scale9Grid="11,10,140,31"/>
+					<e:Image id="imgRightRes0" y="9.009999999999977" x="-0.6600000000000819" scaleX="1" scaleY="1" source="combatRecordSheet_json.shibai"/>
+					<e:Label id="labRightName" text="我的名字七个字" y="4.6499999999999915" height="34" width="172" verticalAlign="middle" fontFamily="SimHei" size="22" x="110" scaleX="1" scaleY="1" anchorOffsetY="0" textColor="0xffffff"/>
+					<e:Label id="labRightName0" text="战力" y="53.67" height="34" width="51.33" verticalAlign="middle" textColor="0xFFFFFF" fontFamily="SimHei" size="22" x="110" scaleX="1" scaleY="1" anchorOffsetY="0" anchorOffsetX="0"/>
+					<e:Label id="labRightCombat" text="3000" y="57.67" height="26" size="24" fontFamily="SimHei" verticalAlign="middle" textAlign="left" width="116" anchorOffsetX="0" x="170" scaleX="1" scaleY="1" textColor="0x9ce4ff"/>
+				</e:Group>
+				<e:Image id="vs" y="62.33000000000001" source="combatRecordSheet_json.vs" x="476" scaleX="1" scaleY="1"/>
+				<e:Image id="imgRightRes" y="44.33000000000001" x="578" scaleX="1" scaleY="1" source="combatRecordSheet_json.bai"/>
+				<e:Image id="imgLeftRes" y="44.33000000000001" x="378" scaleX="1" scaleY="1" source="combatRecordSheet_json.shengli"/>
+				<e:Label id="labRecordId" text="对战id: 1111111" x="0" y="4" width="100%" height="27" verticalAlign="middle" textAlign="center" size="18" fontFamily="SimHei" textColor="0xaaceec" anchorOffsetY="0"/>
+			</e:Group>
+			<e:Group id="groupleftFetters" width="420" height="120.67" anchorOffsetY="0" y="492" x="76"/>
+			<e:Group id="groupRightFetters" height="119.15" width="420" y="492" anchorOffsetY="0" x="582"/>
+			<e:Group width="475.33" height="314" y="132" anchorOffsetX="0" horizontalCenter="-239.5">
+				<e:Group id="groupLeftCardHeads" width="100%" height="100%" scaleX="1" scaleY="1" horizontalCenter="0" y="0">
+				</e:Group>
+			</e:Group>
+			<e:Group width="484.67" height="314" y="132" anchorOffsetX="0" horizontalCenter="256.5">
+				<e:Group id="groupRightCardHeads" width="100%" height="100%" y="0" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+		<e:Scroller id="scrRecordBtn" width="292" scrollPolicyH="off" anchorOffsetX="0" height="630" left="0" top="100">
+			<e:Group id="groupRecordBtn" width="288.01" anchorOffsetX="0" x="8" y="0"/>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LobbySkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupHall" width="100%" height="100%" x="0" y="0">
+		<e:Image width="100%" height="100%" source="bg_jpg" x="0" y="0"/>
+		<e:Image source="bg_0_png" verticalCenter="0" left="0"/>
+		<e:Button id="btnInfoOut" label="" scaleX="1" scaleY="1" top="196" left="12" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallImg0Sheet_json.zuokuangc" source.down="hallImg0Sheet_json.zuokuangc"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="InfoGroup" width="324" height="320" anchorOffsetX="0" anchorOffsetY="0" left="12" top="196" visible="false">
+			<e:Image x="0" y="0" scaleX="1" scaleY="1" source="hallImg0Sheet_json.zuokuangb" visible="false"/>
+			<e:Button id="btnInfoInto" label="" x="0" y="0" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallImg0Sheet_json.zuokuangb" source.down="hallImg0Sheet_json.zuokuangb"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image y="12" scaleX="1" scaleY="1" source="hallText0Sheet_json.xtgg" touchEnabled="false" horizontalCenter="0"/>
+			<e:Scroller id="scrPropItem" scrollPolicyH="off" scaleX="1" scaleY="1" height="260" width="326" anchorOffsetY="0" anchorOffsetX="0" y="56" horizontalCenter="1">
+			<e:Group id="groupPropItem" anchorOffsetY="0" x="-24" y="0" anchorOffsetX="0" height="260"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group width="520" height="750" right="0" verticalCenter="0">
+			<e:Button id="btnCard" y="110" scaleX="1" scaleY="1" x="96" label="">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a176x175_0" source.down="hallBtn1Sheet_json.a176x175_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnCombat" label="" x="-28" y="292" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a260x260_0" source.down="hallBtn1Sheet_json.a260x260_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnCardGroup" label="" x="271" y="217" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.b176x175_0" source.down="hallBtn1Sheet_json.b176x175_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnExtract" label="" x="225" y="420" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.c176x175_0" source.down="hallBtn1Sheet_json.c176x175_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group width="950" height="110" horizontalCenter="0" bottom="0" anchorOffsetX="0">
+			<e:Button id="btnRetrieve" label="" x="469.1428571428571" y="2" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.huishou00" source.down="hallBtn1Sheet_json.huishou01"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+
+			<e:Button id="btnMall" label="" x="4" y="2" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.d98x96_0" source.down="hallBtn1Sheet_json.d98x96_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnExchange" label="" x="120.28571428571429" y="2" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.e_jiaoyisuo00" source.down="hallBtn1Sheet_json.e_jiaoyisuo01"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnTask" label="" x="236.57142857142856" y="2" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.e_renwu00" source.down="hallBtn1Sheet_json.e_renwu01"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnPackage" label="" x="352.85714285714283" y="2" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a98x96_0" source.down="hallBtn1Sheet_json.a98x96_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnActivity" label="" x="351" y="3" scaleX="1" scaleY="1" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.b98x96_0" source.down="hallBtn1Sheet_json.b98x96_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnFetters" label="" x="585.4285714285714" y="2" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.c98x96_0" source.down="hallBtn1Sheet_json.c98x96_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnCombatRecord" label="" x="701.7142857142858" y="2" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.f98x96_0" source.down="hallBtn1Sheet_json.f98x96_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnSetUp" label="" x="818" y="2" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.e98x96_0" source.down="hallBtn1Sheet_json.e98x96_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="txturl" text="1111111111111111111111111" x="136" y="9.32" size="22" fontFamily="SimHei" textColor="0xFFFFFF" width="96" textAlign="center" stroke="2" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" height="89.34" alpha="0.01"/>
+		</e:Group>
+		<e:Component id="comHead" skinName="HeadSkin" left="2" top="0"/>
+		<e:Component id="comNotable" skinName="NotableSkin" top="77" horizontalCenter="16" width="710"/>
+		<e:Component id="comStar" top="13" skinName="StarSkin" right="42"/>
+		<e:Button id="HeadButton" label="Button" x="39.67" y="40.5" width="100" height="100" skinName="ButtonB1Skin" alpha="0"/>
+		<e:Button id="btnTurnCard" label="" x="27" y="202" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.e_chongzhi00" source.down="hallBtn1Sheet_json.e_chongzhi01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnCharge" label="" x="27" y="342" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.e_zhuanyi00" source.down="hallBtn1Sheet_json.e_zhuanyi01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,542 @@
+(function (_super) {
+	__extends(CardGroupUploadSkin, _super);
+	var CardGroupUploadSkin$Skin25 = 	(function (_super) {
+		__extends(CardGroupUploadSkin$Skin25, _super);
+		function CardGroupUploadSkin$Skin25() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a26x42_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CardGroupUploadSkin$Skin25.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a26x42_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardGroupUploadSkin$Skin25;
+	})(eui.Skin);
+
+	var CardGroupUploadSkin$Skin26 = 	(function (_super) {
+		__extends(CardGroupUploadSkin$Skin26, _super);
+		function CardGroupUploadSkin$Skin26() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a78x80_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CardGroupUploadSkin$Skin26.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a78x80_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.fontFamily = "SimHei";
+			t.horizontalCenter = 0;
+			t.size = 30;
+			t.stroke = 2;
+			t.textColor = 0xd9f2ff;
+			t.y = 20;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardGroupUploadSkin$Skin26;
+	})(eui.Skin);
+
+	function CardGroupUploadSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupCardGroupSet_i()];
+	}
+	var _proto = CardGroupUploadSkin.prototype;
+
+	_proto.groupCardGroupSet_i = function () {
+		var t = new eui.Group();
+		this.groupCardGroupSet = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this._c1_i(),this._c2_i(),this._c7_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.source = "bj_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 288;
+		t.x = 10.64;
+		t.y = 100;
+		t.elementsContent = [this.scrOptionBtn_i()];
+		return t;
+	};
+	_proto.scrOptionBtn_i = function () {
+		var t = new eui.Scroller();
+		this.scrOptionBtn = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyH = "off";
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.viewport = this.groupOptionBtn_i();
+		return t;
+	};
+	_proto.groupOptionBtn_i = function () {
+		var t = new eui.Group();
+		this.groupOptionBtn = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.height = 80;
+		t.left = 0;
+		t.top = 0;
+		t.percentWidth = 100;
+		t.elementsContent = [this._a2_i(),this._a3_i(),this.btnBack_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "top_png";
+		t.top = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "hallText0Sheet_json.t_zhuanyi";
+		t.verticalCenter = -5;
+		return t;
+	};
+	_proto.btnBack_i = function () {
+		var t = new eui.Button();
+		this.btnBack = t;
+		t.label = "";
+		t.left = 0;
+		t.top = 0;
+		t.skinName = CardGroupUploadSkin$Skin25;
+		return t;
+	};
+	_proto._c7_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.left = 308;
+		t.right = 12;
+		t.top = 100;
+		t.elementsContent = [this._c4_i(),this._c6_i()];
+		return t;
+	};
+	_proto._c4_i = function () {
+		var t = new eui.Group();
+		t.height = 285;
+		t.horizontalCenter = 0;
+		t.percentWidth = 100;
+		t.y = 0;
+		t.elementsContent = [this._a4_i(),this.scrSCardItem_i(),this._c3_i()];
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.left = 0;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.scrSCardItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrSCardItem = t;
+		t.height = 250;
+		t.horizontalCenter = -167;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyH = "off";
+		t.width = 640;
+		t.y = 15;
+		t.viewport = this.groupSCardItem_i();
+		return t;
+	};
+	_proto.groupSCardItem_i = function () {
+		var t = new eui.Group();
+		this.groupSCardItem = t;
+		return t;
+	};
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.height = 250;
+		t.horizontalCenter = 327;
+		t.width = 328;
+		t.y = 15;
+		t.elementsContent = [this._a5_i(),this.lblCCost_i(),this.lblCCost0_i(),this.lblCCost1_i()];
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(12,12,76,76);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.tanchukuang2";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.lblCCost_i = function () {
+		var t = new eui.Label();
+		this.lblCCost = t;
+		t.fontFamily = "SimHei";
+		t.height = 30;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.text = "说明";
+		t.textAlign = "left";
+		t.textColor = 0xfcc728;
+		t.touchEnabled = false;
+		t.verticalAlign = "middle";
+		t.width = 130;
+		t.x = 17;
+		t.y = 15;
+		return t;
+	};
+	_proto.lblCCost0_i = function () {
+		var t = new eui.Label();
+		this.lblCCost0 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 96.66;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.text = "  1.转入：钱包内的卡牌只有通过转入功能导进游戏，才能在线下进行游戏。转入游戏内的卡牌在钱包内暂时冻结，不能进行交易。";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.touchEnabled = false;
+		t.verticalAlign = "top";
+		t.width = 298;
+		t.x = 15.67;
+		t.y = 47.66;
+		return t;
+	};
+	_proto.lblCCost1_i = function () {
+		var t = new eui.Label();
+		this.lblCCost1 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 92.66;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.text = "  2.转出：游戏内的卡牌只有通过转出功能导进钱包，才能在线上进行交易。转出游戏内的卡牌，会从游戏里消失。";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.touchEnabled = false;
+		t.verticalAlign = "top";
+		t.width = 298;
+		t.x = 19;
+		t.y = 149.66;
+		return t;
+	};
+	_proto._c6_i = function () {
+		var t = new eui.Group();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 1014;
+		t.y = 290;
+		t.elementsContent = [this._c5_i(),this.groupBCardItem_i()];
+		return t;
+	};
+	_proto._c5_i = function () {
+		var t = new eui.Group();
+		t.left = 0;
+		t.top = 0;
+		t.percentWidth = 100;
+		t.elementsContent = [this._a6_i(),this._a7_i(),this._a8_i(),this._a9_i(),this.scrCCardItem_i(),this.btnProgress_i(),this.btnRecord_i(),this.btnSort1_i(),this.btnConfirm_i(),this._a10_i(),this._a11_i()];
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.scale9Grid = new egret.Rectangle(71,36,45,216);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg2Sheet_json.a132x288";
+		t.width = 785;
+		t.x = 240;
+		t.y = 17;
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.scaleX = 1;
+		t.source = "hallImg2Sheet_json.a450x6";
+		t.x = 414;
+		t.y = 47;
+		return t;
+	};
+	_proto._a8_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.scaleX = 1;
+		t.scaleY = -1;
+		t.source = "hallImg2Sheet_json.a450x6";
+		t.x = 414;
+		t.y = 294;
+		return t;
+	};
+	_proto._a9_i = function () {
+		var t = new eui.Image();
+		t.left = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg2Sheet_json.b246x348";
+		t.touchEnabled = false;
+		t.x = -230;
+		t.y = 0;
+		return t;
+	};
+	_proto.scrCCardItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrCCardItem = t;
+		t.anchorOffsetY = 0;
+		t.height = 314;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyV = "off";
+		t.width = 1015;
+		t.x = 10;
+		t.y = 27.63;
+		t.viewport = this.groupCCardItem_i();
+		return t;
+	};
+	_proto.groupCCardItem_i = function () {
+		var t = new eui.Group();
+		this.groupCCardItem = t;
+		t.anchorOffsetY = 0;
+		t.height = 344.67;
+		t.x = -1;
+		t.y = -11;
+		return t;
+	};
+	_proto.btnProgress_i = function () {
+		var t = new eui.Button();
+		this.btnProgress = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 88.67;
+		t.label = "进度";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonB1Skin";
+		t.width = 242;
+		t.x = 673.33;
+		t.y = 295.62;
+		return t;
+	};
+	_proto.btnRecord_i = function () {
+		var t = new eui.Button();
+		this.btnRecord = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 88.67;
+		t.label = "记录";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonR1Skin";
+		t.width = 242;
+		t.x = 506.32;
+		t.y = 295.62;
+		return t;
+	};
+	_proto.btnSort1_i = function () {
+		var t = new eui.Button();
+		this.btnSort1 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 88.67;
+		t.label = "转出";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonR1Skin";
+		t.visible = false;
+		t.width = 242;
+		t.x = 669;
+		t.y = 295.62;
+		return t;
+	};
+	_proto.btnConfirm_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 88.67;
+		t.label = "确定";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonY1Skin";
+		t.width = 242;
+		t.x = 838;
+		t.y = 295.62;
+		return t;
+	};
+	_proto._a10_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.right = -12;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg2Sheet_json.a40x250";
+		t.y = 45;
+		return t;
+	};
+	_proto._a11_i = function () {
+		var t = new eui.Image();
+		t.left = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg2Sheet_json.a246x348";
+		t.touchEnabled = false;
+		t.x = -240;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupBCardItem_i = function () {
+		var t = new eui.Group();
+		this.groupBCardItem = t;
+		t.percentHeight = 100;
+		t.left = 0;
+		t.touchEnabled = false;
+		t.width = 244;
+		t.y = 0;
+		t.elementsContent = [this.btnDetails_i(),this.imgChoose_i()];
+		return t;
+	};
+	_proto.btnDetails_i = function () {
+		var t = new eui.Button();
+		this.btnDetails = t;
+		t.label = "";
+		t.left = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 0;
+		t.skinName = CardGroupUploadSkin$Skin26;
+		return t;
+	};
+	_proto.imgChoose_i = function () {
+		var t = new eui.Image();
+		this.imgChoose = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.x = 463;
+		t.y = 132;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["groupOptionBtn","scrOptionBtn","btnBack","groupSCardItem","scrSCardItem","lblCCost","lblCCost0","lblCCost1","groupCCardItem","scrCCardItem","btnProgress","btnRecord","btnSort1","btnConfirm","btnDetails","imgChoose","groupBCardItem","groupCardGroupSet"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardGroupUploadSkin;
+})(eui.Skin);

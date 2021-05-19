@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CombatSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCombat" width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1">
+		<e:Image width="100%" height="100%" x="0" y="0" source="zdbj_jpg"/>
+		<e:Group id="groupAtkHead" left="40" bottom="35" width="272" height="295">
+		</e:Group>
+		<e:Group id="groupDfdHead" width="272" height="295" left="40" top="25">
+		</e:Group>
+		<e:Group x="0" verticalCenter="0" width="76" height="100">
+			<e:Image x="0" y="0" source="combatImg0Sheet_json.a76x100"/>
+			<e:Image id="imgDirMoon" y="80" source="combatImg0Sheet_json.a26x26" x="15"/>
+			<e:Image id="imgDirSun" source="combatImg0Sheet_json.b26x26" x="15" y="-10"/>
+			<e:Label id="lblRound" text="66" size="34" stroke="2" width="50" textAlign="center" verticalCenter="0" x="0" fontFamily="SimHei" textColor="0xfad450"/>
+		</e:Group>
+		<e:Group id="groupAtkFetter" left="10" verticalCenter="200" height="220">
+			<e:layout>
+				<e:VerticalLayout paddingTop="0" paddingBottom="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="groupDfdFetter" left="10" verticalCenter="-200" height="220">
+			<e:layout>
+			<e:VerticalLayout paddingTop="0" paddingBottom="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="groupAtkRCard" width="750" height="200" anchorOffsetX="0" horizontalCenter="50" verticalCenter="120"/>
+		<e:Group id="groupDfdRCard" width="750" height="200" anchorOffsetX="0" horizontalCenter="50" verticalCenter="-125">
+		</e:Group>
+		<e:Group bottom="0" horizontalCenter="0" width="674" height="144">
+			<e:Image x="0" y="0" source="combatImg0Sheet_json.a664x144" width="100%" scale9Grid="83,18,538,108"/>
+			<e:Group id="groupAtkSCard" width="648" height="124" horizontalCenter="5" verticalCenter="2"/>
+		</e:Group>
+		<e:Group id="groupAtkSendCard" bottom="0" left="0"/>
+		<e:Group horizontalCenter="0" top="0" width="674" height="144">
+			<e:Image x="0" y="145" scaleY="-1" source="combatImg0Sheet_json.a664x144" width="100%" scale9Grid="83,25,498,101"/>
+			<e:Group id="groupDfdSCard" width="648" height="124" scaleX="1" scaleY="1" horizontalCenter="5" verticalCenter="-2"/>
+		</e:Group>
+		<e:Group id="groupDfdSendCard" left="0" top="0"/>
+		<e:Group id="groupAtkDCard" right="15" bottom="5" width="138" height="138">
+			<e:Button id="btnAtkDeath" label="" x="0" scaleX="1" scaleY="1" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.a138x138_0" source.down="combatBtn0Sheet_json.a138x138_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image x="-160" source="combatText0Sheet_json.shengyu" bottom="0"/>
+			<e:Label id="lblAtkReadyCount" text="66" x="-85" size="28" fontFamily="SimHei" textAlign="left" width="80" stroke="2" textColor="0xe9eaf8" bottom="0"/>
+			<e:Image x="0" y="-50" source="combatImg0Sheet_json.a130x40"/>
+			<e:Label id="lblOutCardCutDown" text="06:06" x="40" y="-45" size="28" fontFamily="SimHei" textAlign="center" width="80" stroke="2" textColor="0xe6d7bd"/>
+		</e:Group>
+		<e:Group id="groupDfdDCard" right="15" top="5">
+			<e:Button id="btnDfdDeath" label="" x="0" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.a138x138_0" source.down="combatBtn0Sheet_json.a138x138_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image x="-160" source="combatText0Sheet_json.shengyu" top="0"/>
+			<e:Label id="lblDfdReadyCount" text="66" x="-85" y="0" size="28" fontFamily="SimHei" textAlign="left" width="80" stroke="2" textColor="0xe9eaf8"/>
+		</e:Group>
+		<e:Group height="365" right="20" verticalCenter="0">
+			<e:Button id="btnQuick" label="" top="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.d118x118_0" source.down="combatBtn0Sheet_json.d118x118_1" source.disabled="combatBtn0Sheet_json.d118x118_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnUnHosting" label="" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.c118x118_1" source.down="combatBtn0Sheet_json.c118x118_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnHosting" label="" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.c118x118_0" source.down="combatBtn0Sheet_json.c118x118_0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnEnd" label="" bottom="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.b118x118_0" source.down="combatBtn0Sheet_json.b118x118_1" source.disabled="combatBtn0Sheet_json.b118x118_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnAtk" label="" x="0" bottom="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.a118x118_0" source.down="combatBtn0Sheet_json.a118x118_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group left="15" top="5">
+			<e:Button id="btnSet" label="" x="0" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.a46x46_0" source.down="combatBtn0Sheet_json.a46x46_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="groupAtkDeath" width="100%" height="100%" x="0" y="0" visible="false">
+			<e:Group width="100%" height="200" x="3" bottom="0" y="520" scaleX="1" scaleY="1" touchEnabled="false">
+				<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.5" touchEnabled="false"/>
+				<e:Group id="groupAtkDList" verticalCenter="0" horizontalCenter="0">
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group id="groupDfdDeath" width="100%" height="100%" x="0" y="0" visible="false">
+			<e:Group width="100%" height="200" x="3" top="0" y="0" scaleX="1" scaleY="1" touchEnabled="false">
+				<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.5" touchEnabled="false"/>
+				<e:Group id="groupDfdDList" verticalCenter="0" horizontalCenter="0">
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group id="groupDebug" width="517" height="458" y="35" right="0" touchEnabled="false">
+			<e:EditableText id="editSkillId" width="231" height="80" y="81" size="32" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="middle" prompt="输入技能id" promptColor="0xd8d8d8" scaleX="1" scaleY="1" right="0" textColor="0xffffff" x="286"/>
+			<e:EditableText id="editSpeed" width="160" height="80" y="181.28" size="32" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="middle" prompt="速度" promptColor="0xD8D8D8" scaleX="1" scaleY="1" right="163" textColor="0xFFFFFF" x="194"/>
+			<e:EditableText id="editFrameRate" width="160" height="80" y="264.28" size="32" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="middle" prompt="帧数" promptColor="0xD8D8D8" scaleX="1" scaleY="1" right="163" textColor="0xFFFFFF" x="194"/>
+			<e:EditableText id="editTFrameRate" width="160" height="80" y="79" size="32" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="middle" prompt="总帧数" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" x="114"/>
+			<e:Label text="速度：" x="71" y="210.28"/>
+			<e:Label text="帧数：" x="71" y="288.28"/>
+			<e:Label text="总帧数：" x="108" y="46"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

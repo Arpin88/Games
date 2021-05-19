@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="InfoItemSkin" width="324" height="94" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" width="100%" height="100%" x="0" y="0" touchChildren="false" touchEnabled="true">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" source="hallImg0Sheet_json.zuokuanga" scale9Grid="6,6,42,42" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%"/>
+		<e:Image id="imgSys" x="18" y="6" scaleX="1" scaleY="1" source="hallText0Sheet_json.xitong2" visible="false"/>
+		<e:Image id="imgPoint" x="290" y="6" scaleX="1" scaleY="1" source="hallText0Sheet_json.hongdian"/>
+		<e:Label id="labInfoName" text="【系统】世界印记" x="8.4" y="8" height="26" size="24" verticalAlign="middle" fontFamily="SimHei" anchorOffsetX="0" width="261" stroke="2" textColor="0xffd76a" anchorOffsetY="0"/>
+		<e:Label id="labInfoDesc" text="所有上阵所fddfdfd" x="18" y="54" size="22" fontFamily="SimHei" height="35" width="294" lineSpacing="10" anchorOffsetX="0" anchorOffsetY="0" textColor="0xededed"/>
+	</e:Group>
+</e:Skin>

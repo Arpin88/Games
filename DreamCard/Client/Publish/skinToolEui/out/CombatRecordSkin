@@ -1,0 +1,597 @@
+(function (_super) {
+	__extends(CombatRecordSkin, _super);
+	var CombatRecordSkin$Skin30 = 	(function (_super) {
+		__extends(CombatRecordSkin$Skin30, _super);
+		function CombatRecordSkin$Skin30() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a26x42_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CombatRecordSkin$Skin30.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a26x42_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CombatRecordSkin$Skin30;
+	})(eui.Skin);
+
+	function CombatRecordSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.recordskingroup_i()];
+	}
+	var _proto = CombatRecordSkin.prototype;
+
+	_proto.recordskingroup_i = function () {
+		var t = new eui.Group();
+		this.recordskingroup = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBG_i(),this._s1_i(),this._c1_i(),this.groupDetails_i(),this.scrRecordBtn_i()];
+		return t;
+	};
+	_proto.imgBG_i = function () {
+		var t = new eui.Image();
+		this.imgBG = t;
+		t.percentHeight = 100;
+		t.source = "bj_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.bottom = 0;
+		t.fillAlpha = 0.5;
+		t.fillColor = 0x000000;
+		t.height = 670;
+		t.horizontalCenter = -1;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetY = 0;
+		t.height = 80;
+		t.left = 0;
+		t.top = 0;
+		t.percentWidth = 100;
+		t.elementsContent = [this.imgTitleBG_i(),this.btnBack_i(),this.imgTitle_i()];
+		return t;
+	};
+	_proto.imgTitleBG_i = function () {
+		var t = new eui.Image();
+		this.imgTitleBG = t;
+		t.anchorOffsetY = 0;
+		t.height = 90;
+		t.horizontalCenter = 0;
+		t.source = "top_png";
+		t.top = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.btnBack_i = function () {
+		var t = new eui.Button();
+		this.btnBack = t;
+		t.label = "";
+		t.left = 0;
+		t.top = 0;
+		t.skinName = CombatRecordSkin$Skin30;
+		return t;
+	};
+	_proto.imgTitle_i = function () {
+		var t = new eui.Image();
+		this.imgTitle = t;
+		t.horizontalCenter = 0;
+		t.source = "combatRecordSheet_json.t_duizhanjilu";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.groupDetails_i = function () {
+		var t = new eui.Group();
+		this.groupDetails = t;
+		t.height = 630;
+		t.left = 292;
+		t.right = 30;
+		t.top = 100;
+		t.elementsContent = [this.imgRBG_i(),this._a1_i(),this._a2_i(),this._e1_i(),this._e2_i(),this._c2_i(),this.groupleftFetters_i(),this.groupRightFetters_i(),this._c3_i(),this._c4_i()];
+		return t;
+	};
+	_proto.imgRBG_i = function () {
+		var t = new eui.Image();
+		this.imgRBG = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.x = 1.52;
+		t.y = -1.52;
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.source = "combatRecordSheet_json.line";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 132;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.source = "combatRecordSheet_json.line";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 448;
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 25;
+		t.horizontalCenter = -458.5;
+		t.size = 20;
+		t.text = "羁绊:";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.y = 468;
+		return t;
+	};
+	_proto._e2_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 25;
+		t.horizontalCenter = 45.5;
+		t.size = 20;
+		t.text = "羁绊:";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 45;
+		t.y = 468;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 132;
+		t.horizontalCenter = 0;
+		t.top = 0;
+		t.width = 1012;
+		t.elementsContent = [this.groupLeftHeadFrame_i(),this.groupRightHeadFrame_i(),this.vs_i(),this.imgRightRes_i(),this.imgLeftRes_i(),this.labRecordId_i()];
+		return t;
+	};
+	_proto.groupLeftHeadFrame_i = function () {
+		var t = new eui.Group();
+		this.groupLeftHeadFrame = t;
+		t.height = 92;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 92;
+		t.x = 29;
+		t.y = 26.330000000000013;
+		t.elementsContent = [this.imgLeftHead_i(),this._a3_i(),this._a4_i(),this._a5_i(),this.labLeftName_i(),this.labLeftName0_i(),this.labLeftCombat_i()];
+		return t;
+	};
+	_proto.imgLeftHead_i = function () {
+		var t = new eui.Image();
+		this.imgLeftHead = t;
+		t.height = 92;
+		t.horizontalCenter = 0;
+		t.scaleX = 0.97;
+		t.scaleY = 0.97;
+		t.source = "combatRecordSheet_json.a130x130_0";
+		t.verticalCenter = 0;
+		t.width = 92;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "shezhisheet_json.headkuang";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 41;
+		t.scale9Grid = new egret.Rectangle(11,10,140,31);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 187;
+		t.x = 100;
+		t.y = 1.2999999999999972;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 41;
+		t.scale9Grid = new egret.Rectangle(10,10,141,31);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 188;
+		t.x = 100;
+		t.y = 51.51999999999997;
+		return t;
+	};
+	_proto.labLeftName_i = function () {
+		var t = new eui.Label();
+		this.labLeftName = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 30.01;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.text = "我的名字七个字";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.width = 158.67;
+		t.x = 110;
+		t.y = 5.989999999999995;
+		return t;
+	};
+	_proto.labLeftName0_i = function () {
+		var t = new eui.Label();
+		this.labLeftName0 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 30.01;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.text = "战力";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 64;
+		t.x = 110;
+		t.y = 55.67;
+		return t;
+	};
+	_proto.labLeftCombat_i = function () {
+		var t = new eui.Label();
+		this.labLeftCombat = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.height = 26;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.text = "3000";
+		t.textAlign = "left";
+		t.textColor = 0xffbd1f;
+		t.verticalAlign = "middle";
+		t.width = 92.67;
+		t.x = 170;
+		t.y = 59;
+		return t;
+	};
+	_proto.groupRightHeadFrame_i = function () {
+		var t = new eui.Group();
+		this.groupRightHeadFrame = t;
+		t.height = 92;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 92;
+		t.x = 699;
+		t.y = 26.330000000000013;
+		t.elementsContent = [this.imgRightHead_i(),this.rightFrame_i(),this._a6_i(),this._a7_i(),this.imgRightRes0_i(),this.labRightName_i(),this.labRightName0_i(),this.labRightCombat_i()];
+		return t;
+	};
+	_proto.imgRightHead_i = function () {
+		var t = new eui.Image();
+		this.imgRightHead = t;
+		t.height = 92;
+		t.horizontalCenter = 0;
+		t.scaleX = 0.97;
+		t.scaleY = 0.97;
+		t.source = "combatRecordSheet_json.a130x130_0";
+		t.verticalCenter = 0;
+		t.width = 92;
+		return t;
+	};
+	_proto.rightFrame_i = function () {
+		var t = new eui.Image();
+		this.rightFrame = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "shezhisheet_json.headkuang";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		t.x = -699;
+		t.y = -26.33;
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 41;
+		t.scale9Grid = new egret.Rectangle(11,10,140,31);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 187;
+		t.x = 100;
+		t.y = 1.2999999999999972;
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 41;
+		t.scale9Grid = new egret.Rectangle(11,10,140,31);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 187;
+		t.x = 100;
+		t.y = 51.62999999999998;
+		return t;
+	};
+	_proto.imgRightRes0_i = function () {
+		var t = new eui.Image();
+		this.imgRightRes0 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatRecordSheet_json.shibai";
+		t.x = -0.6600000000000819;
+		t.y = 9.009999999999977;
+		return t;
+	};
+	_proto.labRightName_i = function () {
+		var t = new eui.Label();
+		this.labRightName = t;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 34;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.text = "我的名字七个字";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.width = 172;
+		t.x = 110;
+		t.y = 4.6499999999999915;
+		return t;
+	};
+	_proto.labRightName0_i = function () {
+		var t = new eui.Label();
+		this.labRightName0 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 34;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.text = "战力";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 51.33;
+		t.x = 110;
+		t.y = 53.67;
+		return t;
+	};
+	_proto.labRightCombat_i = function () {
+		var t = new eui.Label();
+		this.labRightCombat = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.height = 26;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.text = "3000";
+		t.textAlign = "left";
+		t.textColor = 0x9ce4ff;
+		t.verticalAlign = "middle";
+		t.width = 116;
+		t.x = 170;
+		t.y = 57.67;
+		return t;
+	};
+	_proto.vs_i = function () {
+		var t = new eui.Image();
+		this.vs = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatRecordSheet_json.vs";
+		t.x = 476;
+		t.y = 62.33000000000001;
+		return t;
+	};
+	_proto.imgRightRes_i = function () {
+		var t = new eui.Image();
+		this.imgRightRes = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatRecordSheet_json.bai";
+		t.x = 578;
+		t.y = 44.33000000000001;
+		return t;
+	};
+	_proto.imgLeftRes_i = function () {
+		var t = new eui.Image();
+		this.imgLeftRes = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatRecordSheet_json.shengli";
+		t.x = 378;
+		t.y = 44.33000000000001;
+		return t;
+	};
+	_proto.labRecordId_i = function () {
+		var t = new eui.Label();
+		this.labRecordId = t;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 27;
+		t.size = 18;
+		t.text = "对战id: 1111111";
+		t.textAlign = "center";
+		t.textColor = 0xaaceec;
+		t.verticalAlign = "middle";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 4;
+		return t;
+	};
+	_proto.groupleftFetters_i = function () {
+		var t = new eui.Group();
+		this.groupleftFetters = t;
+		t.anchorOffsetY = 0;
+		t.height = 120.67;
+		t.width = 420;
+		t.x = 76;
+		t.y = 492;
+		return t;
+	};
+	_proto.groupRightFetters_i = function () {
+		var t = new eui.Group();
+		this.groupRightFetters = t;
+		t.anchorOffsetY = 0;
+		t.height = 119.15;
+		t.width = 420;
+		t.x = 582;
+		t.y = 492;
+		return t;
+	};
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.height = 314;
+		t.horizontalCenter = -239.5;
+		t.width = 475.33;
+		t.y = 132;
+		t.elementsContent = [this.groupLeftCardHeads_i()];
+		return t;
+	};
+	_proto.groupLeftCardHeads_i = function () {
+		var t = new eui.Group();
+		this.groupLeftCardHeads = t;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.y = 0;
+		return t;
+	};
+	_proto._c4_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.height = 314;
+		t.horizontalCenter = 256.5;
+		t.width = 484.67;
+		t.y = 132;
+		t.elementsContent = [this.groupRightCardHeads_i()];
+		return t;
+	};
+	_proto.groupRightCardHeads_i = function () {
+		var t = new eui.Group();
+		this.groupRightCardHeads = t;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.y = 0;
+		return t;
+	};
+	_proto.scrRecordBtn_i = function () {
+		var t = new eui.Scroller();
+		this.scrRecordBtn = t;
+		t.anchorOffsetX = 0;
+		t.height = 630;
+		t.left = 0;
+		t.scrollPolicyH = "off";
+		t.top = 100;
+		t.width = 292;
+		t.viewport = this.groupRecordBtn_i();
+		return t;
+	};
+	_proto.groupRecordBtn_i = function () {
+		var t = new eui.Group();
+		this.groupRecordBtn = t;
+		t.anchorOffsetX = 0;
+		t.width = 288.01;
+		t.x = 8;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBG","imgTitleBG","btnBack","imgTitle","imgRBG","imgLeftHead","labLeftName","labLeftName0","labLeftCombat","groupLeftHeadFrame","imgRightHead","rightFrame","imgRightRes0","labRightName","labRightName0","labRightCombat","groupRightHeadFrame","vs","imgRightRes","imgLeftRes","labRecordId","groupleftFetters","groupRightFetters","groupLeftCardHeads","groupRightCardHeads","groupDetails","groupRecordBtn","scrRecordBtn","recordskingroup"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CombatRecordSkin;
+})(eui.Skin);

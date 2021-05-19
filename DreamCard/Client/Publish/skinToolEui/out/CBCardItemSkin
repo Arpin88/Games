@@ -1,0 +1,50 @@
+(function (_super) {
+	__extends(CBCardItemSkin, _super);
+	function CBCardItemSkin() {
+		_super.call(this);
+		
+		this.height = 206;
+		this.width = 138;
+		this.elementsContent = [this.groupCGBCI_i()];
+	}
+	var _proto = CBCardItemSkin.prototype;
+
+	_proto.groupCGBCI_i = function () {
+		var t = new eui.Group();
+		this.groupCGBCI = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 206;
+		t.width = 138;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.groupCard_i(),this.groupEffect_i()];
+		return t;
+	};
+	_proto.groupCard_i = function () {
+		var t = new eui.Group();
+		this.groupCard = t;
+		t.height = 206;
+		t.width = 138;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupEffect_i = function () {
+		var t = new eui.Group();
+		this.groupEffect = t;
+		t.height = 206;
+		t.width = 138;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["groupCard","groupEffect","groupCGBCI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CBCardItemSkin;
+})(eui.Skin);

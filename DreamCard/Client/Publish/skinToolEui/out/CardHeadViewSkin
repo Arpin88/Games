@@ -1,0 +1,154 @@
+(function (_super) {
+	__extends(CardHeadViewSkin, _super);
+	function CardHeadViewSkin() {
+		_super.call(this);
+		
+		this.height = 150;
+		this.width = 100;
+		this.elementsContent = [this._c2_i()];
+	}
+	var _proto = CardHeadViewSkin.prototype;
+
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgHead_i(),this.labGene_i(),this._c1_i(),this.labCardName_i(),this.imgHeadFrame_i(),this.imgAttr_i(),this.groupLevel_i()];
+		return t;
+	};
+	_proto.imgHead_i = function () {
+		var t = new eui.Image();
+		this.imgHead = t;
+		t.height = 86;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "headImg0Sheet_json.caocao";
+		t.width = 86;
+		t.x = 7;
+		t.y = 38;
+		return t;
+	};
+	_proto.labGene_i = function () {
+		var t = new eui.Label();
+		this.labGene = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 14;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 12;
+		t.text = "3代";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.visible = false;
+		t.width = 20;
+		t.x = 2;
+		t.y = 115;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 20;
+		t.horizontalCenter = 0;
+		t.percentWidth = 100;
+		t.y = 129;
+		t.elementsContent = [this.zhanlitxt_i(),this.labCombat_i()];
+		return t;
+	};
+	_proto.zhanlitxt_i = function () {
+		var t = new eui.Label();
+		this.zhanlitxt = t;
+		t.anchorOffsetX = 1;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 20;
+		t.right = 50;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 18;
+		t.text = "战力:";
+		t.textAlign = "center";
+		t.textColor = 0x8bc2d5;
+		t.verticalAlign = "top";
+		t.width = 45;
+		t.y = 0;
+		return t;
+	};
+	_proto.labCombat_i = function () {
+		var t = new eui.Label();
+		this.labCombat = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.height = 20;
+		t.left = 50;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 18;
+		t.text = "123";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "top";
+		t.y = 0;
+		return t;
+	};
+	_proto.labCardName_i = function () {
+		var t = new eui.Label();
+		this.labCardName = t;
+		t.fontFamily = "SimHei";
+		t.height = 20;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.text = "刘备";
+		t.textAlign = "center";
+		t.verticalAlign = "bottom";
+		t.width = 100;
+		t.x = 0;
+		t.y = 13;
+		return t;
+	};
+	_proto.imgHeadFrame_i = function () {
+		var t = new eui.Image();
+		this.imgHeadFrame = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatRecordSheet_json.a86x86_0";
+		t.x = 7;
+		t.y = 38;
+		return t;
+	};
+	_proto.imgAttr_i = function () {
+		var t = new eui.Image();
+		this.imgAttr = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatRecordSheet_json.a28x28_2";
+		t.x = 66;
+		t.y = 40;
+		return t;
+	};
+	_proto.groupLevel_i = function () {
+		var t = new eui.Group();
+		this.groupLevel = t;
+		t.height = 15;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.width = 75;
+		t.x = 22;
+		t.y = 115;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgHead","labGene","zhanlitxt","labCombat","labCardName","imgHeadFrame","imgAttr","groupLevel"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardHeadViewSkin;
+})(eui.Skin);

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RecordItemSkin" width="939" height="53" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" width="939" height="53" x="0" y="0" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0">
+
+		<e:Image id="imgItem" y="0" touchEnabled="false" x="0" source="shezhisheet_json.di" scale9Grid="6,6,38,40" width="100%" height="100%"/>
+		<e:Group width="100%" height="100%" y="0" horizontalCenter="0" visible="false">
+			<e:Label id="lblDes11" text="编号" x="40" y="17" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="52.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes12" text="订单号" x="148" y="17" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="96.23" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes9" text="类型" x="281" y="17" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="50.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes10" text="卡牌名称" x="416" y="17" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="80.5" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes13" text="品质" x="525" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="74.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left" y="17"/>
+			<e:Label id="lblDes14" text="五行" x="592" y="17" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="74.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes15" text="星级" x="673" y="16.5" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="74.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes16" text="攻击" x="750" y="17" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="74.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes17" text="生命" x="817" y="17" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="74.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes18" text="手续费" x="901" y="17" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="111.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes2e0" text="完成时间" x="1040" y="17" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="154.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes19" text="状态" x="348" y="17" size="20" fontFamily="SimHei" width="50.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" textColor="0xFFFFFF" scaleX="1" scaleY="1" textAlign="left"/>
+		</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+		<e:Group width="100%" height="100%" x="0" y="0">
+			<e:Label id="idlb" text="1000" x="33" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="52.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="center"/>
+			<e:Label id="ordoridlb" text="202112121554224" x="87" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="192.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="center"/>
+			<e:Label id="typelb" text="转入" x="275.5" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="50.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="center"/>
+
+
+
+
+
+
+
+			<e:Label id="timelb" text="03-02 18:18:58" x="766" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="154.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="center"/>
+			<e:Label id="statelb" text="成功" x="344.5" y="16" size="20" fontFamily="SimHei" width="50.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="center" textColor="0x6aef51"/>
+			<e:Label id="numlb" text="10000" x="391.5" y="16" size="20" fontFamily="SimHei" width="132.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="center" textColor="0xffffff"/>
+			<e:Label id="ranyoulb" text="10000" x="524.55" y="16" size="20" fontFamily="SimHei" width="50.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" textColor="0xFFFFFF" scaleX="1" scaleY="1" textAlign="center"/>
+			<e:Label id="shouxulb" text="10000" x="645.55" y="16" size="20" fontFamily="SimHei" width="50.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" textColor="0xFFFFFF" scaleX="1" scaleY="1" textAlign="center"/>
+		</e:Group>
+
+
+
+
+
+	</e:Group>
+</e:Skin>

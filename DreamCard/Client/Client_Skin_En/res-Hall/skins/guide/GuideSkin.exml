@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuideSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupGuide" width="100%" height="100%" x="0" y="0" touchEnabled="false">
+		<e:Group id="groupFirst" x="0" y="0" width="100%" height="100%" touchEnabled="false">
+			<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.7"/>
+			<e:Group width="1302" height="664" horizontalCenter="0" verticalCenter="0" touchEnabled="false">
+				<e:Image source="guideSheet_json.ban" horizontalCenter="0" verticalCenter="0" x="0" y="0" scaleX="1" scaleY="1" touchEnabled="false"/>
+				<e:Image source="guideSheet_json.huanyin" y="190" x="460" scaleX="1" scaleY="1" touchEnabled="false"/>
+				<e:Label id="lblContent" text="Label" x="470" y="250" scaleX="1" scaleY="1" lineSpacing="20" width="590" touchEnabled="false" size="28" fontFamily="SimHei"/>
+				<e:Button id="btnNext" label="" x="960" y="400">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="guideSheet_json.jianou00" source.down="guideSheet_json.jianou01"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnPass" label="" right="0" top="0">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="guideSheet_json.tiaoguo00" source.down="guideSheet_json.tiaoguo01"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+		</e:Group>
+		<e:Group id="groupDynamic" width="100%" height="100%" x="0" y="0" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

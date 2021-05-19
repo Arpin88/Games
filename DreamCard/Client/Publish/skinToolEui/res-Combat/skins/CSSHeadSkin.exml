@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CSSHeadSkin" width="40" height="48" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgHead" x="0" y="0" width="40" height="40" source=""/>
+	<e:Image id="imgHeadFrame" x="0" y="0" width="40" height="40" source="combatImg1Sheet_json.a82x82"/>
+	<e:Image id="imgAttr" x="28" y="0" width="12" height="12" source="combatImg1Sheet_json.a28x28"/>
+	<e:Group id="groupStar" width="40" height="8" x="0" y="40">
+	</e:Group>
+</e:Skin>

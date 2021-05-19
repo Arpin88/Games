@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardItemSkin" width="196" height="194" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCI" width="196" height="194" x="0" y="0">
+		<e:Image id="imgBG" x="0" y="0" source="hallImg1Sheet_json.a196x194"/>
+	</e:Group>
+</e:Skin>

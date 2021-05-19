@@ -1,0 +1,458 @@
+(function (_super) {
+	__extends(CPopupSkin, _super);
+	var CPopupSkin$Skin10 = 	(function (_super) {
+		__extends(CPopupSkin$Skin10, _super);
+		function CPopupSkin$Skin10() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","combatBtn0Sheet_json.quxiao_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CPopupSkin$Skin10.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "combatBtn0Sheet_json.quxiao_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CPopupSkin$Skin10;
+	})(eui.Skin);
+
+	var CPopupSkin$Skin11 = 	(function (_super) {
+		__extends(CPopupSkin$Skin11, _super);
+		function CPopupSkin$Skin11() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","combatBtn0Sheet_json.queding_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CPopupSkin$Skin11.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "combatBtn0Sheet_json.queding_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CPopupSkin$Skin11;
+	})(eui.Skin);
+
+	var CPopupSkin$Skin12 = 	(function (_super) {
+		__extends(CPopupSkin$Skin12, _super);
+		function CPopupSkin$Skin12() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","combatBtn0Sheet_json.jujue_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CPopupSkin$Skin12.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "combatBtn0Sheet_json.jujue_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CPopupSkin$Skin12;
+	})(eui.Skin);
+
+	var CPopupSkin$Skin13 = 	(function (_super) {
+		__extends(CPopupSkin$Skin13, _super);
+		function CPopupSkin$Skin13() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","combatBtn0Sheet_json.tongyi_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CPopupSkin$Skin13.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "combatBtn0Sheet_json.tongyi_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CPopupSkin$Skin13;
+	})(eui.Skin);
+
+	var CPopupSkin$Skin14 = 	(function (_super) {
+		__extends(CPopupSkin$Skin14, _super);
+		function CPopupSkin$Skin14() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","combatBtn0Sheet_json.queding_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CPopupSkin$Skin14.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "combatBtn0Sheet_json.queding_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CPopupSkin$Skin14;
+	})(eui.Skin);
+
+	function CPopupSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupCPopup_i(),this._c1_i()];
+		
+		eui.Binding.$bindProperties(this, ["hostComponent.lbl_3"],[0],this._e1,"text")
+	}
+	var _proto = CPopupSkin.prototype;
+
+	_proto.groupCPopup_i = function () {
+		var t = new eui.Group();
+		this.groupCPopup = t;
+		t.percentHeight = 100;
+		t.touchEnabled = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._s1_i()];
+		return t;
+	};
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 440;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 840;
+		t.elementsContent = [this._a1_i(),this.group0_i(),this.group1_i(),this.group2_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.left = 0;
+		t.scale9Grid = new egret.Rectangle(21,15,60,62);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.y = 0;
+		return t;
+	};
+	_proto.group0_i = function () {
+		var t = new eui.Group();
+		this.group0 = t;
+		t.horizontalCenter = 0;
+		t.width = 820;
+		t.y = 32;
+		t.elementsContent = [this.lbl0_i(),this.btnCance_i(),this.btnConfirm_i()];
+		return t;
+	};
+	_proto.lbl0_i = function () {
+		var t = new eui.Label();
+		this.lbl0 = t;
+		t.fontFamily = "SimHei";
+		t.height = 260;
+		t.horizontalCenter = 0;
+		t.lineSpacing = 10;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 32;
+		t.stroke = 2;
+		t.text = "";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 760;
+		t.wordWrap = true;
+		t.x = 40;
+		t.y = 0;
+		return t;
+	};
+	_proto.btnCance_i = function () {
+		var t = new eui.Button();
+		this.btnCance = t;
+		t.label = "";
+		t.scaleX = 0.68;
+		t.scaleY = 0.68;
+		t.x = 95;
+		t.y = 265;
+		t.skinName = CPopupSkin$Skin10;
+		return t;
+	};
+	_proto.btnConfirm_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "";
+		t.scaleX = 0.68;
+		t.scaleY = 0.68;
+		t.x = 530;
+		t.y = 265;
+		t.skinName = CPopupSkin$Skin11;
+		return t;
+	};
+	_proto.group1_i = function () {
+		var t = new eui.Group();
+		this.group1 = t;
+		t.horizontalCenter = 0;
+		t.width = 820;
+		t.y = 32;
+		t.elementsContent = [this._e1_i(),this.btnRefuse_i(),this.btnAgree_i()];
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		this._e1 = t;
+		t.fontFamily = "SimHei";
+		t.height = 260;
+		t.horizontalCenter = 0;
+		t.lineSpacing = 10;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 32;
+		t.stroke = 2;
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 760;
+		t.wordWrap = true;
+		t.x = 40;
+		t.y = 0;
+		return t;
+	};
+	_proto.btnRefuse_i = function () {
+		var t = new eui.Button();
+		this.btnRefuse = t;
+		t.label = "";
+		t.scaleX = 0.68;
+		t.scaleY = 0.68;
+		t.x = 95;
+		t.y = 265;
+		t.skinName = CPopupSkin$Skin12;
+		return t;
+	};
+	_proto.btnAgree_i = function () {
+		var t = new eui.Button();
+		this.btnAgree = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "";
+		t.scaleX = 0.68;
+		t.scaleY = 0.68;
+		t.x = 530;
+		t.y = 265;
+		t.skinName = CPopupSkin$Skin13;
+		return t;
+	};
+	_proto.group2_i = function () {
+		var t = new eui.Group();
+		this.group2 = t;
+		t.horizontalCenter = 0;
+		t.width = 820;
+		t.y = 32;
+		t.elementsContent = [this.lbl2_i(),this.btnConfirmCenter_i()];
+		return t;
+	};
+	_proto.lbl2_i = function () {
+		var t = new eui.Label();
+		this.lbl2 = t;
+		t.fontFamily = "SimHei";
+		t.height = 260;
+		t.horizontalCenter = 0;
+		t.lineSpacing = 10;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 32;
+		t.stroke = 2;
+		t.text = "";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 760;
+		t.wordWrap = true;
+		t.x = 40;
+		t.y = 0;
+		return t;
+	};
+	_proto.btnConfirmCenter_i = function () {
+		var t = new eui.Button();
+		this.btnConfirmCenter = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 0.68;
+		t.scaleY = 0.68;
+		t.x = 253;
+		t.y = 265;
+		t.skinName = CPopupSkin$Skin14;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["groupCPopup","lbl0","btnCance","btnConfirm","group0","btnRefuse","btnAgree","group1","lbl2","btnConfirmCenter","group2"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CPopupSkin;
+})(eui.Skin);

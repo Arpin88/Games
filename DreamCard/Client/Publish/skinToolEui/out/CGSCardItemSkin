@@ -1,0 +1,98 @@
+(function (_super) {
+	__extends(CGSCardItemSkin, _super);
+	function CGSCardItemSkin() {
+		_super.call(this);
+		
+		this.height = 118;
+		this.width = 118;
+		this.elementsContent = [this.groupCGSCI_i()];
+	}
+	var _proto = CGSCardItemSkin.prototype;
+
+	_proto.groupCGSCI_i = function () {
+		var t = new eui.Group();
+		this.groupCGSCI = t;
+		t.height = 118;
+		t.touchChildren = false;
+		t.width = 118;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.groupAdd_i(),this.groupUnlock_i(),this.groupCard_i()];
+		return t;
+	};
+	_proto.groupAdd_i = function () {
+		var t = new eui.Group();
+		this.groupAdd = t;
+		t.height = 118;
+		t.width = 118;
+		t.y = 0;
+		t.elementsContent = [this._a1_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.height = 118;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg2Sheet_json.b118x118";
+		t.verticalCenter = 0;
+		t.width = 118;
+		return t;
+	};
+	_proto.groupUnlock_i = function () {
+		var t = new eui.Group();
+		this.groupUnlock = t;
+		t.height = 118;
+		t.width = 118;
+		t.y = 0;
+		t.elementsContent = [this._a2_i(),this.lblUnlock_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.height = 118;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg2Sheet_json.a118x118";
+		t.verticalCenter = 0;
+		t.width = 118;
+		return t;
+	};
+	_proto.lblUnlock_i = function () {
+		var t = new eui.Label();
+		this.lblUnlock = t;
+		t.fontFamily = "SimHei";
+		t.height = 40;
+		t.horizontalCenter = 0;
+		t.size = 22;
+		t.stroke = 2;
+		t.text = "解锁";
+		t.textAlign = "center";
+		t.textColor = 0xc2c2c2;
+		t.verticalAlign = "middle";
+		t.width = 110;
+		t.y = 75;
+		return t;
+	};
+	_proto.groupCard_i = function () {
+		var t = new eui.Group();
+		this.groupCard = t;
+		t.height = 118;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 118;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["groupAdd","lblUnlock","groupUnlock","groupCard","groupCGSCI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CGSCardItemSkin;
+})(eui.Skin);

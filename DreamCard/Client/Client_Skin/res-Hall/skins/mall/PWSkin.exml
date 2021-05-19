@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DailogSkin2" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Rect id="rectBG" width="100%" height="100%" x="0" y="0" fillAlpha="0.7"/>
+		<e:Group width="490.91" height="100%" anchorOffsetX="0" anchorOffsetY="0" y="0" right="0">
+			<e:Image width="100%" height="100%" scaleX="0.5" scaleY="0.5" anchorOffsetX="0" anchorOffsetY="0" source="shezhisheet_json.bj" right="0" top="0"/>
+			<e:Image scaleX="0.5" scaleY="0.5" anchorOffsetX="0" anchorOffsetY="0" source="shezhisheet_json.fangge" scale9Grid="12,12,76,76" width="933.33" height="672.73" y="397" horizontalCenter="0" visible="false"/>
+
+
+			<e:Button id="btnCancel" label="取消" x="107.37" y="283" skinName="ButtonR1Skin" scaleX="0.6" scaleY="0.6" visible="false">
+			</e:Button>
+			<e:Button id="btnConfirm" label="1" y="415" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="23" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="30" scaleX="2"/>
+					</e:Skin>
+				</e:skinName>
+
+			</e:Button>
+			<e:Button id="btnConfirm0" label="2" y="415" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="177" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm1" label="3" y="415" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="330" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm2" label="4" y="494" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="23" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm3" label="5" y="494" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="177" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm4" label="6" y="494" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="330" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm5" label="7" y="572" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="23" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm6" label="8" y="572" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="177" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm7" label="9" y="572" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="330" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm8" label="." y="651" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="23" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm9" label="0" y="651" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="177" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm10" label="" y="651" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" x="330" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.key00" source.down="hallBtn2Sheet_json.key02"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image scaleX="0.8" scaleY="0.8" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="12,12,76,76" y="666" horizontalCenter="150.045" source="hallBtn2Sheet_json.tuige" visible="false"/>
+			<e:Image source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" width="487.33" height="309.34" y="165.68" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+			<e:Button id="btnConfirm11" label="" y="497.99" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" horizontalCenter="-0.4550000000000125">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.queding_0" source.down="hallBtn2Sheet_json.queding_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group width="100%" height="80" top="0" y="0" scaleX="1" scaleY="1" anchorOffsetX="0" x="0">
+				<e:Image source="top_png" top="0" horizontalCenter="0" width="100%" visible="false"/>
+				<e:Image horizontalCenter="0" verticalCenter="-3" source="hallText0Sheet_json.t_shouxufei" visible="false"/>
+				<e:Button id="btnBack" label="" top="0" left="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Image source="hallImg1Sheet_json.biaotiban" y="141.32" scaleX="0.8" scaleY="0.8" horizontalCenter="0" anchorOffsetX="0" width="384.6"/>
+			<e:Image anchorOffsetX="0" anchorOffsetY="0" y="152.67" horizontalCenter="-0.4550000000000125" source="hallText0Sheet_json.qingshuru"/>
+			<e:Group y="334.88" touchEnabled="false" anchorOffsetX="0" width="308" horizontalCenter="0">
+				<e:Image y="-4.29" x="0" scaleX="1" scaleY="1" anchorOffsetX="0" width="306" source="hallImg1Sheet_json.shurukuang" scale9Grid="13,16,72,31"/>
+				<e:Button id="btnReduce0" label="" x="0" y="0" scaleX="1" scaleY="1" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.b74x54_0" source.down="hallBtn1Sheet_json.b74x54_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="btnAdd0" label="" x="230" y="0" scaleX="1" scaleY="1" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a74x54_0" source.down="hallBtn1Sheet_json.a74x54_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="btnMax0" label="" x="320" y="0" scaleX="1" scaleY="1" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a98x54_0" source.down="hallBtn1Sheet_json.a98x54_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:EditableText id="editCount" width="303.33" height="56.67" text="111111" x="1" y="-1.63" verticalAlign="middle" textAlign="center" stroke="0" size="30" fontFamily="SimHei" borderColor="0xFFC000" backgroundColor="0xFFC000" anchorOffsetX="0" anchorOffsetY="0" textColor="0xffffff" displayAsPassword="true"/>
+			</e:Group>
+			<e:Label id="showTxt" text="请输入支付密码" y="229" scaleX="1" scaleY="1" width="474" textAlign="center" size="24" fontFamily="SimHei" stroke="2" textColor="0xFFFFFF" anchorOffsetX="0" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

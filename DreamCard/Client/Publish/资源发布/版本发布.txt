@@ -1,0 +1,24 @@
+一.增加 新游戏(假设名字为aaa）的打包目录
+	1.	拷贝Game_xxx目录，命名为 Game_aaa, 只保留目录中只有patch和vers文件夹，其余的删除
+		a. patch 用于增量包备份， 每次对外发布的增量包，需要备份在此
+		b. vers 用于保存文件版本信息
+		c. 别外Game_aaa目录还保存一份对外发布的最新资源和代码 (资源和代码 自已添加到svn)
+			
+	2.  拷贝Publish_xxx.bat 批处理，命名为 Publish_aaa.bat
+		a. 打开文件Publish_aaa.bat 将所有的xxx改为aaa
+	
+	
+	
+	
+二. 生成增量包
+	a.运行Publish_xxx.bat, 做资源增量 patch/webver.zip
+
+	d.如果此包确定对外发布，需要做下列事情
+		1. 在Game_aaa/patch中，备份一份增量包  标记上版本号
+		2. 将Game_aaa/vers/webver.ver上传到svn, 标记上版本号， 用于下次打增量包作版本比较
+		3. 将Game_aaa中的最新资源和代码上传到svn， 标记上版本号
+		
+	e.如果此包没对外发布（如仅用于测试或有问题）注意下列事项
+		1. 将Game_aaa/vers/webver.ver删除，然后从svn更新下webver.ver文件
+		
+	

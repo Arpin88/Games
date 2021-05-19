@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardintroduceSkin" width="388" height="596" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCR" width="100%" height="100%" x="0" y="0" touchChildren="false">
+		<e:Image horizontalCenter="0" verticalCenter="0" source="introducehero_json.di"/>
+		<e:Image id="imgIcon" source="" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image source="introducehero_json.kuang" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image id="imgElement" y="30" x="18" source="introducehero_json.COL00000033"/>
+	</e:Group>
+</e:Skin>

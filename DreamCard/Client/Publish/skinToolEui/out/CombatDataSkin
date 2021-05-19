@@ -1,0 +1,91 @@
+(function (_super) {
+	__extends(CombatDataSkin, _super);
+	function CombatDataSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupCombatData_i()];
+	}
+	var _proto = CombatDataSkin.prototype;
+
+	_proto.groupCombatData_i = function () {
+		var t = new eui.Group();
+		this.groupCombatData = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._s1_i(),this._a1_i(),this._a2_i(),this._a3_i(),this._e1_i(),this.groupLeft_i(),this.groupRight_i()];
+		return t;
+	};
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 1;
+		t.y = 0;
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.source = "combatText0Sheet_json.wofang";
+		t.x = 450;
+		t.y = 90;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.source = "combatText0Sheet_json.duifang";
+		t.x = 760;
+		t.y = 90;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "combatText0Sheet_json.vs";
+		t.y = 90;
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.height = 28;
+		t.horizontalCenter = 0;
+		t.size = 22;
+		t.text = "点击屏幕任意区域即可退出";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.width = 400;
+		t.y = 686;
+		return t;
+	};
+	_proto.groupLeft_i = function () {
+		var t = new eui.Group();
+		this.groupLeft = t;
+		t.height = 480;
+		t.horizontalCenter = -150;
+		t.width = 300;
+		t.y = 124;
+		return t;
+	};
+	_proto.groupRight_i = function () {
+		var t = new eui.Group();
+		this.groupRight = t;
+		t.height = 480;
+		t.horizontalCenter = 150;
+		t.width = 300;
+		t.y = 124;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["groupLeft","groupRight","groupCombatData"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CombatDataSkin;
+})(eui.Skin);

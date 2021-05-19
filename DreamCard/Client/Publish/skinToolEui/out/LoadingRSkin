@@ -1,0 +1,39 @@
+(function (_super) {
+	__extends(LoadingRSkin, _super);
+	function LoadingRSkin() {
+		_super.call(this);
+		
+		this.height = 86;
+		this.width = 86;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = LoadingRSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgZQ_i()];
+		return t;
+	};
+	_proto.imgZQ_i = function () {
+		var t = new eui.Image();
+		this.imgZQ = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a86x86";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgZQ"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return LoadingRSkin;
+})(eui.Skin);

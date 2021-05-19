@@ -1,0 +1,93 @@
+(function (_super) {
+	__extends(FilterSkin, _super);
+	function FilterSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupFilter_i()];
+	}
+	var _proto = FilterSkin.prototype;
+
+	_proto.groupFilter_i = function () {
+		var t = new eui.Group();
+		this.groupFilter = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c1_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 440;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 840;
+		t.elementsContent = [this._a1_i(),this.scrFilterItem_i(),this._a2_i(),this._a3_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.scrFilterItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrFilterItem = t;
+		t.height = 390;
+		t.horizontalCenter = 0;
+		t.scrollPolicyH = "off";
+		t.verticalCenter = 0;
+		t.width = 780;
+		t.viewport = this.groupFilterItem_i();
+		return t;
+	};
+	_proto.groupFilterItem_i = function () {
+		var t = new eui.Group();
+		this.groupFilterItem = t;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a34x42";
+		t.verticalCenter = 0;
+		t.x = 230;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.scaleX = -1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a34x42";
+		t.verticalCenter = 0;
+		t.x = 605;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","groupFilterItem","scrFilterItem","groupFilter"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return FilterSkin;
+})(eui.Skin);

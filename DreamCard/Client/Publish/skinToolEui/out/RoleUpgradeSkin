@@ -1,0 +1,642 @@
+(function (_super) {
+	__extends(RoleUpgradeSkin, _super);
+	var RoleUpgradeSkin$Skin57 = 	(function (_super) {
+		__extends(RoleUpgradeSkin$Skin57, _super);
+		function RoleUpgradeSkin$Skin57() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","commonBtn0Sheet_json.a78x78_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = RoleUpgradeSkin$Skin57.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "commonBtn0Sheet_json.a78x78_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return RoleUpgradeSkin$Skin57;
+	})(eui.Skin);
+
+	var RoleUpgradeSkin$Skin58 = 	(function (_super) {
+		__extends(RoleUpgradeSkin$Skin58, _super);
+		function RoleUpgradeSkin$Skin58() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a52x52_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = RoleUpgradeSkin$Skin58.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a52x52_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return RoleUpgradeSkin$Skin58;
+	})(eui.Skin);
+
+	var RoleUpgradeSkin$Skin59 = 	(function (_super) {
+		__extends(RoleUpgradeSkin$Skin59, _super);
+		function RoleUpgradeSkin$Skin59() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.quxiao_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = RoleUpgradeSkin$Skin59.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.quxiao_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return RoleUpgradeSkin$Skin59;
+	})(eui.Skin);
+
+	var RoleUpgradeSkin$Skin60 = 	(function (_super) {
+		__extends(RoleUpgradeSkin$Skin60, _super);
+		function RoleUpgradeSkin$Skin60() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.shiyong_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = RoleUpgradeSkin$Skin60.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.shiyong_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return RoleUpgradeSkin$Skin60;
+	})(eui.Skin);
+
+	function RoleUpgradeSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupRoleUpgrade_i()];
+		
+		eui.Binding.$bindProperties(this, ["hostComponent.lbl_3"],[0],this._e4,"text")
+	}
+	var _proto = RoleUpgradeSkin.prototype;
+
+	_proto.groupRoleUpgrade_i = function () {
+		var t = new eui.Group();
+		this.groupRoleUpgrade = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c4_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c4_i = function () {
+		var t = new eui.Group();
+		t.height = 515;
+		t.horizontalCenter = 0;
+		t.touchEnabled = false;
+		t.verticalCenter = -10;
+		t.width = 760;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this.imgTitleUpgrade_i(),this.imgTitleLevelUp_i(),this.btnClose_i(),this.groupUpgrade_i(),this.groupLevelUp_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.y = 0;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.biaotiban";
+		t.y = -28;
+		return t;
+	};
+	_proto.imgTitleUpgrade_i = function () {
+		var t = new eui.Image();
+		this.imgTitleUpgrade = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.jueseshenji";
+		t.y = -10;
+		return t;
+	};
+	_proto.imgTitleLevelUp_i = function () {
+		var t = new eui.Image();
+		this.imgTitleLevelUp = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.sjxq";
+		t.visible = false;
+		t.y = -10;
+		return t;
+	};
+	_proto.btnClose_i = function () {
+		var t = new eui.Button();
+		this.btnClose = t;
+		t.label = "";
+		t.x = 715;
+		t.y = -40;
+		t.skinName = RoleUpgradeSkin$Skin57;
+		return t;
+	};
+	_proto.groupUpgrade_i = function () {
+		var t = new eui.Group();
+		this.groupUpgrade = t;
+		t.height = 310;
+		t.horizontalCenter = 0;
+		t.touchEnabled = false;
+		t.visible = false;
+		t.width = 710;
+		t.y = 60;
+		t.elementsContent = [this._a3_i(),this._e1_i(),this.lblLvl_i(),this._e2_i(),this._e3_i(),this.lblLvProgress_i(),this.groupUMaterial_i(),this.groupGoShop_i(),this.btnUCancel_i(),this.btnUUser_i()];
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(14,14,67,70);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.tanchukuang2";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "当前等级:";
+		t.textColor = 0x8bc2d5;
+		t.x = 45;
+		t.y = 30;
+		return t;
+	};
+	_proto.lblLvl_i = function () {
+		var t = new eui.Label();
+		this.lblLvl = t;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 1;
+		t.text = "66";
+		t.textColor = 0xffffff;
+		t.x = 170;
+		t.y = 30;
+		return t;
+	};
+	_proto._e2_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 1;
+		t.text = "当前经验:";
+		t.textColor = 0x8bc2d5;
+		t.x = 290;
+		t.y = 30;
+		return t;
+	};
+	_proto._e3_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 1;
+		t.text = "所需材料:";
+		t.textColor = 0x8bc2d5;
+		t.x = 45;
+		t.y = 95;
+		return t;
+	};
+	_proto.lblLvProgress_i = function () {
+		var t = new eui.Label();
+		this.lblLvProgress = t;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 1;
+		t.strokeColor = 0x60140C;
+		t.text = "66/666";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.x = 415;
+		t.y = 30;
+		return t;
+	};
+	_proto.groupUMaterial_i = function () {
+		var t = new eui.Group();
+		this.groupUMaterial = t;
+		t.x = 190;
+		t.y = 80;
+		return t;
+	};
+	_proto.groupGoShop_i = function () {
+		var t = new eui.Group();
+		this.groupGoShop = t;
+		t.horizontalCenter = 0;
+		t.y = 250;
+		t.elementsContent = [this._e4_i(),this.btnGoShop_i()];
+		return t;
+	};
+	_proto._e4_i = function () {
+		var t = new eui.Label();
+		this._e4 = t;
+		t.fontFamily = "SimHei";
+		t.size = 20;
+		t.stroke = 1;
+		t.textColor = 0xffbc5d;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.btnGoShop_i = function () {
+		var t = new eui.Button();
+		this.btnGoShop = t;
+		t.label = "";
+		t.x = 250;
+		t.y = -15;
+		t.skinName = RoleUpgradeSkin$Skin58;
+		return t;
+	};
+	_proto.btnUCancel_i = function () {
+		var t = new eui.Button();
+		this.btnUCancel = t;
+		t.label = "";
+		t.scaleX = 0.7;
+		t.scaleY = 0.7;
+		t.x = 40;
+		t.y = 345;
+		t.skinName = RoleUpgradeSkin$Skin59;
+		return t;
+	};
+	_proto.btnUUser_i = function () {
+		var t = new eui.Button();
+		this.btnUUser = t;
+		t.label = "";
+		t.scaleX = 0.7;
+		t.scaleY = 0.7;
+		t.x = 470;
+		t.y = 345;
+		t.skinName = RoleUpgradeSkin$Skin60;
+		return t;
+	};
+	_proto.groupLevelUp_i = function () {
+		var t = new eui.Group();
+		this.groupLevelUp = t;
+		t.horizontalCenter = 0;
+		t.width = 670;
+		t.y = 105;
+		t.elementsContent = [this._c1_i(),this._c2_i(),this._c3_i()];
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a4_i(),this._a5_i(),this.lblOLvl_i(),this._a6_i(),this.lblNLvl_i()];
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(14,13,48,45);
+		t.source = "hallImg0Sheet_json.a76x76";
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.source = "hallText0Sheet_json.djbh";
+		t.verticalCenter = 0;
+		t.x = 35;
+		return t;
+	};
+	_proto.lblOLvl_i = function () {
+		var t = new eui.Label();
+		this.lblOLvl = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 30;
+		t.text = "66";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.verticalCenter = 0;
+		t.width = 180;
+		t.x = 240;
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.source = "hallImg0Sheet_json.a42x26";
+		t.verticalCenter = 0;
+		t.x = 420;
+		return t;
+	};
+	_proto.lblNLvl_i = function () {
+		var t = new eui.Label();
+		this.lblNLvl = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 30;
+		t.text = "67";
+		t.textAlign = "center";
+		t.textColor = 0x1ff658;
+		t.verticalCenter = 0;
+		t.width = 180;
+		t.x = 470;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 110;
+		t.elementsContent = [this._a7_i(),this._a8_i(),this.lblOHp_i(),this._a9_i(),this.lblNHp_i()];
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(14,13,48,45);
+		t.source = "hallImg0Sheet_json.a76x76";
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a8_i = function () {
+		var t = new eui.Image();
+		t.source = "hallText0Sheet_json.smbh";
+		t.verticalCenter = 0;
+		t.x = 35;
+		return t;
+	};
+	_proto.lblOHp_i = function () {
+		var t = new eui.Label();
+		this.lblOHp = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 30;
+		t.text = "66";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.verticalCenter = 0;
+		t.width = 180;
+		t.x = 240;
+		return t;
+	};
+	_proto._a9_i = function () {
+		var t = new eui.Image();
+		t.source = "hallImg0Sheet_json.a42x26";
+		t.verticalCenter = 0;
+		t.x = 420;
+		return t;
+	};
+	_proto.lblNHp_i = function () {
+		var t = new eui.Label();
+		this.lblNHp = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 30;
+		t.text = "67";
+		t.textAlign = "center";
+		t.textColor = 0x1ff658;
+		t.verticalCenter = 0;
+		t.width = 180;
+		t.x = 470;
+		return t;
+	};
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 220;
+		t.elementsContent = [this._a10_i(),this._a11_i(),this.lblOCost_i(),this._a12_i(),this.lblNCost_i()];
+		return t;
+	};
+	_proto._a10_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(14,13,48,45);
+		t.source = "hallImg0Sheet_json.a76x76";
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a11_i = function () {
+		var t = new eui.Image();
+		t.source = "hallText0Sheet_json.zfybh";
+		t.verticalCenter = 0;
+		t.x = 35;
+		return t;
+	};
+	_proto.lblOCost_i = function () {
+		var t = new eui.Label();
+		this.lblOCost = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 30;
+		t.text = "66";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.verticalCenter = 0;
+		t.width = 180;
+		t.x = 240;
+		return t;
+	};
+	_proto._a12_i = function () {
+		var t = new eui.Image();
+		t.source = "hallImg0Sheet_json.a42x26";
+		t.verticalCenter = 0;
+		t.x = 420;
+		return t;
+	};
+	_proto.lblNCost_i = function () {
+		var t = new eui.Label();
+		this.lblNCost = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.size = 30;
+		t.text = "67";
+		t.textAlign = "center";
+		t.textColor = 0x1ff658;
+		t.verticalCenter = 0;
+		t.width = 150;
+		t.x = 470;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","imgTitleUpgrade","imgTitleLevelUp","btnClose","lblLvl","lblLvProgress","groupUMaterial","btnGoShop","groupGoShop","btnUCancel","btnUUser","groupUpgrade","lblOLvl","lblNLvl","lblOHp","lblNHp","lblOCost","lblNCost","groupLevelUp","groupRoleUpgrade"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return RoleUpgradeSkin;
+})(eui.Skin);

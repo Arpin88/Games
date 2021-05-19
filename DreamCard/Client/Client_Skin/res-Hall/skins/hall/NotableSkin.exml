@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NotableSkin" width="872" height="34" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Image y="0" horizontalCenter="0" width="100%" source="shezhisheet_json.gonggaokuang" alpha="0.7"/>
+		<e:Image verticalCenter="0" source="hallText0Sheet_json.xitong" horizontalCenter="-302"/>
+		<e:Label id="lblNotify" text="66666666666" size="20" fontFamily="SimHei" verticalCenter="0" stroke="2" textColor="0xffffff" x="165" visible="false"/>
+	</e:Group>
+</e:Skin>

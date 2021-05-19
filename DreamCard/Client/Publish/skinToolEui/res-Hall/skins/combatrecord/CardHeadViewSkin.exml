@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardHeadViewSkin" width="100" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Image id="imgHead" x="7" y="38" width="86" height="86" scaleX="1" scaleY="1" source="headImg0Sheet_json.caocao"/>
+		<e:Label id="labGene" text="3代" x="2" y="115" size="12" anchorOffsetY="0" height="14" anchorOffsetX="0" width="20" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" visible="false"/>
+		<e:Group width="100%" height="20" y="129" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+			<e:Label id="zhanlitxt" text="战力:" width="45" height="20" size="18" fontFamily="SimHei" textAlign="center" verticalAlign="top" scaleX="1" scaleY="1" anchorOffsetX="1" textColor="0x8bc2d5" y="0" anchorOffsetY="0" right="50"/>
+			<e:Label id="labCombat" text="123" height="20" size="18" fontFamily="SimHei" verticalAlign="top" scaleX="1" scaleY="1" anchorOffsetX="0" textColor="0xffffff" y="0" left="50"/>
+		</e:Group>
+		<e:Label id="labCardName" text="刘备" x="0" y="13" width="100" height="20" textAlign="center" fontFamily="SimHei" size="20" verticalAlign="bottom" scaleX="1" scaleY="1"/>
+		<e:Image id="imgHeadFrame" source="combatRecordSheet_json.a86x86_0" x="7" y="38" scaleX="1" scaleY="1"/>
+		<e:Image id="imgAttr" source="combatRecordSheet_json.a28x28_2" x="66" y="40" scaleX="1" scaleY="1"/>
+		<e:Group id="groupLevel" width="75" height="15" x="22" y="115" scaleX="1" scaleY="1" visible="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FetterItemSkin" width="430" height="230" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" width="100%" height="100%">
+		<e:Image id="imgBg" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="tasksheet_json.kuang" width="100%" scale9Grid="15,18,178,196"/>
+		<e:Image id="imgIcon" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" source="tasksheet_json.jinbi" x="113" y="67"/>
+		<e:Image id="imgTxt" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="24" horizontalCenter="-166" source="hallText0Sheet_json.shuangbeijaingli"/>
+		<e:Image id="imgAdd" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" source="tasksheet_json.jia" x="218" y="92"/>
+		<e:Image id="imgGet" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0" source="tasksheet_json.gou" visible="false"/>
+		<e:Image id="lightFrame" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0" source="tasksheet_json.guanghuan" width="447" height="248" scale9Grid="29,31,176,192" visible="false"/>
+		<e:Image id="imgIcon1" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" source="tasksheet_json.jinbi" x="291" y="67"/>
+
+
+		<e:Label id="labelDays" text="第七天" y="14.92" scaleX="1" scaleY="1" width="177.31" textAlign="center" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" textColor="0xFFFFFF" rotation="0.03" horizontalCenter="0" x="2" verticalAlign="middle"/>
+		<e:Label id="labelNum" text="XWG*10" y="177" scaleX="1" scaleY="1" width="130.31" textAlign="center" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" textColor="0xFFFFFF" rotation="0.03" x="88"/>
+		<e:Label id="labelNum1" text="XWG*10" y="177" scaleX="1" scaleY="1" width="130.31" textAlign="center" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" textColor="0xFFFFFF" rotation="0.03" x="266"/>
+	</e:Group>
+</e:Skin>

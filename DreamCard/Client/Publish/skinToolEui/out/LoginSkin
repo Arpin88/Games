@@ -1,0 +1,1278 @@
+(function (_super) {
+	__extends(LoginSkin, _super);
+	var LoginSkin$Skin6 = 	(function (_super) {
+		__extends(LoginSkin$Skin6, _super);
+		function LoginSkin$Skin6() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.huoqu")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin6.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.huoqu";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin6;
+	})(eui.Skin);
+
+	var LoginSkin$Skin7 = 	(function (_super) {
+		__extends(LoginSkin$Skin7, _super);
+		function LoginSkin$Skin7() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.huoqu")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin7.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.huoqu";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin7;
+	})(eui.Skin);
+
+	var LoginSkin$Skin8 = 	(function (_super) {
+		__extends(LoginSkin$Skin8, _super);
+		function LoginSkin$Skin8() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.kaishiyouxi01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin8.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.kaishiyouxi00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin8;
+	})(eui.Skin);
+
+	var LoginSkin$Skin9 = 	(function (_super) {
+		__extends(LoginSkin$Skin9, _super);
+		function LoginSkin$Skin9() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.zczh01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin9.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.zczh00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin9;
+	})(eui.Skin);
+
+	var LoginSkin$Skin10 = 	(function (_super) {
+		__extends(LoginSkin$Skin10, _super);
+		function LoginSkin$Skin10() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.wjmm01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin10.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.wjmm00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin10;
+	})(eui.Skin);
+
+	var LoginSkin$Skin11 = 	(function (_super) {
+		__extends(LoginSkin$Skin11, _super);
+		function LoginSkin$Skin11() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.back01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin11.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.back00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin11;
+	})(eui.Skin);
+
+	var LoginSkin$Skin12 = 	(function (_super) {
+		__extends(LoginSkin$Skin12, _super);
+		function LoginSkin$Skin12() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.ba01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin12.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.scale9Grid = new egret.Rectangle(11,11,68,68);
+			t.source = "loginSheet_json.ba00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin12;
+	})(eui.Skin);
+
+	var LoginSkin$Skin13 = 	(function (_super) {
+		__extends(LoginSkin$Skin13, _super);
+		function LoginSkin$Skin13() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.bb01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin13.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.scale9Grid = new egret.Rectangle(11,11,68,68);
+			t.source = "loginSheet_json.bb00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin13;
+	})(eui.Skin);
+
+	var LoginSkin$Skin14 = 	(function (_super) {
+		__extends(LoginSkin$Skin14, _super);
+		function LoginSkin$Skin14() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.sjdl01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin14.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.sjdl00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin14;
+	})(eui.Skin);
+
+	var LoginSkin$Skin15 = 	(function (_super) {
+		__extends(LoginSkin$Skin15, _super);
+		function LoginSkin$Skin15() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","loginSheet_json.yxdl01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = LoginSkin$Skin15.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "loginSheet_json.yxdl00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return LoginSkin$Skin15;
+	})(eui.Skin);
+
+	function LoginSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupLogin_i()];
+	}
+	var _proto = LoginSkin.prototype;
+
+	_proto.groupLogin_i = function () {
+		var t = new eui.Group();
+		this.groupLogin = t;
+		t.percentHeight = 100;
+		t.touchEnabled = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this.groupNormalLogin_i(),this.groupSwitchLogin_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.source = "bg0_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupNormalLogin_i = function () {
+		var t = new eui.Group();
+		this.groupNormalLogin = t;
+		t.percentHeight = 100;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._c1_i(),this._c2_i(),this._c3_i(),this.btnBackSLogin_i(),this.groupAreano_i()];
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.bottom = 0;
+		t.height = 80;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 670;
+		t.elementsContent = [this._s1_i(),this.lblBottom_i()];
+		return t;
+	};
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.37;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.lblBottom_i = function () {
+		var t = new eui.Label();
+		this.lblBottom = t;
+		t.fontFamily = "SimHei";
+		t.percentHeight = 100;
+		t.lineSpacing = 15;
+		t.size = 14;
+		t.text = "";
+		t.textAlign = "center";
+		t.textColor = 0xe1e1e1;
+		t.verticalAlign = "middle";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.height = 576;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 560;
+		t.x = 387;
+		t.y = 87;
+		t.elementsContent = [this._a2_i(),this._a3_i(),this._a4_i(),this._a5_i(),this.groupPhone_i(),this.groupEmail_i(),this.groupPassword_i(),this.btnLogin_i(),this.lblEmail_i(),this.lblVCode_i(),this._e1_i(),this.lblPassword_i(),this.imgCheckAgreement_i(),this._e2_i(),this.lblLicense_i(),this.lblAgreement_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.source = "loginSheet_json.zhezhao";
+		t.touchEnabled = false;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 0.56;
+		t.scaleY = 0.56;
+		t.source = "loginSheet_json.logo";
+		t.touchEnabled = false;
+		t.y = -90;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(12,10,76,60);
+		t.source = "loginSheet_json.kuang";
+		t.width = 450;
+		t.y = 130;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(12,10,76,60);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.kuang";
+		t.width = 450;
+		t.x = 0;
+		t.y = 220;
+		return t;
+	};
+	_proto.groupPhone_i = function () {
+		var t = new eui.Group();
+		this.groupPhone = t;
+		t.horizontalCenter = 0;
+		t.width = 450;
+		t.y = 130;
+		t.elementsContent = [this.editPhone_i(),this.editVCode_i(),this.btnGetVCode_i(),this.lblVCodeTime_i(),this._s2_i(),this.groupSelAreano_i()];
+		return t;
+	};
+	_proto.editPhone_i = function () {
+		var t = new eui.EditableText();
+		this.editPhone = t;
+		t.fontFamily = "SimHei";
+		t.height = 80;
+		t.maxChars = 11;
+		t.prompt = "请输入手机号";
+		t.promptColor = 0xD8D8D8;
+		t.right = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.text = "";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 255;
+		t.y = 0;
+		return t;
+	};
+	_proto.editVCode_i = function () {
+		var t = new eui.EditableText();
+		this.editVCode = t;
+		t.fontFamily = "SimHei";
+		t.height = 80;
+		t.horizontalCenter = -43;
+		t.maxChars = 8;
+		t.prompt = "请输入验证码";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 360;
+		t.x = 2;
+		t.y = 90;
+		return t;
+	};
+	_proto.btnGetVCode_i = function () {
+		var t = new eui.Button();
+		this.btnGetVCode = t;
+		t.label = "";
+		t.right = 20;
+		t.y = 115;
+		t.skinName = LoginSkin$Skin6;
+		return t;
+	};
+	_proto.lblVCodeTime_i = function () {
+		var t = new eui.Label();
+		this.lblVCodeTime = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.height = 30;
+		t.right = 20;
+		t.size = 28;
+		t.text = "60S";
+		t.textAlign = "center";
+		t.textColor = 0x09db22;
+		t.touchEnabled = false;
+		t.verticalAlign = "middle";
+		t.width = 60;
+		t.y = 117;
+		return t;
+	};
+	_proto._s2_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0x556f81;
+		t.height = 80;
+		t.width = 1;
+		t.x = 188;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupSelAreano_i = function () {
+		var t = new eui.Group();
+		this.groupSelAreano = t;
+		t.height = 80;
+		t.touchChildren = false;
+		t.width = 190;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a6_i(),this.lblAreano_i()];
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "loginSheet_json.jiantou01";
+		t.touchEnabled = false;
+		t.verticalCenter = 2;
+		t.x = 157;
+		return t;
+	};
+	_proto.lblAreano_i = function () {
+		var t = new eui.Label();
+		this.lblAreano = t;
+		t.fontFamily = "SimHei";
+		t.height = 80;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.text = "+86 (CN)";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.width = 160;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupEmail_i = function () {
+		var t = new eui.Group();
+		this.groupEmail = t;
+		t.horizontalCenter = 0;
+		t.visible = false;
+		t.width = 450;
+		t.y = 130;
+		t.elementsContent = [this.editEmail_i(),this.editEmailVCode_i(),this.btnGetEmailVCode_i(),this.lblEmailVCodeTime_i()];
+		return t;
+	};
+	_proto.editEmail_i = function () {
+		var t = new eui.EditableText();
+		this.editEmail = t;
+		t.fontFamily = "SimHei";
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.prompt = "请输入邮箱";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 450;
+		t.y = 0;
+		return t;
+	};
+	_proto.editEmailVCode_i = function () {
+		var t = new eui.EditableText();
+		this.editEmailVCode = t;
+		t.fontFamily = "SimHei";
+		t.height = 80;
+		t.horizontalCenter = -43;
+		t.maxChars = 8;
+		t.prompt = "请输入验证码";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 360;
+		t.x = 2;
+		t.y = 90;
+		return t;
+	};
+	_proto.btnGetEmailVCode_i = function () {
+		var t = new eui.Button();
+		this.btnGetEmailVCode = t;
+		t.label = "";
+		t.right = 20;
+		t.y = 115;
+		t.skinName = LoginSkin$Skin7;
+		return t;
+	};
+	_proto.lblEmailVCodeTime_i = function () {
+		var t = new eui.Label();
+		this.lblEmailVCodeTime = t;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.height = 30;
+		t.right = 20;
+		t.size = 28;
+		t.text = "60S";
+		t.textAlign = "center";
+		t.textColor = 0x09DB22;
+		t.touchEnabled = false;
+		t.verticalAlign = "middle";
+		t.width = 60;
+		t.y = 117;
+		return t;
+	};
+	_proto.groupPassword_i = function () {
+		var t = new eui.Group();
+		this.groupPassword = t;
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.visible = false;
+		t.width = 450;
+		t.y = 130;
+		t.elementsContent = [this.editUsername_i(),this.editPassword_i(),this.imgWatch_i()];
+		return t;
+	};
+	_proto.editUsername_i = function () {
+		var t = new eui.EditableText();
+		this.editUsername = t;
+		t.fontFamily = "SimHei";
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.maxChars = 22;
+		t.prompt = "请输入用户名";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 450;
+		t.y = 0;
+		return t;
+	};
+	_proto.editPassword_i = function () {
+		var t = new eui.EditableText();
+		this.editPassword = t;
+		t.fontFamily = "SimHei";
+		t.height = 80;
+		t.horizontalCenter = -43;
+		t.maxChars = 18;
+		t.prompt = "请输入密码";
+		t.promptColor = 0xD8D8D8;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 360;
+		t.x = 2;
+		t.y = 90;
+		return t;
+	};
+	_proto.imgWatch_i = function () {
+		var t = new eui.Image();
+		this.imgWatch = t;
+		t.right = 20;
+		t.source = "loginSheet_json.biyan";
+		t.y = 115;
+		return t;
+	};
+	_proto.btnLogin_i = function () {
+		var t = new eui.Button();
+		this.btnLogin = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.y = 335;
+		t.skinName = LoginSkin$Skin8;
+		return t;
+	};
+	_proto.lblEmail_i = function () {
+		var t = new eui.Label();
+		this.lblEmail = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = -75;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "邮箱登录";
+		t.visible = false;
+		t.y = 450;
+		return t;
+	};
+	_proto.lblVCode_i = function () {
+		var t = new eui.Label();
+		this.lblVCode = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = -85;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "验证码登录";
+		t.y = 450;
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "|";
+		t.y = 450;
+		return t;
+	};
+	_proto.lblPassword_i = function () {
+		var t = new eui.Label();
+		this.lblPassword = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 75;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "密码登录";
+		t.textColor = 0x42d9ff;
+		t.y = 450;
+		return t;
+	};
+	_proto.imgCheckAgreement_i = function () {
+		var t = new eui.Image();
+		this.imgCheckAgreement = t;
+		t.source = "loginSheet_json.xuankuang01";
+		t.x = 52;
+		t.y = 525;
+		return t;
+	};
+	_proto._e2_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "我已经详细阅读";
+		t.textColor = 0xffffff;
+		t.x = 100;
+		t.y = 534;
+		return t;
+	};
+	_proto.lblLicense_i = function () {
+		var t = new eui.Label();
+		this.lblLicense = t;
+		t.fontFamily = "SimHei";
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "使用许可和";
+		t.textColor = 0x62ff62;
+		t.x = 275;
+		t.y = 534;
+		return t;
+	};
+	_proto.lblAgreement_i = function () {
+		var t = new eui.Label();
+		this.lblAgreement = t;
+		t.fontFamily = "SimHei";
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "服务协议";
+		t.textColor = 0x62ff62;
+		t.x = 395;
+		t.y = 534;
+		return t;
+	};
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.height = 200;
+		t.right = 18;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 25;
+		t.touchEnabled = false;
+		t.width = 84;
+		t.x = 1232;
+		t.y = 25;
+		t.elementsContent = [this.btnRegist_i(),this.btnForgot_i()];
+		return t;
+	};
+	_proto.btnRegist_i = function () {
+		var t = new eui.Button();
+		this.btnRegist = t;
+		t.anchorOffsetX = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 0;
+		t.y = 0;
+		t.skinName = LoginSkin$Skin9;
+		return t;
+	};
+	_proto.btnForgot_i = function () {
+		var t = new eui.Button();
+		this.btnForgot = t;
+		t.anchorOffsetX = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 0;
+		t.y = 105;
+		t.skinName = LoginSkin$Skin10;
+		return t;
+	};
+	_proto.btnBackSLogin_i = function () {
+		var t = new eui.Button();
+		this.btnBackSLogin = t;
+		t.anchorOffsetX = 0;
+		t.label = "";
+		t.left = 25;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 25;
+		t.skinName = LoginSkin$Skin11;
+		return t;
+	};
+	_proto.groupAreano_i = function () {
+		var t = new eui.Group();
+		this.groupAreano = t;
+		t.percentHeight = 100;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.scrAreanoList_i()];
+		return t;
+	};
+	_proto.scrAreanoList_i = function () {
+		var t = new eui.Scroller();
+		this.scrAreanoList = t;
+		t.height = 400;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 133;
+		t.width = 450;
+		t.viewport = this.groupAreanoList_i();
+		return t;
+	};
+	_proto.groupAreanoList_i = function () {
+		var t = new eui.Group();
+		this.groupAreanoList = t;
+		t.y = 127;
+		t.layout = this._VerticalLayout1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		t.gap = 0;
+		return t;
+	};
+	_proto.groupSwitchLogin_i = function () {
+		var t = new eui.Group();
+		this.groupSwitchLogin = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._s3_i(),this.lblVersion_i(),this._c6_i()];
+		return t;
+	};
+	_proto._s3_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.4;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.lblVersion_i = function () {
+		var t = new eui.Label();
+		this.lblVersion = t;
+		t.fontFamily = "SimHei";
+		t.left = 20;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.stroke = 2;
+		t.text = "版本号：0.0.0.1";
+		t.top = 20;
+		t.x = 20;
+		t.y = 20;
+		return t;
+	};
+	_proto._c6_i = function () {
+		var t = new eui.Group();
+		t.height = 750;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 605;
+		t.elementsContent = [this._a7_i(),this._c4_i(),this._c5_i(),this.groupBtnPhoneLogin_i(),this.groupBtnEmailLogin_i(),this._e7_i()];
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 0.75;
+		t.scaleY = 0.75;
+		t.source = "loginSheet_json.logo";
+		t.touchEnabled = false;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c4_i = function () {
+		var t = new eui.Group();
+		t.height = 90;
+		t.horizontalCenter = 0.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.width = 394;
+		t.x = 105;
+		t.y = 300;
+		t.elementsContent = [this.btnMetaMaskLogin_i(),this._e3_i(),this._a8_i()];
+		return t;
+	};
+	_proto.btnMetaMaskLogin_i = function () {
+		var t = new eui.Button();
+		this.btnMetaMaskLogin = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.skinName = LoginSkin$Skin12;
+		return t;
+	};
+	_proto._e3_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.size = 40;
+		t.text = "MetaMask";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.x = 170;
+		return t;
+	};
+	_proto._a8_i = function () {
+		var t = new eui.Image();
+		t.source = "loginSheet_json.l2";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.x = 75;
+		return t;
+	};
+	_proto._c5_i = function () {
+		var t = new eui.Group();
+		t.height = 90;
+		t.horizontalCenter = 0.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.width = 394;
+		t.x = 105;
+		t.y = 420;
+		t.elementsContent = [this.btnBinanceLogin_i(),this._e4_i(),this._a9_i()];
+		return t;
+	};
+	_proto.btnBinanceLogin_i = function () {
+		var t = new eui.Button();
+		this.btnBinanceLogin = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.skinName = LoginSkin$Skin13;
+		return t;
+	};
+	_proto._e4_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.size = 40;
+		t.text = "Binance";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.x = 170;
+		return t;
+	};
+	_proto._a9_i = function () {
+		var t = new eui.Image();
+		t.source = "loginSheet_json.l1";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.x = 75;
+		return t;
+	};
+	_proto.groupBtnPhoneLogin_i = function () {
+		var t = new eui.Group();
+		this.groupBtnPhoneLogin = t;
+		t.horizontalCenter = -84.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.y = 600;
+		t.elementsContent = [this.btnPhoneLogin_i(),this._e5_i()];
+		return t;
+	};
+	_proto.btnPhoneLogin_i = function () {
+		var t = new eui.Button();
+		this.btnPhoneLogin = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.y = 0;
+		t.skinName = LoginSkin$Skin14;
+		return t;
+	};
+	_proto._e5_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 18;
+		t.text = "手机登录";
+		t.textColor = 0xa6acb1;
+		t.touchEnabled = false;
+		t.y = 85;
+		return t;
+	};
+	_proto.groupBtnEmailLogin_i = function () {
+		var t = new eui.Group();
+		this.groupBtnEmailLogin = t;
+		t.horizontalCenter = 85.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.y = 600;
+		t.elementsContent = [this.btnEmailLogin_i(),this._e6_i()];
+		return t;
+	};
+	_proto.btnEmailLogin_i = function () {
+		var t = new eui.Button();
+		this.btnEmailLogin = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.y = 0;
+		t.skinName = LoginSkin$Skin15;
+		return t;
+	};
+	_proto._e6_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 18;
+		t.text = "邮箱登录";
+		t.textColor = 0xa6acb1;
+		t.touchEnabled = false;
+		t.y = 85;
+		return t;
+	};
+	_proto._e7_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 20;
+		t.text = "——————  其他登录方式  ——————";
+		t.textColor = 0xa6acb1;
+		t.y = 550;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["lblBottom","editPhone","editVCode","btnGetVCode","lblVCodeTime","lblAreano","groupSelAreano","groupPhone","editEmail","editEmailVCode","btnGetEmailVCode","lblEmailVCodeTime","groupEmail","editUsername","editPassword","imgWatch","groupPassword","btnLogin","lblEmail","lblVCode","lblPassword","imgCheckAgreement","lblLicense","lblAgreement","btnRegist","btnForgot","btnBackSLogin","groupAreanoList","scrAreanoList","groupAreano","groupNormalLogin","lblVersion","btnMetaMaskLogin","btnBinanceLogin","btnPhoneLogin","groupBtnPhoneLogin","btnEmailLogin","groupBtnEmailLogin","groupSwitchLogin","groupLogin"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return LoginSkin;
+})(eui.Skin);

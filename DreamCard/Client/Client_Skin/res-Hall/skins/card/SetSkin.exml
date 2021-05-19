@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="171110792b6"/>
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Rect id="rectBG" width="100%" height="100%" x="0" y="0" fillAlpha="0.7" alpha="50"/>
+		<e:Group width="760" horizontalCenter="0" height="512" verticalCenter="-2">
+			<e:Image width="100%" height="100%" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" y="0" horizontalCenter="0"/>
+			<e:Image width="708" height="308" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" source="hallImg1Sheet_json.tanchukuang2" scale9Grid="15,15,64,70" y="58" horizontalCenter="0"/>
+			<e:Image source="hallImg1Sheet_json.biaotiban" y="-31" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image source="hallText0Sheet_json.shezhi" anchorOffsetX="0" anchorOffsetY="0" y="-14.32" horizontalCenter="0"/>
+			<e:Group y="0" anchorOffsetY="0" height="100%" x="0" width="100%">
+				<e:Group id="headgroup" width="120" height="120" y="90" anchorOffsetX="0" anchorOffsetY="0" x="48">
+				<e:Image id="headImg" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scaleX="0.95" scaleY="0.95" horizontalCenter="0" verticalCenter="0" source="headicon_json.head_00"/>
+				<e:Image touchEnabled="false" scaleX="1" scaleY="1" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" horizontalCenter="0" verticalCenter="0" source="shezhisheet_json.headkuang"/>
+				<e:Button id="changeIconBtn" label="" y="0.5" x="-0.5">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="shezhisheet_json.zhaoxiangji" source.down="shezhisheet_json.zhaoxiangji" source.disabled="shezhisheet_json.zhaoxiangji"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				</e:Group>
+				<e:Image id="soundImg" touchEnabled="false" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0.5" x="74" y="274.02" source="hallText0Sheet_json.sy00"/>
+				<e:Image id="musicImg" touchEnabled="false" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0.5" x="435" y="274.02" source="hallText0Sheet_json.yy00"/>
+				<e:Image y="90" anchorOffsetX="0" width="505" anchorOffsetY="0" height="120" source="hallImg0Sheet_json.w162x50" scale9Grid="13,10,136,30" x="198" scaleX="1" scaleY="1"/>
+				<e:Label id="useridtxt" text="ID:123456789" y="140.34" size="24" fontFamily="SimHei" stroke="0" anchorOffsetX="0" x="218" textColor="0xffffff"/>
+				<e:Label id="versiontxt" text="版本:1.0.1" y="174.66" size="24" fontFamily="SimHei" stroke="0" anchorOffsetX="0" x="218" textColor="0xfdd047"/>
+				<e:Label id="nicknametxt" text="的房间里空间" y="105.33" size="24" fontFamily="SimHei" stroke="0" x="218" textColor="0xffffff"/>
+				<e:Button id="BtnZhuXiao" label="" y="118" scaleX="0.55" scaleY="0.55" x="512">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.tuichudenglu_0" source.down="hallBtn2Sheet_json.tuichudenglu_1" source.disabled="hallBtn2Sheet_json.tuichudenglu_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="soundtxt" text="声音" y="289.26" size="26" fontFamily="Arial" stroke="2" x="61" scaleX="1" scaleY="1" textAlign="center" textColor="0xffffff" visible="false"/>
+				<e:ToggleSwitch id="SwitchSound" label="" x="155.55" y="256.67" selected="true" scaleX="1" scaleY="1" anchorOffsetY="0.5">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="shezhisheet_json.off" source.down="shezhisheet_json.on" source.disabled="shezhisheet_json.off"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:ToggleSwitch>
+				<e:ToggleSwitch id="SwitchMusic" label="" x="513.5" y="255.36" selected="true" scaleX="1" scaleY="1" anchorOffsetY="0.5">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="shezhisheet_json.off" source.down="shezhisheet_json.on" source.disabled="shezhisheet_json.off"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:ToggleSwitch>
+				<e:Label id="kefuwxLabel" text="客服微信： 1234567" y="403" size="24" fontFamily="SimHei" textColor="0xFFFFFF" stroke="2" x="130" scaleX="1" scaleY="1"/>
+				<e:Label id="musictxt" text="音乐" y="289.26" size="26" fontFamily="Arial" textColor="0xFFFFFF" stroke="2" x="424.5" scaleX="1" scaleY="1" textAlign="center" visible="false"/>
+				<e:Label id="kefuqqLabel" text="客服QQ：  1234567" y="403" size="24" fontFamily="SimHei" textColor="0xFFFFFF" stroke="2" x="418" scaleX="1" scaleY="1"/>
+				<e:Label id="label1" text="发行商：科技有限公司" y="470" size="18" fontFamily="Arial" textAlign="center" x="26" scaleX="1" scaleY="1" textColor="0x8bc2d5"/>
+				<e:Label id="label2" text="开发商：科技有限公司" y="470" size="18" fontFamily="Arial" x="281" scaleX="1" scaleY="1" textColor="0x8bc2d5" textAlign="center" anchorOffsetX="0.5"/>
+				<e:Label id="label3" text="著作权：科技有限公司" y="470" size="18" fontFamily="Arial" textAlign="center" x="550.03" scaleX="1" scaleY="1" textColor="0x8bc2d5" anchorOffsetX="1"/>
+			</e:Group>
+			<e:Button id="btnBack" label="" horizontalCenter="379" x="1150" y="-39.01" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="shezhisheet_json.guanbi00" source.down="shezhisheet_json.guanbi01"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+</e:Skin>

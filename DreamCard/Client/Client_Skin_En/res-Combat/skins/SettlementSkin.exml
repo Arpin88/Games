@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SettlementSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupSettlement" width="100%" height="100%" x="0" y="0">
+		<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.7" scaleX="1" scaleY="1" anchorOffsetY="0"/>
+		<e:Image id="imgLightOfVictory" source="combatImg0Sheet_json.a778x750" anchorOffsetX="389" anchorOffsetY="375" horizontalCenter="0" y="248.67"/>
+		<e:Image id="imgResult" y="15" horizontalCenter="0" source="combatImg0Sheet_json.a632x490"/>
+		<e:Group id="groupExp" y="225" horizontalCenter="0" width="318" height="116">
+			<e:Group id="groupCardExp" width="100%" height="58" y="0" horizontalCenter="0">
+				<e:Image id="imgType0" scaleX="1" scaleY="1" x="0" source="combatText0Sheet_json.kpjy" verticalCenter="0"/>
+				<e:Label id="lblSymbol0" text="+" x="165" size="34" fontFamily="SimHei" stroke="2" textColor="0xffffff" bold="true" scaleX="1" scaleY="1" verticalCenter="0"/>
+				<e:Label id="lblContent0" text="666666" x="190" size="34" fontFamily="SimHei" textColor="0xFFCD00" stroke="2" bold="true" scaleX="1" scaleY="1" verticalCenter="0"/>
+			</e:Group>
+			<e:Group id="groupRoleExp" width="100%" height="58" y="58" horizontalCenter="0">
+				<e:Image id="imgType1" scaleX="1" scaleY="1" x="0" source="combatText0Sheet_json.jsjy" verticalCenter="0"/>
+				<e:Label id="lblSymbol1" text="+" x="165" size="34" fontFamily="SimHei" stroke="2" textColor="0xffffff" bold="true" scaleX="1" scaleY="1" verticalCenter="0"/>
+				<e:Label id="lblContent1" text="666666" x="190" size="34" fontFamily="SimHei" textColor="0x59F9FF" stroke="2" bold="true" scaleX="1" scaleY="1" verticalCenter="0"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="groupCardHeads" width="1000" height="210" horizontalCenter="0" bottom="25">
+		</e:Group>
+		<e:Button id="btnData" label="" right="35" top="25">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.a202x58_0" source.down="combatBtn0Sheet_json.a202x58_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnLeave" label="" right="35" bottom="25">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="combatBtn0Sheet_json.a68x32_0" source.down="combatBtn0Sheet_json.a68x32_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group height="80" y="342" horizontalCenter="0" width="128">
+			<e:Image id="imgBox" x="0" verticalCenter="0" source="combatImg0Sheet_json.box2"/>
+			<e:Label text="x" x="70" verticalCenter="0" fontFamily="SimHei" size="34" stroke="2" bold="true"/>
+			<e:Label id="lblBoxCount" text="6" x="95" verticalCenter="3" fontFamily="SimHei" size="34" textColor="0x59f9ff" stroke="2" bold="true"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

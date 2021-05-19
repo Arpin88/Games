@@ -1,0 +1,10 @@
+{
+    "HTMLElementObj":[
+        {
+            "type":"HTMLScript",
+            "path":"libs/uis/uis-sdk.js?v=1.0.0",
+            "model":"WIN,PHONE"
+        }
+    ]
+}
+    

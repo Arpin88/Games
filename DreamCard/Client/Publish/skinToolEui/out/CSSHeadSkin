@@ -1,0 +1,59 @@
+(function (_super) {
+	__extends(CSSHeadSkin, _super);
+	function CSSHeadSkin() {
+		_super.call(this);
+		
+		this.height = 48;
+		this.width = 40;
+		this.elementsContent = [this.imgHead_i(),this.imgHeadFrame_i(),this.imgAttr_i(),this.groupStar_i()];
+	}
+	var _proto = CSSHeadSkin.prototype;
+
+	_proto.imgHead_i = function () {
+		var t = new eui.Image();
+		this.imgHead = t;
+		t.height = 40;
+		t.source = "";
+		t.width = 40;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgHeadFrame_i = function () {
+		var t = new eui.Image();
+		this.imgHeadFrame = t;
+		t.height = 40;
+		t.source = "combatImg1Sheet_json.a82x82";
+		t.width = 40;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgAttr_i = function () {
+		var t = new eui.Image();
+		this.imgAttr = t;
+		t.height = 12;
+		t.source = "combatImg1Sheet_json.a28x28";
+		t.width = 12;
+		t.x = 28;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupStar_i = function () {
+		var t = new eui.Group();
+		this.groupStar = t;
+		t.height = 8;
+		t.width = 40;
+		t.x = 0;
+		t.y = 40;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgHead","imgHeadFrame","imgAttr","groupStar"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CSSHeadSkin;
+})(eui.Skin);

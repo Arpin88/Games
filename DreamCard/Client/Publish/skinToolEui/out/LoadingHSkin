@@ -1,0 +1,67 @@
+(function (_super) {
+	__extends(LoadingHSkin, _super);
+	function LoadingHSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._s1_i(),this._a1_i(),this.prbLoading_i(),this.lblProgress_i(),this.lblProgress0_i()];
+	}
+	var _proto = LoadingHSkin.prototype;
+
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0xBFBFBF;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.source = "bjt_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.prbLoading_i = function () {
+		var t = new eui.ProgressBar();
+		this.prbLoading = t;
+		t.bottom = 27;
+		t.horizontalCenter = 0;
+		t.skinName = "LoadingBSkin";
+		t.value = 0;
+		return t;
+	};
+	_proto.lblProgress_i = function () {
+		var t = new eui.Label();
+		this.lblProgress = t;
+		t.horizontalCenter = 37.5;
+		t.size = 30;
+		t.text = "0%";
+		t.textColor = 0xf7dfb2;
+		t.y = 670;
+		return t;
+	};
+	_proto.lblProgress0_i = function () {
+		var t = new eui.Label();
+		this.lblProgress0 = t;
+		t.horizontalCenter = -60.5;
+		t.size = 30;
+		t.text = "Loading";
+		t.textColor = 0xf2af43;
+		t.y = 670;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["prbLoading","lblProgress","lblProgress0"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return LoadingHSkin;
+})(eui.Skin);

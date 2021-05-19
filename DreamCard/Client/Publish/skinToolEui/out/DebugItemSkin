@@ -1,0 +1,65 @@
+(function (_super) {
+	__extends(DebugItemSkin, _super);
+	function DebugItemSkin() {
+		_super.call(this);
+		
+		this.height = 50;
+		this.width = 90;
+		this.elementsContent = [this.groupDebugItem_i()];
+	}
+	var _proto = DebugItemSkin.prototype;
+
+	_proto.groupDebugItem_i = function () {
+		var t = new eui.Group();
+		this.groupDebugItem = t;
+		t.height = 50;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchChildren = false;
+		t.width = 90;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._s1_i(),this.lblRoom_i(),this.lblState_i()];
+		return t;
+	};
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 1;
+		t.fillColor = 0x4c4c4c;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.lblRoom_i = function () {
+		var t = new eui.Label();
+		this.lblRoom = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 16;
+		t.text = "房间号：100";
+		t.y = 10;
+		return t;
+	};
+	_proto.lblState_i = function () {
+		var t = new eui.Label();
+		this.lblState = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 16;
+		t.text = "状态：正常";
+		t.y = 30;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["lblRoom","lblState","groupDebugItem"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return DebugItemSkin;
+})(eui.Skin);

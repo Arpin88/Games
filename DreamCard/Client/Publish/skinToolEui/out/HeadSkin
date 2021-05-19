@@ -1,0 +1,224 @@
+(function (_super) {
+	__extends(HeadSkin, _super);
+	var HeadSkin$Skin56 = 	(function (_super) {
+		__extends(HeadSkin$Skin56, _super);
+		function HeadSkin$Skin56() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a48x52_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = HeadSkin$Skin56.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a48x52_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return HeadSkin$Skin56;
+	})(eui.Skin);
+
+	function HeadSkin() {
+		_super.call(this);
+		
+		this.height = 172;
+		this.width = 380;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = HeadSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.groupIcon_i(),this._a1_i(),this.leveltxt_i(),this.upbtn_i(),this.nickname_i(),this.prbLoading_i(),this.prbLoading0_i(),this.lblProgress_i(),this._a2_i(),this.hptxt_i(),this.hptxt_btnum_i()];
+		return t;
+	};
+	_proto.groupIcon_i = function () {
+		var t = new eui.Group();
+		this.groupIcon = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 117;
+		t.width = 120;
+		t.x = 17.5;
+		t.y = 22;
+		t.elementsContent = [this.headimag_i()];
+		return t;
+	};
+	_proto.headimag_i = function () {
+		var t = new eui.Image();
+		this.headimag = t;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg0Sheet_json.a101x101";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.source = "hallImg0Sheet_json.a346x154";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.leveltxt_i = function () {
+		var t = new eui.Label();
+		this.leveltxt = t;
+		t.fontFamily = "SimHei";
+		t.size = 22;
+		t.stroke = 2;
+		t.text = "66";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.width = 60;
+		t.x = 48;
+		t.y = 130;
+		return t;
+	};
+	_proto.upbtn_i = function () {
+		var t = new eui.Button();
+		this.upbtn = t;
+		t.label = "";
+		t.x = 330;
+		t.y = 36;
+		t.skinName = HeadSkin$Skin56;
+		return t;
+	};
+	_proto.nickname_i = function () {
+		var t = new eui.Label();
+		this.nickname = t;
+		t.fontFamily = "SimHei";
+		t.size = 22;
+		t.stroke = 2;
+		t.text = "liu";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.width = 148;
+		t.x = 146.5;
+		t.y = 33;
+		return t;
+	};
+	_proto.prbLoading_i = function () {
+		var t = new eui.ProgressBar();
+		this.prbLoading = t;
+		t.anchorOffsetX = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "HLoadSkin";
+		t.value = 100;
+		t.width = 182;
+		t.x = 143;
+		t.y = 65;
+		return t;
+	};
+	_proto.prbLoading0_i = function () {
+		var t = new eui.ProgressBar();
+		this.prbLoading0 = t;
+		t.height = 18;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "HLoadSkin2";
+		t.value = 100;
+		t.visible = false;
+		t.width = 178;
+		t.x = 150;
+		t.y = 65;
+		return t;
+	};
+	_proto.lblProgress_i = function () {
+		var t = new eui.Label();
+		this.lblProgress = t;
+		t.fontFamily = "SimHei";
+		t.size = 18;
+		t.stroke = 2;
+		t.text = "66/100";
+		t.textAlign = "center";
+		t.width = 160;
+		t.x = 153;
+		t.y = 64;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.smz";
+		t.touchEnabled = false;
+		t.x = 148.5;
+		t.y = 87.2;
+		return t;
+	};
+	_proto.hptxt_i = function () {
+		var t = new eui.Label();
+		this.hptxt = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.size = 18;
+		t.stroke = 2;
+		t.text = "100";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.visible = false;
+		t.width = 98;
+		t.x = 152.6;
+		t.y = 123.8;
+		return t;
+	};
+	_proto.hptxt_btnum_i = function () {
+		var t = new eui.BitmapLabel();
+		this.hptxt_btnum = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.font = "btnun_fnt";
+		t.height = 25;
+		t.text = "123";
+		t.width = 111;
+		t.x = 220;
+		t.y = 87.2;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["headimag","groupIcon","leveltxt","upbtn","nickname","prbLoading","prbLoading0","lblProgress","hptxt","hptxt_btnum"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return HeadSkin;
+})(eui.Skin);

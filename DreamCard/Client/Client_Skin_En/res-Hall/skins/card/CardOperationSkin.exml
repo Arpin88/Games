@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardOptionSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="cardoperationgruop" width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Rect id="CardShade" width="100%" height="100%" x="0" y="0" fillAlpha="0.7" scaleX="1" scaleY="1"/>
+		<e:Group width="1018" height="635" horizontalCenter="0" verticalCenter="0">
+			<e:Image source="commonImg0Sheet_json.a100x100" width="100%" height="100%" scaleX="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" x="0" y="0" scaleY="1" scale9Grid="21,17,59,59"/>
+			<e:Button id="btnClose" label="" horizontalCenter="507" verticalCenter="-318.5" x="992" y="-29" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="shezhisheet_json.guanbi00" source.down="shezhisheet_json.guanbi01"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group id="groupLeft" width="388" height="635" anchorOffsetY="0" anchorOffsetX="0" scaleX="1" scaleY="1" horizontalCenter="-289" verticalCenter="0">
+				<e:Image y="-1.29" scaleX="1" scaleY="1" source="newcardpanel_json.qizhi" horizontalCenter="0"/>
+				<e:Label id="labCardName" text="刘备" scaleX="1" scaleY="1" width="100%" verticalAlign="middle" textAlign="center" size="28" fontFamily="Microsoft YaHei" height="34" stroke="1" borderColor="0x000000" strokeColor="0x614c33" horizontalCenter="0" top="24" textColor="0xffffff" anchorOffsetY="0"/>
+				<e:Image id="imgGene" scaleX="1" scaleY="1" source="hallText0Sheet_json.daishu3" x="42" y="279"/>
+				<e:Image id="imgMaxEXP" scaleX="1" scaleY="1" source="newcardpanel_json.jingdu01" horizontalCenter="0" verticalCenter="14.5"/>
+				<e:ProgressBar id="prbLoading0" scaleX="1" scaleY="1" width="328" height="24" value="50" skinName="HLoadSkin3" horizontalCenter="0" verticalCenter="14.5"/>
+				<e:Label id="labExp_left" text="200/238" size="20" fontFamily="SimHei" height="22" scaleX="1" scaleY="1" textAlign="center" width="200" horizontalCenter="0" verticalCenter="15.5"/>
+				<e:Group id="groupStar" width="130" height="24" x="140" y="281.66"/>
+				<e:Button id="btnLvlUp" label="" enabled="true" y="400" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.55" scaleY="0.55" horizontalCenter="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.shengxing_0" source.down="hallBtn2Sheet_json.shengxing_1" source.disabled="hallBtn2Sheet_json.shengxing_2"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnGeneUp" label="" scaleX="0.55" scaleY="0.55" y="485" anchorOffsetX="0" anchorOffsetY="0" enabled="true" horizontalCenter="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.jinjie_0" source.down="hallBtn2Sheet_json.jinjie_1" source.disabled="hallBtn2Sheet_json.jinjie_2"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label text="Get advanced only when you reach five stars!" size="20" fontFamily="SimHei" horizontalCenter="5.5" textColor="0xffc4c0" y="351.26" anchorOffsetY="0" height="45.33" anchorOffsetX="0" width="333" textAlign="center"/>
+				<e:Group id="groupCardView" width="156" height="156" x="30" y="108"/>
+				<e:Label id="labPrice" text="Reference Price:1000XWG" y="77" width="353" height="28" fontFamily="SimHei" size="20" verticalAlign="top" textAlign="center" horizontalCenter="0.5" textColor="0xffdcdb" anchorOffsetY="0" anchorOffsetX="0"/>
+				<e:Group id="groupSkillList" width="156" height="156" x="200" y="108"/>
+			</e:Group>
+			<e:Group id="groupRight" width="552" height="578" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="203" verticalCenter="0.5">
+				<e:Image id="kuang" width="100%" height="100%" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" source="hallImg1Sheet_json.tanchukuang2" horizontalCenter="0" verticalCenter="0" scale9Grid="15,15,64,70"/>
+				<e:Group id="scrAttrListPanel" width="100%" height="100%" y="0" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" visible="false">
+					<e:Label id="labCardName0" text="Card Properties" scaleX="1" scaleY="1" width="402" verticalAlign="middle" textAlign="center" size="24" fontFamily="SimHei" height="26" stroke="1" borderColor="0x000000" strokeColor="0x614C33" horizontalCenter="5" top="20" textColor="0x91e1ff"/>
+					<e:Scroller id="scrAttrList" width="100%" height="505.34" y="64" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0">
+					<e:Group id="groupAttrList" width="100%" anchorOffsetX="0" anchorOffsetY="0" height="490" y="0" x="-1.33"/>
+					</e:Scroller>
+					<e:Image y="30" scaleX="1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="60"/>
+					<e:Image y="30" scaleX="-1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="500"/>
+				</e:Group>
+				<e:Group id="scrFetterPanel" width="100%" height="100%" y="0" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" visible="false">
+				<e:Scroller id="scrFetter" width="556" height="509.34" y="53.12" scaleX="1" scaleY="1" horizontalCenter="0" anchorOffsetX="0" anchorOffsetY="0" x="-570.3499999999999" visible="false">
+					<e:Group id="groupFetter" width="557.33" height="510.67" anchorOffsetX="0" anchorOffsetY="0"/>
+				</e:Scroller>
+				<e:Label id="labCardName1" text="Bond" scaleX="1" scaleY="1" width="402" verticalAlign="middle" textAlign="center" size="24" fontFamily="SimHei" height="26" stroke="1" borderColor="0x000000" strokeColor="0x614C33" horizontalCenter="5.6650000000000205" textColor="0x91e1ff" y="20.69"/>
+					<e:Image y="30" scaleX="1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="95"/>
+					<e:Image y="30" scaleX="-1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="465"/>
+				</e:Group>
+				<e:Group id="groupShow" width="100%" height="100%" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" visible="false">
+				<e:Image source="newcardpanel_json.kabeitietu" x="0" verticalCenter="0"/>
+				<e:Group id="groupCardShow" width="382" height="575" scaleX="1" scaleY="1" horizontalCenter="86" anchorOffsetX="0" verticalCenter="0"/>
+				</e:Group>
+				<e:Group id="groupShopPanel" width="100%" height="100%" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+					<e:Button id="btnGoTrace" label="Sell" scaleX="0.6" scaleY="0.6" horizontalCenter="0" x="186" verticalCenter="0" skinName="ButtonY1Skin"/>
+				</e:Group>
+				<e:Group id="groupGeneUpPanel" width="577.33" height="585.33" x="3" anchorOffsetX="0" anchorOffsetY="0" y="3.99">
+				<e:Group id="groupGeneUp" width="100%" height="100%" x="-3" y="-3.989999999999995" scaleX="1" scaleY="1">
+					<e:Button id="BtnGeneUpItem" label="使用" y="193" scaleX="0.6" scaleY="0.6" horizontalCenter="0" skinName="PPropItemSkin2"/>
+					<e:Image id="imgGeneUpItem" source="hallImg1Sheet_json.a128x128" y="170.97" rotation="0.02" x="250.05" scaleX="0.7" scaleY="0.7" visible="false"/>
+					<e:Image source="hallImg1Sheet_json.k128x129" y="164.69" scaleX="0.7" scaleY="0.7" horizontalCenter="0.5" x="126" visible="false"/>
+					<e:Label text="Materials Needed:" y="105" height="26" size="24" fontFamily="Microsoft YaHei" x="38" verticalAlign="middle" scaleX="1" scaleY="1" textColor="0x91e1ff"/>
+					<e:Label id="labGeneUpItem" text="进阶石" y="280.83" height="63.34" size="20" fontFamily="SimHei" verticalAlign="middle" scaleX="1" scaleY="1" width="121.33" textAlign="center" horizontalCenter="0" textColor="0xffffff" anchorOffsetX="0" anchorOffsetY="0"/>
+					<e:Button id="btnUseGeneItem" label="OK" y="408" skinName="ButtonB1Skin" horizontalCenter="0" x="73" scaleX="0.6" scaleY="0.6"/>
+				</e:Group>
+				<e:Label id="labCardName3" text="Level Up" scaleX="1" scaleY="1" width="402" verticalAlign="middle" textAlign="center" size="24" fontFamily="Microsoft YaHei" height="26" stroke="1" borderColor="0x000000" strokeColor="0x614C33" horizontalCenter="-11.66500000000002" top="18" x="85" y="8.010000000000005" textColor="0x91e1ff"/>
+					<e:Image y="26.00999999999999" scaleX="1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="92"/>
+					<e:Image y="26.00999999999999" scaleX="-1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="462"/>
+				</e:Group>
+				<e:Group id="groupLvlUp" width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" visible="false">
+				<e:Label text="Lv：" x="40" y="85" size="26" fontFamily="Microsoft YaHei" height="61.33" verticalAlign="middle" textColor="0x8bc2d5" anchorOffsetY="0"/>
+				<e:Label id="lvUp_level" text="5" x="86.36" y="104" size="26" fontFamily="Microsoft YaHei" height="24" verticalAlign="middle" textColor="0xFFFFFF"/>
+				<e:Label text="Exp:" x="297" y="78" width="134" height="76" size="26" fontFamily="Microsoft YaHei" verticalAlign="middle" textColor="0x8bc2d5" anchorOffsetY="0" anchorOffsetX="0"/>
+				<e:Label id="labExp" text="200/238" y="106.33" size="26" fontFamily="Microsoft YaHei" height="22" verticalAlign="middle" x="361.7"/>
+				<e:Button id="btnUserItem" label="" y="477.29" scaleX="0.6" scaleY="0.6" horizontalCenter="0.5">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.shiyong_0" source.down="hallBtn2Sheet_json.shiyong_1" source.disabled="hallBtn2Sheet_json.shiyong_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnUserItem0" label="使用" y="258" x="88" skinName="RoleUpgradeMaterialSkin" scaleX="0.88" scaleY="0.88"/>
+				<e:Button id="btnUserItem1" label="使用" y="258" scaleX="0.88" scaleY="0.88" x="233.2" skinName="RoleUpgradeMaterialSkin"/>
+				<e:Button id="btnUserItem2" label="使用" y="258" scaleX="0.88" scaleY="0.88" x="365" skinName="RoleUpgradeMaterialSkin"/>
+				<e:Label id="labCardName4" text="Star Rising " scaleX="1" scaleY="1" width="402" verticalAlign="middle" textAlign="center" size="24" fontFamily="Microsoft YaHei" height="26" stroke="1" borderColor="0x000000" strokeColor="0x614C33" horizontalCenter="4" top="21" x="88" y="12" textColor="0x91e1ff"/>
+				<e:Label text="Materials Needed：" x="42.96" y="192.68" size="26" fontFamily="Microsoft YaHei" height="24" verticalAlign="middle" textColor="0x8bc2d5"/>
+				<e:Image id="ImgChoose" x="149.96" y="257.36" scaleX="0.9" scaleY="0.9" source="hallBtn1Sheet_json.a40x40_1" touchEnabled="false"/>
+					<e:Image y="30" scaleX="1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="80"/>
+					<e:Image y="30" scaleX="-1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="475"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="groupSkillExplain" width="311" height="187" scaleX="1" scaleY="1" verticalCenter="-132" horizontalCenter="-2.5" anchorOffsetY="0" anchorOffsetX="0" x="363" y="94" visible="false">
+				<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.5"/>
+				<e:Label id="labSkillName" text="治疗专精" x="17" y="14" size="24" fontFamily="SimHei" italic="true"/>
+				<e:Label id="labSkillType" text="被动技能" y="44" anchorOffsetY="0" height="20" textColor="0x8dd3ff" size="20" fontFamily="SimHei" x="17"/>
+				<e:Label id="labSkillExplain" text="技能说明技能说明30%;技能说明技能说明技能说明技;" x="17" y="69" size="20" fontFamily="SimHei" width="278" lineSpacing="5" textColor="0xffd119" anchorOffsetX="0"/>
+				<e:Label id="labLockState" text="Locked" x="171.5" y="154" textColor="0xffd119" size="20" fontFamily="SimHei" textAlign="left"/>
+				<e:Label text="Current Status:" x="17" y="154" size="20" fontFamily="SimHei" textColor="0x7a766a"/>
+				<e:Label id="labeffect" text="额外增加" x="94.99" y="127.37" textColor="0xFFD119" size="16" fontFamily="Microsoft YaHei" textAlign="left" visible="false"/>
+				<e:Label text="当前效果:" x="23.29" y="127.35" size="16" fontFamily="Microsoft YaHei" textColor="0x7A766A" visible="false"/>
+			</e:Group>
+			<e:Group y="63.61" scaleX="1" scaleY="1" height="522.67" touchEnabled="false" width="86" anchorOffsetY="0" horizontalCenter="549">
+				<e:Image id="imgAttribute" x="0" y="0" scaleX="1" scaleY="1" source="hallBtn1Sheet_json.a86x114_1"/>
+				<e:Image id="imgAttributeLabel" y="45" scaleX="0.9" scaleY="0.9" x="10.67" touchEnabled="false" source="hallText0Sheet_json.sx_0"/>
+				<e:Image id="imgFetter" scaleX="1" scaleY="1" y="133" source="hallBtn1Sheet_json.a86x114_0" x="0"/>
+				<e:Image id="imgFetterLabel" y="178" scaleX="0.9" scaleY="0.9" x="7.01" source="hallText0Sheet_json.jb_0" touchEnabled="false"/>
+				<e:Image id="imgShow" scaleX="1" scaleY="1" y="263" source="hallBtn1Sheet_json.a86x114_0" x="-2"/>
+				<e:Image id="imgShowLabel" y="308" scaleX="0.9" scaleY="0.9" x="0.01" touchEnabled="false" source="hallText0Sheet_json.zhanshi00"/>
+				<e:Image id="imgSell" scaleX="1" scaleY="1" y="394" source="hallBtn1Sheet_json.a86x114_0" x="0"/>
+				<e:Image id="imgSellLabel" y="439" scaleX="0.9" scaleY="0.9" x="14.68" touchEnabled="false" source="hallText0Sheet_json.chushou00"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

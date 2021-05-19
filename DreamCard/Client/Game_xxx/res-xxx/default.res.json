@@ -1,0 +1,16 @@
+{
+	"groups": [
+		{
+			"keys": "chaodipi_json",
+			"name": "ChaoDipi"
+		}
+	],
+	"resources": [
+		{
+			"url": "xxx_res/res/chaodipi.json",
+			"type": "sheet",
+			"name": "chaodipi_json",
+			"subkeys": "bg_chaodi,bg_dikuang,bg_fangjianxinxi,bg_jifenban,bg_liangzhu,bg_xiaofang,bg_xiaofangdis,bg_xiaohong,bg_xiaohongdis,bg_xiaopai,bg_xingxing,btn_fangkuai,btn_fangkuai5,btn_fangkuai5_dis,btn_fangkuai5_s,btn_fangkuai_dis,btn_fangkuai_s,btn_heitao,btn_heitao_dis,btn_heitao_s,btn_hongtao,btn_hongtao5,btn_hongtao5_dis,btn_hongtao5_s,btn_hongtao_dis,btn_hongtao_s,btn_kandi,btn_kandisel,btn_kanfen,btn_kanfensel,btn_meihua,btn_meihua_dis,btn_meihua_s,btn_shanglun,btn_xiaowang,btn_xiaowang_dis,btn_xiaowang_s,chaodi,chaodipi,label_dawang,label_dawang_s,label_dawangdis,label_duo,label_shao,label_shengzhang,label_xian,label_xianjiadefen,label_xiaozhuang,label_zhu,label_zhuangmark,liangzhu,logo_chaodipi,please,youxizidongkaishi"
+		}
+	]		
+}

@@ -1,0 +1,100 @@
+(function (_super) {
+	__extends(InfoItemSkin, _super);
+	function InfoItemSkin() {
+		_super.call(this);
+		
+		this.height = 94;
+		this.width = 324;
+		this.elementsContent = [this.groupPI_i()];
+	}
+	var _proto = InfoItemSkin.prototype;
+
+	_proto.groupPI_i = function () {
+		var t = new eui.Group();
+		this.groupPI = t;
+		t.percentHeight = 100;
+		t.touchChildren = false;
+		t.touchEnabled = true;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this.imgSys_i(),this.imgPoint_i(),this.labInfoName_i(),this.labInfoDesc_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(6,6,42,42);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg0Sheet_json.zuokuanga";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgSys_i = function () {
+		var t = new eui.Image();
+		this.imgSys = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.xitong2";
+		t.visible = false;
+		t.x = 18;
+		t.y = 6;
+		return t;
+	};
+	_proto.imgPoint_i = function () {
+		var t = new eui.Image();
+		this.imgPoint = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.hongdian";
+		t.x = 290;
+		t.y = 6;
+		return t;
+	};
+	_proto.labInfoName_i = function () {
+		var t = new eui.Label();
+		this.labInfoName = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 26;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "【系统】世界印记";
+		t.textColor = 0xffd76a;
+		t.verticalAlign = "middle";
+		t.width = 261;
+		t.x = 8.4;
+		t.y = 8;
+		return t;
+	};
+	_proto.labInfoDesc_i = function () {
+		var t = new eui.Label();
+		this.labInfoDesc = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 35;
+		t.lineSpacing = 10;
+		t.size = 22;
+		t.text = "所有上阵所fddfdfd";
+		t.textColor = 0xededed;
+		t.width = 294;
+		t.x = 18;
+		t.y = 54;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgSys","imgPoint","labInfoName","labInfoDesc","groupPI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return InfoItemSkin;
+})(eui.Skin);

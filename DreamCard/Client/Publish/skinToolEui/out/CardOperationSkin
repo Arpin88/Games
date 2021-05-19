@@ -1,0 +1,1210 @@
+(function (_super) {
+	__extends(CardOptionSkin, _super);
+	var CardOptionSkin$Skin1 = 	(function (_super) {
+		__extends(CardOptionSkin$Skin1, _super);
+		function CardOptionSkin$Skin1() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.guanbi01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CardOptionSkin$Skin1.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "shezhisheet_json.guanbi00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardOptionSkin$Skin1;
+	})(eui.Skin);
+
+	var CardOptionSkin$Skin2 = 	(function (_super) {
+		__extends(CardOptionSkin$Skin2, _super);
+		function CardOptionSkin$Skin2() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.shengxing_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.shengxing_2")
+					])
+			];
+		}
+		var _proto = CardOptionSkin$Skin2.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.shengxing_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardOptionSkin$Skin2;
+	})(eui.Skin);
+
+	var CardOptionSkin$Skin3 = 	(function (_super) {
+		__extends(CardOptionSkin$Skin3, _super);
+		function CardOptionSkin$Skin3() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.jinjie_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.jinjie_2")
+					])
+			];
+		}
+		var _proto = CardOptionSkin$Skin3.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.jinjie_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardOptionSkin$Skin3;
+	})(eui.Skin);
+
+	var CardOptionSkin$Skin4 = 	(function (_super) {
+		__extends(CardOptionSkin$Skin4, _super);
+		function CardOptionSkin$Skin4() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.shiyong_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.shiyong_1")
+					])
+			];
+		}
+		var _proto = CardOptionSkin$Skin4.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.shiyong_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardOptionSkin$Skin4;
+	})(eui.Skin);
+
+	function CardOptionSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.cardoperationgruop_i()];
+	}
+	var _proto = CardOptionSkin.prototype;
+
+	_proto.cardoperationgruop_i = function () {
+		var t = new eui.Group();
+		this.cardoperationgruop = t;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		t.elementsContent = [this.CardShade_i(),this._c2_i()];
+		return t;
+	};
+	_proto.CardShade_i = function () {
+		var t = new eui.Rect();
+		this.CardShade = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.height = 635;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 1018;
+		t.elementsContent = [this._a1_i(),this.btnClose_i(),this.groupLeft_i(),this.groupRight_i(),this.groupSkillExplain_i(),this._c1_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.btnClose_i = function () {
+		var t = new eui.Button();
+		this.btnClose = t;
+		t.horizontalCenter = 507;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = -318.5;
+		t.x = 992;
+		t.y = -29;
+		t.skinName = CardOptionSkin$Skin1;
+		return t;
+	};
+	_proto.groupLeft_i = function () {
+		var t = new eui.Group();
+		this.groupLeft = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 635;
+		t.horizontalCenter = -289;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.width = 388;
+		t.elementsContent = [this._a2_i(),this.labCardName_i(),this.imgGene_i(),this.imgMaxEXP_i(),this.prbLoading0_i(),this.labExp_left_i(),this.groupStar_i(),this.btnLvlUp_i(),this.btnGeneUp_i(),this._e1_i(),this.groupCardView_i(),this.labPrice_i(),this.groupSkillList_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "newcardpanel_json.qizhi";
+		t.y = -1.29;
+		return t;
+	};
+	_proto.labCardName_i = function () {
+		var t = new eui.Label();
+		this.labCardName = t;
+		t.anchorOffsetY = 0;
+		t.borderColor = 0x000000;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 34;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 1;
+		t.strokeColor = 0x614c33;
+		t.text = "刘备";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.top = 24;
+		t.verticalAlign = "middle";
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.imgGene_i = function () {
+		var t = new eui.Image();
+		this.imgGene = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.daishu3";
+		t.x = 83;
+		t.y = 279;
+		return t;
+	};
+	_proto.imgMaxEXP_i = function () {
+		var t = new eui.Image();
+		this.imgMaxEXP = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "newcardpanel_json.jingdu01";
+		t.verticalCenter = 14.5;
+		return t;
+	};
+	_proto.prbLoading0_i = function () {
+		var t = new eui.ProgressBar();
+		this.prbLoading0 = t;
+		t.height = 24;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "HLoadSkin3";
+		t.value = 50;
+		t.verticalCenter = 14.5;
+		t.width = 328;
+		return t;
+	};
+	_proto.labExp_left_i = function () {
+		var t = new eui.Label();
+		this.labExp_left = t;
+		t.fontFamily = "SimHei";
+		t.height = 22;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.text = "200/238";
+		t.textAlign = "center";
+		t.verticalCenter = 15.5;
+		t.width = 200;
+		return t;
+	};
+	_proto.groupStar_i = function () {
+		var t = new eui.Group();
+		this.groupStar = t;
+		t.height = 24;
+		t.width = 130;
+		t.x = 140;
+		t.y = 281.66;
+		return t;
+	};
+	_proto.btnLvlUp_i = function () {
+		var t = new eui.Button();
+		this.btnLvlUp = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.enabled = true;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 0.55;
+		t.scaleY = 0.55;
+		t.y = 400;
+		t.skinName = CardOptionSkin$Skin2;
+		return t;
+	};
+	_proto.btnGeneUp_i = function () {
+		var t = new eui.Button();
+		this.btnGeneUp = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.enabled = true;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 0.55;
+		t.scaleY = 0.55;
+		t.y = 485;
+		t.skinName = CardOptionSkin$Skin3;
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 20;
+		t.text = "（达到五星才可以进阶！）";
+		t.textColor = 0xffc4c0;
+		t.y = 360;
+		return t;
+	};
+	_proto.groupCardView_i = function () {
+		var t = new eui.Group();
+		this.groupCardView = t;
+		t.height = 156;
+		t.width = 156;
+		t.x = 30;
+		t.y = 108;
+		return t;
+	};
+	_proto.labPrice_i = function () {
+		var t = new eui.Label();
+		this.labPrice = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 28;
+		t.horizontalCenter = 0.5;
+		t.size = 20;
+		t.text = "参考价:1000XWG";
+		t.textAlign = "center";
+		t.textColor = 0xffdcdb;
+		t.verticalAlign = "top";
+		t.width = 353;
+		t.y = 77;
+		return t;
+	};
+	_proto.groupSkillList_i = function () {
+		var t = new eui.Group();
+		this.groupSkillList = t;
+		t.height = 156;
+		t.width = 156;
+		t.x = 200;
+		t.y = 108;
+		return t;
+	};
+	_proto.groupRight_i = function () {
+		var t = new eui.Group();
+		this.groupRight = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 578;
+		t.horizontalCenter = 203;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0.5;
+		t.width = 552;
+		t.elementsContent = [this.kuang_i(),this.scrAttrListPanel_i(),this.scrFetterPanel_i(),this.groupShow_i(),this.groupShopPanel_i(),this.groupGeneUpPanel_i(),this.groupLvlUp_i()];
+		return t;
+	};
+	_proto.kuang_i = function () {
+		var t = new eui.Image();
+		this.kuang = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(15,15,64,70);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.tanchukuang2";
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.scrAttrListPanel_i = function () {
+		var t = new eui.Group();
+		this.scrAttrListPanel = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.y = 0;
+		t.elementsContent = [this.labCardName0_i(),this.scrAttrList_i(),this._a3_i(),this._a4_i()];
+		return t;
+	};
+	_proto.labCardName0_i = function () {
+		var t = new eui.Label();
+		this.labCardName0 = t;
+		t.borderColor = 0x000000;
+		t.fontFamily = "SimHei";
+		t.height = 26;
+		t.horizontalCenter = 4;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.stroke = 1;
+		t.strokeColor = 0x614C33;
+		t.text = "卡牌属性";
+		t.textAlign = "center";
+		t.textColor = 0x91e1ff;
+		t.top = 20;
+		t.verticalAlign = "middle";
+		t.width = 402;
+		return t;
+	};
+	_proto.scrAttrList_i = function () {
+		var t = new eui.Scroller();
+		this.scrAttrList = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 505.34;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.y = 64;
+		t.viewport = this.groupAttrList_i();
+		return t;
+	};
+	_proto.groupAttrList_i = function () {
+		var t = new eui.Group();
+		this.groupAttrList = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 490;
+		t.percentWidth = 100;
+		t.x = -1.33;
+		t.y = 0;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 95;
+		t.y = 30;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.scaleX = -1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 465;
+		t.y = 30;
+		return t;
+	};
+	_proto.scrFetterPanel_i = function () {
+		var t = new eui.Group();
+		this.scrFetterPanel = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.y = 0;
+		t.elementsContent = [this.scrFetter_i(),this.labCardName1_i(),this._a5_i(),this._a6_i()];
+		return t;
+	};
+	_proto.scrFetter_i = function () {
+		var t = new eui.Scroller();
+		this.scrFetter = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 509.34;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.width = 556;
+		t.x = -570.3499999999999;
+		t.y = 53.12;
+		t.viewport = this.groupFetter_i();
+		return t;
+	};
+	_proto.groupFetter_i = function () {
+		var t = new eui.Group();
+		this.groupFetter = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 510.67;
+		t.width = 557.33;
+		return t;
+	};
+	_proto.labCardName1_i = function () {
+		var t = new eui.Label();
+		this.labCardName1 = t;
+		t.borderColor = 0x000000;
+		t.fontFamily = "SimHei";
+		t.height = 26;
+		t.horizontalCenter = 5.6650000000000205;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.stroke = 1;
+		t.strokeColor = 0x614C33;
+		t.text = "羁绊";
+		t.textAlign = "center";
+		t.textColor = 0x91e1ff;
+		t.verticalAlign = "middle";
+		t.width = 402;
+		t.y = 20.69;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 95;
+		t.y = 30;
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.scaleX = -1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 465;
+		t.y = 30;
+		return t;
+	};
+	_proto.groupShow_i = function () {
+		var t = new eui.Group();
+		this.groupShow = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a7_i(),this.groupCardShow_i()];
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.source = "newcardpanel_json.kabeitietu";
+		t.verticalCenter = 0;
+		t.x = 0;
+		return t;
+	};
+	_proto.groupCardShow_i = function () {
+		var t = new eui.Group();
+		this.groupCardShow = t;
+		t.anchorOffsetX = 0;
+		t.height = 575;
+		t.horizontalCenter = 86;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = 0;
+		t.width = 382;
+		return t;
+	};
+	_proto.groupShopPanel_i = function () {
+		var t = new eui.Group();
+		this.groupShopPanel = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.btnGoTrace_i()];
+		return t;
+	};
+	_proto.btnGoTrace_i = function () {
+		var t = new eui.Button();
+		this.btnGoTrace = t;
+		t.horizontalCenter = 0;
+		t.label = "出售";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonY1Skin";
+		t.verticalCenter = 0;
+		t.x = 186;
+		return t;
+	};
+	_proto.groupGeneUpPanel_i = function () {
+		var t = new eui.Group();
+		this.groupGeneUpPanel = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 585.33;
+		t.visible = false;
+		t.width = 577.33;
+		t.x = 3;
+		t.y = 3.99;
+		t.elementsContent = [this.groupGeneUp_i(),this.labCardName3_i(),this._a9_i(),this._a10_i()];
+		return t;
+	};
+	_proto.groupGeneUp_i = function () {
+		var t = new eui.Group();
+		this.groupGeneUp = t;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = -3;
+		t.y = -3.989999999999995;
+		t.elementsContent = [this.BtnGeneUpItem_i(),this.imgGeneUpItem_i(),this._a8_i(),this._e2_i(),this.labGeneUpItem_i(),this.btnUseGeneItem_i()];
+		return t;
+	};
+	_proto.BtnGeneUpItem_i = function () {
+		var t = new eui.Button();
+		this.BtnGeneUpItem = t;
+		t.horizontalCenter = 0;
+		t.label = "使用";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "PPropItemSkin2";
+		t.y = 193;
+		return t;
+	};
+	_proto.imgGeneUpItem_i = function () {
+		var t = new eui.Image();
+		this.imgGeneUpItem = t;
+		t.rotation = 0.02;
+		t.scaleX = 0.7;
+		t.scaleY = 0.7;
+		t.source = "hallImg1Sheet_json.a128x128";
+		t.visible = false;
+		t.x = 250.05;
+		t.y = 170.97;
+		return t;
+	};
+	_proto._a8_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0.5;
+		t.scaleX = 0.7;
+		t.scaleY = 0.7;
+		t.source = "hallImg1Sheet_json.k128x129";
+		t.visible = false;
+		t.x = 126;
+		t.y = 164.69;
+		return t;
+	};
+	_proto._e2_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 26;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.text = "所需材料：";
+		t.textColor = 0x91e1ff;
+		t.verticalAlign = "middle";
+		t.x = 38;
+		t.y = 105;
+		return t;
+	};
+	_proto.labGeneUpItem_i = function () {
+		var t = new eui.Label();
+		this.labGeneUpItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.34;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 20;
+		t.text = "进阶石";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.width = 121.33;
+		t.y = 280.83;
+		return t;
+	};
+	_proto.btnUseGeneItem_i = function () {
+		var t = new eui.Button();
+		this.btnUseGeneItem = t;
+		t.horizontalCenter = 0;
+		t.label = "确定";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonB1Skin";
+		t.x = 73;
+		t.y = 408;
+		return t;
+	};
+	_proto.labCardName3_i = function () {
+		var t = new eui.Label();
+		this.labCardName3 = t;
+		t.borderColor = 0x000000;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 26;
+		t.horizontalCenter = -8.66500000000002;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 1;
+		t.strokeColor = 0x614C33;
+		t.text = "进阶";
+		t.textAlign = "center";
+		t.textColor = 0x91e1ff;
+		t.top = 18;
+		t.verticalAlign = "middle";
+		t.width = 402;
+		t.x = 85;
+		t.y = 8.010000000000005;
+		return t;
+	};
+	_proto._a9_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 92;
+		t.y = 26.00999999999999;
+		return t;
+	};
+	_proto._a10_i = function () {
+		var t = new eui.Image();
+		t.scaleX = -1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 462;
+		t.y = 26.00999999999999;
+		return t;
+	};
+	_proto.groupLvlUp_i = function () {
+		var t = new eui.Group();
+		this.groupLvlUp = t;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._e3_i(),this.lvUp_level_i(),this._e4_i(),this.labExp_i(),this.btnUserItem_i(),this.btnUserItem0_i(),this.btnUserItem1_i(),this.btnUserItem2_i(),this.labCardName4_i(),this._e5_i(),this.ImgChoose_i(),this._a11_i(),this._a12_i()];
+		return t;
+	};
+	_proto._e3_i = function () {
+		var t = new eui.Label();
+		t.anchorOffsetY = 0;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 61.33;
+		t.size = 26;
+		t.text = "当前星级：";
+		t.textColor = 0x8bc2d5;
+		t.verticalAlign = "middle";
+		t.x = 40;
+		t.y = 85;
+		return t;
+	};
+	_proto.lvUp_level_i = function () {
+		var t = new eui.Label();
+		this.lvUp_level = t;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 24;
+		t.size = 26;
+		t.text = "5";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.x = 162.37;
+		t.y = 104;
+		return t;
+	};
+	_proto._e4_i = function () {
+		var t = new eui.Label();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 76;
+		t.size = 26;
+		t.text = "当前经验：";
+		t.textColor = 0x8bc2d5;
+		t.verticalAlign = "middle";
+		t.width = 134;
+		t.x = 297;
+		t.y = 78;
+		return t;
+	};
+	_proto.labExp_i = function () {
+		var t = new eui.Label();
+		this.labExp = t;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 22;
+		t.size = 26;
+		t.text = "200/238";
+		t.verticalAlign = "middle";
+		t.x = 416.37;
+		t.y = 106.33;
+		return t;
+	};
+	_proto.btnUserItem_i = function () {
+		var t = new eui.Button();
+		this.btnUserItem = t;
+		t.horizontalCenter = 0.5;
+		t.label = "";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.y = 477.29;
+		t.skinName = CardOptionSkin$Skin4;
+		return t;
+	};
+	_proto.btnUserItem0_i = function () {
+		var t = new eui.Button();
+		this.btnUserItem0 = t;
+		t.label = "使用";
+		t.scaleX = 0.88;
+		t.scaleY = 0.88;
+		t.skinName = "RoleUpgradeMaterialSkin";
+		t.x = 88;
+		t.y = 258;
+		return t;
+	};
+	_proto.btnUserItem1_i = function () {
+		var t = new eui.Button();
+		this.btnUserItem1 = t;
+		t.label = "使用";
+		t.scaleX = 0.88;
+		t.scaleY = 0.88;
+		t.skinName = "RoleUpgradeMaterialSkin";
+		t.x = 233.2;
+		t.y = 258;
+		return t;
+	};
+	_proto.btnUserItem2_i = function () {
+		var t = new eui.Button();
+		this.btnUserItem2 = t;
+		t.label = "使用";
+		t.scaleX = 0.88;
+		t.scaleY = 0.88;
+		t.skinName = "RoleUpgradeMaterialSkin";
+		t.x = 365;
+		t.y = 258;
+		return t;
+	};
+	_proto.labCardName4_i = function () {
+		var t = new eui.Label();
+		this.labCardName4 = t;
+		t.borderColor = 0x000000;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 26;
+		t.horizontalCenter = 2;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.stroke = 1;
+		t.strokeColor = 0x614C33;
+		t.text = "升星";
+		t.textAlign = "center";
+		t.textColor = 0x91e1ff;
+		t.top = 21;
+		t.verticalAlign = "middle";
+		t.width = 402;
+		t.x = 88;
+		t.y = 12;
+		return t;
+	};
+	_proto._e5_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 24;
+		t.size = 26;
+		t.text = "所需材料：";
+		t.textColor = 0x8bc2d5;
+		t.verticalAlign = "middle";
+		t.x = 42.96;
+		t.y = 192.68;
+		return t;
+	};
+	_proto.ImgChoose_i = function () {
+		var t = new eui.Image();
+		this.ImgChoose = t;
+		t.scaleX = 0.9;
+		t.scaleY = 0.9;
+		t.source = "hallBtn1Sheet_json.a40x40_1";
+		t.touchEnabled = false;
+		t.x = 149.96;
+		t.y = 257.36;
+		return t;
+	};
+	_proto._a11_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 95;
+		t.y = 30;
+		return t;
+	};
+	_proto._a12_i = function () {
+		var t = new eui.Image();
+		t.scaleX = -1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a129x10";
+		t.x = 465;
+		t.y = 30;
+		return t;
+	};
+	_proto.groupSkillExplain_i = function () {
+		var t = new eui.Group();
+		this.groupSkillExplain = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 187;
+		t.horizontalCenter = -2.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.verticalCenter = -132;
+		t.visible = false;
+		t.width = 311;
+		t.x = 363;
+		t.y = 94;
+		t.elementsContent = [this._s1_i(),this.labSkillName_i(),this.labSkillType_i(),this.labSkillExplain_i(),this.labLockState_i(),this._e6_i(),this.labeffect_i(),this._e7_i()];
+		return t;
+	};
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillAlpha = 0.5;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.labSkillName_i = function () {
+		var t = new eui.Label();
+		this.labSkillName = t;
+		t.fontFamily = "SimHei";
+		t.italic = true;
+		t.size = 24;
+		t.text = "治疗专精";
+		t.x = 17;
+		t.y = 14;
+		return t;
+	};
+	_proto.labSkillType_i = function () {
+		var t = new eui.Label();
+		this.labSkillType = t;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 20;
+		t.size = 20;
+		t.text = "被动技能";
+		t.textColor = 0x8dd3ff;
+		t.x = 17;
+		t.y = 44;
+		return t;
+	};
+	_proto.labSkillExplain_i = function () {
+		var t = new eui.Label();
+		this.labSkillExplain = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 5;
+		t.size = 20;
+		t.text = "技能说明技能说明30%;技能说明技能说明技能说明技;";
+		t.textColor = 0xffd119;
+		t.width = 278;
+		t.x = 17;
+		t.y = 69;
+		return t;
+	};
+	_proto.labLockState_i = function () {
+		var t = new eui.Label();
+		this.labLockState = t;
+		t.fontFamily = "SimHei";
+		t.size = 20;
+		t.text = "已解锁";
+		t.textAlign = "left";
+		t.textColor = 0xffd119;
+		t.x = 108.5;
+		t.y = 154;
+		return t;
+	};
+	_proto._e6_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "SimHei";
+		t.size = 20;
+		t.text = "当前状态:";
+		t.textColor = 0x7a766a;
+		t.x = 17;
+		t.y = 154;
+		return t;
+	};
+	_proto.labeffect_i = function () {
+		var t = new eui.Label();
+		this.labeffect = t;
+		t.fontFamily = "Microsoft YaHei";
+		t.size = 16;
+		t.text = "额外增加";
+		t.textAlign = "left";
+		t.textColor = 0xFFD119;
+		t.visible = false;
+		t.x = 94.99;
+		t.y = 127.37;
+		return t;
+	};
+	_proto._e7_i = function () {
+		var t = new eui.Label();
+		t.fontFamily = "Microsoft YaHei";
+		t.size = 16;
+		t.text = "当前效果:";
+		t.textColor = 0x7A766A;
+		t.visible = false;
+		t.x = 23.29;
+		t.y = 127.35;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetY = 0;
+		t.height = 522.67;
+		t.horizontalCenter = 549;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.width = 86;
+		t.y = 63.61;
+		t.elementsContent = [this.imgAttribute_i(),this.imgAttributeLabel_i(),this.imgFetter_i(),this.imgFetterLabel_i(),this.imgShow_i(),this.imgShowLabel_i(),this.imgSell_i(),this.imgSellLabel_i()];
+		return t;
+	};
+	_proto.imgAttribute_i = function () {
+		var t = new eui.Image();
+		this.imgAttribute = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallBtn1Sheet_json.a86x114_1";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgAttributeLabel_i = function () {
+		var t = new eui.Image();
+		this.imgAttributeLabel = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.sx_0";
+		t.touchEnabled = false;
+		t.x = 20;
+		t.y = 20;
+		return t;
+	};
+	_proto.imgFetter_i = function () {
+		var t = new eui.Image();
+		this.imgFetter = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallBtn1Sheet_json.a86x114_0";
+		t.y = 132.66;
+		return t;
+	};
+	_proto.imgFetterLabel_i = function () {
+		var t = new eui.Image();
+		this.imgFetterLabel = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.jb_0";
+		t.touchEnabled = false;
+		t.x = 20;
+		t.y = 152.66;
+		return t;
+	};
+	_proto.imgShow_i = function () {
+		var t = new eui.Image();
+		this.imgShow = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallBtn1Sheet_json.a86x114_0";
+		t.x = 0;
+		t.y = 262.65;
+		return t;
+	};
+	_proto.imgShowLabel_i = function () {
+		var t = new eui.Image();
+		this.imgShowLabel = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.zhanshi00";
+		t.touchEnabled = false;
+		t.x = 20;
+		t.y = 282.65;
+		return t;
+	};
+	_proto.imgSell_i = function () {
+		var t = new eui.Image();
+		this.imgSell = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallBtn1Sheet_json.a86x114_0";
+		t.y = 393.65;
+		return t;
+	};
+	_proto.imgSellLabel_i = function () {
+		var t = new eui.Image();
+		this.imgSellLabel = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.chushou00";
+		t.touchEnabled = false;
+		t.x = 20;
+		t.y = 413.65;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["CardShade","btnClose","labCardName","imgGene","imgMaxEXP","prbLoading0","labExp_left","groupStar","btnLvlUp","btnGeneUp","groupCardView","labPrice","groupSkillList","groupLeft","kuang","labCardName0","groupAttrList","scrAttrList","scrAttrListPanel","groupFetter","scrFetter","labCardName1","scrFetterPanel","groupCardShow","groupShow","btnGoTrace","groupShopPanel","BtnGeneUpItem","imgGeneUpItem","labGeneUpItem","btnUseGeneItem","groupGeneUp","labCardName3","groupGeneUpPanel","lvUp_level","labExp","btnUserItem","btnUserItem0","btnUserItem1","btnUserItem2","labCardName4","ImgChoose","groupLvlUp","groupRight","labSkillName","labSkillType","labSkillExplain","labLockState","labeffect","groupSkillExplain","imgAttribute","imgAttributeLabel","imgFetter","imgFetterLabel","imgShow","imgShowLabel","imgSell","imgSellLabel","cardoperationgruop"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardOptionSkin;
+})(eui.Skin);

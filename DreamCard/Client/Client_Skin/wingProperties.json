@@ -1,0 +1,23 @@
+{
+	"resourcePlugin": {
+		"configs": [
+			{
+				"configPath": "res-Hall/default.res.json",
+				"relativePath": "res-Hall/"
+			},
+			{
+				"configPath": "res-Combat/default.res.json",
+				"relativePath": "res-Combat/"
+			},
+			{
+				"configPath": "resource/default.res.json",
+				"relativePath": "resource/"
+			},
+			{
+				"configPath": "res-xxx/default.res.json",
+				"relativePath": "resource/"
+			}
+		]
+	},
+	"theme": "resource/default.thm.json"
+}

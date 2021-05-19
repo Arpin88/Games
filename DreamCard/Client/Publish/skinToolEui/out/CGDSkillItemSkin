@@ -1,0 +1,67 @@
+(function (_super) {
+	__extends(CGDSkillItemSkin, _super);
+	function CGDSkillItemSkin() {
+		_super.call(this);
+		
+		this.width = 510;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = CGDSkillItemSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.width = 510;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBG_i(),this.groupSkillIcon_i(),this.groupSTextField_i(),this.lblDes_i()];
+		return t;
+	};
+	_proto.imgBG_i = function () {
+		var t = new eui.Image();
+		this.imgBG = t;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(16,49,476,30);
+		t.source = "hallImg1Sheet_json.a508x90";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupSkillIcon_i = function () {
+		var t = new eui.Group();
+		this.groupSkillIcon = t;
+		t.left = 10;
+		t.top = 10;
+		return t;
+	};
+	_proto.groupSTextField_i = function () {
+		var t = new eui.Group();
+		this.groupSTextField = t;
+		t.left = 100;
+		t.top = 10;
+		return t;
+	};
+	_proto.lblDes_i = function () {
+		var t = new eui.Label();
+		this.lblDes = t;
+		t.fontFamily = "SimHei";
+		t.lineSpacing = 8;
+		t.size = 20;
+		t.stroke = 2;
+		t.text = "技能介绍技能介绍技能介绍技能介绍技能介绍技能介绍技能介绍技能介绍";
+		t.textColor = 0xFFFFFF;
+		t.width = 365;
+		t.wordWrap = true;
+		t.x = 100;
+		t.y = 60;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBG","groupSkillIcon","groupSTextField","lblDes"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CGDSkillItemSkin;
+})(eui.Skin);

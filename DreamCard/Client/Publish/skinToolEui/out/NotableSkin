@@ -1,0 +1,58 @@
+(function (_super) {
+	__extends(NotableSkin, _super);
+	function NotableSkin() {
+		_super.call(this);
+		
+		this.height = 34;
+		this.width = 872;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = NotableSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this.lblNotify_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.alpha = 0.7;
+		t.horizontalCenter = 0;
+		t.source = "shezhisheet_json.gonggaokuang";
+		t.percentWidth = 100;
+		t.y = 0;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = -302;
+		t.source = "hallText0Sheet_json.xitong";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.lblNotify_i = function () {
+		var t = new eui.Label();
+		this.lblNotify = t;
+		t.fontFamily = "SimHei";
+		t.size = 20;
+		t.stroke = 2;
+		t.text = "66666666666";
+		t.textColor = 0xffffff;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.x = 165;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["lblNotify"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return NotableSkin;
+})(eui.Skin);

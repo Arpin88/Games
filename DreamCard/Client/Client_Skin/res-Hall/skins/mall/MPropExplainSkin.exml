@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MPropExplainSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupMPropExplain" width="100%" height="100%" x="0" y="0">
+		<e:Rect id="rectBG" width="100%" height="100%" x="0" y="0" fillAlpha="0.7"/>
+		<e:Group width="762" height="513" horizontalCenter="0" verticalCenter="0" anchorOffsetX="0">
+			<e:Image source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" width="100%" height="100%" horizontalCenter="0" x="0" y="0" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image width="711" height="311" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="15,11,64,75" source="hallImg1Sheet_json.tanchukuang2" horizontalCenter="0" y="58"/>
+			<e:Image width="514" height="130" x="198" y="96" scaleX="1" scaleY="1" anchorOffsetX="1.25" anchorOffsetY="1.2" source="hallImg0Sheet_json.w162x50" scale9Grid="15,11,122,25"/>
+			<e:Label id="namstring" text="天工号角" x="218" y="110" scaleX="1" scaleY="1" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" textColor="0xffffff"/>
+			<e:Image y="89" touchEnabled="false" source="hallImg1Sheet_json.k150x150" anchorOffsetX="0" width="143.33" anchorOffsetY="0" height="143.33" x="48"/>
+			<e:Image id="imgItem" y="95.65" horizontalCenter="-261" source="propSheet_json.1" anchorOffsetX="0" width="130" anchorOffsetY="0" height="130"/>
+			<e:Image y="284" anchorOffsetX="0" anchorOffsetY="0" source="hallText0Sheet_json.goumaishuliang" x="48"/>
+			<e:Image y="-31" anchorOffsetX="0" anchorOffsetY="0" source="hallImg1Sheet_json.biaotiban" horizontalCenter="0"/>
+			<e:Image y="-13" anchorOffsetX="0" anchorOffsetY="0" source="hallText0Sheet_json.spgm" horizontalCenter="0"/>
+			<e:Label id="price" text="120XWG" x="290.71" y="150" scaleX="1" scaleY="1" width="142" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" textColor="0xffffff"/>
+			<e:Label id="nameandnum" text="22" x="523" y="150" scaleX="1" scaleY="1" width="142" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" textColor="0xffffff" visible="false"/>
+			<e:Label id="price0" text="单价：" x="218" y="150" scaleX="1" scaleY="1" width="85" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" textColor="0xffffff"/>
+			<e:Label id="price1" text="已有：" x="446.5" y="150" scaleX="1" scaleY="1" width="81" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" textColor="0xffffff" visible="false"/>
+			<e:Label id="descstring" text="使用可获得120经验值" x="218" y="190" scaleX="1" scaleY="1" width="488" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" textColor="0xfdd047"/>
+			<e:Label id="totalnum" text="(花费：100)" x="506" y="284.69" scaleX="1" scaleY="1" width="244" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" textColor="0xf72222"/>
+			<e:Button id="btnCancel" label="" x="64" y="400" scaleX="0.66" scaleY="0.66">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.quxiao_0" source.down="hallBtn2Sheet_json.quxiao_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnConfirm" label="" x="498" y="400" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.66" scaleY="0.66">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.queding_0" source.down="hallBtn2Sheet_json.queding_1" source.disabled="hallBtn2Sheet_json.queding_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group x="199.91" y="272.65" touchEnabled="false" anchorOffsetX="0" width="308">
+				<e:Image y="-4.29" x="0" scaleX="1" scaleY="1" anchorOffsetX="0" width="306" source="hallImg1Sheet_json.shurukuang" scale9Grid="12,10,78,45"/>
+				<e:Button id="btnReduce" label="" x="0" y="0" scaleX="1" scaleY="1" visible="false">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.b74x54_0" source.down="hallBtn1Sheet_json.b74x54_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnAdd" label="" x="230" y="0" scaleX="1" scaleY="1" visible="false">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a74x54_0" source.down="hallBtn1Sheet_json.a74x54_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnMax" label="" x="320" y="0" scaleX="1" scaleY="1" visible="false">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a98x54_0" source.down="hallBtn1Sheet_json.a98x54_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:EditableText id="editCount" width="303.33" height="56.67" text="999" x="1" y="-1.63" verticalAlign="middle" textAlign="center" textColor="0xffc000" stroke="0" size="30" fontFamily="SimHei" borderColor="0xffc000" backgroundColor="0xffc000" anchorOffsetX="0" anchorOffsetY="0"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

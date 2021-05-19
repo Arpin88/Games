@@ -1,0 +1,123 @@
+(function (_super) {
+	__extends(FetterItemSkin, _super);
+	function FetterItemSkin() {
+		_super.call(this);
+		
+		this.height = 230;
+		this.width = 210;
+		this.elementsContent = [this.groupPI_i()];
+	}
+	var _proto = FetterItemSkin.prototype;
+
+	_proto.groupPI_i = function () {
+		var t = new eui.Group();
+		this.groupPI = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBg_i(),this.imgIcon_i(),this.imgGet_i(),this.lightFrame_i(),this.labelNum_i(),this.labelDays_i()];
+		return t;
+	};
+	_proto.imgBg_i = function () {
+		var t = new eui.Image();
+		this.imgBg = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "tasksheet_json.kuang";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.imgIcon_i = function () {
+		var t = new eui.Image();
+		this.imgIcon = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "tasksheet_json.jinbi";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.imgGet_i = function () {
+		var t = new eui.Image();
+		this.imgGet = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "tasksheet_json.gou";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.visible = false;
+		return t;
+	};
+	_proto.lightFrame_i = function () {
+		var t = new eui.Image();
+		this.lightFrame = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 244;
+		t.horizontalCenter = 0.5;
+		t.source = "tasksheet_json.guanghuan";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 223;
+		return t;
+	};
+	_proto.labelNum_i = function () {
+		var t = new eui.Label();
+		this.labelNum = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.horizontalCenter = -0.5;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "XWG*10";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.width = 177.31;
+		t.x = 12;
+		t.y = 189.92;
+		return t;
+	};
+	_proto.labelDays_i = function () {
+		var t = new eui.Label();
+		this.labelDays = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.horizontalCenter = 0;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "第三天";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 177.31;
+		t.x = 2;
+		t.y = 13.92;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBg","imgIcon","imgGet","lightFrame","labelNum","labelDays","groupPI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return FetterItemSkin;
+})(eui.Skin);

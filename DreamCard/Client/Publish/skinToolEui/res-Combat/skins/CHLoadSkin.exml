@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CHLoadSkin" width="90" height="12" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="100%" height="100%" source="combatImg0Sheet_json.b90x12"/>
+	<e:Image id="thumb" width="100%" height="100%" x="0" y="0" source="combatImg0Sheet_json.a90x12"/>
+</e:Skin>

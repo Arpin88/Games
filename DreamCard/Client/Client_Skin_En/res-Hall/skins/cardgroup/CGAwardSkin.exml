@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CGDetailSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Rect id="rectBG" width="100%" height="100%" x="0" y="0" fillAlpha="0.7"/>
+		<e:Group width="1016" height="640" verticalCenter="0" horizontalCenter="0">
+			<e:Image width="100%" height="100%" x="0" y="0" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59"/>
+			<e:Group id="groupCard" width="390" height="578" horizontalCenter="-285" verticalCenter="-3">
+			</e:Group>
+			<e:Group width="552" height="578" horizontalCenter="205" verticalCenter="-3">
+				<e:Image width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" source="hallImg1Sheet_json.tanchukuang2" scale9Grid="12,12,76,76"/>
+				<e:Image y="30.82" scaleX="1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="61.38"/>
+				<e:Image y="30.82" scaleX="-1" scaleY="1" source="hallImg1Sheet_json.a129x10" x="491.38"/>
+				<e:Group id="groupFetter" width="100%" height="100%" x="0" y="0">
+					<e:Label text="Card Profile" y="24" fontFamily="SimHei" size="24" horizontalCenter="0" textColor="0x91e1ff"/>
+					<e:Scroller id="scrFetterItem" width="482.3" height="490" y="65" scrollPolicyH="off" scaleX="1" scaleY="1" x="35" anchorOffsetX="0">
+						<e:Group id="groupFetterItem" y="10">
+							<e:layout>
+								<e:VerticalLayout/>
+							</e:layout>
+						</e:Group>
+					</e:Scroller>
+				</e:Group>
+			</e:Group>
+			<e:Button id="btnClose" label="" x="978" y="-39">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="shezhisheet_json.guanbi00" source.down="shezhisheet_json.guanbi00"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+</e:Skin>

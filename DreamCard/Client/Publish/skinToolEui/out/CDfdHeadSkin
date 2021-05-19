@@ -1,0 +1,309 @@
+(function (_super) {
+	__extends(CDfdHeadSkin, _super);
+	function CDfdHeadSkin() {
+		_super.call(this);
+		
+		this.height = 295;
+		this.width = 272;
+		this.elementsContent = [this._c5_i()];
+	}
+	var _proto = CDfdHeadSkin.prototype;
+
+	_proto._c5_i = function () {
+		var t = new eui.Group();
+		t.height = 295;
+		t.width = 272;
+		t.elementsContent = [this.groupBack_i(),this.groupHead_i(),this.groupFront_i()];
+		return t;
+	};
+	_proto.groupBack_i = function () {
+		var t = new eui.Group();
+		this.groupBack = t;
+		t.height = 295;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchChildren = false;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 272;
+		return t;
+	};
+	_proto.groupHead_i = function () {
+		var t = new eui.Group();
+		this.groupHead = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchChildren = false;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 272;
+		t.elementsContent = [this._c1_i(),this._c3_i(),this._c4_i(),this.imgDisconnect_i()];
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 210;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 272;
+		t.x = 0;
+		t.y = 50;
+		t.elementsContent = [this.groupIcon_i(),this.groupHp_i()];
+		return t;
+	};
+	_proto.groupIcon_i = function () {
+		var t = new eui.Group();
+		this.groupIcon = t;
+		t.horizontalCenter = 0;
+		t.y = 30;
+		t.elementsContent = [this.imgIcon_i()];
+		return t;
+	};
+	_proto.imgIcon_i = function () {
+		var t = new eui.Image();
+		this.imgIcon = t;
+		t.height = 130;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "linshitouxiang_jpg";
+		t.width = 130;
+		t.y = 0;
+		return t;
+	};
+	_proto.groupHp_i = function () {
+		var t = new eui.Group();
+		this.groupHp = t;
+		t.horizontalCenter = 0;
+		t.y = 15;
+		t.elementsContent = [this._a1_i(),this.imgHp_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatImg0Sheet_json.a158x158";
+		t.y = 0;
+		return t;
+	};
+	_proto.imgHp_i = function () {
+		var t = new eui.Image();
+		this.imgHp = t;
+		t.height = 158;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatImg0Sheet_json.b158x158";
+		t.width = 158;
+		t.y = 0;
+		return t;
+	};
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 272;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a2_i(),this._a3_i(),this.lblName_i(),this.lblHp_i(),this.lblLv_i(),this._c2_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatImg0Sheet_json.a272x214";
+		t.y = 50;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatImg0Sheet_json.a242x84";
+		t.x = 10;
+		t.y = 0;
+		return t;
+	};
+	_proto.lblName_i = function () {
+		var t = new eui.Label();
+		this.lblName = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 22;
+		t.stroke = 2;
+		t.text = "酷炫吊炸天";
+		t.textAlign = "center";
+		t.textColor = 0xF9D978;
+		t.width = 200;
+		t.y = 27;
+		return t;
+	};
+	_proto.lblHp_i = function () {
+		var t = new eui.Label();
+		this.lblHp = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 18;
+		t.stroke = 2;
+		t.text = "HP:666";
+		t.textAlign = "center";
+		t.textColor = 0xFFFAE3;
+		t.width = 100;
+		t.x = 50;
+		t.y = 175;
+		return t;
+	};
+	_proto.lblLv_i = function () {
+		var t = new eui.Label();
+		this.lblLv = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "66";
+		t.textAlign = "center";
+		t.textColor = 0xFFFAE3;
+		t.width = 40;
+		t.y = 200;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.horizontalCenter = 0;
+		t.touchEnabled = false;
+		t.width = 272;
+		t.y = 58;
+		t.elementsContent = [this.groupFetter0_i(),this.groupFetter1_i(),this.groupFetter2_i(),this.groupFetter3_i()];
+		return t;
+	};
+	_proto.groupFetter0_i = function () {
+		var t = new eui.Group();
+		this.groupFetter0 = t;
+		t.anchorOffsetX = 22;
+		t.anchorOffsetY = 22;
+		t.height = 44;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.width = 44;
+		t.x = 24;
+		t.y = 65;
+		return t;
+	};
+	_proto.groupFetter1_i = function () {
+		var t = new eui.Group();
+		this.groupFetter1 = t;
+		t.anchorOffsetX = 22;
+		t.anchorOffsetY = 22;
+		t.height = 44;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.width = 44;
+		t.x = 249;
+		t.y = 66;
+		return t;
+	};
+	_proto.groupFetter2_i = function () {
+		var t = new eui.Group();
+		this.groupFetter2 = t;
+		t.anchorOffsetX = 22;
+		t.anchorOffsetY = 22;
+		t.height = 44;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.width = 44;
+		t.x = 30;
+		t.y = 117;
+		return t;
+	};
+	_proto.groupFetter3_i = function () {
+		var t = new eui.Group();
+		this.groupFetter3 = t;
+		t.anchorOffsetX = 22;
+		t.anchorOffsetY = 22;
+		t.height = 44;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.width = 44;
+		t.x = 243;
+		t.y = 116;
+		return t;
+	};
+	_proto._c4_i = function () {
+		var t = new eui.Group();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.y = 245;
+		t.elementsContent = [this._a4_i(),this.lblPower_i()];
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatText0Sheet_json.zzl00";
+		t.y = 0;
+		return t;
+	};
+	_proto.lblPower_i = function () {
+		var t = new eui.Label();
+		this.lblPower = t;
+		t.fontFamily = "SimHei";
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "6666";
+		t.textAlign = "left";
+		t.textColor = 0xFFDA77;
+		t.width = 90;
+		t.x = 160;
+		t.y = 14;
+		return t;
+	};
+	_proto.imgDisconnect_i = function () {
+		var t = new eui.Image();
+		this.imgDisconnect = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatText0Sheet_json.duanxian";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.groupFront_i = function () {
+		var t = new eui.Group();
+		this.groupFront = t;
+		t.height = 295;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchChildren = false;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 272;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["groupBack","imgIcon","groupIcon","imgHp","groupHp","lblName","lblHp","lblLv","groupFetter0","groupFetter1","groupFetter2","groupFetter3","lblPower","imgDisconnect","groupHead","groupFront"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CDfdHeadSkin;
+})(eui.Skin);

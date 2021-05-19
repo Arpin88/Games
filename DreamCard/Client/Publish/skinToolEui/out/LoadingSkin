@@ -1,0 +1,79 @@
+(function (_super) {
+	__extends(MPropExplainSkin, _super);
+	function MPropExplainSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._c2_i()];
+	}
+	var _proto = MPropExplainSkin.prototype;
+
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c1_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 748;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 0;
+		t.width = 1336;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this.loadtxt_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 770.65;
+		t.horizontalCenter = -0.5;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.verticalCenter = 0.5;
+		t.width = 1349.34;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "hallImg1Sheet_json.a128x128";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.loadtxt_i = function () {
+		var t = new eui.Label();
+		this.loadtxt = t;
+		t.horizontalCenter = 0;
+		t.text = "载入中....";
+		t.y = 468.67;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","loadtxt"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return MPropExplainSkin;
+})(eui.Skin);

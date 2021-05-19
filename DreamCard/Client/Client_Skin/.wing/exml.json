@@ -1,0 +1,75 @@
+{
+  "global": {
+    "globalAutoLayerMarkEnable": true,
+    "globalBindingDataTestObj": []
+  },
+  "171110792b6": {
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": 748.485
+      },
+      {
+        "type": "v",
+        "pos": 875.758
+      }
+    ]
+  },
+  "176ef752809": {
+    "guideLinesEnabled": false,
+    "bindingDataTestObj": []
+  },
+  "176f5564a5e": {
+    "bindingDataTestObj": []
+  },
+  "176f56a4b2f": {
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": 393.939
+      }
+    ]
+  },
+  "17705164574": {
+    "bindingDataTestObj": []
+  },
+  "1770516457e": {
+    "bindingDataTestObj": [
+      {
+        "key": "lbl_0",
+        "value": "当前等级:"
+      },
+      {
+        "key": "lbl_1",
+        "value": "当前经验:"
+      },
+      {
+        "key": "lbl_2",
+        "value": "所需材料:"
+      },
+      {
+        "key": "lbl_3",
+        "value": "材料不足，请前往商城购买"
+      }
+    ]
+  },
+  "17714652c99": {
+    "bindingDataTestObj": [
+      {
+        "key": "lbl_0",
+        "value": "卡牌属性"
+      },
+      {
+        "key": "lbl_1",
+        "value": "卡牌技能"
+      },
+      {
+        "key": "lbl_2",
+        "value": "可组羁绊"
+      }
+    ]
+  },
+  "17719fc2632": {
+    "bindingDataTestObj": []
+  }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeadSkin" width="380" height="172" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1764fcd9dc3"/>
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Group id="groupIcon" width="120" height="117" x="17.5" y="22" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="headimag" x="0" y="0" source="hallImg0Sheet_json.a101x101" scaleX="1" scaleY="1" width="100%" height="100%"/>
+		</e:Group>
+		<e:Image x="0" y="0" source="hallImg0Sheet_json.a346x154"/>
+		<e:Label id="leveltxt" text="66" x="48" y="130" size="22" fontFamily="SimHei" width="60" textAlign="center" stroke="2" textColor="0xffffff"/>
+		<e:Button id="upbtn" label="" x="330" y="36">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a48x52_0" source.down="hallBtn1Sheet_json.a48x52_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="nickname" text="liu" x="146.5" y="33" size="22" fontFamily="SimHei" textColor="0xffffff" width="148" textAlign="center" stroke="2"/>
+		<e:ProgressBar id="prbLoading" x="143" y="65" scaleX="1" scaleY="1" value="100" skinName="HLoadSkin" anchorOffsetX="0" width="182"/>
+		<e:ProgressBar id="prbLoading0" x="150" y="65" scaleX="1" scaleY="1" width="178" height="18" value="100" skinName="HLoadSkin2" visible="false"/>
+		<e:Label id="lblProgress" text="66/100" size="18" x="153" y="64" fontFamily="SimHei" width="160" textAlign="center" stroke="2"/>
+		<e:Image y="91" scaleX="1" scaleY="1" x="150" touchEnabled="false" source="hallText0Sheet_json.smz"/>
+		<e:Label id="hptxt" text="100" x="152.6" y="123.8" size="18" fontFamily="SimHei" stroke="2" textColor="0xffffff" width="98" textAlign="left" anchorOffsetX="0" visible="false"/>
+		<e:BitmapLabel id="hptxt_btnum" width="111" height="25" x="190" y="89" font="btnun_fnt" text="123" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+</e:Skin>

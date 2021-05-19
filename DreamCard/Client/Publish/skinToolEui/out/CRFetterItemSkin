@@ -1,0 +1,37 @@
+(function (_super) {
+	__extends(CRFetterItemSkin, _super);
+	function CRFetterItemSkin() {
+		_super.call(this);
+		
+		this.height = 44;
+		this.width = 44;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = CRFetterItemSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 44;
+		t.width = 44;
+		t.elementsContent = [this.imgIcon_i()];
+		return t;
+	};
+	_proto.imgIcon_i = function () {
+		var t = new eui.Image();
+		this.imgIcon = t;
+		t.anchorOffsetX = 22;
+		t.anchorOffsetY = 22;
+		t.source = "fetterIconImg0Sheet_json.xjb01";
+		t.x = 22;
+		t.y = 22;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgIcon"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CRFetterItemSkin;
+})(eui.Skin);

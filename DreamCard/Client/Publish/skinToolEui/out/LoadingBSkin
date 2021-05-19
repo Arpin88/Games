@@ -1,0 +1,39 @@
+(function (_super) {
+	__extends(LoadingBSkin, _super);
+	function LoadingBSkin() {
+		_super.call(this);
+		
+		this.height = 16;
+		this.width = 650;
+		this.elementsContent = [this._a1_i(),this.thumb_i()];
+	}
+	var _proto = LoadingBSkin.prototype;
+
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(7,2,34,12);
+		t.source = "l2_png";
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.thumb_i = function () {
+		var t = new eui.Image();
+		this.thumb = t;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(0,0,0,0);
+		t.source = "l1_png";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["thumb"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return LoadingBSkin;
+})(eui.Skin);

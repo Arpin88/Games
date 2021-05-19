@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RecycleSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupRecycle" width="100%" height="100%" x="0" y="0">
+		<e:Image x="0" y="0" source="bj_jpg" width="100%" height="100%"/>
+		<e:Group width="100%" height="80" x="0" y="0" left="0" top="0">
+		<e:Image source="top_png" top="0" horizontalCenter="0" width="100%"/>
+		<e:Image horizontalCenter="0" verticalCenter="-5" source="hallText0Sheet_json.t_huishou"/>
+		<e:Button id="btnBack" label="" left="0" top="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+			<e:Component id="comStar" skinName="StarSkin" right="50" x="1085" scaleX="1" scaleY="1" verticalCenter="-5"/>
+		</e:Group>
+		<e:Scroller id="scrOptionBtn" top="100" scrollPolicyH="off" height="640" left="0" width="288">
+		<e:Group id="groupOptionBtn"/>
+		</e:Scroller>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" top="100" height="640" left="288" right="406">
+		<e:Image source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" width="100%" x="0" y="0"/>
+		<e:Scroller id="scrCardItem" scrollPolicyH="off" scaleX="1" scaleY="1" height="600" width="600" y="20" horizontalCenter="0">
+			<e:Group id="groupCardItem"/>
+		</e:Scroller>
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" height="640" width="365" right="30" top="100">
+			<e:Image source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" width="100%" x="0" y="0"/>
+			<e:Image y="20" source="hallText0Sheet_json.huishouxinxi" horizontalCenter="0"/>
+			<e:Label id="lblContent" text="当前选择了0张卡牌，其中\n普通品质：0张\n稀有品质：0张\n史诗品质：0张\n传奇品质：0张\n神话品质：0张\n总价值：0XWG" y="65" textAlign="center" size="22" lineSpacing="15" width="340" fontFamily="SimHei" horizontalCenter="0"/>
+			<e:Label id="lblXWGPrice" text="XWG实时价格：0.00（-0.00）" y="370" textAlign="center" size="22" lineSpacing="15" width="340" fontFamily="SimHei" textColor="0xffffff" horizontalCenter="0"/>
+			<e:Button id="btnReset" label="" y="430" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.chongzhi_0" source.down="hallBtn2Sheet_json.chongzhi_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnRecycle" label="" y="530" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.huishou_0" source.down="hallBtn2Sheet_json.huishou_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+</e:Skin>

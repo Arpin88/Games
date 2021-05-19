@@ -1,0 +1,174 @@
+(function (_super) {
+	__extends(FetterItemSkin, _super);
+	function FetterItemSkin() {
+		_super.call(this);
+		
+		this.height = 147;
+		this.width = 1000;
+		this.elementsContent = [this.groupPI_i()];
+	}
+	var _proto = FetterItemSkin.prototype;
+
+	_proto.groupPI_i = function () {
+		var t = new eui.Group();
+		this.groupPI = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 147;
+		t.width = 1000;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBg_i(),this.bgClr1_i(),this.imgHead_i(),this._a1_i(),this.btnconfirm_i(),this.labelName_i(),this.labelDsc_i(),this._e1_i(),this.labelNum_i()];
+		return t;
+	};
+	_proto.imgBg_i = function () {
+		var t = new eui.Image();
+		this.imgBg = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = -223;
+		t.source = "tasksheet_json.di";
+		t.touchEnabled = false;
+		t.verticalCenter = -40.5;
+		return t;
+	};
+	_proto.bgClr1_i = function () {
+		var t = new eui.Image();
+		this.bgClr1 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(21,18,158,112);
+		t.source = "tasksheet_json.renwukuang";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.imgHead_i = function () {
+		var t = new eui.Image();
+		this.imgHead = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.source = "tasksheet_json.yaoqing";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.x = 40;
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = -235;
+		t.source = "tasksheet_json.xiaojinbi";
+		t.touchEnabled = false;
+		t.verticalCenter = 44.5;
+		return t;
+	};
+	_proto.btnconfirm_i = function () {
+		var t = new eui.Button();
+		this.btnconfirm = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 112.89;
+		t.label = "前往";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonB1Skin";
+		t.width = 263.57;
+		t.x = 785;
+		t.y = 39;
+		return t;
+	};
+	_proto.labelName_i = function () {
+		var t = new eui.Label();
+		this.labelName = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "十连抽";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 146.31;
+		t.x = 190;
+		t.y = 19;
+		return t;
+	};
+	_proto.labelDsc_i = function () {
+		var t = new eui.Label();
+		this.labelDsc = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "每日进行一次十连抽";
+		t.textAlign = "left";
+		t.textColor = 0x5ebfe5;
+		t.width = 275.31;
+		t.x = 186.02;
+		t.y = 62.97;
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "奖励:";
+		t.textAlign = "left";
+		t.textColor = 0xf2cd60;
+		t.verticalAlign = "middle";
+		t.width = 63.31;
+		t.x = 187.02;
+		t.y = 99.87;
+		return t;
+	};
+	_proto.labelNum_i = function () {
+		var t = new eui.Label();
+		this.labelNum = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "X10";
+		t.textAlign = "left";
+		t.textColor = 0xF2CD60;
+		t.verticalAlign = "middle";
+		t.width = 63.31;
+		t.x = 293.02;
+		t.y = 99.98;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBg","bgClr1","imgHead","btnconfirm","labelName","labelDsc","labelNum","groupPI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return FetterItemSkin;
+})(eui.Skin);

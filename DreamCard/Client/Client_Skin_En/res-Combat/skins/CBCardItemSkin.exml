@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CBCardItemSkin" width="138" height="206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCGBCI" width="138" height="206" anchorOffsetX="0" anchorOffsetY="0" x="0" y="0">
+		<e:Group id="groupCard" width="138" height="206" x="0" y="0">
+		</e:Group>
+		<e:Group id="groupEffect" width="138" height="206" x="0" y="0">
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PackageSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPackage" width="100%" height="100%" x="0" y="0">
+		<e:Image x="0" y="0" source="bj_jpg" width="100%" height="100%"/>
+		<e:Group width="100%" height="80" horizontalCenter="0" top="0">
+		<e:Image source="top_png" top="0" horizontalCenter="0" width="100%"/>
+		<e:Image horizontalCenter="0" verticalCenter="-4" source="hallText0Sheet_json.beibao"/>
+		<e:Button id="btnBack" label="" left="0" top="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+			<e:Component id="comStar" skinName="StarSkin" scaleX="1" scaleY="1" verticalCenter="-5" y="350" right="32"/>
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" height="640" left="288" right="406" top="100">
+		<e:Image id="imgRBG" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" anchorOffsetX="0" top="0" left="0" width="100%"/>
+			<e:Scroller id="scrPropItem" scrollPolicyH="off" scaleX="1" scaleY="1" height="100%" anchorOffsetX="0" top="0" horizontalCenter="0" width="640">
+				<e:Group id="groupPropItem" anchorOffsetX="0" width="100%" x="1.33" y="0"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Scroller id="scrOptionBtn" width="288" left="0" scrollPolicyH="off" height="640" anchorOffsetY="0" top="100">
+			<e:Group id="groupOptionBtn" anchorOffsetY="0" height="640" x="0" y="2.67" anchorOffsetX="0" width="100%"/>
+		</e:Scroller>
+		<e:Image id="imgRBG0" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="640" anchorOffsetX="0" width="368" anchorOffsetY="0" y="100" right="26"/>
+		<e:Group id="infogroup" anchorOffsetX="0" anchorOffsetY="0" width="368" height="640" right="26" top="100">
+			<e:Image x="176" y="34" anchorOffsetX="0" width="162" anchorOffsetY="0" height="50" source="hallImg0Sheet_json.w162x50"/>
+			<e:Image x="176" y="102" anchorOffsetX="0" width="162" anchorOffsetY="0" height="50" source="hallImg0Sheet_json.w162x50"/>
+			<e:Image y="28" touchEnabled="false" scaleX="1" scaleY="1" source="hallImg1Sheet_json.k150x150" anchorOffsetX="0" width="130" anchorOffsetY="0" height="130" x="30"/>
+			<e:Button id="btnUse" label="" y="496" scaleX="0.6999999999999998" scaleY="0.6999999999999998" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.shiyong_0" source.down="hallBtn2Sheet_json.shiyong_1" source.disabled="hallBtn2Sheet_json.shiyong_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnDestory" label="" y="382" scaleX="0.6999999999999998" scaleY="0.6999999999999998" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.cuihui_0" source.down="hallBtn2Sheet_json.cuihui_1" source.disabled="hallBtn2Sheet_json.cuihui_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="imgItem" y="40.09" scaleX="1" scaleY="0.96" source="propSheet_json.1" anchorOffsetX="0" width="111.33" anchorOffsetY="0" height="111.33" horizontalCenter="-90.5"/>
+			<e:Label id="iconname" text="开天号角" y="46" scaleX="1" scaleY="1" width="141" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="25.37" textColor="0xffffff" x="191" bold="true"/>
+			<e:Label id="labTips3" text="拥有" x="191" y="114" scaleX="1" scaleY="1" width="53.44" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="26.33" textColor="0xffffff" bold="true"/>
+			<e:Label id="labTips0" text="商城售价 :" x="30" y="276" scaleX="1" scaleY="1" width="121.99" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="32" textColor="0xb0b0b0"/>
+			<e:Label id="disc" text="商城售" x="32.67" y="192.67" scaleX="1" scaleY="1" width="297.99" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="74.67" textColor="0xffffff"/>
+			<e:Label id="price" text="120XWG" x="146" y="276" scaleX="1" scaleY="1" width="121.99" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="32" textColor="0x1fff59" bold="true"/>
+			<e:Label id="num" text="888" x="251.25" y="116" scaleX="1" scaleY="1" width="70.47" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="23.83" textColor="0xffbd1f" bold="true"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,111 @@
+(function (_super) {
+	__extends(MPropItemSkin2, _super);
+	function MPropItemSkin2() {
+		_super.call(this);
+		
+		this.height = 133;
+		this.width = 134;
+		this.elementsContent = [this.groupPI_i()];
+	}
+	var _proto = MPropItemSkin2.prototype;
+
+	_proto.groupPI_i = function () {
+		var t = new eui.Group();
+		this.groupPI = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 135;
+		t.touchEnabled = false;
+		t.width = 134;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this._a3_i(),this.thename_i(),this._a4_i(),this.labItemNum_i(),this.btnBuy_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.source = "hallImg0Sheet_json.a248x300";
+		t.touchEnabled = false;
+		t.visible = false;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 1;
+		t.source = "hallImg1Sheet_json.a128x128";
+		t.touchEnabled = false;
+		t.y = 11;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "hallImg1Sheet_json.k128x129";
+		t.touchEnabled = false;
+		t.y = 3;
+		return t;
+	};
+	_proto.thename_i = function () {
+		var t = new eui.Label();
+		this.thename = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "经验书";
+		t.textAlign = "center";
+		t.textColor = 0xffdaba;
+		t.touchEnabled = false;
+		t.visible = false;
+		t.width = 240;
+		t.y = 15;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "hallImg0Sheet_json.a160x35";
+		t.touchEnabled = false;
+		t.visible = false;
+		t.y = 185;
+		return t;
+	};
+	_proto.labItemNum_i = function () {
+		var t = new eui.Label();
+		this.labItemNum = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "6666";
+		t.textAlign = "right";
+		t.textColor = 0xffffff;
+		t.touchEnabled = false;
+		t.width = 117;
+		t.x = 10.5;
+		t.y = 97;
+		return t;
+	};
+	_proto.btnBuy_i = function () {
+		var t = new eui.Button();
+		this.btnBuy = t;
+		t.horizontalCenter = 0.5;
+		t.label = "购买";
+		t.scaleX = 0.45;
+		t.scaleY = 0.45;
+		t.skinName = "ButtonB1Skin";
+		t.visible = false;
+		t.y = 237;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["thename","labItemNum","btnBuy","groupPI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return MPropItemSkin2;
+})(eui.Skin);

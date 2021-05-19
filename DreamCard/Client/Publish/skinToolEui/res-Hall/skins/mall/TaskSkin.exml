@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="171110792b6"/>
+	<e:Group id="mallskingroup" width="100%" height="100%" x="0" y="0">
+		<e:Image x="0" y="0" source="bj_jpg" width="100%" height="100%" scaleX="1" scaleY="1"/>
+		<e:Group width="100%" height="80" left="0" top="0" x="0" y="0" scaleX="1" scaleY="1">
+			<e:Image source="top_png" top="0" horizontalCenter="0" width="100%"/>
+			<e:Image horizontalCenter="0" verticalCenter="-3" source="hallText0Sheet_json.t_renwu"/>
+			<e:Button id="btnBack" label="" top="0" left="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Component id="comStar" skinName="StarSkin" scaleX="1" scaleY="1" verticalCenter="-6" right="31"/>
+		</e:Group>
+		<e:Group width="288" height="640" anchorOffsetX="0" anchorOffsetY="0" x="0" y="100" scaleX="1" scaleY="1">
+			<e:Scroller id="scrOptionBtn" width="100%" scrollPolicyH="off" height="100%" anchorOffsetX="0" scaleX="1" scaleY="1" top="0" x="0">
+			<e:Group id="groupOptionBtn" anchorOffsetX="0" width="100%" height="100%"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" height="640" scaleX="1" scaleY="1" top="100" left="288" right="26">
+			<e:Image id="imgRBG" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" top="0" anchorOffsetX="0" x="0" width="100%"/>
+
+		</e:Group>
+		<e:Group id="taskpage" anchorOffsetX="0" anchorOffsetY="0" height="640" scaleX="1" scaleY="1" top="100" left="288" right="26">
+			<e:Scroller id="taskPropItem" width="1004" scrollPolicyH="off" scaleX="1" scaleY="1" height="608" anchorOffsetX="0" horizontalCenter="-1" y="10" anchorOffsetY="0">
+			<e:Group id="taskgroupPropItem" anchorOffsetX="0" width="100%" height="100%"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="awardpage" anchorOffsetX="0" anchorOffsetY="0" height="640" scaleX="1" scaleY="1" top="100" left="288" right="26">
+			<e:Scroller id="awardPropItem" width="1004" scrollPolicyH="off" scaleX="1" scaleY="1" height="608" anchorOffsetX="0" horizontalCenter="0" y="10">
+			<e:Group id="awardgroupPropItem" anchorOffsetX="0" width="100%" height="100%">
+			</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="signpage1" anchorOffsetX="0" anchorOffsetY="0" height="640" scaleX="1" scaleY="1" top="100" left="288" right="26">
+			<e:Group id="signpage" width="1004" height="608" y="10.64" horizontalCenter="0">
+				<e:Button id="btnBack0" label="签到" x="833" y="531.04" skinName="ButtonY1Skin" anchorOffsetX="0" width="263.57" anchorOffsetY="0" height="112.89" scaleX="0.6" scaleY="0.6"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

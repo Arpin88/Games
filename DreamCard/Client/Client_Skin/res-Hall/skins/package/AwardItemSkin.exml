@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FetterItemSkin" width="1000" height="147" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" width="1000" height="147">
+		<e:Image id="imgBg" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-223" verticalCenter="-40.5" source="tasksheet_json.di"/>
+		<e:Image id="bgClr1" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="tasksheet_json.renwukuang" width="100%" height="100%" scale9Grid="21,18,158,112"/>
+		<e:Image id="imgHead" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" source="tasksheet_json.yaoqing" x="40"/>
+		<e:Image touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-235" verticalCenter="44.5" source="tasksheet_json.xiaojinbi"/>
+
+
+
+		<e:Button id="btnconfirm" label="前往" x="785" y="39" anchorOffsetX="0" width="263.57" anchorOffsetY="0" height="112.89" scaleX="0.6" scaleY="0.6" skinName="ButtonB1Skin"/>
+		<e:Label id="labelName" text="十连抽" y="19" scaleX="1" scaleY="1" width="146.31" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" textColor="0xFFFFFF" rotation="0.03" x="190"/>
+		<e:Label id="labelDsc" text="每日进行一次十连抽" y="62.97" scaleX="1" scaleY="1" width="275.31" textAlign="left" size="24" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" rotation="0.03" x="186.02" textColor="0x5ebfe5"/>
+		<e:Label text="奖励:" y="99.87" scaleX="1" scaleY="1" width="63.31" textAlign="left" size="24" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" rotation="0.03" x="187.02" textColor="0xf2cd60" verticalAlign="middle"/>
+		<e:Label id="labelNum" text="X10" y="99.98" scaleX="1" scaleY="1" width="63.31" textAlign="left" size="24" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" textColor="0xF2CD60" rotation="0.03" x="293.02" verticalAlign="middle"/>
+	</e:Group>
+</e:Skin>

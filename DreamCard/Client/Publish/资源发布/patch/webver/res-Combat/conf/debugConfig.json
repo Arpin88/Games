@@ -1,0 +1,105 @@
+{
+    "Player_Id":0,
+
+    "Atkc_Hand":[
+        {"code":"1","icon":"sunquan", "rarity":"common","element":"metal", "generation" :1,"name":"孙权", "cost":66, "atk":66, "hp":66,"groupName":"groupCS_1"},
+        {"code":"2","icon":"liubei", "rarity":"common","element":"metal", "generation" :1,"name":"刘备", "cost":66, "atk":66, "hp":66,"groupName":"groupCS_2"},
+        {"code":"3","icon":"dianwei", "rarity":"common","element":"metal", "generation" :1,"name":"典韦", "cost":66, "atk":66, "hp":66,"groupName":"groupCS_3"}
+    ],
+    "Atkc_Out":[
+        {"code":"10","icon":"dianwei", "rarity":"mythical","element":"metal", "generation" :1,"name":"典韦", "cost":66, "atk":66, "hp":66},
+        {"code":"11","icon":"liubei", "rarity":"mythical","element":"metal", "generation" :1,"name":"刘备", "cost":66, "atk":66, "hp":66},
+        {"code":"12","icon":"caocao", "rarity":"mythical","element":"metal", "generation" :1,"name":"曹操", "cost":66, "atk":66, "hp":66}
+    ],
+    "Atkc_Death":[
+        {"code":"15","icon":"ganning", "rarity":"common","element":"metal", "generation" :1,"name":"甘宁", "cost":66, "atk":66, "hp":66,"grey":1}
+    ],
+
+    "Dfdc_Hand":[
+        {"visible":false},{"visible":false},{"visible":false}
+    ],
+    "Dfdc_Out":[
+        {"code":"20","icon":"chengpu", "rarity":"mythical","element":"metal", "generation" :1,"name":"程普", "cost":66, "atk":66, "hp":66},
+        {"code":"21","icon":"diaochan", "rarity":"mythical","element":"metal", "generation" :1,"name":"貂蝉", "cost":66, "atk":66, "hp":66},
+        {"code":"22","icon":"dongzhuo", "rarity":"mythical","element":"metal", "generation" :1,"name":"董卓", "cost":66, "atk":66, "hp":66}
+    ],
+    "Dfdc_Death":[
+        {"code":"25","icon":"ganning", "rarity":"common","element":"metal", "generation" :1,"name":"甘宁", "cost":66, "atk":66, "hp":66,"grey":1}
+    ],
+
+    "Click_0_Play_Key":"6",
+    "Click_1_Play_Key":"7",
+
+    "Combat_Serial":{
+        "0":[{"note":"无任何操作","optType":0}],
+
+        "1":[{"note":"发牌 发下方牌","optType":1,"senderPlace":0,
+                "optCardData":{"code":"5","icon":"sunquan", "rarity":"common","element":"metal", "generation" :1,"name":"诸葛村夫", "cost":66, "atk":66, "hp":66,"groupName":"groupCS_5"}
+            }
+        ],
+
+        "2":[{"note":"发牌 发上方牌","optType":1,"senderPlace":1,
+                "optCardData":{"visible":false}
+            }
+        ],
+
+        "3":[{"note":"减少手牌回合","optType":2,"senderPlace":0}],
+
+        "4":[{"note":"出牌 下方出牌","optType":3,"senderPlace":0,"removeCard":true,"fromCardCode":"1"}],
+
+        "5":[{"note":"出牌 上方出牌","optType":3,"senderPlace":1,"removeCard":true,
+                "optCardData":{"code":"24","icon":"sunquan", "rarity":"common","element":"metal", "generation" :1,"name":"诸葛村夫", "cost":66, "atk":66, "hp":66,"groupName":"groupCS_24"}
+            }
+        ],
+
+        "6":[{"note":"普通攻击 下方攻击","optType":4,"senderPlace":0,"fromCardCode":"10",
+                "fightNodeArr":[
+                    {"toCardCode":"20","hited":true,"damage":-6666,"damageShow":"-6666"},
+                    {"toCardCode":"21","hited":true,"damage":6666,"damageShow":"+6666"},
+                    {"toCardCode":"22","hited":false}
+                ]
+            },
+            {"note":"普通攻击 上方攻击","optType":4,"senderPlace":1,"fromCardCode":"20",
+                "fightNodeArr":[
+                    {"toCardCode":"10","hited":true,"damage":-6666,"damageShow":"-6666"},
+                    {"toCardCode":"11","hited":true,"damage":6666,"damageShow":"+6666"},
+                    {"toCardCode":"12","hited":false}
+                ]
+            }
+        ],
+
+        "7":[{"note":"技能攻击 上方攻击","optType":5,"senderPlace":1,"skillKey":"4","fromCardCode":"20",
+                "fightNodeArr":[
+                    {"toCardCode":"10","hited":true,"damage":-6666,"damageShow":"-6666","recipient":true},
+                    {"toCardCode":"11","hited":true,"damage":6666,"damageShow":"+6666","recipient":true},
+                    {"toCardCode":"12","hited":false,"recipient":true}
+                ]
+            },
+
+            {"note":"技能攻击 下方攻击","optType":5,"senderPlace":0,"skillKey":"4","fromCardCode":"10",
+                "fightNodeArr":[
+                    {"toCardCode":"20","hited":true,"damage":-6666,"damageShow":"-6666","recipient":true},
+                    {"toCardCode":"21","hited":true,"damage":6666,"damageShow":"+6666","recipient":true},
+                    {"toCardCode":"22","hited":false,"recipient":true}
+                ]
+            }
+        ],
+
+        "8":[
+            {"note":"牌死亡 下方死亡","optType":6,"senderPlace":0,"removeCard":true,"fromCardCode":"12"}
+        ],
+
+        "9":[
+            {"note":"牌死亡 上方死亡","optType":6,"senderPlace":1,"removeCard":true,"fromCardCode":"22"}
+        ],
+
+        "10":[
+            {"note":"牌复活 下方复活","optType":7,"senderPlace":0,"removeCard":true,"fromCardCode":"12"}
+        ],
+
+        "11":[
+            {"note":"牌复活 上方复活","optType":7,"senderPlace":1,"removeCard":true,"fromCardCode":"22"}
+        ]
+    }
+    
+}

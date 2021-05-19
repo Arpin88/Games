@@ -1,0 +1,38 @@
+(function (_super) {
+	__extends(CardItemSkin, _super);
+	function CardItemSkin() {
+		_super.call(this);
+		
+		this.height = 194;
+		this.width = 196;
+		this.elementsContent = [this.groupCI_i()];
+	}
+	var _proto = CardItemSkin.prototype;
+
+	_proto.groupCI_i = function () {
+		var t = new eui.Group();
+		this.groupCI = t;
+		t.height = 194;
+		t.width = 196;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBG_i()];
+		return t;
+	};
+	_proto.imgBG_i = function () {
+		var t = new eui.Image();
+		this.imgBG = t;
+		t.source = "hallImg1Sheet_json.a196x194";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBG","groupCI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardItemSkin;
+})(eui.Skin);

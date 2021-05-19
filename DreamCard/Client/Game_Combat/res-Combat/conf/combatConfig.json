@@ -1,0 +1,5557 @@
+{
+	"Send_Card": {
+		"atkc_attr": {
+			"scaleX": 0.63,
+			"scaleY": 0.63,
+			"gapX": 0,
+			"gapY": 0,
+			"space": 5,
+			"act_attr": {
+				"speed": 70
+			}
+		},
+		"dfdc_attr": {
+			"scaleX": 0.63,
+			"scaleY": 0.63,
+			"gapX": 0,
+			"gapY": 0,
+			"space": 5,
+			"act_attr": {
+				"speed": 70
+			}
+		}
+	},
+
+	"Out_Card": {
+		"atkc_attr": {
+			"scaleX": 0.36,
+			"scaleY": 0.36,
+			"gapX": 0,
+			"gapY": 0,
+			"space": 10,
+			"act_attr": {
+				"speed": 60
+			}
+		},
+		"dfdc_attr": {
+			"scaleX": 0.36,
+			"scaleY": 0.36,
+			"gapX": 0,
+			"gapY": 0,
+			"space": 10,
+			"act_attr": {
+				"speed": 60
+			}
+		}
+	},
+
+	"Death_Card": {
+		"atkc_attr": {
+			"scaleX": 0.5,
+			"scaleY": 0.5,
+			"gapX": 0,
+			"gapY": 0,
+			"space": 10,
+			"act_attr": {
+				"speed": 180
+			}
+		},
+		"dfdc_attr": {
+			"scaleX": 0.5,
+			"scaleY": 0.5,
+			"gapX": 0,
+			"gapY": 0,
+			"space": 10,
+			"act_attr": {
+				"speed": 180
+			}
+		}
+	},
+
+	"Head_Common_ExpForms":{
+		"hit":{
+			"usage_time": 1000,
+			"eff_comp": {
+				"labels": {
+					"damageShow": {
+						"showDelay":750,
+						"compId": "1",
+						"actId":"3"
+					}
+				},
+				"movieClips": [{
+					"compId": "0",
+					"remove": true,
+					"showDelay":200
+				}]
+
+			}
+		},
+		"recover": {
+			"usage_time": 1000,
+			"eff_comp": {
+				"labels": {
+					"recoverShow": {
+						"showDelay":200,
+						"compId": "2",
+						"actId":"3"
+					}
+				}
+			}
+		},
+		"lost": {
+			"usage_time": 1000,
+			"eff_comp": {
+				"labels": {
+					"damageShow": {
+						"showDelay":200,
+						"compId": "1",
+						"actId":"3"
+					}
+				}
+			}
+		},
+		"evasive": {
+			"usage_time": 1500,
+			"eff_comp": {
+				
+				"movieClips": [{
+					"compId": "0",
+					"remove": true,
+					"showDelay":200
+				}],
+
+				"labels": {
+					"missShow": {
+						"text":"MISS",
+						"showDelay":200,
+						"compId": "1",
+						"actId":"3"
+					}
+				}
+			}
+		}
+	},
+
+	"Head_Skill_ExpForms": {
+		"20": {
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "20",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+		"43": {
+			"rec_attr": {
+				"usage_time": 1200,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":800,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "43",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+		"52": {
+			"rec_attr": {
+				"usage_time": 1500,
+				"eff_comp": {
+					"labels": {
+						"recoverShow": {
+							"showDelay":1000,
+							"compId": "2",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"73":{},
+		"75": {
+			"rec_attr": {
+				"usage_time": 800,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":400,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "0",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+		"98":{}
+	},
+
+	"Head_Fetter_ExpForms":{
+		"20000":{
+			"name": ["混沌印记","Mark of Chaos"],
+			"res_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"image":{
+						"showDelay":700,
+						"compId": "20000"
+					},
+					"labels": {
+						"skillNameShow": {
+							"showDelay":200,
+							"compId": "0",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20001":{
+			"name": ["金属印记","Mark of Metal"],
+			"res_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"image":{
+						"showDelay":700,
+						"compId": "20001"
+					},
+					"labels": {
+						"skillNameShow": {
+							"showDelay":200,
+							"compId": "0",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20002":{
+			"name": ["森林印记","Mark of Forest"],
+			"res_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"image":{
+						"showDelay":700,
+						"compId": "20002"
+					},
+					"labels": {
+						"skillNameShow": {
+							"showDelay":200,
+							"compId": "0",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20003":{
+			"name": ["海洋印记","Mark of Ocean"],
+			"res_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"image":{
+						"showDelay":700,
+						"compId": "20003"
+					},
+					"labels": {
+						"skillNameShow": {
+							"showDelay":200,
+							"compId": "0",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20004":{
+			"name": ["烈焰印记","Mark of Flame"],
+			"res_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"image":{
+						"showDelay":700,
+						"compId": "20004"
+					},
+					"labels": {
+						"skillNameShow": {
+							"showDelay":200,
+							"compId": "0",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20005":{
+			"name": ["大地印记","Mark of Earth"],
+			"res_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"image":{
+						"showDelay":700,
+						"compId": "20005"
+					},
+					"labels": {
+						"skillNameShow": {
+							"showDelay":200,
+							"compId": "0",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		}
+	},
+
+	"RC_Common_ExpForms": {
+		"atk": {
+			"usage_time": 300,
+			"eff_comp": {
+				"images": [{
+					"compId": "0",
+					"zIndex": -1,
+					"act_attr": {
+						"postDelay": 200,
+						"remove": true
+					}
+				}]
+			},
+			"atkc_attr": {
+				"actId":"0"
+			},
+			"dfdc_attr": {
+				"actId":"1"
+			}
+		},
+		"hit": {
+			"usage_time": 500,
+			"eff_comp": {
+				"labels": {
+					"damageShow": {
+						"showDelay":300,
+						"compId": "1",
+						"actId":"3"
+					}
+				},
+				"movieClips": [{
+					"compId": "0",
+					"remove": true,
+					"showDelay":100
+				}]
+
+			},
+			"atkc_attr": {
+				"actId":"2"
+			},
+			"dfdc_attr": {
+				"actId":"2"
+			}
+		},
+		"recover": {
+			"usage_time": 500,
+			"eff_comp": {
+				"labels": {
+					"recoverShow": {
+						"showDelay":100,
+						"compId": "2",
+						"actId":"3"
+					}
+				}
+			}
+		},
+		"lost": {
+			"usage_time": 750,
+			"eff_comp": {
+				"labels": {
+					"damageShow": {
+						"showDelay":200,
+						"compId": "1",
+						"actId":"3"
+					}
+				}
+			}
+		},
+		"evasive": {
+			"usage_time": 1500,
+			"eff_comp": {
+				
+				"movieClips": [{
+					"compId": "0",
+					"remove": true,
+					"showDelay":200
+				}],
+
+				"labels": {
+					"missShow": {
+						"text":"MISS",
+						"showDelay":100,
+						"compId": "1",
+						"actId":"3"
+					}
+				}
+			}
+		},
+		"death": {
+
+		},
+		"release": {
+
+		},
+		"modify":{
+			"usage_time": 1000,
+			"eff_comp": {
+				"labels": {
+					"reduceShow": {
+						"showDelay":200,
+						"compId": "3",
+						"actId":"3"
+					},
+					"increaseShow": {
+						"showDelay":200,
+						"compId": "4",
+						"actId":"3"
+					}
+				}
+			}
+		}
+	},
+
+	"RC_Buff_ExpForms":{
+		"10001":{
+			"name":["不死","Undead"],
+			"eff_comp": {
+				"image":{
+					"compId": "10001"
+				}
+			}
+		},
+		"10002":{
+			"name":["冰冻","Freeze"],
+			"eff_comp": {
+				"image":{
+					"compId": "10002"
+				}
+			}
+		},
+		"10003":{
+			"name":["眩晕","vertigo"],
+			"eff_comp": {
+				"image":{
+					"compId": "10003"
+				}
+			}
+		},
+		"10004":{
+			"name":["魅惑","Charm"],
+			"eff_comp": {
+				"image":{
+					"compId": "10004"
+				}
+			}
+		},
+		"10005":{
+			"name":["缴械","Disarm"],
+			"eff_comp": {
+				"image":{
+					"compId": "10005"
+				}
+			}
+		},
+		"10006":{
+			"name":["沉默","Silence"],
+			"eff_comp": {
+				"image":{
+					"compId": "10006"
+				}
+			}
+		},
+		"10007":{
+			"name":["伤害封印","Damage Seal"],
+			"eff_comp": {
+				"image":{
+					"compId": "10007"
+				}
+			}
+		},
+		"10008":{
+			"name":["虚化","Virtual"],
+			"eff_comp": {
+				"image":{
+					"compId": "10008"
+				}
+			}
+		},
+		"10009":{
+			"name":["固化","Solidification"],
+			"eff_comp": {
+				"image":{
+					"compId": "10009"
+				}
+			}
+		},
+		"10010":{
+			"name":["防御护盾","Defense Shield"],
+			"eff_comp": {
+				"image":{
+					"compId": "10010"
+				}
+			}
+		}
+	},
+
+	"RC_Skill_ExpForms": {
+		"0": {
+			"name":["冰火九重天",""],
+			"res_attr": {
+				"usage_time": 1000,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 750,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"showDelay":200,
+							"compId": "0",
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":750,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "0",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"1": {
+			"name":["反击","Counterattack"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1110,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":610,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "1",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"2": {
+			"name":["狙击","Snipe"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1000,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":600,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "2",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"3": {
+			"name":["时光加速","Time Acceleration"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1150,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "3",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"4": {
+			"name":["暴击","Crit"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1000,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":500,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "4",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"5": {
+			"name":["劝退","Discouraging"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1420,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "5",
+						"remove": true,
+						"directionY":true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"6": {
+			"name":["虚化","Virtual"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					
+					"movieClips": [{
+						"compId": "6",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"7": {
+			"name":["诅咒","Curse"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 12500,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "7",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"8": {
+			"name":["复活术","Resurrection"],
+			"res_attr": {
+				"usage_time": 1620,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "8",
+						"remove": true,
+						"showDelay":200
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {}
+		},
+
+		"9": {
+			"name":["放血","Bloodletting"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1200,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "9",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"10": {
+			"name":["缴械","Disarm"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1350,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "10",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"11": {
+			"name":["齐射","Volley"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1500,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1000,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "11",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"12": {
+			"name":["祈祷","Prayer"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "12",
+						"remove": true,
+						"showDelay":200
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1500,
+				"eff_comp": {
+					"labels": {
+						"recoverShow": {
+							"compId": "2",
+							"showDelay":1000,
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+
+		"13": {
+			"name":["蓄势","Gearing Up"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1420,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "13",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"14": {
+			"name":["致命一击","Critical Strike"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1000,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":500,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "14",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"15": {
+			"name":["击溃","Rout"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time":1420,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":920,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "15",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"16": {
+			"name":["浴血","Bloodbath"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1500,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1000,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "16",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"17": {
+			"name":["冰冻","Freeze"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1300,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "17",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"18": {
+			"name":["鼓舞","Inspire"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1500,
+				"eff_comp": {
+					"labels": {
+							"reduceShow": {
+							"showDelay":100,
+							"compId": "1",
+							"actId":"3"
+						},
+						"increaseShow": {
+							"showDelay":100,
+							"compId": "2",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "18",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"19": {
+			"name":["连击","Double Hit"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1200,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":800,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "19",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"20": {
+			"name":["投毒","Poisoning"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1200,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "20",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"21": {
+			"name":["血祭","Blood Sacrifice"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1600,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1200,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "21",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"22": {
+			"name":["格挡","Block"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1200,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":800,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "22",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"23": {
+			"name":["护体","Barrier"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1200,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":800,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "23",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"24": {
+			"name":["多重攻击","Multiple Attack"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1080,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":680,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "24",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"25": {
+			"name":["反弹","Rebound"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "25",
+						"remove": true,
+						"showDelay":100
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1150,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":750,
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+
+		"26": {
+			"name":["伤害封印","Damage Seal"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1100,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "26",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"27": {
+			"name":["顽强","Indomitability"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1200,
+				"eff_comp": {
+					"labels": {
+						"recoverShow": {
+							"compId": "2",
+							"showDelay":800,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "27",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"28": {
+			"name":["牺牲","Sacrifice"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						},"damageShow": {
+							"compId": "1",
+							"showDelay":1050,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1450,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1050,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "28",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"29": {
+			"name":["沉默","Silence"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1350,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "29",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"30": {
+			"name":["防御护盾","Defense Shield"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1800,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "30",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"31": {
+			"name":["溅射攻击","Sputtering Attack"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1020,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":620,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "31",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"32": {
+			"name":["校正","Correct"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1500,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "32",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"33": {
+			"name":["魅惑","Charm"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1600,
+				"eff_comp": {
+					"movieClips": [{
+							"compId": "33",
+							"remove": true,
+							"directionY":true,
+							"showDelay":100
+						},
+						{
+							"compId": "503",
+							"remove": true,
+							"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"34": {
+			"name":["不死","Undead"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "34",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"35": {
+			"name":["重生","Reborn"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "35",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"36": {
+			"name":["处决","Execution"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1750,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1250,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "36",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"37": {
+			"name":["固化","Solidification"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1300,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "37",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		
+
+		
+
+		"39": {
+			"name":["荆棘","Thorn"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "39",
+						"remove": true,
+						"showDelay":100
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1100,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":700,
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+
+		"40": {
+			"name":["剧毒外壳","Hypertoxic Shell"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "40",
+						"remove": true,
+						"showDelay":200
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1500,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1000,
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+
+		"41": {
+			"name":["灵巧术","Dexterity"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "41",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"42": {
+			"name":["劈砍","Hack"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1300,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":800,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "42",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"43": {
+			"name":["擒王","Ringleader Catching"],
+			"res_attr": {
+				"usage_time": 1200,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {}
+		},
+
+		"44": {
+			"name":["伤害加深","Amplify Damage"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time":1500,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":1000,
+							"compId": "4",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "44",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"45": {
+			"name":["生命抽取","Life Drain"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						},
+						"recoverShow": {
+							"compId": "2",
+							"showDelay":1000,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "501",
+						"directionY":true,
+						"remove": true,
+						"showDelay":100
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1000,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "45",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"46": {
+			"name":["嗜血","Bloodlust"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						},
+						"recoverShow": {
+							"compId": "2",
+							"showDelay":1000,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "46",
+						"remove": true,
+						"showDelay":100
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1000,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "502",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"47": {
+			"name":["吸血","Vampiric"],
+			"res_attr": {
+				"usage_time": 1150,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						},
+						"recoverShow": {
+							"compId": "2",
+							"showDelay":750,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "47",
+						"remove": true,
+						"showDelay":100
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {}
+		},
+
+		"48": {
+			"name":["战意","Warth"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1230,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":820,
+							"compId": "4",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "48",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"49": {
+			"name":["治疗术","Healing"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1360,
+				"eff_comp": {
+					"labels": {
+						"recoverShow": {
+							"compId": "2",
+							"showDelay":860,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "49",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"50": {
+			"name":["致盲","Blind"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1100,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "50",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"51": {
+			"name":["重击","Bash"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1250,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":850,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "51",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"52": {
+			"name":["绷带","Bandage"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "52",
+						"remove": true,
+						"showDelay":100
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1690,
+				"eff_comp": {
+					"labels": {
+						"recoverShow": {
+							"compId": "2",
+							"showDelay":1190,
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+
+		"53": {
+			"name":["衰老","Ageing"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1150,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":750,
+							"compId": "4",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "53",
+						"remove": true,
+						"directionY":true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"54": {
+			"name":["复仇","Vengeance"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1700,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":1300,
+							"compId": "4",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "54",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"55": {
+			"name":["兴奋","Excitement"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1600,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":1200,
+							"compId": "2",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "55",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"56": {
+			"name":["削弱","Impair"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1600,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":1200,
+							"compId": "4",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "56",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"57": {
+			"name":["荆棘盾","Thorn Shield"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1590,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1090,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "57",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"58": {
+			"name":["活力","Vitality"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1150,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":750,
+							"compId": "1",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "58",
+						"remove": true,
+						"directionY":true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"59": {
+			"name":["大治疗术","Great Heal"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1360,
+				"eff_comp": {
+					"labels": {
+						"recoverShow": {
+							"compId": "2",
+							"showDelay":860,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "49",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"60":{
+			"name":["先祖血脉","Ancestral Blood"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":1000,
+							"compId": "4",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "60",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"61":{
+			"name":["虚弱","Weaken"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+				"labels": {
+						"reduceShow": {
+							"showDelay":1000,
+							"compId": "1",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "61",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"62": {
+			"name":["强击","Tureshot"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 900,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":500,
+							"compId": "4",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "62",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"63":{
+			"name":["压制","Suppress"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 900,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":500,
+							"compId": "2",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "63",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"64":{
+			"name":["衰竭","Exhaustion"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1250,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "64",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"65":{
+			"name":["热忱","Zeal"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "65",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"66":{
+			"name":["嘲讽","Taunt"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 900,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "66",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"67":{
+			"name":["虚弱光环","Weaken Aura"],
+			"res_attr": {
+				"usage_time": 1000,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 750,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":200,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":1400,
+							"compId": "4",
+							"actId":"3"
+						}},
+					"movieClips": [{
+						"compId": "101",
+						"remove": true,
+						"showDelay":300
+					}]
+				}
+			}
+		},
+
+		"68": {
+			"name":["强击光环","Tureshot Aura"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1250,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":850,
+							"compId": "2",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "100",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"69":{
+			"name":["压制光环","Suppress Aura"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"showDelay":1000,
+							"compId": "2",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "101",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"70":{
+			"name":["衰竭光环","Exhaustion Aura"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1400,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "101",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"71":{
+			"name":["热忱光环","Zeal Aura"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1250,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "100",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"72": {
+			"name":["冲锋","Charge"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 2020,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":820,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "72",
+						"remove": true,
+						"showDelay":100
+					},{
+						"compId": "51",
+						"remove": true,
+						"showDelay":800
+					}]
+				}
+			}
+		},
+
+
+		"73": {
+			"name":["护主","Loyal Protective"],
+			"res_attr": {
+				"usage_time": 1200,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 800,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "73",
+						"remove": true,
+						"showDelay":100
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {}
+		},
+
+		"74": {
+			"name":["天选之子","The Chosen One"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 800,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":400,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "0",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"75": {
+			"name":["附带攻击","Collateral Attack"],
+			"res_attr": {
+				"usage_time": 800,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"showDelay":300,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {}
+		},
+
+		"76": {
+			"name":["守护","Guard"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1800,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "30",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"77": {
+			"name":["刺杀","Assassinate"],
+			"res_attr": {
+				"usage_time": 800,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 400,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {}
+		},
+
+		"78":{
+			"name":["荆棘光环","Thorn Aura"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1250,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "100",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"79":{
+			"name":["吸血光环","Vampiric Aura"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1250,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "100",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+		"80":{
+			"name":["生命强化","Life enhance"],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":100,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1250,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":850,
+							"compId": "4",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "80",
+						"remove": true,
+						"showDelay":100
+					}]
+				}
+			}
+		},
+
+
+
+		"100": {
+			"name":["测试",""],
+			"res_attr": {
+				"usage_time": 700,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 700,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"showDelay":100,
+							"compId": "0",
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 1250,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":850,
+							"actId":"3"
+						}
+					},
+					"images": [{
+						"compId": "100",
+						"act_attr": {
+							"postDelay": 850,
+							"remove": false
+						}
+					}]
+				}
+			}
+		},
+
+
+
+		"200": {
+			"name":["技能测试200",""],
+			"res_attr": {
+				"usage_time": 1000,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 750,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":200,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 3000,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1750,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "0",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"201":{
+			"name":["技能测试201",""],
+			"res_attr": {
+				"usage_time": 3000,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 750,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":200,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "22",
+						"remove": true,
+						"showDelay":200
+					}]
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":2000,
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+
+
+		"202":{
+			"name":["技能测试202",""],
+			"res_attr": {
+				"usage_time": 3000,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 750,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":200,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "22",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"203": {
+			"name":["技能测试203",""],
+			"res_attr": {
+				"usage_time": 1000,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 750,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":200,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 3000,
+				"eff_comp": {
+					"labels": {
+						"damageShow": {
+							"compId": "1",
+							"showDelay":1750,
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "0",
+						"remove": true,
+						"showDelay":200
+					},{
+						"compId": "51",
+						"remove": true,
+						"showDelay":1000
+					}]
+				}
+			}
+		},
+
+		"204": {
+			"name":["技能测试204",""],
+			"res_attr": {
+				"usage_time": 1000,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 750,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":200,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 3000,
+				"eff_comp": {
+					"labels": {
+						"recoverShow": {
+							"compId": "2",
+							"showDelay":1750,
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+
+		"205": {
+			"name":["技能测试205",""],
+			"res_attr": {
+				"usage_time": 1000,
+				"eff_comp": {
+					"images": [{
+						"compId": "0",
+						"zIndex": -1,
+						"act_attr": {
+							"postDelay": 750,
+							"remove": true
+						}
+					}],
+					"labels": {
+						"skillNameShow": {
+							"compId": "0",
+							"showDelay":200,
+							"actId":"3"
+						}
+					}
+				},
+				"atkc_attr": {
+					"actId":"0"
+				},
+				"dfdc_attr": {
+					"actId":"1"
+				}
+			},
+			"rec_attr": {
+				"usage_time": 3000,
+				"eff_comp": {
+					"labels": {
+						"increaseShow": {
+							"showDelay":500,
+							"compId": "2",
+							"actId":"3"
+						}
+					},
+					"movieClips": [{
+						"compId": "22",
+						"remove": true,
+						"showDelay":200
+					}]
+				}
+			}
+		},
+
+		"1000": {
+			"name":["持续技能测试",""],
+			"res_attr": {},
+			"rec_attr": {
+				"usage_time": 1500,
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "0",
+						"playTimes": -1
+					}]
+				}
+			}
+		}
+	},
+
+	"RC_Fetter_ExpForms":{
+		"20000":{
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":700,
+							"compId": "5",
+							"actId":"3"
+						},
+						"increaseShow": {
+							"showDelay":700,
+							"compId": "6",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20001":{
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":700,
+							"compId": "5",
+							"actId":"3"
+						},
+						"increaseShow": {
+							"showDelay":700,
+							"compId": "6",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20002":{
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":700,
+							"compId": "5",
+							"actId":"3"
+						},
+						"increaseShow": {
+							"showDelay":700,
+							"compId": "6",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20003":{
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":700,
+							"compId": "5",
+							"actId":"3"
+						},
+						"increaseShow": {
+							"showDelay":700,
+							"compId": "6",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20004":{
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":700,
+							"compId": "5",
+							"actId":"3"
+						},
+						"increaseShow": {
+							"showDelay":700,
+							"compId": "6",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		},
+		"20005":{
+			"rec_attr": {
+				"usage_time": 2000,
+				"eff_comp": {
+					"labels": {
+						"reduceShow": {
+							"showDelay":700,
+							"compId": "5",
+							"actId":"3"
+						},
+						"increaseShow": {
+							"showDelay":700,
+							"compId": "6",
+							"actId":"3"
+						}
+					}
+				}
+			}
+		}
+	},
+
+	"SC_Skill_ExpForms": {
+		"eff_clickable": {
+			"res_attr": {
+				"eff_comp": {
+					"movieClips": [{
+						"compId": "5001"
+					}]
+				}
+			},
+			"rec_attr": {}
+		}
+	},
+
+	"Eff_Components": {
+		"images": {
+			"0": {
+				"note": "攻击光圈图片",
+				"res": "fightImg0Sheet_json.r_gjgq",
+				"scaleX": 1,
+				"scaleY": 1,
+				"gapX": 0,
+				"gapY": 0,
+				"posX": 0,
+				"posY": 0,
+				"anchorCenter": true,
+				"posCenter": true
+			},
+
+			"100":{
+				"note":"测试",
+				"res": "test123_png"
+			},
+
+
+			"10001":{
+				"note":"buff不死图标",
+				"res": "buffIconImg0Sheet_json.b1"
+			},
+			"10002":{
+				"note":"buff冰冻图标",
+				"res": "buffIconImg0Sheet_json.b2"
+			},
+			"10003":{
+				"note":"buff眩晕图标",
+				"res": "buffIconImg0Sheet_json.b3"
+			},
+			"10004":{
+				"note":"buff魅惑图标",
+				"res": "buffIconImg0Sheet_json.b4"
+			},
+			"10005":{
+				"note":"buff缴械图标",
+				"res": "buffIconImg0Sheet_json.b5"
+			},
+			"10006":{
+				"note":"buff沉默图标",
+				"res": "buffIconImg0Sheet_json.b6"
+			},
+			"10007":{
+				"note":"buff伤害封印图标",
+				"res": "buffIconImg0Sheet_json.b10"
+			},
+			"10008":{
+				"note":"buff虚化图标",
+				"res": "buffIconImg0Sheet_json.b7"
+			},
+			"10009":{
+				"note":"buff固化图标",
+				"res": "buffIconImg0Sheet_json.b8"
+			},
+			"10010":{
+				"note":"buff防御护盾图标",
+				"res": "buffIconImg0Sheet_json.b9"
+			},
+
+
+			"20000":{
+				"note":"混沌印记图标",
+				"res": "fetterIconImg0Sheet_json.xjb01"
+			},
+			"20001":{
+				"note":"金属印记图标",
+				"res": "fetterIconImg0Sheet_json.xjb02"
+			},
+			"20002":{
+				"note":"森林印记图标",
+				"res": "fetterIconImg0Sheet_json.xjb03"
+			},
+			"20003":{
+				"note":"海洋印记图标",
+				"res": "fetterIconImg0Sheet_json.xjb04"
+			},
+			"20004":{
+				"note":"烈焰印记图标",
+				"res": "fetterIconImg0Sheet_json.xjb05"
+			},
+			"20005":{
+				"note":"大地印记图标",
+				"res": "fetterIconImg0Sheet_json.xjb06"
+			},
+			"20006":{
+				"note":"五虎上将图标",
+				"res": "fetterIconImg0Sheet_json.xjb07"
+			},
+			"20007":{
+				"note":"五虎良将图标",
+				"res": "fetterIconImg0Sheet_json.xjb08"
+			},
+			"20008":{
+				"note":"江东虎臣图标",
+				"res": "fetterIconImg0Sheet_json.xjb09"
+			},
+			"20009":{
+				"note":"权谋天下图标",
+				"res": "fetterIconImg0Sheet_json.xjb10"
+			},
+			"20010":{
+				"note":"王者归来图标",
+				"res": "fetterIconImg0Sheet_json.xjb11"
+			},
+			"20011":{
+				"note":"舍生取义图标",
+				"res": "fetterIconImg0Sheet_json.xjb12"
+			},
+			"20012":{
+				"note":"血性图标",
+				"res": "fetterIconImg0Sheet_json.xjb13"
+			},
+			"20013":{
+				"note":"专注图标",
+				"res": "fetterIconImg0Sheet_json.xjb14"
+			},
+			"20014":{
+				"note":"奔袭图标",
+				"res": "fetterIconImg0Sheet_json.xjb15"
+			},
+			"20015":{
+				"note":"圈套图标",
+				"res": "fetterIconImg0Sheet_json.xjb16"
+			},
+			"20016":{
+				"note":"恐吓图标",
+				"res": "fetterIconImg0Sheet_json.xjb17"
+			},
+			"20017":{
+				"note":"驰援图标",
+				"res": "fetterIconImg0Sheet_json.xjb18"
+			},
+			"20018":{
+				"note":"同心图标",
+				"res": "fetterIconImg0Sheet_json.xjb19"
+			},
+			"20019":{
+				"note":"名医图标",
+				"res": "fetterIconImg0Sheet_json.xjb20"
+			}
+			
+		},
+		"bitmapLabels": {
+			"0": {
+				"note": "攻击伤害数值富文本",
+				"res": "hitFont_fnt",
+				"scaleX": 1,
+				"scaleY": 1,
+				"gapX": 0,
+				"gapY": 0,
+				"posX": 0,
+				"posY": 0,
+				"anchorCenter": true,
+				"posCenter": true
+			},
+			"1": {
+				"note": "治疗数值富文本",
+				"res": "recoverFont_fnt"
+			}
+		},
+		"labels": {
+			"0": {
+				"text": "",
+				"scaleX": 1,
+				"scaleY": 1,
+				"gapX": 0,
+				"gapY": 0,
+				"posX": 0,
+				"posY": 0,
+				"size": 26,
+				"textColor": "0xff3108",
+				"fontFamily": "黑体",
+				"stroke": 4,
+				"strokeColor": "0x000000",
+				"bold": true,
+				"anchorCenter": true,
+				"posCenter": true,
+				"textAlign":"center",
+				"wordWrap":true,
+				"width":191,
+				"lineSpacing":10
+			},
+			"1": {
+				"text": "",
+				"size": 40,
+				"gapY": 50,
+				"textColor": "0xff3108",
+				"fontFamily": "黑体",
+				"stroke": 4,
+				"strokeColor": "0x000000",
+				"bold": true,
+				"anchorCenter": true,
+				"posCenter": true,
+				"lineSpacing":16,
+				"textAlign":"center"
+			},
+			"2": {
+				"text": "",
+				"size": 40,
+				"gapY": 50,
+				"textColor": "0x01ff2b",
+				"fontFamily": "黑体",
+				"stroke": 4,
+				"strokeColor": "0x000000",
+				"bold": true,
+				"anchorCenter": true,
+				"posCenter": true,
+				"lineSpacing":16,
+				"textAlign":"center"
+			},
+			"3": {
+				"text": "",
+				"size": 26,
+				"textColor": "0xff3108",
+				"fontFamily": "黑体",
+				"stroke": 4,
+				"strokeColor": "0x000000",
+				"bold": true,
+				"anchorCenter": true,
+				"posCenter": true,
+				"lineSpacing":16,
+				"textAlign":"center"
+			},
+			"4": {
+				"text": "",
+				"size": 22,
+				"textColor": "0x01ff2b",
+				"fontFamily": "黑体",
+				"stroke": 4,
+				"strokeColor": "0x000000",
+				"bold": true,
+				"anchorCenter": true,
+				"posCenter": true,
+				"lineSpacing":16,
+				"textAlign":"center"
+			},
+			"5": {
+				"text": "",
+				"size": 22,
+				"gapY": 50,
+				"textColor": "0xff3108",
+				"fontFamily": "黑体",
+				"stroke": 4,
+				"strokeColor": "0x000000",
+				"bold": true,
+				"anchorCenter": true,
+				"posCenter": true,
+				"lineSpacing":16,
+				"textAlign":"center"
+			},
+			"6": {
+				"text": "",
+				"size": 22,
+				"gapY": 50,
+				"textColor": "0x01ff2b",
+				"fontFamily": "黑体",
+				"stroke": 4,
+				"strokeColor": "0x000000",
+				"bold": true,
+				"anchorCenter": true,
+				"posCenter": true,
+				"lineSpacing":16,
+				"textAlign":"center"
+			}
+		},
+		"movieClips": {
+			"0": {
+				"note": "普攻效果",
+				"jsName": "rc_pugong",
+				"mcName": "rc_pugong",
+				"actName": "playani",
+				"sound":"pugong_mp3",
+				"gapX": 0,
+				"gapY": 0,
+				"posX": 0,
+				"posY": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"frameRate": 24,
+				"playTimes": 1,
+				"zIndex": 0,
+				"anchorCenter": true,
+				"posCenter": true
+			},
+			"1": {
+				"note": "反击效果",
+				"jsName": "rc_fanji",
+				"mcName": "rc_fanji",
+				"actName": "playani",
+				"sound":"fanji_mp3",
+				"frameRate": 28,
+				"playTimes": 1
+			},
+			"2": {
+				"note": "狙击效果",
+				"jsName": "rc_juji",
+				"mcName": "rc_juji",
+				"actName": "playani",
+				"sound":"juji_mp3",
+				"frameRate": 36,
+				"playTimes": 1
+			},
+			"3": {
+				"note": "时光加速效果",
+				"jsName": "rc_shijianjiasu",
+				"mcName": "rc_shijianjiasu",
+				"actName": "playani",
+				"sound":"shiguangjiasu_mp3",
+				"frameRate": 28,
+				"playTimes": 1
+			},
+			"4": {
+				"note": "暴击效果",
+				"jsName": "rc_baoji",
+				"mcName": "rc_baoji",
+				"actName": "playani",
+				"sound":"baoji_mp3",
+				"frameRate": 36,
+				"playTimes": 1
+			},
+			"5": {
+				"note": "劝退效果",
+				"jsName": "rc_quantui",
+				"mcName": "rc_quantui",
+				"actName": "playani",
+				"sound":"quantui_mp3",
+				"frameRate": 26,
+				"playTimes": 1
+			},
+			"6": {
+				"note": "虚化灰白效果",
+				"jsName": "rc_xuhuahuibai",
+				"mcName": "rc_xuhuahuibai",
+				"actName": "playani",
+				"sound":"xuhua_mp3",
+				"frameRate": 23,
+				"playTimes": 1
+			},
+			"7": {
+				"note": "诅咒效果",
+				"jsName": "rc_zuzhou",
+				"mcName": "rc_zuzhou",
+				"actName": "playani",
+				"sound":"zuzhou_mp3",
+				"frameRate": 24,
+				"playTimes": 1
+			},
+			"8": {
+				"note": "复活术效果",
+				"jsName": "rc_fuhuo",
+				"mcName": "rc_fuhuo",
+				"actName": "playani",
+				"sound":"fuhuoshu_mp3",
+				"frameRate": 16,
+				"playTimes": 1
+			},
+			"9": {
+				"note": "放血效果",
+				"jsName": "rc_fangxue",
+				"mcName": "rc_fangxue",
+				"actName": "playani",
+				"sound":"fangxue_mp3",
+				"frameRate": 25,
+				"playTimes": 1
+			},
+			"10": {
+				"note": "缴械效果",
+				"jsName": "rc_jiaoxie",
+				"mcName": "rc_jiaoxie",
+				"actName": "playani",
+				"sound":"jiaoxie_mp3",
+				"frameRate": 25,
+				"playTimes": 1
+			},
+			"11": {
+				"note": "齐射效果",
+				"jsName": "rc_qishe",
+				"mcName": "rc_qishe",
+				"actName": "playani",
+				"sound":"qishe_mp3",
+				"frameRate": 24,
+				"playTimes": 1
+			},
+			"12": {
+				"note": "祈祷效果",
+				"jsName": "rc_qidao",
+				"mcName": "rc_qidao",
+				"actName": "playani",
+				"sound":"qidao_mp3",
+				"frameRate": 30,
+				"playTimes": 1
+			},
+			"13": {
+				"note": "蓄势效果",
+				"jsName": "rc_xushi",
+				"mcName": "rc_xushi",
+				"actName": "playani",
+				"sound":"xushi_mp3",
+				"frameRate": 26,
+				"playTimes": 1
+			},
+			"14": {
+				"note": "致命一击效果",
+				"jsName": "rc_zhimingyiji",
+				"mcName": "rc_zhimingyiji",
+				"actName": "playani",
+				"sound":"zhimingyiji_mp3",
+				"frameRate": 28,
+				"playTimes": 1
+			},
+			"15": {
+				"note": "击溃效果",
+				"jsName": "rc_jikui",
+				"mcName": "rc_jikui",
+				"actName": "playani",
+				"sound":"jikui_mp3",
+				"frameRate": 26,
+				"playTimes": 1
+			},
+			"16": {
+				"note": "浴血效果",
+				"jsName": "rc_xueyu",
+				"mcName": "rc_xueyu",
+				"actName": "playani",
+				"sound":"yuxue_mp3",
+				"frameRate": 16,
+				"playTimes": 1
+			},
+			"17": {
+				"note": "冰冻效果",
+				"jsName": "rc_bingdong",
+				"mcName": "rc_bingdong",
+				"actName": "playani",
+				"sound":"bingdong_mp3",
+				"frameRate": 18,
+				"playTimes": 1
+			},
+			"18": {
+				"note": "鼓舞效果",
+				"jsName": "rc_guwu",
+				"mcName": "rc_guwu",
+				"actName": "playani",
+				"sound":"guwu_mp3",
+				"frameRate": 16,
+				"playTimes": 1
+			},
+			"19": {
+				"note": "连击效果",
+				"jsName": "rc_lianji",
+				"mcName": "rc_lianji",
+				"actName": "playani",
+				"sound":"lianji_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"20": {
+				"note": "投毒效果",
+				"jsName": "rc_toudu",
+				"mcName": "rc_toudu",
+				"actName": "playani",
+				"sound":"toudu_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"21": {
+				"note": "血祭效果",
+				"jsName": "rc_xueji",
+				"mcName": "rc_xueji",
+				"actName": "playani",
+				"sound":"xueji_mp3",
+				"frameRate": 15,
+				"playTimes": 1
+			},
+			"22": {
+				"note": "格挡效果",
+				"jsName": "rc_gedang",
+				"mcName": "rc_gedang",
+				"actName": "playani",
+				"sound":"gedang_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"23": {
+				"note": "护体效果",
+				"jsName": "rc_huti",
+				"mcName": "rc_huti",
+				"actName": "playani",
+				"sound":"gedang_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"24": {
+				"note": "多重攻击效果",
+				"jsName": "rc_duochongsheji",
+				"mcName": "rc_duochongsheji",
+				"actName": "playani",
+				"sound":"duochonggongji_mp3",
+				"frameRate": 22,
+				"playTimes": 1
+			},
+			"25": {
+				"note": "反弹效果",
+				"jsName": "rc_fantan",
+				"mcName": "rc_fantan",
+				"actName": "playani",
+				"sound":"fantan_mp3",
+				"frameRate": 18,
+				"playTimes": 1
+			},
+			"26": {
+				"note": "伤害封印效果",
+				"jsName": "rc_shanghaifengyin",
+				"mcName": "rc_shanghaifengyin",
+				"actName": "playani",
+				"sound":"shanghaifengyin_mp3",
+				"frameRate": 27,
+				"playTimes": 1
+			},
+			"27": {
+				"note": "顽强效果",
+				"jsName": "rc_wanqiang",
+				"mcName": "rc_wanqiang",
+				"actName": "playani",
+				"sound":"wanqiang_mp3",
+				"frameRate": 25,
+				"playTimes": 1
+			},
+			"28": {
+				"note": "牺牲效果",
+				"jsName": "rc_xisheng",
+				"mcName": "rc_xisheng",
+				"actName": "playani",
+				"sound":"xisheng_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"29": {
+				"note": "沉默效果",
+				"jsName": "rc_chenmo",
+				"mcName": "rc_chenmo",
+				"actName": "playani",
+				"sound":"chenmo_mp3",
+				"frameRate": 25,
+				"playTimes": 1
+			},
+			"30": {
+				"note": "防御护盾效果",
+				"jsName": "rc_fangyuhudun",
+				"mcName": "rc_fangyuhudun",
+				"actName": "playani",
+				"sound":"fangyuhudun_mp3",
+				"frameRate": 15,
+				"playTimes": 1
+			},
+			"31": {
+				"note": "溅射效果",
+				"jsName": "rc_jianshe",
+				"mcName": "rc_jianshe",
+				"actName": "playani",
+				"sound":"jianshegongji_mp3",
+				"frameRate": 13,
+				"playTimes": 1
+			},
+			"32": {
+				"note": "校正效果",
+				"jsName": "rc_jiaozheng",
+				"mcName": "rc_jiaozheng",
+				"actName": "playani",
+				"sound":"jiaozheng_mp3",
+				"frameRate": 24,
+				"playTimes": 1
+			},
+			"33": {
+				"note": "魅惑",
+				"jsName": "rc_meihuo1",
+				"mcName": "rc_meihuo1",
+				"actName": "playani",
+				"sound":"meihuo_mp3",
+				"frameRate": 14,
+				"playTimes": 1
+			},
+			"34": {
+				"note": "不死效果",
+				"jsName": "rc_busi",
+				"mcName": "rc_busi",
+				"actName": "playani",
+				"sound":"busi_mp3",
+				"frameRate": 19,
+				"playTimes": 1
+			},
+			"35": {
+				"note": "重生效果",
+				"jsName": "rc_chongsheng",
+				"mcName": "rc_chongsheng",
+				"actName": "playani",
+				"sound":"chongsheng_mp3",
+				"frameRate": 18,
+				"playTimes": 1
+			},
+			"36": {
+				"note": "处决效果",
+				"jsName": "rc_chujue",
+				"mcName": "rc_chujue",
+				"actName": "playani",
+				"sound":"chujue_mp3",
+				"frameRate": 16,
+				"playTimes": 1
+			},
+			"37": {
+				"note": "固化效果",
+				"jsName": "rc_guhua",
+				"mcName": "rc_guhua",
+				"actName": "playani",
+				"sound":"guhua_mp3",
+				"frameRate": 24,
+				"playTimes": 1
+			},
+			
+			"39": {
+				"note": "荆棘效果",
+				"jsName": "rc_jingji",
+				"mcName": "rc_jingji",
+				"actName": "playani",
+				"sound":"jingji_mp3",
+				"frameRate": 30,
+				"playTimes": 1
+			},
+			"40": {
+				"note": "剧毒外壳效果",
+				"jsName": "rc_juduwaike",
+				"mcName": "rc_juduwaike",
+				"actName": "playani",
+				"sound":"juduwaike_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"41": {
+				"note": "零巧术效果",
+				"jsName": "rc_lingqiaoshu",
+				"mcName": "rc_lingqiaoshu",
+				"actName": "playani",
+				"sound":"lingqiaoshu_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"42": {
+				"note": "劈砍效果",
+				"jsName": "rc_pikan",
+				"mcName": "rc_pikan",
+				"actName": "playani",
+				"sound":"pikan_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"43": {
+				"note": "擒王效果",
+				"jsName": "rc_qinwang",
+				"mcName": "rc_qinwang",
+				"actName": "playani",
+				"sound":"qinwang_mp3",
+				"frameRate": 30,
+				"playTimes": 1
+			},
+			"44": {
+				"note": "伤害加深效果",
+				"jsName": "rc_shanghaijiashen",
+				"mcName": "rc_shanghaijiashen",
+				"actName": "playani",
+				"sound":"shanghaijiashen_mp3",
+				"frameRate": 17,
+				"playTimes": 1
+			},
+			"45": {
+				"note": "生命抽取1效果",
+				"jsName": "rc_shengmingchouqu1",
+				"mcName": "rc_shengmingchouqu1",
+				"actName": "playani",
+				"sound":"shengmingchouqu_mp3",
+				"frameRate": 24,
+				"playTimes": 1
+			},
+			"46": {
+				"note": "嗜血1效果",
+				"jsName": "rc_shixue1",
+				"mcName": "rc_shixue1",
+				"actName": "playani",
+				"sound":"shixue_mp3",
+				"frameRate": 23,
+				"playTimes": 1
+			},
+			"47": {
+				"note": "吸血效果",
+				"jsName": "rc_xixue",
+				"mcName": "rc_xixue",
+				"actName": "playani",
+				"sound":"xixue_mp3",
+				"frameRate": 27,
+				"playTimes": 1
+			},
+			"48": {
+				"note": "战意效果",
+				"jsName": "rc_zhanyi",
+				"mcName": "rc_zhanyi",
+				"actName": "playani",
+				"sound":"zhanyi_mp3",
+				"frameRate": 18,
+				"playTimes": 1
+			},
+			"49": {
+				"note": "治疗术效果",
+				"jsName": "rc_zhiliaoshu",
+				"mcName": "rc_zhiliaoshu",
+				"actName": "playani",
+				"sound":"zhiliaoshu_mp3",
+				"frameRate": 28,
+				"playTimes": 1
+			},
+			"50": {
+				"note": "致盲效果",
+				"jsName": "rc_zhimang",
+				"mcName": "rc_zhimang",
+				"actName": "playani",
+				"sound":"zhimang_mp3",
+				"frameRate": 26,
+				"playTimes": 1
+			},
+			"51":{
+				"note": "眩晕效果",
+				"jsName": "rc_zhongji",
+				"mcName": "rc_zhongji",
+				"actName": "playani",
+				"sound":"zhongji_mp3",
+				"frameRate": 26,
+				"playTimes": 1
+			},
+			"52": {
+				"note": "绷带效果",
+				"jsName": "rc_bengdai",
+				"mcName": "rc_bengdai",
+				"actName": "playani",
+				"sound":"bengdai_mp3",
+				"frameRate": 19,
+				"playTimes": 1
+			},
+			"53": {
+				"note": "衰老效果",
+				"jsName": "rc_shuailao",
+				"mcName": "rc_shuailao",
+				"actName": "playani",
+				"sound":"shuailao_mp3",
+				"frameRate": 25,
+				"playTimes": 1
+			},
+			"54": {
+				"note": "复仇效果",
+				"jsName": "rc_fuchou",
+				"mcName": "rc_fuchou",
+				"actName": "playani",
+				"sound":"fuchou_mp3",
+				"frameRate": 31,
+				"playTimes": 1
+			},
+			"55": {
+				"note": "兴奋效果",
+				"jsName": "rc_xingfen",
+				"mcName": "rc_xingfen",
+				"actName": "playani",
+				"sound":"xingfen_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"56": {
+				"note": "削弱效果",
+				"jsName": "rc_xueruo",
+				"mcName": "rc_xueruo",
+				"actName": "playani",
+				"sound":"xueruo_mp3",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+			"57": {
+				"note": "荆棘盾效果",
+				"jsName": "rc_jingjidun",
+				"mcName": "rc_jingjidun",
+				"actName": "playani",
+				"sound":"jingjidun_mp3",
+				"frameRate": 22,
+				"playTimes": 1
+			},
+			"58": {
+				"note": "活力效果",
+				"jsName": "rc_shuailaoxuehongse",
+				"mcName": "rc_shuailaoxuehongse",
+				"actName": "playani",
+				"sound":"huoli_mp3",
+				"frameRate": 25,
+				"playTimes": 1
+			},
+			"59": {
+				"note": "大治疗术效果",
+				"jsName": "rc_zhiliaoshu",
+				"mcName": "rc_zhiliaoshu",
+				"actName": "playani",
+				"sound":"zhiliaoshu_mp3",
+				"frameRate": 28,
+				"playTimes": 1
+			},
+			"60": {
+				"note": "先祖血脉效果",
+				"jsName": "rc_xianzuxuemai",
+				"mcName": "rc_xianzuxuemai",
+				"actName": "playani",
+				"sound":"xianzuxuemai_mp3",
+				"frameRate": 36,
+				"playTimes": 1
+			},
+			"61": {
+				"note": "虚弱效果",
+				"jsName": "rc_xuruo",
+				"mcName": "rc_xuruo",
+				"actName": "playani",
+				"sound":"xuruo_mp3",
+				"frameRate": 28,
+				"playTimes": 1
+			},
+			"62": {
+				"note": "强击效果",
+				"jsName": "rc_qiangji",
+				"mcName": "rc_qiangji",
+				"actName": "playani",
+				"sound":"qiangji_mp3",
+				"frameRate": 24,
+				"playTimes": 1
+			},
+			"63": {
+				"note": "压制效果",
+				"jsName": "rc_yazhi",
+				"mcName": "rc_yazhi",
+				"actName": "playani",
+				"sound":"yazhi_mp3",
+				"frameRate": 24,
+				"playTimes": 1
+			},
+			"64": {
+				"note": "衰竭效果",
+				"jsName": "rc_shuaijie",
+				"mcName": "rc_shuaijie",
+				"actName": "playani",
+				"sound":"shuaijie_mp3",
+				"frameRate": 34,
+				"playTimes": 1
+			},
+			"65": {
+				"note": "热忱效果",
+				"jsName": "rc_rechen",
+				"mcName": "rc_rechen",
+				"actName": "playani",
+				"sound":"rechen_mp3",
+				"frameRate": 30,
+				"playTimes": 1
+			},
+			"66": {
+				"note": "嘲讽效果",
+				"jsName": "rc_chaofeng",
+				"mcName": "rc_chaofeng",
+				"actName": "playani",
+				"sound":"chaofeng_mp3",
+				"frameRate": 26,
+				"playTimes": 1
+			},
+
+			"72": {
+				"note": "冲锋效果",
+				"jsName": "rc_chongfeng1",
+				"mcName": "rc_chongfeng1",
+				"actName": "playani",
+				"sound":"chongfeng",
+				"frameRate": 22,
+				"playTimes": 1
+			},
+			"73": {
+				"note": "护主效果",
+				"jsName": "rc_huzhu",
+				"mcName": "rc_huzhu",
+				"actName": "playani",
+				"sound":"huzhu_mp3",
+				"frameRate": 25,
+				"playTimes": 1
+			},
+
+			"80": {
+				"note": "生命强化效果",
+				"jsName": "rc_shengmingqianghua",
+				"mcName": "rc_shengmingqianghua",
+				"actName": "playani",
+				"sound":"shengmingqianghua_mp3",
+				"frameRate": 26,
+				"playTimes": 1
+			},
+
+			"100": {
+				"note": "光环0效果",
+				"jsName": "rc_guanghuan0",
+				"mcName": "rc_guanghuan0",
+				"actName": "playani",
+				"sound":"zengyiguanghuan_mp3",
+				"frameRate": 45,
+				"playTimes": 1
+			},
+			"101": {
+				"note": "光环1效果",
+				"jsName": "rc_guanghuan1",
+				"mcName": "rc_guanghuan1",
+				"actName": "playani",
+				"sound":"jianyiguanghuan_mp3",
+				"frameRate": 45,
+				"playTimes": 1
+			},
+			
+
+
+			"501": {
+				"note": "生命抽取2效果",
+				"jsName": "rc_shengmingchouqu2",
+				"mcName": "rc_shengmingchouqu2",
+				"actName": "playani",
+				"frameRate": 24,
+				"playTimes": 1
+			},
+			"502": {
+				"note": "嗜血2效果",
+				"jsName": "rc_shixue2",
+				"mcName": "rc_shixue2",
+				"actName": "playani",
+				"frameRate": 23,
+				"playTimes": 1
+			},
+			"503": {
+				"note": "魅惑2",
+				"jsName": "rc_meihuo2",
+				"mcName": "rc_meihuo2",
+				"actName": "playani",
+				"frameRate": 20,
+				"playTimes": 1
+			},
+
+			"5001": {
+				"note": "可点击的光圈特效",
+				"jsName": "sc_guangquan",
+				"mcName": "sc_guangquan",
+				"actName": "playani",
+				"frameRate": 24,
+				"playTimes": -1,
+				"scaleX": 1.1,
+				"scaleY": 1.1,
+				"zIndex": -1
+			}
+
+			
+		}
+	},
+
+	"Common_Actions":{
+		"0":{
+			"act_attr": {
+				"speed": 20,
+				"postDelay": 0
+			},
+			"acts": [{
+				"preDelay": 50,
+				"moveY": -6,
+				"postDelay": 200
+			}, {
+				"moveY": 0
+			}]
+		},
+		"1":{
+			"act_attr": {
+				"speed": 20,
+				"postDelay": 0
+			},
+			"acts": [{
+				"preDelay": 50,
+				"moveY": 6,
+				"postDelay": 200
+			}, {
+				"moveY": 0
+			}]
+		},
+		"2":{
+			"act_attr": {
+				"speed": 20,
+				"postDelay": 0
+			},
+			"acts": [{
+				"preDelay": 150,
+				"rotateRange": 8
+			}, {
+				"rotateRange": 0
+			}, {
+				"rotateRange": -8
+			}, {
+				"rotateRange": 0
+			}]
+		},
+		"3":{
+			"act_attr": {
+				"remove": true
+			},
+			"acts": [{
+				"speed": 250,
+				"moveY": -70
+			}, {
+				"speed": 200,
+				"alpha": 0
+			}]
+		}
+	}
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CDfdHeadSkin" width="272" height="295" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="272" height="295">
+		<e:Group id="groupBack" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" width="272" height="295" touchChildren="false" touchEnabled="false"/>
+		<e:Group id="groupHead" scaleX="1" scaleY="1" width="272" touchChildren="false" touchEnabled="false" horizontalCenter="0" verticalCenter="0">
+		<e:Group width="272" height="210" x="0" y="50" scaleX="1" scaleY="1">
+			<e:Group id="groupIcon" horizontalCenter="0" y="30">
+			<e:Image id="imgIcon" y="0" source="linshitouxiang_jpg" height="130" scaleX="1" scaleY="1" horizontalCenter="0" width="130"/>
+			</e:Group>
+			<e:Group id="groupHp" horizontalCenter="0" y="15">
+			<e:Image y="0" scaleX="1" scaleY="1" horizontalCenter="0" source="combatImg0Sheet_json.a158x158"/>
+			<e:Image id="imgHp" y="0" scaleX="1" scaleY="1" horizontalCenter="0" source="combatImg0Sheet_json.b158x158" width="158" height="158"/>
+			</e:Group>
+		</e:Group>
+		<e:Group x="0" y="0" width="272" scaleX="1" scaleY="1">
+			<e:Image y="50" scaleX="1" scaleY="1" horizontalCenter="0" source="combatImg0Sheet_json.a272x214"/>
+			<e:Image y="0" scaleX="1" scaleY="1" horizontalCenter="0" x="10" source="combatImg0Sheet_json.a242x84"/>
+			<e:Label id="lblName" text="酷炫吊炸天" y="27" horizontalCenter="0" size="22" fontFamily="SimHei" width="200" textAlign="center" stroke="2" textColor="0xF9D978"/>
+			<e:Label id="lblHp" text="HP:666" y="175" size="18" fontFamily="SimHei" width="100" textAlign="center" horizontalCenter="0" stroke="2" x="50" scaleX="1" scaleY="1" textColor="0xFFFAE3"/>
+			<e:Label id="lblLv" text="66" y="200" size="26" fontFamily="SimHei" width="40" textAlign="center" stroke="2" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0xFFFAE3"/>
+			<e:Group horizontalCenter="0" y="58" touchEnabled="false" width="272">
+			<e:Group id="groupFetter0" width="44" height="44" touchEnabled="false" scaleX="1" scaleY="1" x="24" y="65" anchorOffsetX="22" anchorOffsetY="22"/>
+			<e:Group id="groupFetter1" width="44" height="44" touchEnabled="false" scaleX="1" scaleY="1" x="249" y="66" anchorOffsetX="22" anchorOffsetY="22"/>
+			<e:Group id="groupFetter2" width="44" height="44" touchEnabled="false" scaleX="1" scaleY="1" x="30" y="117" anchorOffsetX="22" anchorOffsetY="22"/>
+			<e:Group id="groupFetter3" width="44" height="44" touchEnabled="false" scaleX="1" scaleY="1" x="243" y="116" anchorOffsetX="22" anchorOffsetY="22"/>
+			</e:Group>
+		</e:Group>
+		<e:Group y="245" scaleX="1" scaleY="1" horizontalCenter="0">
+			<e:Image y="0" scaleX="1" scaleY="1" source="combatText0Sheet_json.zzl00" horizontalCenter="0"/>
+			<e:Label id="lblPower" text="6666" y="14" size="28" fontFamily="SimHei" textAlign="left" x="160" stroke="2" width="90" textColor="0xFFDA77"/>
+		</e:Group>
+		<e:Image id="imgDisconnect" scaleX="1" scaleY="1" source="combatText0Sheet_json.duanxian" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="groupFront" scaleX="1" scaleY="1" touchChildren="false" touchEnabled="false" width="272" height="295" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

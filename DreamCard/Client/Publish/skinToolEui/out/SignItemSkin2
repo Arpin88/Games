@@ -1,0 +1,178 @@
+(function (_super) {
+	__extends(FetterItemSkin, _super);
+	function FetterItemSkin() {
+		_super.call(this);
+		
+		this.height = 230;
+		this.width = 430;
+		this.elementsContent = [this.groupPI_i()];
+	}
+	var _proto = FetterItemSkin.prototype;
+
+	_proto.groupPI_i = function () {
+		var t = new eui.Group();
+		this.groupPI = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgBg_i(),this.imgIcon_i(),this.imgTxt_i(),this.imgAdd_i(),this.imgGet_i(),this.lightFrame_i(),this.imgIcon1_i(),this.labelDays_i(),this.labelNum_i(),this.labelNum1_i()];
+		return t;
+	};
+	_proto.imgBg_i = function () {
+		var t = new eui.Image();
+		this.imgBg = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(15,18,178,196);
+		t.source = "tasksheet_json.kuang";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.imgIcon_i = function () {
+		var t = new eui.Image();
+		this.imgIcon = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.source = "tasksheet_json.jinbi";
+		t.touchEnabled = false;
+		t.x = 113;
+		t.y = 67;
+		return t;
+	};
+	_proto.imgTxt_i = function () {
+		var t = new eui.Image();
+		this.imgTxt = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = -166;
+		t.source = "hallText0Sheet_json.shuangbeijaingli";
+		t.touchEnabled = false;
+		t.verticalCenter = 24;
+		return t;
+	};
+	_proto.imgAdd_i = function () {
+		var t = new eui.Image();
+		this.imgAdd = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.source = "tasksheet_json.jia";
+		t.touchEnabled = false;
+		t.x = 218;
+		t.y = 92;
+		return t;
+	};
+	_proto.imgGet_i = function () {
+		var t = new eui.Image();
+		this.imgGet = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "tasksheet_json.gou";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.visible = false;
+		return t;
+	};
+	_proto.lightFrame_i = function () {
+		var t = new eui.Image();
+		this.lightFrame = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 248;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(29,31,176,192);
+		t.source = "tasksheet_json.guanghuan";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 447;
+		return t;
+	};
+	_proto.imgIcon1_i = function () {
+		var t = new eui.Image();
+		this.imgIcon1 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.source = "tasksheet_json.jinbi";
+		t.touchEnabled = false;
+		t.x = 291;
+		t.y = 67;
+		return t;
+	};
+	_proto.labelDays_i = function () {
+		var t = new eui.Label();
+		this.labelDays = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.horizontalCenter = 0;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "第七天";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.width = 177.31;
+		t.x = 2;
+		t.y = 14.92;
+		return t;
+	};
+	_proto.labelNum_i = function () {
+		var t = new eui.Label();
+		this.labelNum = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "XWG*10";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.width = 130.31;
+		t.x = 88;
+		t.y = 177;
+		return t;
+	};
+	_proto.labelNum1_i = function () {
+		var t = new eui.Label();
+		this.labelNum1 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 31.99;
+		t.rotation = 0.03;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "XWG*10";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.width = 130.31;
+		t.x = 266;
+		t.y = 177;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBg","imgIcon","imgTxt","imgAdd","imgGet","lightFrame","imgIcon1","labelDays","labelNum","labelNum1","groupPI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return FetterItemSkin;
+})(eui.Skin);

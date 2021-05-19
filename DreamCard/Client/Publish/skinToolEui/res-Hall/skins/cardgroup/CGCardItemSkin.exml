@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CGCardItemSkin" width="176" height="176" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCGCI" width="176" height="176" x="0" y="0" touchChildren="false">
+		<e:Group id="groupAdd" width="176" height="176" y="0">
+		<e:Image scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" scale9Grid="24,24,146,146" source="hallImg2Sheet_json.b176x176"/>
+		</e:Group>
+		<e:Group id="groupUnlock" width="176" height="176" y="0">
+		<e:Image scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" scale9Grid="24,24,146,146" width="176" height="176" source="hallImg2Sheet_json.a176x176"/>
+		<e:Label id="lblUnlock" text="解锁" horizontalCenter="0" size="28" fontFamily="SimHei" height="60" width="178" verticalAlign="middle" textAlign="center" y="105" textColor="0xc2c2c2"/>
+		</e:Group>
+		<e:Group id="groupCard" width="176" height="176" x="0" y="0" scaleX="1" scaleY="1">
+		</e:Group>
+	</e:Group>
+</e:Skin>

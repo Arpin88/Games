@@ -1,0 +1,338 @@
+(function (_super) {
+	__extends(ExtrackInfoSkin, _super);
+	var ExtrackInfoSkin$Skin34 = 	(function (_super) {
+		__extends(ExtrackInfoSkin$Skin34, _super);
+		function ExtrackInfoSkin$Skin34() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","shezhisheet_json.guanbi00")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = ExtrackInfoSkin$Skin34.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "shezhisheet_json.guanbi00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return ExtrackInfoSkin$Skin34;
+	})(eui.Skin);
+
+	function ExtrackInfoSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._c2_i()];
+	}
+	var _proto = ExtrackInfoSkin.prototype;
+
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c1_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 562.67;
+		t.horizontalCenter = 0;
+		t.verticalCenter = 42.5;
+		t.width = 809.33;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this.puotngstring_i(),this._e1_i(),this.xiyoustring_i(),this._e2_i(),this.shishistring_i(),this._e3_i(),this.chuanqistring_i(),this._e4_i(),this.shenhuagstring_i(),this._e5_i(),this._a3_i(),this._a4_i(),this.btnCancel_i(),this.btnConfirm_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 474.67;
+		t.horizontalCenter = 0.33499999999997954;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.verticalCenter = -39.83499999999998;
+		t.width = 732;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 445.34;
+		t.horizontalCenter = 0.33499999999997954;
+		t.scale9Grid = new egret.Rectangle(15,11,64,75);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.tanchukuang2";
+		t.width = 703.99;
+		t.y = 18;
+		return t;
+	};
+	_proto.puotngstring_i = function () {
+		var t = new eui.Label();
+		this.puotngstring = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "35%";
+		t.textAlign = "left";
+		t.textColor = 0xefc869;
+		t.width = 116;
+		t.x = 413;
+		t.y = 98.93;
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "普通品质:";
+		t.textAlign = "left";
+		t.textColor = 0xd9ecec;
+		t.width = 140;
+		t.x = 258;
+		t.y = 98.93;
+		return t;
+	};
+	_proto.xiyoustring_i = function () {
+		var t = new eui.Label();
+		this.xiyoustring = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "35%";
+		t.textAlign = "left";
+		t.textColor = 0xEFC869;
+		t.width = 116;
+		t.x = 413;
+		t.y = 170;
+		return t;
+	};
+	_proto._e2_i = function () {
+		var t = new eui.Label();
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "稀有品质:";
+		t.textAlign = "left";
+		t.textColor = 0x0ad779;
+		t.width = 140;
+		t.x = 258;
+		t.y = 170;
+		return t;
+	};
+	_proto.shishistring_i = function () {
+		var t = new eui.Label();
+		this.shishistring = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "35%";
+		t.textAlign = "left";
+		t.textColor = 0xEFC869;
+		t.width = 116;
+		t.x = 413;
+		t.y = 241;
+		return t;
+	};
+	_proto._e3_i = function () {
+		var t = new eui.Label();
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "史诗品质:";
+		t.textAlign = "left";
+		t.textColor = 0x3eabff;
+		t.width = 140;
+		t.x = 258;
+		t.y = 241;
+		return t;
+	};
+	_proto.chuanqistring_i = function () {
+		var t = new eui.Label();
+		this.chuanqistring = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "35%";
+		t.textAlign = "left";
+		t.textColor = 0xEFC869;
+		t.width = 116;
+		t.x = 413;
+		t.y = 312;
+		return t;
+	};
+	_proto._e4_i = function () {
+		var t = new eui.Label();
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "传奇品质:";
+		t.textAlign = "left";
+		t.textColor = 0xf073ff;
+		t.width = 140;
+		t.x = 258;
+		t.y = 312;
+		return t;
+	};
+	_proto.shenhuagstring_i = function () {
+		var t = new eui.Label();
+		this.shenhuagstring = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "35%";
+		t.textAlign = "left";
+		t.textColor = 0xEFC869;
+		t.width = 116;
+		t.x = 413;
+		t.y = 383.26;
+		return t;
+	};
+	_proto._e5_i = function () {
+		var t = new eui.Label();
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.stroke = 2;
+		t.text = "神话品质:";
+		t.textAlign = "left";
+		t.textColor = 0xff7e1f;
+		t.width = 140;
+		t.x = 258;
+		t.y = 383.26;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 60;
+		t.horizontalCenter = 0.33499999999997954;
+		t.source = "hallImg1Sheet_json.biaotiban";
+		t.width = 362;
+		t.y = -19.74;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "hallText0Sheet_json.gailvshuoming";
+		t.y = -3;
+		return t;
+	};
+	_proto.btnCancel_i = function () {
+		var t = new eui.Button();
+		this.btnCancel = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.x = 727;
+		t.y = -34;
+		t.skinName = ExtrackInfoSkin$Skin34;
+		return t;
+	};
+	_proto.btnConfirm_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "确定";
+		t.scaleX = 0.7;
+		t.scaleY = 0.7;
+		t.skinName = "ButtonB1Skin";
+		t.visible = false;
+		t.x = 188;
+		t.y = 360;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","puotngstring","xiyoustring","shishistring","chuanqistring","shenhuagstring","btnCancel","btnConfirm"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return ExtrackInfoSkin;
+})(eui.Skin);

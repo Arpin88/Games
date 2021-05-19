@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeadItemSkin" width="120" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" width="100%" height="100%">
+		<e:Image id="imgItem" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" source="headicon_json.head_01" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="selceNormal" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" width="120" height="120" source="shezhisheet_json.txkuang" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="selcetLight" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" source="shezhisheet_json.xuanzhongtouxiang" horizontalCenter="0" verticalCenter="0" width="136" height="136"/>
+	</e:Group>
+</e:Skin>

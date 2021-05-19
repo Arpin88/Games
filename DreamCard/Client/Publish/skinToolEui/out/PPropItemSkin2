@@ -1,0 +1,109 @@
+(function (_super) {
+	__extends(PPropItemSkin2, _super);
+	function PPropItemSkin2() {
+		_super.call(this);
+		
+		this.height = 130;
+		this.width = 130;
+		this.elementsContent = [this.groupPI_i()];
+	}
+	var _proto = PPropItemSkin2.prototype;
+
+	_proto.groupPI_i = function () {
+		var t = new eui.Group();
+		this.groupPI = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 130;
+		t.width = 130;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.labItemName_i(),this._a1_i(),this.selcetLight_i(),this.imgItem_i(),this.labItemNum_i()];
+		return t;
+	};
+	_proto.labItemName_i = function () {
+		var t = new eui.Label();
+		this.labItemName = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 32;
+		t.stroke = 2;
+		t.text = "经验书";
+		t.textAlign = "center";
+		t.textColor = 0xffdaba;
+		t.touchEnabled = false;
+		t.visible = false;
+		t.width = 150;
+		t.y = 160;
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.k150x150";
+		t.touchEnabled = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.selcetLight_i = function () {
+		var t = new eui.Image();
+		this.selcetLight = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.source = "hallImg1Sheet_json.k2150x150";
+		t.touchEnabled = false;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgItem_i = function () {
+		var t = new eui.Image();
+		this.imgItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 118;
+		t.horizontalCenter = 0;
+		t.source = "propSheet_json.1";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 118;
+		return t;
+	};
+	_proto.labItemNum_i = function () {
+		var t = new eui.Label();
+		this.labItemNum = t;
+		t.anchorOffsetX = 0;
+		t.bold = true;
+		t.border = false;
+		t.fontFamily = "SimHei";
+		t.height = 28;
+		t.size = 24;
+		t.stroke = 1;
+		t.strokeColor = 0x000000;
+		t.text = "0";
+		t.textAlign = "right";
+		t.textColor = 0xffffff;
+		t.touchEnabled = false;
+		t.width = 115;
+		t.x = 6;
+		t.y = 100;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["labItemName","selcetLight","imgItem","labItemNum","groupPI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return PPropItemSkin2;
+})(eui.Skin);

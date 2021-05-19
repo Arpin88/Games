@@ -1,0 +1,195 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,bg_0_png,top_png,bj_jpg,mbj_jpg,hallBtn0Sheet_json,hallBtn1Sheet_json,hallImg0Sheet_json,hallImg1Sheet_json,hallText0Sheet_json,hallImg2Sheet_json,hallBtn2Sheet_json,languagePackage-Hall_json,walletConfig_json",
+			"name": "Hall"
+		}
+	],
+	"resources": [
+		{
+			"url": "res/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "res/bg_0.png",
+			"type": "image",
+			"name": "bg_0_png"
+		},
+		{
+			"url": "res/top.png",
+			"type": "image",
+			"name": "top_png"
+		},
+		{
+			"url": "res/bj.jpg",
+			"type": "image",
+			"name": "bj_jpg"
+		},
+		{
+			"url": "res/shezhisheet.json",
+			"type": "sheet",
+			"name": "shezhisheet_json",
+			"subkeys": "anniu00,anniu01,bankuai,fengexian,gonggaokuang,guanbi00,guanbi01,headkuang,linshitouxiang,off,on,touxiangkuang,txkuang,xiugai,xuanzhongtouxiang,zhaoxiangji"
+		},
+		{
+			"url": "res/jibanshuoming.json",
+			"type": "sheet",
+			"name": "jibanshuoming_json",
+			"subkeys": "daoyin,djb01,djb02,djb03,djb04,djb05,djb06,djb07,djb08,djb09,djb10,djb11,djb12,djb13,djb14,djb15,djb16,djb17,djb18,djb19,djb20,djb21,jbB_0,jbB_1,jbG_0,jbG_1,jbR_0,jbR_1,jbY_0,jbY_1,kuang"
+		},
+		{
+			"url": "res/mbj.jpg",
+			"type": "image",
+			"name": "mbj_jpg"
+		},
+		{
+			"url": "res/hallBtn0Sheet.json",
+			"type": "sheet",
+			"name": "hallBtn0Sheet_json",
+			"subkeys": "a258x86_0,a258x86_1,a258x86_2,a258x86_3,anniu00,anniu01"
+		},
+		{
+			"url": "res/hallBtn1Sheet.json",
+			"type": "sheet",
+			"name": "hallBtn1Sheet_json",
+			"subkeys": "a176x175_0,a176x175_1,a260x260_0,a260x260_1,a26x42_0,a26x42_1,a272x102_0,a272x102_1,a40x40_0,a40x40_1,a44x44_0,a44x44_1,a44x48_0,a44x48_1,a48x52_0,a48x52_1,a52x52_0,a52x52_1,a78x80_0,a78x80_1,a86x114_0,a86x114_1,a96x90_0,a96x90_1,a98x96_0,a98x96_1,b176x175_0,b176x175_1,b98x96_0,b98x96_1,c176x175_0,c176x175_1,c98x96_0,c98x96_1,d98x96_0,d98x96_1,e98x96_0,e98x96_1,e_duihuan00,e_duihuan01,f98x96_0,f98x96_1,huishou00,huishou01"
+		},
+		{
+			"url": "res/hallImg0Sheet.json",
+			"type": "sheet",
+			"name": "hallImg0Sheet_json",
+			"subkeys": "a101x101,a160x35,a170x20,a18x20,a199x41,a199x42,a304x55,a346x154,a34x36,a36x36,a36x36_1,a42x26,a76x76,a800x142,a800x90,a872x34,a98x94,anniu00,anniu01,b18x20,b800x142,c800x142,hp,w162x50,zuokuanga,zuokuangb,zuokuangc"
+		},
+		{
+			"url": "res/hallImg1Sheet.json",
+			"type": "sheet",
+			"name": "hallImg1Sheet_json",
+			"subkeys": "a100x100,a128x128,a129x10,a200x200,a242x406,a34x42,a508x90,a72x72,a780x74,b200x200,biaotiban,biaotikuang,c200x200,c98x140,daojuwaikuang,di,huodongkuang,k128x129,k150x150,k2150x150,kuang00,kuang01,l1,l2,l3,l4,l5,l6,l7,l8,l9,line,shopback,shurukuang,tanchukuang2,whanniu00,whanniu01,xinxikuang"
+		},
+		{
+			"url": "res/hallText0Sheet.json",
+			"type": "sheet",
+			"name": "hallText0Sheet_json",
+			"subkeys": "bag_changjing00,bag_changjing01,bag_jingyanshu00,bag_jingyanshu01,bag_paibei00,bag_paibei01,bag_qita00,bag_qita01,bag_quanbu00,bag_quanbu01,beibao,chuanqi00,chuanqi01,chuanqipinzhi,chushou00,chushou01,daishu1,daishu2,daishu3,djbh,e_qbdz,e_qbye00,e_qbye01,e_sy00,e_sy01,e_t_duihuan,e_t_shezhi,e_yxye00,e_yxye01,e_yy00,e_yy01,e_zcdqb00,e_zcdqb01,e_zrdyx00,e_zrdyx01,exp,feiyongddg00,feiyongddg01,feiyonggdd00,feiyonggdd01,gailvshuoming,gongjiddg00,gongjiddg01,gongjigdd00,gongjigdd01,goumaishuliang,hd,hongdian,hp,huishouxinxi,huo00,huo01,jb_0,jb_1,jiban,jibanshuoming,jin00,jin01,jineng0,jn_0,jn_1,jueseshenji,kapai,kazu,kazuming,kehuodeyingxiong,mu00,mu01,peizhikazu,putong00,putong01,quanpinzhi00,quanpinzhi01,quanwuxing00,quanwuxing01,shangcheng,shenghua00,shenghua01,shengmingddg00,shengmingddg01,shengminggdd00,shengminggdd01,shezhi,shilianchou,shishi00,shishi01,shui00,shui01,sjxq,smbh,smz,spgm,sx_0,sx_1,sy00,sy01,t_huishou,tu00,tu01,wuxing1,xitong,xitong2,xiyou00,xiyou01,xtgg,yy00,yy01,zfybh,zhanliddg00,zhanliddg01,zhanligdd00,zhanligdd01,zhanshi,zhanshi00,zongatk,zongcost,zongfeiyong,zonghp,zongzhanli"
+		},
+		{
+			"url": "res/hallImg2Sheet.json",
+			"type": "sheet",
+			"name": "hallImg2Sheet_json",
+			"subkeys": "a118x118,a132x288,a160x22,a176x176,a228x77,a246x348,a40x250,a42x44,a450x6,a58x38,a92x92,b100x100,b118x118,b160x22,b176x176,b246x348,c160x22"
+		},
+		{
+			"url": "res/newcardpanel.json",
+			"type": "sheet",
+			"name": "newcardpanel_json",
+			"subkeys": "guanbi00,guanbi01,jineng1,jineng2,jineng3,jineng4,jineng5,jingdu00,jingdu01,jingdu02,jingdu03,kabeitietu,kakuang,kuang-jiban,qizhi,star0,star1,star2,suo,xuanzhong0,xuanzhong1,yeqian00,yeqian01,yeqian02,yeqian03"
+		},
+		{
+			"url": "res/cardCommonImg4Sheet.json",
+			"type": "sheet",
+			"name": "cardCommonImg4Sheet_json",
+			"subkeys": "sk_b1,sk_b2,sk_b3,sk_b4,sk_b5,sk_linshi"
+		},
+		{
+			"url": "res/skill.json",
+			"type": "sheet",
+			"name": "skill_json",
+			"subkeys": "baoji,bendai,bingdong,busi,chaofeng,chenmo,chongfeng,chonghui,chongsheng,chujue,cisha,dazhiliaoshu,duochonggongji,fangxue,fangyuhudun,fanji,fantan,fuchou,fudaigongji,fuhuoshu,gedang,guhua,guwu,huoli,huti,huzhu,jianshegongji,jiaoxie,jiaozheng,jikui,jinji,jinjidun,jinjiguanghuan,juduwaike,juji,lianji,lingqiaoshu,meihuo,pikan,qiangji,qiangjiguanghuan,qidao,qinwang,qishe,quantui,rechen,rechenguanghuan,shanghaifengyin,shanghaijiashen,shengmingchouqu,shenmingqianghua,shiguangjiasu,shixue,shouhu,shuaijie,shuaijieguanghuan,shuailao,tainxuanzhizi,toudu,wanqiang,xianzuxuemai,xingfen,xisheng,xixue,xixueguanghuan,xueji,xueruo,xuhua,xuruo,xuruoguanghuan,xushi,yazhi,yazhiguanghuan,yuxue,zhanyi,zhiliaoqianghua,zhiliaoshu,zhimang,zhimingyiji,zhongji,zuzhou"
+		},
+		{
+			"url": "res/headicon.json",
+			"type": "sheet",
+			"name": "headicon_json",
+			"subkeys": "head_00,head_01,head_02,head_03,head_04,head_05,head_06,head_07,head_08,head_09,head_10,head_11,head_12,head_13,head_14,head_15,head_16,head_17,head_18,head_19,head_20,head_21,head_22,head_23,head_24,head_25,head_26,head_27,head_28,head_29,head_30,head_31,head_32,head_33,head_34,head_35,head_36,head_37,head_38,head_39,head_40,head_41,head_42,head_43,head_44,head_45"
+		},
+		{
+			"url": "res/hallBtn2Sheet.json",
+			"type": "sheet",
+			"name": "hallBtn2Sheet_json",
+			"subkeys": "baocun_0,baocun_1,chongzhi_0,chongzhi_1,chushou_0,chushou_1,cq_0,cq_1,cuihui_0,cuihui_1,fydg_0,fydg_1,fygd_0,fygd_1,gongjidg_0,gongjidg_1,gongjigd_0,gongjigd_1,goumai_0,goumai_1,h_0,h_1,huishou_0,huishou_1,j_0,j_1,jinjie_0,jinjie_1,jinjie_2,kazu_0,kazu_1,mu_0,mu_1,peizhikazu_0,peizhikazu_1,pt_0,pt_1,qianwangshengcheng_0,qianwangshengcheng_1,qpz_0,qpz_1,queding_0,queding_1,quxiao_0,quxiao_1,qwx_0,qwx_1,s_0,s_1,sh_0,sh_1,shengxing_0,shengxing_1,shengxing_2,shiyong_0,shiyong_1,shiyongtouxiang_0,shiyongtouxiang_1,smdg_0,smdg_1,smgd_0,smgd_1,ss_0,ss_1,t_0,t_1,tingzhipipei_0,tingzhipipei_1,tuichudenglu_0,tuichudenglu_1,xy_0,xy_1,zaichouyici_0,zaichouyici_1,zhanlidg_0,zhanlidg_1,zhanligd_0,zhanligd_1"
+		},
+		{
+			"url": "res/introducehero.json",
+			"type": "sheet",
+			"name": "introducehero_json",
+			"subkeys": "COL00000000,COL00000001,COL00000002,COL00000003,COL00000004,COL00000005,COL00000006,COL00000007,COL00000008,COL00000009,COL00000010,COL00000011,COL00000012,COL00000013,COL00000014,COL00000015,COL00000016,COL00000017,COL00000018,COL00000019,COL00000020,COL00000021,COL00000022,COL00000023,COL00000024,COL00000025,COL00000026,COL00000027,COL00000028,COL00000029,COL00000030,COL00000031,COL00000032,COL00000033,COL00000034,COL00000035,COL00000036,COL00000037,COL00000038,COL00000039,di,kuang"
+		},
+		{
+			"url": "res/combatRecordSheet.json",
+			"type": "sheet",
+			"name": "combatRecordSheet_json",
+			"subkeys": "a130x130_0,a28x28_0,a28x28_1,a28x28_2,a28x28_3,a28x28_4,a86x86_0,a86x86_1,a86x86_2,a86x86_3,a86x86_4,bai,exp,line,shengli,shibai,t_duizhanjilu,vs,y1,y2,y3,y4,y5,zuoan00,zuoan01"
+		},
+		{
+			"url": "res/btnun.png",
+			"type": "image",
+			"name": "btnun_png"
+		},
+		{
+			"url": "res/btnun.fnt",
+			"type": "font",
+			"name": "btnun_fnt"
+		},
+		{
+			"url": "res/animation/blueanimation.png",
+			"type": "image",
+			"name": "blueanimation_png"
+		},
+		{
+			"url": "res/animation/greenanimation.png",
+			"type": "image",
+			"name": "greenanimation_png"
+		},
+		{
+			"url": "res/animation/blueanimation.json",
+			"type": "json",
+			"name": "blueanimation_json"
+		},
+		{
+			"url": "res/animation/greenanimation.json",
+			"type": "json",
+			"name": "greenanimation_json"
+		},
+		{
+			"url": "res/animation/ani00008.png",
+			"type": "image",
+			"name": "ani00008_png"
+		},
+		{
+			"url": "res/animation/orangeanimation.png",
+			"type": "image",
+			"name": "orangeanimation_png"
+		},
+		{
+			"url": "res/animation/purpleanimation.png",
+			"type": "image",
+			"name": "purpleanimation_png"
+		},
+		{
+			"url": "res/animation/orangeanimation.json",
+			"type": "json",
+			"name": "orangeanimation_json"
+		},
+		{
+			"url": "res/animation/purpleanimation.json",
+			"type": "json",
+			"name": "purpleanimation_json"
+		},
+		{
+			"url": "res/animation/card.png",
+			"type": "image",
+			"name": "card_png"
+		},
+		{
+			"url": "conf/languagePackage-Hall.json",
+			"type": "json",
+			"name": "languagePackage-Hall_json"
+		},
+		{
+			"url": "conf/walletConfig.json",
+			"type": "json",
+			"name": "walletConfig_json"
+		}
+	]
+}

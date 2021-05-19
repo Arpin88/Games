@@ -1,0 +1,223 @@
+(function (_super) {
+	__extends(StarSkin, _super);
+	var StarSkin$Skin61 = 	(function (_super) {
+		__extends(StarSkin$Skin61, _super);
+		function StarSkin$Skin61() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallImg0Sheet_json.anniu01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","hallImg0Sheet_json.anniu01")
+					])
+			];
+		}
+		var _proto = StarSkin$Skin61.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallImg0Sheet_json.anniu00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return StarSkin$Skin61;
+	})(eui.Skin);
+
+	var StarSkin$Skin62 = 	(function (_super) {
+		__extends(StarSkin$Skin62, _super);
+		function StarSkin$Skin62() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallImg0Sheet_json.anniu00")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","hallImg0Sheet_json.anniu01")
+					])
+			];
+		}
+		var _proto = StarSkin$Skin62.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallImg0Sheet_json.anniu00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return StarSkin$Skin62;
+	})(eui.Skin);
+
+	function StarSkin() {
+		_super.call(this);
+		
+		this.height = 54;
+		this.width = 525;
+		this.elementsContent = [this._c1_i()];
+	}
+	var _proto = StarSkin.prototype;
+
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this.rectBG0_i(),this._a1_i(),this._a2_i(),this.txt_i(),this.btnUserItem_i(),this.btnUserItem0_i(),this.txt0_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.alpha = 50;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fillAlpha = 0.7;
+		t.height = 43.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.width = 214.5;
+		t.x = 23;
+		t.y = 5.5;
+		return t;
+	};
+	_proto.rectBG0_i = function () {
+		var t = new eui.Rect();
+		this.rectBG0 = t;
+		t.alpha = 50;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fillAlpha = 0.7;
+		t.height = 43.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 214.5;
+		t.x = 296.5;
+		t.y = 5.5;
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.source = "hallImg0Sheet_json.a36x36";
+		t.verticalCenter = 0;
+		t.x = 273.5;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.source = "hallImg0Sheet_json.a36x36_1";
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.x = 277;
+		return t;
+	};
+	_proto.txt_i = function () {
+		var t = new eui.Label();
+		this.txt = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.size = 32;
+		t.text = "666,666";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.verticalCenter = 0;
+		t.width = 135.5;
+		t.x = 334;
+		return t;
+	};
+	_proto.btnUserItem_i = function () {
+		var t = new eui.Button();
+		this.btnUserItem = t;
+		t.label = "";
+		t.name = "btnUserItem";
+		t.verticalCenter = 0;
+		t.x = 476;
+		t.skinName = StarSkin$Skin61;
+		return t;
+	};
+	_proto.btnUserItem0_i = function () {
+		var t = new eui.Button();
+		this.btnUserItem0 = t;
+		t.label = "";
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.x = 204;
+		t.skinName = StarSkin$Skin62;
+		return t;
+	};
+	_proto.txt0_i = function () {
+		var t = new eui.Label();
+		this.txt0 = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.size = 32;
+		t.text = "666,666";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.verticalCenter = 0;
+		t.visible = false;
+		t.width = 138;
+		t.x = 62;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","rectBG0","txt","btnUserItem","btnUserItem0","txt0"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return StarSkin;
+})(eui.Skin);

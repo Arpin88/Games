@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CRCardItemSkin" width="138" height="206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCRCI" width="138" height="206" x="0" y="0" touchEnabled="false">
+		<e:Group id="groupBack" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" width="138" height="206" touchChildren="false" touchEnabled="false"/>
+		<e:Group id="groupCard" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" touchEnabled="false">
+		</e:Group>
+		<e:Group id="groupBuffIcon" width="128" height="34" horizontalCenter="0" y="146" touchEnabled="false" touchThrough="false">
+		</e:Group>
+		<e:Group id="groupFront" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" width="138" height="206" touchChildren="false" touchEnabled="false">
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadingBSkin" width="650" height="16" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="100%" height="100%" scale9Grid="7,2,34,12" source="l2_png"/>
+	<e:Image id="thumb" width="100%" height="100%" x="0" y="0" scale9Grid="0,0,0,0" source="l1_png"/>
+</e:Skin>

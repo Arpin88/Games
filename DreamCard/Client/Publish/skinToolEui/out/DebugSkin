@@ -1,0 +1,428 @@
+(function (_super) {
+	__extends(DebugSkin, _super);
+	function DebugSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._c2_i()];
+	}
+	var _proto = DebugSkin.prototype;
+
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._s1_i(),this._a1_i(),this.group1_i(),this.group2_i()];
+		return t;
+	};
+	_proto._s1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0xBFBFBF;
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "bg0_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.group1_i = function () {
+		var t = new eui.Group();
+		this.group1 = t;
+		t.percentHeight = 100;
+		t.touchEnabled = false;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.btnCreate_i(),this.btnOpen_i(),this.btnClose_i(),this.lblAccount0_i(),this.lblAccount1_i()];
+		return t;
+	};
+	_proto.btnCreate_i = function () {
+		var t = new eui.Button();
+		this.btnCreate = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "创建房间";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.y = 480;
+		return t;
+	};
+	_proto.btnOpen_i = function () {
+		var t = new eui.Button();
+		this.btnOpen = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "打开窗口";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.y = 400;
+		return t;
+	};
+	_proto.btnClose_i = function () {
+		var t = new eui.Button();
+		this.btnClose = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "关闭房间";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.y = 530;
+		return t;
+	};
+	_proto.lblAccount0_i = function () {
+		var t = new eui.Label();
+		this.lblAccount0 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "用户1：";
+		t.x = 0;
+		t.y = 50;
+		return t;
+	};
+	_proto.lblAccount1_i = function () {
+		var t = new eui.Label();
+		this.lblAccount1 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "用户2：";
+		t.x = 0;
+		t.y = 100;
+		return t;
+	};
+	_proto.group2_i = function () {
+		var t = new eui.Group();
+		this.group2 = t;
+		t.percentHeight = 100;
+		t.touchEnabled = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.groupRData_i(),this.groupRDetail_i(),this.groupRCreate_i()];
+		return t;
+	};
+	_proto.groupRData_i = function () {
+		var t = new eui.Group();
+		this.groupRData = t;
+		t.percentHeight = 100;
+		t.touchEnabled = false;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.scrRoom_i(),this.lblTime_i(),this._e1_i(),this.editCurCSIndex_i()];
+		return t;
+	};
+	_proto.scrRoom_i = function () {
+		var t = new eui.Scroller();
+		this.scrRoom = t;
+		t.height = 670;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 80;
+		t.viewport = this.groupRoom_i();
+		return t;
+	};
+	_proto.groupRoom_i = function () {
+		var t = new eui.Group();
+		this.groupRoom = t;
+		t.layout = this._TileLayout1_i();
+		return t;
+	};
+	_proto._TileLayout1_i = function () {
+		var t = new eui.TileLayout();
+		return t;
+	};
+	_proto.lblTime_i = function () {
+		var t = new eui.Label();
+		this.lblTime = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "刷新倒计时: 00:00";
+		t.x = 0;
+		t.y = 20;
+		return t;
+	};
+	_proto._e1_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "当前测试下标:";
+		t.x = 260;
+		t.y = 20;
+		return t;
+	};
+	_proto.editCurCSIndex_i = function () {
+		var t = new eui.EditableText();
+		this.editCurCSIndex = t;
+		t.height = 50;
+		t.text = "0";
+		t.width = 150;
+		t.x = 465;
+		t.y = 20;
+		return t;
+	};
+	_proto.groupRDetail_i = function () {
+		var t = new eui.Group();
+		this.groupRDetail = t;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._e2_i(),this.lblRAccount0_i(),this.lblRAccount1_i(),this.lblRState_i(),this._c1_i(),this.btnROpen_i(),this.btnRClose_i(),this.btnRRecovery_i(),this.btnRGetBattleInfo_i(),this.btnRBack_i(),this.editBattleInfo_i()];
+		return t;
+	};
+	_proto._e2_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "房间信息：";
+		t.x = 0;
+		t.y = 10;
+		return t;
+	};
+	_proto.lblRAccount0_i = function () {
+		var t = new eui.Label();
+		this.lblRAccount0 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "用户1：";
+		t.x = 0;
+		t.y = 50;
+		return t;
+	};
+	_proto.lblRAccount1_i = function () {
+		var t = new eui.Label();
+		this.lblRAccount1 = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "用户2：";
+		t.x = 0;
+		t.y = 100;
+		return t;
+	};
+	_proto.lblRState_i = function () {
+		var t = new eui.Label();
+		this.lblRState = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "状态：";
+		t.x = 0;
+		t.y = 150;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.horizontalCenter = 0;
+		t.touchEnabled = false;
+		t.percentWidth = 100;
+		t.y = 200;
+		t.layout = this._VerticalLayout1_i();
+		t.elementsContent = [this._e3_i(),this.editJson_i()];
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		return t;
+	};
+	_proto._e3_i = function () {
+		var t = new eui.Label();
+		t.text = "卡牌json：";
+		t.verticalAlign = "middle";
+		t.x = 0;
+		t.y = 200;
+		return t;
+	};
+	_proto.editJson_i = function () {
+		var t = new eui.EditableText();
+		this.editJson = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 150;
+		t.prompt = "点击选择复制";
+		t.promptColor = 0xf9bf4a;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.percentWidth = 100;
+		t.x = 100;
+		t.y = -50;
+		return t;
+	};
+	_proto.btnROpen_i = function () {
+		var t = new eui.Button();
+		this.btnROpen = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "打开窗口";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.x = 491;
+		t.y = 400;
+		return t;
+	};
+	_proto.btnRClose_i = function () {
+		var t = new eui.Button();
+		this.btnRClose = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "关闭房间";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.x = 491;
+		t.y = 530;
+		return t;
+	};
+	_proto.btnRRecovery_i = function () {
+		var t = new eui.Button();
+		this.btnRRecovery = t;
+		t.anchorOffsetX = 0;
+		t.label = "回收房间";
+		t.right = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.y = 400;
+		return t;
+	};
+	_proto.btnRGetBattleInfo_i = function () {
+		var t = new eui.Button();
+		this.btnRGetBattleInfo = t;
+		t.anchorOffsetX = 0;
+		t.label = "获取战斗信息";
+		t.right = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.x = 10;
+		t.y = 530;
+		return t;
+	};
+	_proto.btnRBack_i = function () {
+		var t = new eui.Button();
+		this.btnRBack = t;
+		t.anchorOffsetX = 0;
+		t.label = "返回";
+		t.left = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.y = 400;
+		return t;
+	};
+	_proto.editBattleInfo_i = function () {
+		var t = new eui.EditableText();
+		this.editBattleInfo = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "Microsoft YaHei";
+		t.height = 100;
+		t.prompt = "点击获取战斗信息按钮获取";
+		t.promptColor = 0xF9BF4A;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.verticalAlign = "middle";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 640;
+		return t;
+	};
+	_proto.groupRCreate_i = function () {
+		var t = new eui.Group();
+		this.groupRCreate = t;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.touchEnabled = false;
+		t.visible = false;
+		t.percentWidth = 100;
+		t.elementsContent = [this.btnRCreate_i(),this.btnChangeCurCSIndex_i(),this._e4_i(),this.editCCurCSIndex_i()];
+		return t;
+	};
+	_proto.btnRCreate_i = function () {
+		var t = new eui.Button();
+		this.btnRCreate = t;
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.label = "创建房间";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.x = 491;
+		t.y = 480;
+		return t;
+	};
+	_proto.btnChangeCurCSIndex_i = function () {
+		var t = new eui.Button();
+		this.btnChangeCurCSIndex = t;
+		t.anchorOffsetX = 0;
+		t.label = "修改下标";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "ButtonB1Skin";
+		t.x = 10;
+		t.y = 71;
+		return t;
+	};
+	_proto._e4_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "当前测试下标:";
+		t.x = 0;
+		t.y = 20;
+		return t;
+	};
+	_proto.editCCurCSIndex_i = function () {
+		var t = new eui.EditableText();
+		this.editCCurCSIndex = t;
+		t.height = 50;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "0";
+		t.width = 150;
+		t.x = 207;
+		t.y = 20;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["btnCreate","btnOpen","btnClose","lblAccount0","lblAccount1","group1","groupRoom","scrRoom","lblTime","editCurCSIndex","groupRData","lblRAccount0","lblRAccount1","lblRState","editJson","btnROpen","btnRClose","btnRRecovery","btnRGetBattleInfo","btnRBack","editBattleInfo","groupRDetail","btnRCreate","btnChangeCurCSIndex","editCCurCSIndex","groupRCreate","group2"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return DebugSkin;
+})(eui.Skin);

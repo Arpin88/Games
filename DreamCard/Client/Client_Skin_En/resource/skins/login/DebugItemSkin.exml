@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DebugItemSkin" width="90" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupDebugItem" width="90" height="50" x="0" y="0" scaleX="1" scaleY="1" touchChildren="false">
+		<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0x4c4c4c" fillAlpha="1"/>
+		<e:Label id="lblRoom" text="房间号：100" y="10" scaleX="1" scaleY="1" horizontalCenter="0" size="16"/>
+		<e:Label id="lblState" text="状态：正常" y="30" scaleX="1" scaleY="1" horizontalCenter="0" size="16"/>
+	</e:Group>
+</e:Skin>

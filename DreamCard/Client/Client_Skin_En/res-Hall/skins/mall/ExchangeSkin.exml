@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ExchangeSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="171110792b6"/>
+	<e:Group id="mallskingroup" width="100%" height="100%" x="0" y="0">
+		<e:Image x="0" y="0" source="bj_jpg" width="100%" height="100%" scaleX="1" scaleY="1"/>
+		<e:Group width="100%" height="80" left="0" top="0" x="0" y="0" scaleX="1" scaleY="1">
+			<e:Image source="top_png" top="0" horizontalCenter="0" width="100%"/>
+			<e:Image horizontalCenter="0" verticalCenter="-3" source="hallText0Sheet_json.e_t_duihuan"/>
+			<e:Button id="btnBack" label="" top="0" left="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Component id="comStar" skinName="StarSkin" scaleX="1" scaleY="1" verticalCenter="-6" right="31"/>
+		</e:Group>
+		<e:Group width="288" height="640" anchorOffsetX="0" anchorOffsetY="0" x="0" y="100" scaleX="1" scaleY="1">
+			<e:Scroller id="scrOptionBtn" width="100%" scrollPolicyH="off" height="100%" anchorOffsetX="0" scaleX="1" scaleY="1" top="0" x="0">
+			<e:Group id="groupOptionBtn" anchorOffsetX="0" width="100%" height="100%"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="InGroup" anchorOffsetX="0" anchorOffsetY="0" height="640" scaleX="1" scaleY="1" top="100" left="288" right="26" visible="false">
+			<e:Image id="imgRBG" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" top="0" anchorOffsetX="0" x="0" width="100%"/>
+			<e:Image x="37" y="115.88" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29" visible="false"/>
+			<e:Image x="44" y="93" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29"/>
+			<e:Image x="44" y="196" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29"/>
+			<e:Image y="332" x="44" scaleX="1" scaleY="1" anchorOffsetX="0" width="415.18" source="hallImg1Sheet_json.shurukuang" scale9Grid="12,10,78,45" height="82"/>
+			<e:Image x="66" y="117" source="hallText0Sheet_json.e_qbye00"/>
+			<e:Image x="66" y="220" source="hallText0Sheet_json.e_yxye01"/>
+			<e:Image source="hallText0Sheet_json.qbdz" x="66" y="139.88" scaleX="1" scaleY="1" anchorOffsetX="0" width="146.67" anchorOffsetY="0" height="34" visible="false"/>
+			<e:EditableText id="editCount" width="413.03"  height="56.67" text="1" x="37" y="343.7" verticalAlign="middle" textAlign="center" textColor="0xFFC000" stroke="0" size="30" fontFamily="SimHei" borderColor="0xFFC000" backgroundColor="0xFFC000" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Button id="btnInConfirm" label="" y="506" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" width="240" height="95">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.queding_0" source.down="hallBtn2Sheet_json.queding_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnInAll" label="全部" y="334" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" skinName="ButtonR1Skin" width="270" height="134" scaleY="0.6" x="490">
+			</e:Button>
+			<e:Label id="namstring" text="dfjslfjerlgjerlgjwlkf" x="242" y="130.88" scaleX="1" scaleY="1" width="718.33" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0x87c1ea" visible="false"/>
+			<e:Label id="namstring0" text="123456789" x="304" y="108" scaleX="1" scaleY="1" width="664.33" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" textColor="0x87C1EA" anchorOffsetY="0" height="52.67" verticalAlign="middle"/>
+			<e:Label id="InGameNum" text="123456789" x="306" y="211" scaleX="1" scaleY="1" width="662.33" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0xffc23d"/>
+			<e:Button id="btnInCharge" label="充值" y="222" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" width="270" height="134" scaleY="0.6" x="814" skinName="ButtonB1Skin" visible="false"/>
+			<e:Label id="namstring17" text="转入：把XWG从游戏钱包转入到游戏余额" x="44" y="28" scaleX="1" scaleY="1" width="664.75" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0xFFC23D" italic="true"/>
+		</e:Group>
+		<e:Group id="OutGroup" anchorOffsetX="0" anchorOffsetY="0" height="640" scaleX="1" scaleY="1" top="100" left="288" right="26" visible="false">
+			<e:Image id="imgRBG0" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" top="0" anchorOffsetX="0" x="0" width="100%"/>
+			<e:Label id="namstring16" text="转出：把XWG从游戏余额转出到游戏钱包" x="44" y="28" scaleX="1" scaleY="1" width="664.75" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0xFFC23D" italic="true"/>
+			<e:Image x="37" y="28" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29" visible="false"/>
+			<e:Image x="44" y="196" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29"/>
+			<e:Image x="44" y="93" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29"/>
+			<e:Image y="332" x="44" scaleX="1" scaleY="1" anchorOffsetX="0" width="415.18" source="hallImg1Sheet_json.shurukuang" scale9Grid="12,10,78,45" height="82"/>
+			<e:Image x="66" y="220" source="hallText0Sheet_json.e_qbye01"/>
+			<e:Image x="66" y="117" source="hallText0Sheet_json.e_yxye00"/>
+			<e:Image source="hallText0Sheet_json.qbdz" x="66" y="52" height="34" anchorOffsetX="0" width="143" visible="false"/>
+			<e:EditableText id="editCountOut" width="402.42" height="56.67" text="1" x="42.64" y="343.7" verticalAlign="middle" textAlign="center" textColor="0xFFC000" stroke="0" size="30" fontFamily="SimHei" borderColor="0xFFC000" backgroundColor="0xFFC000" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Button id="btnOutConfirm" label="" y="506" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" width="240" height="95">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.queding_0" source.down="hallBtn2Sheet_json.queding_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btnOutAll" label="全部" y="331.84" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" skinName="ButtonR1Skin" width="270" height="134" scaleY="0.6" x="490"/>
+			<e:Label id="namstring2" text="dfjslfjerlgjerlgjwlkf" x="242" y="43" scaleX="1" scaleY="1" width="718.33" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0x87c1ea" visible="false"/>
+			<e:Label id="namstring5" text="手续费：" x="41.33" y="443" scaleX="1" scaleY="1" width="127.66" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="47.34" verticalAlign="middle" textColor="0xffffff"/>
+			<e:Label id="namstring7" text="（注:转出时将收取5%的手续费）" x="372.7" y="443" scaleX="1" scaleY="1" width="441.3" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" textColor="0xFFFFFF" anchorOffsetY="0" height="47.34" verticalAlign="middle"/>
+			<e:Label id="ourRatestring" text="1200XWG" x="150" y="443" scaleX="1" scaleY="1" width="207.97" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="47.34" verticalAlign="middle" textColor="0x1fff59"/>
+			<e:Label id="namstring3" text="123456789" x="308.67" y="211" scaleX="1" scaleY="1" width="656.75" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0xffc23d"/>
+			<e:Label id="OutGameNum" text="123456789" x="308.66" y="108" scaleX="1" scaleY="1" width="635.55" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0x87c1ea"/>
+			<e:Button id="btnOutCharge" label="提现" y="120.67" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" width="270" height="134" scaleY="0.6" x="814" skinName="ButtonB1Skin" visible="false"/>
+			<e:Image source="hallText0Sheet_json.qbdz" x="66" y="139.88" scaleX="1" scaleY="1" anchorOffsetX="0" width="146.67" anchorOffsetY="0" height="34" visible="false"/>
+			<e:Button id="btnInCharge0" label="充值" y="222" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" width="270" height="134" scaleY="0.6" x="814" skinName="ButtonB1Skin" visible="false"/>
+		</e:Group>
+		<e:Group id="ChargeGroup" anchorOffsetX="0" anchorOffsetY="0" height="640" scaleX="1" scaleY="1" top="100" left="288" right="26" visible="false">
+			<e:Image id="imgRBG1" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" top="0" anchorOffsetX="0" x="0" width="100%"/>
+			<e:Image x="44" y="93" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29"/>
+			<e:Image x="44" y="196" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29"/>
+			<e:Image x="66" y="117" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" source="hallText0Sheet_json.e_youxiqbdz"/>
+			<e:Button id="btnCharge" label="" y="506" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" width="240" height="95">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.queding_0" source.down="hallBtn2Sheet_json.queding_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="lbgamewalletaddr" text="dfjslfjerlgjerlgjwlkf" x="392.66" y="108" scaleX="1" scaleY="1" width="567.67" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0x87C1EA"/>
+			<e:Label id="namstring15" text="充值：把XWG从其他链上钱包充值到游戏钱包" x="44" y="28" scaleX="1" scaleY="1" width="664.75" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0xFFC23D" italic="true"/>
+			<e:Label id="lbchargewalletnum" text="123456789" x="310.22" y="211" scaleX="1" scaleY="1" width="620.88" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0x87C1EA"/>
+			<e:Image x="66" y="220" source="hallText0Sheet_json.e_qbye00"/>
+		</e:Group>
+		<e:Group id="CashGroup" anchorOffsetX="0" anchorOffsetY="0" height="640" scaleX="1" scaleY="1" top="100" left="288" right="26" visible="false">
+			<e:Image id="imgRBG2" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" height="100%" top="0" anchorOffsetX="0" x="0" width="100%"/>
+			<e:Image x="44" y="93" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29"/>
+			<e:Image x="44" y="196" anchorOffsetX="0" width="940" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29"/>
+			<e:Image x="66" y="117" anchorOffsetX="0" source="hallText0Sheet_json.e_tixianqbdz"/>
+			<e:Button id="btnCash" label="" y="506" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" width="240" height="95">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.queding_0" source.down="hallBtn2Sheet_json.queding_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="lbcashaddr" text="dfjslfjerlgjerlgjwlkf" x="464.19" y="108" scaleX="1" scaleY="1" width="488.33" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0x87C1EA"/>
+			<e:Label id="namstring11" text="提现：把XWG从游戏钱包提现到绑定地址" x="44" y="28" scaleX="1" scaleY="1" width="664.75" textAlign="left" size="26" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0xFFC23D" italic="true"/>
+			<e:Label id="lbcashwalletnum" text="123456789" x="302.19" y="211" scaleX="1" scaleY="1" width="626.21" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0x87C1EA"/>
+			<e:Image x="66" y="220" source="hallText0Sheet_json.e_qbye00"/>
+		</e:Group>
+		<e:Group id="RecordGroup" height="640" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" left="288" right="26" top="100">
+			<e:Image touchEnabled="false" anchorOffsetX="0" width="951" anchorOffsetY="0" height="607" source="hallImg1Sheet_json.shopback" scale9Grid="13,14,75,72" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" width="100%" height="100%" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" y="0" horizontalCenter="0"/>
+			<e:Image width="941.6" height="600" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" source="hallImg1Sheet_json.tanchukuang2" scale9Grid="15,15,64,70" y="15" x="37.73" visible="false"/>
+			<e:Image touchEnabled="false" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" source="shezhisheet_json.lan" scale9Grid="12,10,76,36" y="15.02" width="945" height="55" horizontalCenter="0"/>
+			<e:Scroller id="scrPropItem" width="940" scrollPolicyH="off" scaleX="1" scaleY="1" height="547" anchorOffsetX="0" horizontalCenter="0" y="68.18" anchorOffsetY="0">
+			<e:Group id="groupPropItem" anchorOffsetX="0" width="100%" height="100%"/>
+			</e:Scroller>
+			<e:Group width="938.82" height="51.15" y="13.71" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0">
+			<e:Label id="lblDes3" text="编号" x="43" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="52.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes2" text="订单号" x="150" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="96.23" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes4" text="类型" x="275" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="50.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes5" text="金额" x="437" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="80.5" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes0" text="手续费" x="640" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="111.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes6" text="燃油费" x="520" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="111.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes2e0" text="完成时间" x="784" y="16" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="154.9" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left"/>
+			<e:Label id="lblDes1" text="状态" x="350" y="16" size="20" fontFamily="SimHei" width="50.4" lineSpacing="8" stroke="1" wordWrap="true" anchorOffsetX="0" scaleX="1" scaleY="1" textAlign="left" textColor="0xFFFFFF"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,1271 @@
+(function (_super) {
+	__extends(DailogSkin2, _super);
+	var DailogSkin2$Skin88 = 	(function (_super) {
+		__extends(DailogSkin2$Skin88, _super);
+		function DailogSkin2$Skin88() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin88.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.scaleX = 2;
+			t.size = 30;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin88;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin89 = 	(function (_super) {
+		__extends(DailogSkin2$Skin89, _super);
+		function DailogSkin2$Skin89() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin89.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin89;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin90 = 	(function (_super) {
+		__extends(DailogSkin2$Skin90, _super);
+		function DailogSkin2$Skin90() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin90.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin90;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin91 = 	(function (_super) {
+		__extends(DailogSkin2$Skin91, _super);
+		function DailogSkin2$Skin91() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin91.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin91;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin92 = 	(function (_super) {
+		__extends(DailogSkin2$Skin92, _super);
+		function DailogSkin2$Skin92() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin92.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin92;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin93 = 	(function (_super) {
+		__extends(DailogSkin2$Skin93, _super);
+		function DailogSkin2$Skin93() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin93.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin93;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin94 = 	(function (_super) {
+		__extends(DailogSkin2$Skin94, _super);
+		function DailogSkin2$Skin94() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin94.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin94;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin95 = 	(function (_super) {
+		__extends(DailogSkin2$Skin95, _super);
+		function DailogSkin2$Skin95() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin95.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin95;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin96 = 	(function (_super) {
+		__extends(DailogSkin2$Skin96, _super);
+		function DailogSkin2$Skin96() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin96.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin96;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin97 = 	(function (_super) {
+		__extends(DailogSkin2$Skin97, _super);
+		function DailogSkin2$Skin97() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin97.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin97;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin98 = 	(function (_super) {
+		__extends(DailogSkin2$Skin98, _super);
+		function DailogSkin2$Skin98() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin98.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin98;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin99 = 	(function (_super) {
+		__extends(DailogSkin2$Skin99, _super);
+		function DailogSkin2$Skin99() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.key02")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin99.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.key00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin99;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin100 = 	(function (_super) {
+		__extends(DailogSkin2$Skin100, _super);
+		function DailogSkin2$Skin100() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.queding_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin100.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.queding_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin100;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin101 = 	(function (_super) {
+		__extends(DailogSkin2$Skin101, _super);
+		function DailogSkin2$Skin101() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a26x42_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin101.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a26x42_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin101;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin102 = 	(function (_super) {
+		__extends(DailogSkin2$Skin102, _super);
+		function DailogSkin2$Skin102() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.b74x54_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin102.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.b74x54_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin102;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin103 = 	(function (_super) {
+		__extends(DailogSkin2$Skin103, _super);
+		function DailogSkin2$Skin103() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a74x54_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin103.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a74x54_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin103;
+	})(eui.Skin);
+
+	var DailogSkin2$Skin104 = 	(function (_super) {
+		__extends(DailogSkin2$Skin104, _super);
+		function DailogSkin2$Skin104() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a98x54_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = DailogSkin2$Skin104.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a98x54_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return DailogSkin2$Skin104;
+	})(eui.Skin);
+
+	function DailogSkin2() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._c4_i()];
+	}
+	var _proto = DailogSkin2.prototype;
+
+	_proto._c4_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c3_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.right = 0;
+		t.width = 490.91;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this._a2_i(),this.btnCancel_i(),this.btnConfirm_i(),this.btnConfirm0_i(),this.btnConfirm1_i(),this.btnConfirm2_i(),this.btnConfirm3_i(),this.btnConfirm4_i(),this.btnConfirm5_i(),this.btnConfirm6_i(),this.btnConfirm7_i(),this.btnConfirm8_i(),this.btnConfirm9_i(),this.btnConfirm10_i(),this._a3_i(),this._a4_i(),this.btnConfirm11_i(),this._c1_i(),this._a7_i(),this._a8_i(),this._c2_i(),this.showTxt_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.right = 0;
+		t.scaleX = 0.5;
+		t.scaleY = 0.5;
+		t.source = "shezhisheet_json.bj";
+		t.top = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 672.73;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(12,12,76,76);
+		t.scaleX = 0.5;
+		t.scaleY = 0.5;
+		t.source = "shezhisheet_json.fangge";
+		t.visible = false;
+		t.width = 933.33;
+		t.y = 397;
+		return t;
+	};
+	_proto.btnCancel_i = function () {
+		var t = new eui.Button();
+		this.btnCancel = t;
+		t.label = "取消";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.skinName = "ButtonR1Skin";
+		t.visible = false;
+		t.x = 107.37;
+		t.y = 283;
+		return t;
+	};
+	_proto.btnConfirm_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "1";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 23;
+		t.y = 415;
+		t.skinName = DailogSkin2$Skin88;
+		return t;
+	};
+	_proto.btnConfirm0_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm0 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "2";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 177;
+		t.y = 415;
+		t.skinName = DailogSkin2$Skin89;
+		return t;
+	};
+	_proto.btnConfirm1_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm1 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "3";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 330;
+		t.y = 415;
+		t.skinName = DailogSkin2$Skin90;
+		return t;
+	};
+	_proto.btnConfirm2_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm2 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "4";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 23;
+		t.y = 494;
+		t.skinName = DailogSkin2$Skin91;
+		return t;
+	};
+	_proto.btnConfirm3_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm3 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "5";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 177;
+		t.y = 494;
+		t.skinName = DailogSkin2$Skin92;
+		return t;
+	};
+	_proto.btnConfirm4_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm4 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "6";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 330;
+		t.y = 494;
+		t.skinName = DailogSkin2$Skin93;
+		return t;
+	};
+	_proto.btnConfirm5_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm5 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "7";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 23;
+		t.y = 572;
+		t.skinName = DailogSkin2$Skin94;
+		return t;
+	};
+	_proto.btnConfirm6_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm6 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "8";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 177;
+		t.y = 572;
+		t.skinName = DailogSkin2$Skin95;
+		return t;
+	};
+	_proto.btnConfirm7_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm7 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "9";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 330;
+		t.y = 572;
+		t.skinName = DailogSkin2$Skin96;
+		return t;
+	};
+	_proto.btnConfirm8_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm8 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = ".";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 23;
+		t.y = 651;
+		t.skinName = DailogSkin2$Skin97;
+		return t;
+	};
+	_proto.btnConfirm9_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm9 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "0";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 177;
+		t.y = 651;
+		t.skinName = DailogSkin2$Skin98;
+		return t;
+	};
+	_proto.btnConfirm10_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm10 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.label = "";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.visible = false;
+		t.x = 330;
+		t.y = 651;
+		t.skinName = DailogSkin2$Skin99;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 150.045;
+		t.scale9Grid = new egret.Rectangle(12,12,76,76);
+		t.scaleX = 0.8;
+		t.scaleY = 0.8;
+		t.source = "hallBtn2Sheet_json.tuige";
+		t.visible = false;
+		t.y = 666;
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 309.34;
+		t.horizontalCenter = 0;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.width = 487.33;
+		t.y = 165.68;
+		return t;
+	};
+	_proto.btnConfirm11_i = function () {
+		var t = new eui.Button();
+		this.btnConfirm11 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = -0.4550000000000125;
+		t.label = "";
+		t.scaleX = 0.6;
+		t.scaleY = 0.6;
+		t.y = 497.99;
+		t.skinName = DailogSkin2$Skin100;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.height = 80;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a5_i(),this._a6_i(),this.btnBack_i()];
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "top_png";
+		t.top = 0;
+		t.visible = false;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "hallText0Sheet_json.t_shouxufei";
+		t.verticalCenter = -3;
+		t.visible = false;
+		return t;
+	};
+	_proto.btnBack_i = function () {
+		var t = new eui.Button();
+		this.btnBack = t;
+		t.label = "";
+		t.left = 0;
+		t.top = 0;
+		t.skinName = DailogSkin2$Skin101;
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.scaleX = 0.8;
+		t.scaleY = 0.8;
+		t.source = "hallImg1Sheet_json.biaotiban";
+		t.width = 384.6;
+		t.y = 141.32;
+		return t;
+	};
+	_proto._a8_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = -0.4550000000000125;
+		t.source = "hallText0Sheet_json.qingshuru";
+		t.y = 152.67;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.horizontalCenter = 0;
+		t.touchEnabled = false;
+		t.width = 308;
+		t.y = 334.88;
+		t.elementsContent = [this._a9_i(),this.btnReduce0_i(),this.btnAdd0_i(),this.btnMax0_i(),this.editCount_i()];
+		return t;
+	};
+	_proto._a9_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.scale9Grid = new egret.Rectangle(13,16,72,31);
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.shurukuang";
+		t.width = 306;
+		t.x = 0;
+		t.y = -4.29;
+		return t;
+	};
+	_proto.btnReduce0_i = function () {
+		var t = new eui.Button();
+		this.btnReduce0 = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.x = 0;
+		t.y = 0;
+		t.skinName = DailogSkin2$Skin102;
+		return t;
+	};
+	_proto.btnAdd0_i = function () {
+		var t = new eui.Button();
+		this.btnAdd0 = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.x = 230;
+		t.y = 0;
+		t.skinName = DailogSkin2$Skin103;
+		return t;
+	};
+	_proto.btnMax0_i = function () {
+		var t = new eui.Button();
+		this.btnMax0 = t;
+		t.label = "";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.visible = false;
+		t.x = 320;
+		t.y = 0;
+		t.skinName = DailogSkin2$Skin104;
+		return t;
+	};
+	_proto.editCount_i = function () {
+		var t = new eui.EditableText();
+		this.editCount = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.backgroundColor = 0xFFC000;
+		t.borderColor = 0xFFC000;
+		t.displayAsPassword = true;
+		t.fontFamily = "SimHei";
+		t.height = 56.67;
+		t.size = 30;
+		t.stroke = 0;
+		t.text = "111111";
+		t.textAlign = "center";
+		t.textColor = 0xffffff;
+		t.verticalAlign = "middle";
+		t.width = 303.33;
+		t.x = 1;
+		t.y = -1.63;
+		return t;
+	};
+	_proto.showTxt_i = function () {
+		var t = new eui.Label();
+		this.showTxt = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 24;
+		t.stroke = 2;
+		t.text = "请输入支付密码";
+		t.textAlign = "center";
+		t.textColor = 0xFFFFFF;
+		t.width = 474;
+		t.y = 229;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","btnCancel","btnConfirm","btnConfirm0","btnConfirm1","btnConfirm2","btnConfirm3","btnConfirm4","btnConfirm5","btnConfirm6","btnConfirm7","btnConfirm8","btnConfirm9","btnConfirm10","btnConfirm11","btnBack","btnReduce0","btnAdd0","btnMax0","editCount","showTxt"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return DailogSkin2;
+})(eui.Skin);

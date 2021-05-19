@@ -1,0 +1,48 @@
+(function (_super) {
+	__extends(CRBuffItemSkin, _super);
+	function CRBuffItemSkin() {
+		_super.call(this);
+		
+		this.height = 32;
+		this.width = 32;
+		this.elementsContent = [this.groupBufftem_i()];
+	}
+	var _proto = CRBuffItemSkin.prototype;
+
+	_proto.groupBufftem_i = function () {
+		var t = new eui.Group();
+		this.groupBufftem = t;
+		t.height = 32;
+		t.width = 32;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgIcon_i(),this.lblName_i()];
+		return t;
+	};
+	_proto.imgIcon_i = function () {
+		var t = new eui.Image();
+		this.imgIcon = t;
+		t.horizontalCenter = 0;
+		t.source = "buffIconImg0Sheet_json.b1";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.lblName_i = function () {
+		var t = new eui.Label();
+		this.lblName = t;
+		t.horizontalCenter = 0;
+		t.size = 16;
+		t.stroke = 1;
+		t.text = "0";
+		t.verticalCenter = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgIcon","lblName","groupBufftem"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CRBuffItemSkin;
+})(eui.Skin);

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoginSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<!--<ns1:Main width="100%" height="100%" x="0" y="0">-->
+		<e:Group id="groupLogin" width="100%" height="100%" x="0" y="0" touchEnabled="false">
+			<e:Image x="0" y="0" width="100%" height="100%" source="bg0_jpg"/>
+			<e:Group id="groupNormalLogin" width="100%" height="100%" x="0" y="0" visible="false">
+				<e:Group width="100%" height="80" x="0" bottom="0" y="670" scaleX="1" scaleY="1">
+					<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.37"/>
+					<e:Label id="lblBottom" x="0" y="0" width="100%" height="100%" textColor="0xe1e1e1" size="14" fontFamily="SimHei" textAlign="center" verticalAlign="middle" lineSpacing="15" text=""/>
+				</e:Group>
+
+				<e:Group width="560" height="576" horizontalCenter="0" touchEnabled="false" verticalCenter="0" x="387" y="87" scaleX="1" scaleY="1">
+					<e:Image x="0" y="0" source="loginSheet_json.zhezhao" touchEnabled="false"/>
+					<e:Image y="-90" source="loginSheet_json.logo" horizontalCenter="0" scaleX="0.56" scaleY="0.56" touchEnabled="false"/>
+					<e:Image y="130" source="loginSheet_json.kuang" width="450" scale9Grid="12,10,76,60" horizontalCenter="0"/>
+					<e:Image y="220" source="loginSheet_json.kuang" width="450" scale9Grid="12,10,76,60" horizontalCenter="0" x="0" scaleX="1" scaleY="1"/>
+					<e:Group id="groupPhone" width="450" y="130" horizontalCenter="0">
+						<e:EditableText id="editPhone" width="255" y="0" size="28" fontFamily="SimHei" textAlign="center" prompt="Phone number" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" verticalAlign="middle" height="80" maxChars="11" right="0" text=""/>
+						<e:EditableText id="editVCode" width="360" height="80" y="90" size="28" fontFamily="SimHei" textAlign="center" verticalAlign="middle" prompt="Captcha" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="-43" x="2" maxChars="8"/>
+						<e:Button id="btnGetVCode" label="" y="115" right="15">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="loginSheet_json.huoqu" source.down="loginSheet_json.huoqu"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+							</e:Skin>
+						</e:skinName>
+						</e:Button>
+						<e:Label id="lblVCodeTime" text="60S" y="117" textColor="0x09db22" fontFamily="SimHei" size="28" width="60" bold="true" right="20" height="30" verticalAlign="middle" textAlign="center" touchEnabled="false"/>
+						<e:Rect width="1" height="80" x="188" y="0" fillColor="0x556f81"/>
+						<e:Group id="groupSelAreano" width="190" height="80" x="0" y="0" touchChildren="false">
+						<e:Image x="157" touchEnabled="false" source="loginSheet_json.jiantou01" scaleX="1" scaleY="1" verticalCenter="2"/>
+						<e:Label id="lblAreano" text="+86 (CN)" x="0" y="0" fontFamily="SimHei" size="28" height="80" textAlign="center" verticalAlign="middle" width="160" scaleX="1" scaleY="1"/>
+						</e:Group>
+					</e:Group>
+					<e:Group id="groupEmail" width="450" y="130" horizontalCenter="0" visible="false">
+						<e:EditableText id="editEmail" width="450" y="0" size="28" fontFamily="SimHei" textAlign="center" prompt="Enter email address" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="0" verticalAlign="middle" height="80"/>
+						<e:EditableText id="editEmailVCode" width="360" height="80" y="90" size="28" fontFamily="SimHei" textAlign="center" verticalAlign="middle" prompt="Captcha" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="-43" x="2" maxChars="8"/>
+						<e:Button id="btnGetEmailVCode" label="" y="115" right="15">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="loginSheet_json.huoqu" source.down="loginSheet_json.huoqu"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+							</e:Skin>
+						</e:skinName>
+						</e:Button>
+						<e:Label id="lblEmailVCodeTime" text="60S" y="117" textColor="0x09DB22" fontFamily="SimHei" size="28" width="60" bold="true" right="20" height="30" verticalAlign="middle" textAlign="center" touchEnabled="false"/>
+					</e:Group>
+					<e:Group id="groupPassword" width="450" height="80" y="130" horizontalCenter="0" visible="false">
+						<e:EditableText id="editUsername" width="450" height="80" y="0" size="28" fontFamily="SimHei" textAlign="center" prompt="User name" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="0" verticalAlign="middle" maxChars="22"/>
+						<e:EditableText id="editPassword" width="360" height="80" y="90" size="28" fontFamily="SimHei" textAlign="center" verticalAlign="middle" prompt="Password" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="-43" x="2" maxChars="18"/>
+						<e:Image id="imgWatch" y="115" right="20" source="loginSheet_json.biyan"/>
+					</e:Group>
+					<e:Button id="btnLogin" label="" anchorOffsetX="0" horizontalCenter="0" y="335">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="loginSheet_json.kaishiyouxi00" source.down="loginSheet_json.kaishiyouxi01"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+					</e:Button>
+					<e:Label id="lblEmail" text="邮箱登录" y="450" size="24" fontFamily="SimHei" stroke="2" horizontalCenter="-75" visible="false"/>
+					<e:Label id="lblVCode" text="Captcha login" y="450" size="24" fontFamily="SimHei" stroke="2" horizontalCenter="-95"/>
+					<e:Label text="|" y="450" size="24" fontFamily="SimHei" stroke="2" horizontalCenter="0"/>
+					<e:Label id="lblPassword" text="Password login" y="450" size="24" fontFamily="SimHei" stroke="2" horizontalCenter="105" textColor="0x42d9ff"/>
+					<e:Image id="imgCheckAgreement" x="85" y="510" source="loginSheet_json.xuankuang01"/>
+					<e:Label text="I have read" y="520" size="24" fontFamily="SimHei" stroke="2" x="133" textColor="0xffffff"/>
+					<e:Label id="lblLicense" text="the license and" y="519" size="24" fontFamily="SimHei" stroke="2" x="275" textColor="0x62ff62"/>
+					<e:Label id="lblAgreement" text="service agreement in detail" y="550" size="24" fontFamily="SimHei" stroke="2" textColor="0x62ff62" x="133"/>
+				</e:Group>
+				<e:Group width="84" height="200" right="18" top="25" touchEnabled="false" x="1232" y="25" scaleX="1" scaleY="1">
+					<e:Button id="btnRegist" label="" anchorOffsetX="0" x="0" y="0" scaleX="1" scaleY="1">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="loginSheet_json.zczh00" source.down="loginSheet_json.zczh01"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+					</e:Button>
+					<e:Button id="btnForgot" label="" anchorOffsetX="0" x="0" y="105" scaleX="1" scaleY="1">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="loginSheet_json.wjmm00" source.down="loginSheet_json.wjmm01"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+					</e:Button>
+				</e:Group>
+				<e:Button id="btnBackSLogin" label="" anchorOffsetX="0" scaleX="1" scaleY="1" left="25" top="25">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="loginSheet_json.back00" source.down="loginSheet_json.back01"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Group id="groupAreano" width="100%" height="100%" y="0" x="0" visible="false">
+					<e:Scroller id="scrAreanoList" width="450" height="400" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="133">
+						<e:Group id="groupAreanoList" y="127">
+						<e:layout>
+							<e:VerticalLayout gap="0"/>
+						</e:layout>
+						</e:Group>
+					</e:Scroller>
+				</e:Group>
+			</e:Group>
+			<e:Group id="groupSwitchLogin" width="100%" height="100%" x="0" y="0">
+				<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.4"/>
+				<e:Label id="lblVersion" text="版本号：0.0.0.1" size="22" fontFamily="SimHei" left="20" top="20" stroke="2" x="20" y="20" scaleX="1" scaleY="1"/>
+				<e:Group horizontalCenter="0" width="605" verticalCenter="0" height="750">
+					<e:Image y="0" source="loginSheet_json.logo" scaleX="0.75" scaleY="0.75" touchEnabled="false" x="0"/>
+					<e:Group width="394" height="90" y="300" touchEnabled="false" horizontalCenter="0.5" x="105" scaleX="1" scaleY="1">
+						<e:Button id="btnMetaMaskLogin" label="" anchorOffsetX="0" y="0" scaleX="1" scaleY="1" x="0" width="100%" height="100%">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="loginSheet_json.ba00" source.down="loginSheet_json.ba01" scale9Grid="11,11,68,68"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+							</e:Skin>
+						</e:skinName>
+						</e:Button>
+						<e:Label text="MetaMask" fontFamily="SimHei" touchEnabled="false" verticalCenter="0" size="40" x="170"/>
+						<e:Image x="75" source="loginSheet_json.l2" verticalCenter="0" touchEnabled="false"/>
+					</e:Group>
+					<e:Group width="394" height="90" y="420" touchEnabled="false" horizontalCenter="0.5" x="105" scaleX="1" scaleY="1">
+						<e:Button id="btnBinanceLogin" label="" anchorOffsetX="0" y="0" scaleX="1" scaleY="1" x="0" width="100%" height="100%">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="loginSheet_json.bb00" source.down="loginSheet_json.bb01" scale9Grid="11,11,68,68"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+							</e:Skin>
+						</e:skinName>
+						</e:Button>
+						<e:Label text="Binance" x="170" fontFamily="SimHei" touchEnabled="false" verticalCenter="0" size="40"/>
+						<e:Image x="75" verticalCenter="0" source="loginSheet_json.l1" touchEnabled="false"/>
+					</e:Group>
+					<e:Group id="groupBtnPhoneLogin" y="600" scaleX="1" scaleY="1" horizontalCenter="-84.5">
+						<e:Button id="btnPhoneLogin" label="" anchorOffsetX="0" y="0" scaleX="1" scaleY="1" horizontalCenter="0">
+							<e:skinName>
+								<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source="loginSheet_json.sjdl00" source.down="loginSheet_json.sjdl01"/>
+								<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+								</e:Skin>
+							</e:skinName>
+						</e:Button>
+						<e:Label text="Mobile" fontFamily="SimHei" touchEnabled="false" size="18" horizontalCenter="0" y="85" textColor="0xa6acb1"/>
+					</e:Group>
+					<e:Group id="groupBtnEmailLogin" y="600" scaleX="1" scaleY="1" horizontalCenter="85.5">
+						<e:Button id="btnEmailLogin" label="" anchorOffsetX="0" y="0" scaleX="1" scaleY="1" horizontalCenter="0">
+							<e:skinName>
+								<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source="loginSheet_json.yxdl00" source.down="loginSheet_json.yxdl01"/>
+								<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+								</e:Skin>
+							</e:skinName>
+						</e:Button>
+						<e:Label text="Email" fontFamily="SimHei" touchEnabled="false" size="18" y="85" horizontalCenter="0" textColor="0xa6acb1"/>
+					</e:Group>
+					<e:Label text="————  Other Login Methods  ————" y="550" size="20" fontFamily="SimHei" textColor="0xa6acb1" horizontalCenter="0"/>
+				</e:Group>
+			</e:Group>
+
+		</e:Group>
+	<!--</ns1:Main>-->
+</e:Skin>

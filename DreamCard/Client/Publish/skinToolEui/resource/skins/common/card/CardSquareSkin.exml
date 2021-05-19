@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardSquareSkin" width="196" height="196" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCS" width="196" height="196" x="0" y="0" touchChildren="false">
+		<e:Image id="imgBG" x="0" y="0" source="cardCommonImg0Sheet_json.tongyongb"/>
+		<e:Image id="imgIcon" x="0" y="0" source=""/>
+		<e:Image id="imgRarity" x="0" y="0" source="cardCommonImg0Sheet_json.s_rb1"/>
+		<e:Image id="flag" x="10" y="35" source="cardCommonImg0Sheet_json.s_cost"/>
+		<e:Image id="imgRound" source="cardCommonImg0Sheet_json.s_r1" x="0" y="0"/>
+		<e:Image id="imgElement" x="155" y="5.4" source="cardCommonImg2Sheet_json.s_e1" scaleX="0.8" scaleY="0.8"/>
+		<e:Label id="lblRound" text="6" x="7" y="4" size="26" fontFamily="SimHei" width="33" textAlign="center" stroke="2" height="34" verticalAlign="middle"/>
+		<e:Label id="lblName" text="诸葛匹夫" x="45" y="12" size="22" fontFamily="SimHei" width="110" textAlign="center" stroke="2"/>
+		<e:Label id="lblCost" text="66" x="10" y="44" size="18" fontFamily="SimHei" width="30" textAlign="center" stroke="1"/>
+		<e:Group id="groupLevel" x="40" y="35" anchorOffsetX="0" anchorOffsetY="0" width="134">
+			<e:Image id="imgGeneration" x="0" y="0" width="32" source="cardCommonText0Sheet_json.s_g1"/>
+			<e:Image id="imgLv1" x="32" y="2" scaleX="1" scaleY="1" source="cardCommonImg0Sheet_json.s_star" width="17"/>
+			<e:Image id="imgLv2" source="cardCommonImg0Sheet_json.s_star" x="49" y="2" scaleX="1" scaleY="1" width="17"/>
+			<e:Image id="imgLv3" source="cardCommonImg0Sheet_json.s_star" x="66" y="2" scaleX="1" scaleY="1" width="17"/>
+			<e:Image id="imgLv4" source="cardCommonImg0Sheet_json.s_star" x="83" y="2" scaleX="1" scaleY="1" width="17"/>
+			<e:Image id="imgLv5" source="cardCommonImg0Sheet_json.s_star" x="100" y="2" scaleX="1" scaleY="1" width="17"/>
+			<e:Image id="imgLv6" source="cardCommonImg0Sheet_json.s_star" x="117" y="2" scaleX="1" scaleY="1" width="17"/>
+		</e:Group>
+		<e:Label id="lblAtk" text="6666" y="166" size="21" fontFamily="SimHei" width="50" textAlign="center" stroke="1" bold="true" x="30"/>
+		<e:Label id="lblHp" text="6666" x="115" y="166" size="21" fontFamily="SimHei" width="50" textAlign="center" stroke="1" bold="true"/>
+		<e:Image id="imgChoose" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" x="-7" y="-7" touchEnabled="false" source="cardCommonImg2Sheet_json.a108x112" width="108" height="112" visible="false"/>
+	</e:Group>
+	<e:Group id="groupCSB" width="196" height="196" x="0" y="0" touchChildren="false" visible="false">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" source="cardCommonImg0Sheet_json.s_rb0"/>
+	</e:Group>
+</e:Skin>

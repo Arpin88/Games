@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MPropItemSkin" width="470" height="178" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" width="470" height="178" x="0" y="0" touchEnabled="false">
+		<e:Image y="0" touchEnabled="false" anchorOffsetX="0" width="470" anchorOffsetY="0" height="178" source="hallImg1Sheet_json.shopback" horizontalCenter="0" scale9Grid="13,14,75,72"/>
+		<e:Image anchorOffsetX="0" width="284" anchorOffsetY="0" height="50" source="hallImg0Sheet_json.w162x50" scale9Grid="36,12,106,29" left="165" top="30"/>
+		<e:Image anchorOffsetX="0" width="284" anchorOffsetY="0" height="50" source="hallImg0Sheet_json.w162x50" scale9Grid="36,12,106,29" left="165" top="97"/>
+		<e:Image y="24" touchEnabled="false" source="hallImg1Sheet_json.k150x150" anchorOffsetX="0" width="130" anchorOffsetY="0" height="130" x="19"/>
+		<e:Image id="imgItem" y="24" touchEnabled="false" source="propSheet_json.1" anchorOffsetX="0" width="130" anchorOffsetY="0" height="130" x="19"/>
+		<e:Label id="thename" text="战天御神剑" y="41.5" width="237.33" textAlign="left" stroke="0" size="26" fontFamily="SimHei" touchEnabled="false" anchorOffsetX="0" textColor="0xffffff" x="192"/>
+		<e:Label id="thename0" text="price" y="108.5" width="74.33" textAlign="left" stroke="0" size="26" fontFamily="SimHei" touchEnabled="false" anchorOffsetX="0" textColor="0xFFFFFF" x="189"/>
+		<e:Image y="140.5" horizontalCenter="5" touchEnabled="false" source="hallImg0Sheet_json.a160x35" visible="false"/>
+		<e:Label id="price" text="6666" y="108.5" width="179" textAlign="left" stroke="2" size="28" fontFamily="SimHei" touchEnabled="false" x="263" textColor="0x1fff59" anchorOffsetX="0" bold="true"/>
+		<e:Button id="btnBuy" label="购买:666" y="0" horizontalCenter="-0.5" scaleX="0.54" scaleY="0.54" skinName="ButtonB1Skin" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" alpha="0">
+		</e:Button>
+	</e:Group>
+</e:Skin>

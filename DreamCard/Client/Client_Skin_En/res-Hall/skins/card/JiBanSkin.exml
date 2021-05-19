@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1712fd0fadf"/>
+	<e:Group id="jibanskingruop" width="100%" height="100%" x="0" y="0">
+		<e:Image x="0" y="0" source="bj_jpg" width="100%" height="100%"/>
+		<e:Rect id="rectBG" width="100%" height="100%" x="0" y="0" fillAlpha="0.7" visible="false"/>
+		<e:Group width="100%" height="80" left="0" top="0">
+			<e:Image source="top_png" top="0" horizontalCenter="0" width="100%"/>
+			<e:Image horizontalCenter="0" verticalCenter="-5" source="hallText0Sheet_json.jibanshuoming"/>
+			<e:Button id="btnBack" label="" left="0" top="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Component id="comStar" skinName="StarSkin" scaleX="1" scaleY="1" verticalCenter="-5" y="343.00000000000006" right="32" x="880.0000000000001" visible="false"/>
+		</e:Group>
+		<e:Group id="JibanBtnGroup" width="100%" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="90" bottom="10">
+			<e:Scroller id="scrCardItem" width="1334" scrollPolicyH="off" scaleX="1" scaleY="1" y="0" height="615.45" anchorOffsetY="0" horizontalCenter="0">
+				<e:Group id="groupCardItem" width="100%" height="629.09" anchorOffsetY="0">
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="infoPanel" width="100%" height="100%" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0">
+			<e:Rect id="rectBG0" width="100%" height="100%" fillAlpha="0.5" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0"/>
+			<e:Group width="664" height="360" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+				<e:Image source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" width="664" height="360" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" x="0" y="0"/>
+				<e:Image width="414" height="310" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" source="hallImg1Sheet_json.tanchukuang2" scale9Grid="15,15,64,70" y="26" x="226"/>
+				<e:Label id="xiaoguo1" text="效果加成效果加成效果加成" scaleX="1" scaleY="1" size="22" anchorOffsetX="0" width="374" anchorOffsetY="0" height="130.67" x="250" y="50" textColor="0xe1e1e1" fontFamily="SimHei" lineSpacing="10"/>
+				<e:Label id="jiban1" text="效果加成效果加成效果加成" scaleX="1" scaleY="1" size="22" anchorOffsetX="0" width="374" anchorOffsetY="0" height="139" x="250" y="185.96" textColor="0xe1e1e1" fontFamily="SimHei" lineSpacing="10"/>
+				<e:Group id="groupPI" x="27.97" anchorOffsetX="0" anchorOffsetY="0" width="180" height="236" scaleX="1" scaleY="1" verticalCenter="0">
+					<e:Image id="bgClr" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-28" source="fetterCommonImg0Sheet_json.jbR_0"/>
+					<e:Image id="imgItem" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" source="fetterSheet_json.djb01" verticalCenter="-28" horizontalCenter="0"/>
+					<e:Image id="txtBg0" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" y="191" source="fetterCommonImg0Sheet_json.kuang" horizontalCenter="0" visible="false"/>
+					<e:Image id="txtBg1" touchEnabled="false" anchorOffsetX="0" anchorOffsetY="0" source="fetterCommonImg0Sheet_json.daoyin" y="182" horizontalCenter="0"/>
+					<e:Label id="labItemName" text="混沌印记" y="207.98" scaleX="1" scaleY="1" width="223.98" textAlign="center" size="18" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="31.99" rotation="0.03" horizontalCenter="-2" x="2" textColor="0xeec258"/>
+				</e:Group>
+			</e:Group>
+			<e:Button id="PanelButton" label="Button" width="100%" height="100%" skinName="ButtonB1Skin" alpha="0" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-1" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

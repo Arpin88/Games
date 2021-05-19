@@ -1,0 +1,141 @@
+{
+    "language": {
+        "HallSkin":{
+            "lbl_0":"Activity not available yet"
+        },
+        "CardGroupSkin":{
+            "lbl_0":"Deck1",
+            "lbl_1":"Deck2",
+            "lbl_2":"Deck3"
+        },
+        "CardGroupSetSkin":{
+            "lbl_0":"Power-high to low",
+            "lbl_1":"Power-low to high",
+            "lbl_2":"Atk-high to low",
+            "lbl_3":"Atk-low to high",
+            "lbl_4":"Hp-high to low",
+            "lbl_5":"Hp-low to high",
+            "lbl_6":"Cost-high to low",
+            "lbl_7":"Cost-low to high",
+            "lbl_8":"All Qualities",
+            "lbl_9":"Common",
+            "lbl_10":"Rare",
+            "lbl_11":"Epic",
+            "lbl_12":"Legend",
+            "lbl_13":"Mythological",
+            "lbl_14":"All elements",
+            "lbl_15":"Metal",
+            "lbl_16":"Wood",
+            "lbl_17":"Water",
+            "lbl_18":"Fire",
+            "lbl_19":"Earth",
+            "lbl_20":"Saved",
+            "lbl_21":"Back",
+            "lbl_22":"Continue",
+            "lbl_23":"Failed to save! Card group name cannot be empty!",
+            "lbl_24":"Failed to save! The cost of the team is greater than the current maximum cost of the user"
+        },
+        "CGDetailSkin":{
+            "lbl_0":"Properties",
+            "lbl_1":"Skill",
+            "lbl_2":"Bond",
+            "lbl_3":"%sGen %sStar",
+            "lbl_4":"Quality: ",
+            "lbl_5":"Lv: ",
+            "lbl_6":"Power: ",
+            "lbl_7":"Cost: ",
+            "lbl_8":"Waiting: ",
+            "lbl_9":"HP: ",
+            "lbl_10":"Atk: ",
+            "lbl_11":"Accuracy: ",
+            "lbl_12":"Dodge Rate: ",
+            "lbl_13":"Crit Rate: ",
+            "lbl_14":"Crit Multipler: ",
+            "lbl_15":"Recovery: "
+        },
+        "CGDSkillItemSkin":{
+            "lbl_0":"Passive Skill",
+            "lbl_1":"Active Skill"
+        },
+        "CGDFetterItemSkin":{
+            "lbl_0":"Effects：",
+            "lbl_1":"Formation："
+        },
+        "RoleUpgradeSkin":{
+            "lbl_0":"Current Level:",
+            "lbl_1":"Current Experience:",
+            "lbl_2":"Materials Needed:",
+            "lbl_3":"Insufficient props, please go to the mall to buy!",
+            "lbl_4":"Full level reached, use failed!"
+        },
+        "CGCardItemSkin":{
+            "lbl_0":"\nUnlock"
+        },
+        "CGSCardItemSkin":{
+            "lbl_0":"\nUnlock"
+        },
+        "RecycleSkin":{
+            "lbl_0":"Power-high to low",
+            "lbl_1":"Power-low to high",
+            "lbl_2":"Atk-high to low",
+            "lbl_3":"Atk-low to high",
+            "lbl_4":"Hp-high to low",
+            "lbl_5":"Hp-low to high",
+            "lbl_6":"Cost-high to low",
+            "lbl_7":"Cost-low to high",
+            "lbl_8":"All Qualities",
+            "lbl_9":"Common",
+            "lbl_10":"Rare",
+            "lbl_11":"Epic",
+            "lbl_12":"Legend",
+            "lbl_13":"Mythological",
+            "lbl_14":"All elements",
+            "lbl_15":"Metal",
+            "lbl_16":"Wood",
+            "lbl_17":"Water",
+            "lbl_18":"Fire",
+            "lbl_19":"Earth",
+            "lbl_20":"%s cards currently selected , among which\n",
+            "lbl_21":"Common：%s \n",
+            "lbl_22":"Rare：%s \n",
+            "lbl_23":"Epic：%s \n",
+            "lbl_24":"Legendary：%s \n",
+            "lbl_25":"Myth：%s \n",
+            "lbl_26":"Total Value：",
+            "lbl_27":"XWG real time price：",
+            "lbl_28":"Please select the card you want to recycle first!!",
+            "lbl_29":"After collection, the card will be removed and cannot be retrieved. \n Whether you are sure to reclaim the currently selected card",
+            "lbl_30":"OK",
+            "lbl_31":"Cancel",
+            "lbl_32":"Recycling successful! \n Recycling price:",
+            "lbl_33":"Recall failed!"
+        },
+        "CardSkin":{
+            "lbl_0":"Power-high to low",
+            "lbl_1":"Power-low to high",
+            "lbl_2":"Atk-high to low",
+            "lbl_3":"Atk-low to high",
+            "lbl_4":"Hp-high to low",
+            "lbl_5":"Hp-low to high",
+            "lbl_6":"Cost-high to low",
+            "lbl_7":"Cost-low to high",
+            "lbl_8":"All Qualities",
+            "lbl_9":"Common",
+            "lbl_10":"Rare",
+            "lbl_11":"Epic",
+            "lbl_12":"Legend",
+            "lbl_13":"Mythological",
+            "lbl_14":"All elements",
+            "lbl_15":"Metal",
+            "lbl_16":"Wood",
+            "lbl_17":"Water",
+            "lbl_18":"Fire",
+            "lbl_19":"Earth"
+        },
+        "MatchingSkin":{
+            "lbl_0":"Tip:",
+            "lbl_1":"Click the button below to close the interface"
+        }
+
+    }
+}

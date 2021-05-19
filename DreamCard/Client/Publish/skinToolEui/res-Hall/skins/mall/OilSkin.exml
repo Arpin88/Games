@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DailogSkin2" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Rect id="rectBG" width="100%" height="100%" x="0" y="0" fillAlpha="0.7"/>
+		<e:Group width="490.91" height="100%" anchorOffsetX="0" anchorOffsetY="0" y="0" right="0">
+			<e:Image width="100%" height="100%" scaleX="0.5" scaleY="0.5" anchorOffsetX="0" anchorOffsetY="0" source="shezhisheet_json.bj" right="-0.08999999999997499" top="-1"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<e:Button id="btnConfirm11" label="" y="637.93" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.6" scaleY="0.6" horizontalCenter="-0.4550000000000125">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.queding_0" source.down="hallBtn2Sheet_json.queding_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group width="100%" height="80" top="0" y="0" scaleX="1" scaleY="1" anchorOffsetX="0" x="0">
+				<e:Image source="top_png" top="0" horizontalCenter="0" width="100%" scaleY="1"/>
+				<e:Image horizontalCenter="-0.5" verticalCenter="-4.5" scaleY="1" scaleX="1" anchorOffsetX="0" anchorOffsetY="0" source="hallText0Sheet_json.t_shouxufei"/>
+				<e:Button id="btnBack" label="" top="0" left="0" scaleX="1" scaleY="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+			</e:Group>
+
+
+			<e:Group y="272.63" touchEnabled="false" anchorOffsetX="0" width="470" x="11" height="82">
+				<e:Image y="0" x="0" scaleX="1" scaleY="1" anchorOffsetX="0" width="100%" source="hallImg1Sheet_json.shurukuang" scale9Grid="13,16,72,31" height="100%"/>
+				<e:Button id="btnReduce0" label="" x="0" y="0" scaleX="1" scaleY="1" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.b74x54_0" source.down="hallBtn1Sheet_json.b74x54_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="btnAdd0" label="" x="230" y="0" scaleX="1" scaleY="1" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a74x54_0" source.down="hallBtn1Sheet_json.a74x54_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="btnMax0" label="" x="320" y="0" scaleX="1" scaleY="1" visible="false">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a98x54_0" source.down="hallBtn1Sheet_json.a98x54_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:EditableText id="editCount" width="230.72" height="56" text="" x="164.16" y="13" verticalAlign="middle" textAlign="right" stroke="0" size="30" fontFamily="SimHei" borderColor="0xFFC000" backgroundColor="0xFFC000" anchorOffsetX="0" anchorOffsetY="0" textColor="0xffffff" displayAsPassword="false"/>
+				<e:Image x="40.34" y="26.33" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" source="hallText0Sheet_json.ranyoufei" height="34" width="106.88"/>
+				<e:Label id="namstring2" text="XWG" x="411.04" y="13.48" scaleX="1" scaleY="1" width="53.72" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="56" verticalAlign="middle" textColor="0xFFC23D"/>
+			</e:Group>
+
+
+
+			<e:Image x="11" y="161" anchorOffsetX="0" width="470" anchorOffsetY="0" height="82" source="hallImg0Sheet_json.w162x50" scale9Grid="12,10,137,29"/>
+			<e:Image x="17" y="185" source="hallText0Sheet_json.qbye01"/>
+			<e:Label id="walletnumlb" text="123456789" x="204.83" y="176" scaleX="1" scaleY="1" width="264.33" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0xFFC23D"/>
+			<e:Label id="numlb" text="" x="115" y="436.49" scaleX="1" scaleY="1" width="264.33" textAlign="right" size="50" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0xFFC23D"/>
+			<e:Label id="namstring1" text="XWG" x="389.7" y="441.05" scaleX="1" scaleY="1" width="85.54" textAlign="left" size="30" fontFamily="SimHei" stroke="2" anchorOffsetX="0" anchorOffsetY="0" height="52.67" verticalAlign="middle" textColor="0xFFC23D"/>
+			<e:Label id="showTxt" text="燃油费越多，交易速度越快" y="372.6" scaleX="1" scaleY="1" width="462.79" textAlign="left" size="20" fontFamily="SimHei" stroke="2" textColor="0xFFFFFF" anchorOffsetX="0" anchorOffsetY="0" height="35.09" x="11"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

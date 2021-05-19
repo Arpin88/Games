@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CGSFetterItemSkin" width="92" height="92" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="92" height="92" x="0" y="0" touchEnabled="false">
+		<e:Image id="imgBG" x="0" y="0" source="hallImg2Sheet_json.a92x92"/>
+		<e:Group id="groupFetter" width="92" height="92" x="0" y="0" touchEnabled="false" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

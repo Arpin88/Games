@@ -1,0 +1,200 @@
+(function (_super) {
+	__extends(CardSkin, _super);
+	var CardSkin$Skin5 = 	(function (_super) {
+		__extends(CardSkin$Skin5, _super);
+		function CardSkin$Skin5() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a26x42_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CardSkin$Skin5.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a26x42_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CardSkin$Skin5;
+	})(eui.Skin);
+
+	function CardSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.cardskingroup_i()];
+	}
+	var _proto = CardSkin.prototype;
+
+	_proto.cardskingroup_i = function () {
+		var t = new eui.Group();
+		this.cardskingroup = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this._c1_i(),this.scrOptionBtn_i(),this._c2_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.source = "bj_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 80;
+		t.left = 0;
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a2_i(),this._a3_i(),this.btnBack_i(),this.comStar_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "top_png";
+		t.top = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "hallText0Sheet_json.kapai";
+		t.verticalCenter = -5;
+		return t;
+	};
+	_proto.btnBack_i = function () {
+		var t = new eui.Button();
+		this.btnBack = t;
+		t.label = "";
+		t.left = 0;
+		t.top = 0;
+		t.skinName = CardSkin$Skin5;
+		return t;
+	};
+	_proto.comStar_i = function () {
+		var t = new eui.Component();
+		this.comStar = t;
+		t.right = 32;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "StarSkin";
+		t.verticalCenter = -5;
+		t.visible = false;
+		t.x = 880.0000000000001;
+		t.y = 343.00000000000006;
+		return t;
+	};
+	_proto.scrOptionBtn_i = function () {
+		var t = new eui.Scroller();
+		this.scrOptionBtn = t;
+		t.height = 640;
+		t.left = 0;
+		t.scrollPolicyH = "off";
+		t.width = 292;
+		t.y = 100;
+		t.viewport = this.groupOptionBtn_i();
+		return t;
+	};
+	_proto.groupOptionBtn_i = function () {
+		var t = new eui.Group();
+		this.groupOptionBtn = t;
+		t.percentHeight = 100;
+		t.width = 292;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.left = 288;
+		t.right = 26;
+		t.y = 100;
+		t.elementsContent = [this.imgRBG_i(),this.scrCardItem_i()];
+		return t;
+	};
+	_proto.imgRBG_i = function () {
+		var t = new eui.Image();
+		this.imgRBG = t;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.top = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		return t;
+	};
+	_proto.scrCardItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrCardItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 582.43;
+		t.horizontalCenter = 3.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyH = "off";
+		t.width = 973.03;
+		t.y = 26;
+		t.viewport = this.groupCardItem_i();
+		return t;
+	};
+	_proto.groupCardItem_i = function () {
+		var t = new eui.Group();
+		this.groupCardItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.width = 974.54;
+		t.x = 0;
+		t.y = 15.15;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["btnBack","comStar","groupOptionBtn","scrOptionBtn","imgRBG","groupCardItem","scrCardItem","cardskingroup"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardSkin;
+})(eui.Skin);

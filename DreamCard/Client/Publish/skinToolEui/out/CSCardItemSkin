@@ -1,0 +1,69 @@
+(function (_super) {
+	__extends(CSCardItemSkin, _super);
+	function CSCardItemSkin() {
+		_super.call(this);
+		
+		this.height = 124;
+		this.width = 124;
+		this.elementsContent = [this.groupCSCI_i()];
+	}
+	var _proto = CSCardItemSkin.prototype;
+
+	_proto.groupCSCI_i = function () {
+		var t = new eui.Group();
+		this.groupCSCI = t;
+		t.height = 124;
+		t.touchEnabled = false;
+		t.width = 124;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.groupBack_i(),this.groupCard_i(),this.groupFront_i()];
+		return t;
+	};
+	_proto.groupBack_i = function () {
+		var t = new eui.Group();
+		this.groupBack = t;
+		t.height = 124;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchChildren = false;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 124;
+		return t;
+	};
+	_proto.groupCard_i = function () {
+		var t = new eui.Group();
+		this.groupCard = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.x = 62;
+		t.y = 62;
+		return t;
+	};
+	_proto.groupFront_i = function () {
+		var t = new eui.Group();
+		this.groupFront = t;
+		t.height = 124;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchChildren = false;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 124;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["groupBack","groupCard","groupFront","groupCSCI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CSCardItemSkin;
+})(eui.Skin);

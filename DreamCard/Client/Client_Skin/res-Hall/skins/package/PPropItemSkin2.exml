@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PPropItemSkin2" width="130" height="130" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" width="130" height="130" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Label id="labItemName" text="经验书" y="160" horizontalCenter="0" width="150" textAlign="center" stroke="2" textColor="0xffdaba" size="32" fontFamily="SimHei" touchEnabled="false" visible="false"/>
+		<e:Image y="0" touchEnabled="false" x="0" scaleX="1" scaleY="1" source="hallImg1Sheet_json.k150x150" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%"/>
+		<e:Image id="selcetLight" x="0" y="0" touchEnabled="false" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" source="hallImg1Sheet_json.k2150x150" visible="false"/>
+		<e:Image id="imgItem" horizontalCenter="0" touchEnabled="false" source="propSheet_json.1" anchorOffsetX="0" width="118" anchorOffsetY="0" height="118" verticalCenter="0"/>
+		<e:Label id="labItemNum" text="0" y="100" textColor="0xffffff" anchorOffsetX="0" width="115" textAlign="right" x="6" height="28" fontFamily="SimHei" touchEnabled="false" size="24" stroke="1" strokeColor="0x000000" border="false" bold="true"/>
+	</e:Group>
+</e:Skin>

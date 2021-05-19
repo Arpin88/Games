@@ -1,0 +1,69 @@
+(function (_super) {
+	__extends(FilterItemSkin, _super);
+	function FilterItemSkin() {
+		_super.call(this);
+		
+		this.height = 84;
+		this.width = 780;
+		this.elementsContent = [this.groupFilterItem_i()];
+	}
+	var _proto = FilterItemSkin.prototype;
+
+	_proto.groupFilterItem_i = function () {
+		var t = new eui.Group();
+		this.groupFilterItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 42;
+		t.height = 84;
+		t.width = 780;
+		t.x = 0;
+		t.y = 42;
+		t.elementsContent = [this.imgBG_i(),this.imgBG1_i(),this.lblDes_i()];
+		return t;
+	};
+	_proto.imgBG_i = function () {
+		var t = new eui.Image();
+		this.imgBG = t;
+		t.anchorOffsetX = 0;
+		t.source = "hallImg1Sheet_json.a780x74";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.percentWidth = 100;
+		t.x = 0;
+		return t;
+	};
+	_proto.imgBG1_i = function () {
+		var t = new eui.Image();
+		this.imgBG1 = t;
+		t.anchorOffsetX = 0;
+		t.scale9Grid = new egret.Rectangle(12,11,76,68);
+		t.source = "hallImg1Sheet_json.kuang01";
+		t.touchEnabled = false;
+		t.visible = false;
+		t.width = 800;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.lblDes_i = function () {
+		var t = new eui.Label();
+		this.lblDes = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.size = 34;
+		t.stroke = 2;
+		t.strokeColor = 0x1a4f67;
+		t.text = "6666666";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgBG","imgBG1","lblDes","groupFilterItem"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return FilterItemSkin;
+})(eui.Skin);

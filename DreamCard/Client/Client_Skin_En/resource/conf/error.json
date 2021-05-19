@@ -1,0 +1,37 @@
+{
+    "-4":"Illegal request!",
+    "-5":"System license has expired, please login again!",
+    "-6":"Account abnormal, please contact customer service!",
+    
+    "-100":"Matching mission already exists",
+    "-101":"Matching error",
+    "-104":"There is no matching information, please return and try again",
+    "-108":"Matching error, please configure team information first",
+    "-109":"Your deck has zero experience cards,please rause the star!",
+
+    "-500":"Defeat",
+    "-501":"Sending SMS error",
+    "-502":"Account is empty",
+    "-503":"Illegal account",
+    "-504":"Phone number or mailbox is illegal",
+    "-505":"The two passwords do not match",
+    "-506":"Wrong password",
+    "-507":"The account  already exists",
+    "-508":"Phone number or mailbox already exists",
+    "-510":"Registration error",
+    "-511":"Login error",
+    "-512":"Account does not exist",
+    "-513":"Wrong password modification",
+    "-514":"Verification code error",
+    "-515":"Wrong parameter",
+    "-523":"User password error",
+
+    "-996":"Reconnected",
+    "-997":"You have been disconnected. \n Please reconnect the game !",
+    "-998":"Your network is unstable. Please try again!",
+    "-999":"An unknown error occurred. Please try again!",
+
+    "-20000":"Please install the metamask plugin!",
+    "-20001":"Please install the binanceChain wallet plugin!",
+    "-20002":"User denied message signature"
+}

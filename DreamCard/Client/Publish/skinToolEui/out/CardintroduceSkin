@@ -1,0 +1,61 @@
+(function (_super) {
+	__extends(CardintroduceSkin, _super);
+	function CardintroduceSkin() {
+		_super.call(this);
+		
+		this.height = 596;
+		this.width = 388;
+		this.elementsContent = [this.groupCR_i()];
+	}
+	var _proto = CardintroduceSkin.prototype;
+
+	_proto.groupCR_i = function () {
+		var t = new eui.Group();
+		this.groupCR = t;
+		t.percentHeight = 100;
+		t.touchChildren = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this.imgIcon_i(),this._a2_i(),this.imgElement_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "introducehero_json.di";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.imgIcon_i = function () {
+		var t = new eui.Image();
+		this.imgIcon = t;
+		t.horizontalCenter = 0;
+		t.source = "";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "introducehero_json.kuang";
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.imgElement_i = function () {
+		var t = new eui.Image();
+		this.imgElement = t;
+		t.source = "introducehero_json.COL00000033";
+		t.x = 18;
+		t.y = 30;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgIcon","imgElement","groupCR"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CardintroduceSkin;
+})(eui.Skin);

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="operator">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="file" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="name" use="required"/>
+					<xs:attribute name="enabled" type="xs:boolean"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="filePattern" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="pattern" use="required"/>
+					<xs:attribute name="enabled" type="xs:boolean"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="folder" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="name" use="required"/>
+					<xs:attribute name="enabled" type="xs:boolean"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="folderPattern" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="pattern" use="required"/>
+					<xs:attribute name="enabled" type="xs:boolean"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="versionBase">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="include" type="operator" minOccurs="0"/>
+			<xs:element name="exclude" type="operator" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="enabled"/>
+	</xs:complexType>
+	<xs:element name="cvpub">
+		<xs:annotation>
+			<xs:documentation>cvpub设置程序的根节点</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="common" minOccurs="0">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="versionBase">
+								<xs:attribute name="src"/>
+								<xs:attribute name="dest"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="version" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="versionBase">
+								<xs:attribute name="name" use="required"/>
+								<xs:attribute name="src"/>
+								<xs:attribute name="dest"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

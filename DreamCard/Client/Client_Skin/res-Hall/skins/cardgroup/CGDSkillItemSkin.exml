@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CGDSkillItemSkin" width="510" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="510" x="0" y="0">
+		<e:Image id="imgBG" width="100%" height="100%" x="0" y="0" source="hallImg1Sheet_json.a508x90" scale9Grid="16,49,476,30"/>
+		<e:Group id="groupSkillIcon" left="10" top="10">
+		</e:Group>
+		<e:Group id="groupSTextField" left="100" top="10"/>
+		<e:Label id="lblDes" text="技能介绍技能介绍技能介绍技能介绍技能介绍技能介绍技能介绍技能介绍" x="100" y="60" size="20" fontFamily="SimHei" textColor="0xFFFFFF" width="365" lineSpacing="8" stroke="2" wordWrap="true"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,156 @@
+(function (_super) {
+	__extends(CSHeadSkin, _super);
+	function CSHeadSkin() {
+		_super.call(this);
+		
+		this.height = 210;
+		this.width = 100;
+		this.elementsContent = [this.groupCardHead_i()];
+	}
+	var _proto = CSHeadSkin.prototype;
+
+	_proto.groupCardHead_i = function () {
+		var t = new eui.Group();
+		this.groupCardHead = t;
+		t.height = 210;
+		t.width = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.labCardName_i(),this.imgHead_i(),this.imgHeadFrame_i(),this.imgAttr_i(),this.labGene_i(),this.prbExp_i(),this.labExp_i(),this.labLvlChange_i(),this.GroupStar_i()];
+		return t;
+	};
+	_proto.labCardName_i = function () {
+		var t = new eui.Label();
+		this.labCardName = t;
+		t.fontFamily = "SimHei";
+		t.height = 20;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 22;
+		t.text = "刘备";
+		t.textAlign = "center";
+		t.verticalAlign = "bottom";
+		t.width = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.imgHead_i = function () {
+		var t = new eui.Image();
+		this.imgHead = t;
+		t.height = 86;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "";
+		t.width = 86;
+		t.x = 7;
+		t.y = 30;
+		return t;
+	};
+	_proto.imgHeadFrame_i = function () {
+		var t = new eui.Image();
+		this.imgHeadFrame = t;
+		t.height = 86;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatImg1Sheet_json.a82x82";
+		t.width = 86;
+		t.x = 7;
+		t.y = 30;
+		return t;
+	};
+	_proto.imgAttr_i = function () {
+		var t = new eui.Image();
+		this.imgAttr = t;
+		t.horizontalCenter = 30;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "combatImg1Sheet_json.a28x28";
+		t.x = 66;
+		t.y = 32;
+		return t;
+	};
+	_proto.labGene_i = function () {
+		var t = new eui.Label();
+		this.labGene = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "Microsoft YaHei";
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 12;
+		t.text = "3代";
+		t.textAlign = "center";
+		t.verticalAlign = "top";
+		t.width = 20;
+		t.x = 2;
+		t.y = 123;
+		return t;
+	};
+	_proto.prbExp_i = function () {
+		var t = new eui.ProgressBar();
+		this.prbExp = t;
+		t.horizontalCenter = 0;
+		t.skinName = "CHLoadSkin";
+		t.y = 145;
+		return t;
+	};
+	_proto.labExp_i = function () {
+		var t = new eui.Label();
+		this.labExp = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 18;
+		t.stroke = 1;
+		t.text = "Label";
+		t.textAlign = "center";
+		t.textColor = 0xc9fdff;
+		t.verticalAlign = "top";
+		t.width = 100;
+		t.x = 0;
+		t.y = 165;
+		return t;
+	};
+	_proto.labLvlChange_i = function () {
+		var t = new eui.Label();
+		this.labLvlChange = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 18;
+		t.stroke = 1;
+		t.text = "Label";
+		t.textAlign = "center";
+		t.textColor = 0xff5252;
+		t.verticalAlign = "top";
+		t.width = 100;
+		t.x = 0;
+		t.y = 190;
+		return t;
+	};
+	_proto.GroupStar_i = function () {
+		var t = new eui.Group();
+		this.GroupStar = t;
+		t.height = 15;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 75;
+		t.x = 22;
+		t.y = 120;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["labCardName","imgHead","imgHeadFrame","imgAttr","labGene","prbExp","labExp","labLvlChange","GroupStar","groupCardHead"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CSHeadSkin;
+})(eui.Skin);

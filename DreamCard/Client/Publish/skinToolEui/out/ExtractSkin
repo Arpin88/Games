@@ -1,0 +1,370 @@
+(function (_super) {
+	__extends(ExtractSkin, _super);
+	var ExtractSkin$Skin35 = 	(function (_super) {
+		__extends(ExtractSkin$Skin35, _super);
+		function ExtractSkin$Skin35() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a26x42_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = ExtractSkin$Skin35.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a26x42_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return ExtractSkin$Skin35;
+	})(eui.Skin);
+
+	var ExtractSkin$Skin36 = 	(function (_super) {
+		__extends(ExtractSkin$Skin36, _super);
+		function ExtractSkin$Skin36() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallImg1Sheet_json.whanniu01")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = ExtractSkin$Skin36.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallImg1Sheet_json.whanniu00";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return ExtractSkin$Skin36;
+	})(eui.Skin);
+
+	function ExtractSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.extractskingroup_i()];
+	}
+	var _proto = ExtractSkin.prototype;
+
+	_proto.extractskingroup_i = function () {
+		var t = new eui.Group();
+		this.extractskingroup = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this._c1_i(),this._c4_i(),this._c5_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.source = "bj_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.top = 0;
+		t.percentWidth = 100;
+		t.elementsContent = [this._a2_i(),this._a3_i(),this.btnBack_i(),this.comStar_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "top_png";
+		t.top = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "hallText0Sheet_json.shilianchou";
+		t.verticalCenter = -5;
+		return t;
+	};
+	_proto.btnBack_i = function () {
+		var t = new eui.Button();
+		this.btnBack = t;
+		t.label = "";
+		t.left = 0;
+		t.top = 0;
+		t.skinName = ExtractSkin$Skin35;
+		return t;
+	};
+	_proto.comStar_i = function () {
+		var t = new eui.Component();
+		this.comStar = t;
+		t.right = 32;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "StarSkin";
+		t.verticalCenter = -5;
+		t.x = 880.0000000000001;
+		t.y = 343.00000000000006;
+		return t;
+	};
+	_proto._c4_i = function () {
+		var t = new eui.Group();
+		t.height = 640;
+		t.width = 288;
+		t.x = 0;
+		t.y = 100;
+		t.elementsContent = [this._a4_i(),this.btnInfo_i(),this.tittle1_i(),this.btnBuy_i(),this._c2_i(),this._c3_i(),this.tittle2_i()];
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.huodongkuang";
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.btnInfo_i = function () {
+		var t = new eui.Button();
+		this.btnInfo = t;
+		t.label = "";
+		t.x = 222.52;
+		t.y = 4;
+		t.skinName = ExtractSkin$Skin36;
+		return t;
+	};
+	_proto.tittle1_i = function () {
+		var t = new eui.Label();
+		this.tittle1 = t;
+		t.fontFamily = "SimHei";
+		t.size = 28;
+		t.text = "圣诞节限定";
+		t.textColor = 0xffe196;
+		t.x = 69;
+		t.y = 19;
+		return t;
+	};
+	_proto.btnBuy_i = function () {
+		var t = new eui.Button();
+		this.btnBuy = t;
+		t.horizontalCenter = 0;
+		t.label = "购买";
+		t.scaleX = 0.7;
+		t.scaleY = 0.7;
+		t.skinName = "ButtonB1Skin";
+		t.y = 510;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 394;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 256;
+		t.y = 116;
+		t.elementsContent = [this.groupIcon_i(),this._a5_i()];
+		return t;
+	};
+	_proto.groupIcon_i = function () {
+		var t = new eui.Image();
+		this.groupIcon = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.a242x406";
+		t.y = 0;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.chuanqipinzhi";
+		t.visible = false;
+		t.y = 342;
+		return t;
+	};
+	_proto._c3_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 34;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.width = 196;
+		t.y = 594.66;
+		t.elementsContent = [this._a6_i(),this.priceTxt_i()];
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.scaleX = 0.7;
+		t.scaleY = 0.7;
+		t.source = "hallImg0Sheet_json.a36x36";
+		t.x = 46.97;
+		t.y = 0;
+		return t;
+	};
+	_proto.priceTxt_i = function () {
+		var t = new eui.Label();
+		this.priceTxt = t;
+		t.anchorOffsetX = 0;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 23.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.text = "X100";
+		t.textAlign = "left";
+		t.textColor = 0xFFFFFF;
+		t.width = 76.67;
+		t.y = 5.32;
+		return t;
+	};
+	_proto.tittle2_i = function () {
+		var t = new eui.Label();
+		this.tittle2 = t;
+		t.fontFamily = "SimHei";
+		t.horizontalCenter = 1;
+		t.size = 22;
+		t.stroke = 1;
+		t.text = "15款圣诞节限定卡牌";
+		t.textColor = 0xffffff;
+		t.y = 76.88;
+		return t;
+	};
+	_proto._c5_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.left = 288;
+		t.right = 26;
+		t.top = 100;
+		t.elementsContent = [this.imgRBG_i(),this._a7_i(),this.scrCardItem_i()];
+		return t;
+	};
+	_proto.imgRBG_i = function () {
+		var t = new eui.Image();
+		this.imgRBG = t;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._a7_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallText0Sheet_json.kehuodeyingxiong";
+		t.y = 28;
+		return t;
+	};
+	_proto.scrCardItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrCardItem = t;
+		t.anchorOffsetY = 0;
+		t.height = 543.79;
+		t.horizontalCenter = 2.5;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyH = "off";
+		t.width = 973.03;
+		t.y = 77;
+		t.viewport = this.groupCardItem_i();
+		return t;
+	};
+	_proto.groupCardItem_i = function () {
+		var t = new eui.Group();
+		this.groupCardItem = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["btnBack","comStar","btnInfo","tittle1","btnBuy","groupIcon","priceTxt","tittle2","imgRBG","groupCardItem","scrCardItem","extractskingroup"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return ExtractSkin;
+})(eui.Skin);

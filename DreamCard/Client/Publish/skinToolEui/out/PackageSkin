@@ -1,0 +1,512 @@
+(function (_super) {
+	__extends(PackageSkin, _super);
+	var PackageSkin$Skin108 = 	(function (_super) {
+		__extends(PackageSkin$Skin108, _super);
+		function PackageSkin$Skin108() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn1Sheet_json.a26x42_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = PackageSkin$Skin108.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn1Sheet_json.a26x42_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return PackageSkin$Skin108;
+	})(eui.Skin);
+
+	var PackageSkin$Skin109 = 	(function (_super) {
+		__extends(PackageSkin$Skin109, _super);
+		function PackageSkin$Skin109() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.shiyong_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.shiyong_2")
+					])
+			];
+		}
+		var _proto = PackageSkin$Skin109.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.shiyong_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return PackageSkin$Skin109;
+	})(eui.Skin);
+
+	var PackageSkin$Skin110 = 	(function (_super) {
+		__extends(PackageSkin$Skin110, _super);
+		function PackageSkin$Skin110() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.cuihui_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+						new eui.SetProperty("_a1","source","hallBtn2Sheet_json.cuihui_2")
+					])
+			];
+		}
+		var _proto = PackageSkin$Skin110.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "hallBtn2Sheet_json.cuihui_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return PackageSkin$Skin110;
+	})(eui.Skin);
+
+	function PackageSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this.groupPackage_i()];
+	}
+	var _proto = PackageSkin.prototype;
+
+	_proto.groupPackage_i = function () {
+		var t = new eui.Group();
+		this.groupPackage = t;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this._a1_i(),this._c1_i(),this._c2_i(),this.scrOptionBtn_i(),this.imgRBG0_i(),this.infogroup_i()];
+		return t;
+	};
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.source = "bj_jpg";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.height = 80;
+		t.horizontalCenter = 0;
+		t.top = 0;
+		t.percentWidth = 100;
+		t.elementsContent = [this._a2_i(),this._a3_i(),this.btnBack_i(),this.comStar_i()];
+		return t;
+	};
+	_proto._a2_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "top_png";
+		t.top = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto._a3_i = function () {
+		var t = new eui.Image();
+		t.horizontalCenter = 0;
+		t.source = "hallText0Sheet_json.beibao";
+		t.verticalCenter = -4;
+		return t;
+	};
+	_proto.btnBack_i = function () {
+		var t = new eui.Button();
+		this.btnBack = t;
+		t.label = "";
+		t.left = 0;
+		t.top = 0;
+		t.skinName = PackageSkin$Skin108;
+		return t;
+	};
+	_proto.comStar_i = function () {
+		var t = new eui.Component();
+		this.comStar = t;
+		t.right = 32;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.skinName = "StarSkin";
+		t.verticalCenter = -5;
+		t.y = 350;
+		return t;
+	};
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.left = 288;
+		t.right = 406;
+		t.top = 100;
+		t.elementsContent = [this.imgRBG_i(),this.scrPropItem_i()];
+		return t;
+	};
+	_proto.imgRBG_i = function () {
+		var t = new eui.Image();
+		this.imgRBG = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.left = 0;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.top = 0;
+		t.percentWidth = 100;
+		return t;
+	};
+	_proto.scrPropItem_i = function () {
+		var t = new eui.Scroller();
+		this.scrPropItem = t;
+		t.anchorOffsetX = 0;
+		t.percentHeight = 100;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.scrollPolicyH = "off";
+		t.top = 0;
+		t.width = 640;
+		t.viewport = this.groupPropItem_i();
+		return t;
+	};
+	_proto.groupPropItem_i = function () {
+		var t = new eui.Group();
+		this.groupPropItem = t;
+		t.anchorOffsetX = 0;
+		t.percentWidth = 100;
+		t.x = 1.33;
+		t.y = 0;
+		return t;
+	};
+	_proto.scrOptionBtn_i = function () {
+		var t = new eui.Scroller();
+		this.scrOptionBtn = t;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.left = 0;
+		t.scrollPolicyH = "off";
+		t.top = 100;
+		t.width = 288;
+		t.viewport = this.groupOptionBtn_i();
+		return t;
+	};
+	_proto.groupOptionBtn_i = function () {
+		var t = new eui.Group();
+		this.groupOptionBtn = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 2.67;
+		return t;
+	};
+	_proto.imgRBG0_i = function () {
+		var t = new eui.Image();
+		this.imgRBG0 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.right = 26;
+		t.scale9Grid = new egret.Rectangle(21,17,59,59);
+		t.source = "commonImg0Sheet_json.a100x100";
+		t.width = 368;
+		t.y = 100;
+		return t;
+	};
+	_proto.infogroup_i = function () {
+		var t = new eui.Group();
+		this.infogroup = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 640;
+		t.right = 26;
+		t.top = 100;
+		t.width = 368;
+		t.elementsContent = [this._a4_i(),this._a5_i(),this._a6_i(),this.btnUse_i(),this.btnDestory_i(),this.imgItem_i(),this.iconname_i(),this.labTips3_i(),this.labTips0_i(),this.disc_i(),this.price_i(),this.num_i()];
+		return t;
+	};
+	_proto._a4_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 50;
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 162;
+		t.x = 176;
+		t.y = 34;
+		return t;
+	};
+	_proto._a5_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 50;
+		t.source = "hallImg0Sheet_json.w162x50";
+		t.width = 162;
+		t.x = 176;
+		t.y = 102;
+		return t;
+	};
+	_proto._a6_i = function () {
+		var t = new eui.Image();
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 130;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.source = "hallImg1Sheet_json.k150x150";
+		t.touchEnabled = false;
+		t.width = 130;
+		t.x = 30;
+		t.y = 28;
+		return t;
+	};
+	_proto.btnUse_i = function () {
+		var t = new eui.Button();
+		this.btnUse = t;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 0.6999999999999998;
+		t.scaleY = 0.6999999999999998;
+		t.y = 496;
+		t.skinName = PackageSkin$Skin109;
+		return t;
+	};
+	_proto.btnDestory_i = function () {
+		var t = new eui.Button();
+		this.btnDestory = t;
+		t.horizontalCenter = 0;
+		t.label = "";
+		t.scaleX = 0.6999999999999998;
+		t.scaleY = 0.6999999999999998;
+		t.y = 382;
+		t.skinName = PackageSkin$Skin110;
+		return t;
+	};
+	_proto.imgItem_i = function () {
+		var t = new eui.Image();
+		this.imgItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 111.33;
+		t.horizontalCenter = -90.5;
+		t.scaleX = 1;
+		t.scaleY = 0.96;
+		t.source = "propSheet_json.1";
+		t.width = 111.33;
+		t.y = 40.09;
+		return t;
+	};
+	_proto.iconname_i = function () {
+		var t = new eui.Label();
+		this.iconname = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.height = 25.37;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "开天号角";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.width = 141;
+		t.x = 191;
+		t.y = 46;
+		return t;
+	};
+	_proto.labTips3_i = function () {
+		var t = new eui.Label();
+		this.labTips3 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.height = 26.33;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "拥有";
+		t.textColor = 0xffffff;
+		t.width = 53.44;
+		t.x = 191;
+		t.y = 114;
+		return t;
+	};
+	_proto.labTips0_i = function () {
+		var t = new eui.Label();
+		this.labTips0 = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 32;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "商城售价 :";
+		t.textAlign = "left";
+		t.textColor = 0xb0b0b0;
+		t.width = 121.99;
+		t.x = 30;
+		t.y = 276;
+		return t;
+	};
+	_proto.disc_i = function () {
+		var t = new eui.Label();
+		this.disc = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.fontFamily = "SimHei";
+		t.height = 74.67;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "商城售";
+		t.textAlign = "left";
+		t.textColor = 0xffffff;
+		t.width = 297.99;
+		t.x = 32.67;
+		t.y = 192.67;
+		return t;
+	};
+	_proto.price_i = function () {
+		var t = new eui.Label();
+		this.price = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.height = 32;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "120XWG";
+		t.textAlign = "left";
+		t.textColor = 0x1fff59;
+		t.width = 121.99;
+		t.x = 146;
+		t.y = 276;
+		return t;
+	};
+	_proto.num_i = function () {
+		var t = new eui.Label();
+		this.num = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.bold = true;
+		t.fontFamily = "SimHei";
+		t.height = 23.83;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 26;
+		t.stroke = 2;
+		t.text = "888";
+		t.textAlign = "left";
+		t.textColor = 0xffbd1f;
+		t.width = 70.47;
+		t.x = 251.25;
+		t.y = 116;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["btnBack","comStar","imgRBG","groupPropItem","scrPropItem","groupOptionBtn","scrOptionBtn","imgRBG0","btnUse","btnDestory","imgItem","iconname","labTips3","labTips0","disc","price","num","infogroup","groupPackage"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return PackageSkin;
+})(eui.Skin);

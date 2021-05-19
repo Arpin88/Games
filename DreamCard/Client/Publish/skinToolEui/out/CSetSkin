@@ -1,0 +1,219 @@
+(function (_super) {
+	__extends(CSetSkin, _super);
+	var CSetSkin$Skin15 = 	(function (_super) {
+		__extends(CSetSkin$Skin15, _super);
+		function CSetSkin$Skin15() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","combatBtn0Sheet_json.a172x228_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CSetSkin$Skin15.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "combatBtn0Sheet_json.a172x228_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CSetSkin$Skin15;
+	})(eui.Skin);
+
+	var CSetSkin$Skin16 = 	(function (_super) {
+		__extends(CSetSkin$Skin16, _super);
+		function CSetSkin$Skin16() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","combatBtn0Sheet_json.b172x228_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CSetSkin$Skin16.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "combatBtn0Sheet_json.b172x228_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CSetSkin$Skin16;
+	})(eui.Skin);
+
+	var CSetSkin$Skin17 = 	(function (_super) {
+		__extends(CSetSkin$Skin17, _super);
+		function CSetSkin$Skin17() {
+			_super.call(this);
+			
+			this.elementsContent = [this._a1_i(),this.labelDisplay_i()];
+			this.states = [
+				new eui.State ("up",
+					[
+					])
+				,
+				new eui.State ("down",
+					[
+						new eui.SetProperty("_a1","source","combatBtn0Sheet_json.c172x228_1")
+					])
+				,
+				new eui.State ("disabled",
+					[
+					])
+			];
+		}
+		var _proto = CSetSkin$Skin17.prototype;
+
+		_proto._a1_i = function () {
+			var t = new eui.Image();
+			this._a1 = t;
+			t.percentHeight = 100;
+			t.source = "combatBtn0Sheet_json.c172x228_0";
+			t.percentWidth = 100;
+			return t;
+		};
+		_proto.labelDisplay_i = function () {
+			var t = new eui.Label();
+			this.labelDisplay = t;
+			t.horizontalCenter = 0;
+			t.verticalCenter = 0;
+			return t;
+		};
+		Object.defineProperty(_proto, "skinParts", {
+			get: function () {
+				return ["labelDisplay"];
+			},
+			enumerable: true,
+			configurable: true
+		});
+		return CSetSkin$Skin17;
+	})(eui.Skin);
+
+	function CSetSkin() {
+		_super.call(this);
+		
+		this.height = 750;
+		this.width = 1334;
+		this.elementsContent = [this._c2_i()];
+	}
+	var _proto = CSetSkin.prototype;
+
+	_proto._c2_i = function () {
+		var t = new eui.Group();
+		t.percentHeight = 100;
+		t.touchEnabled = false;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.rectBG_i(),this._c1_i()];
+		return t;
+	};
+	_proto.rectBG_i = function () {
+		var t = new eui.Rect();
+		this.rectBG = t;
+		t.fillAlpha = 0.7;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto._c1_i = function () {
+		var t = new eui.Group();
+		t.horizontalCenter = 0;
+		t.touchEnabled = false;
+		t.y = 230;
+		t.elementsContent = [this.btnClose_i(),this.btnSurrender_i(),this.btnHelp_i()];
+		return t;
+	};
+	_proto.btnClose_i = function () {
+		var t = new eui.Button();
+		this.btnClose = t;
+		t.label = "";
+		t.x = 0;
+		t.y = 0;
+		t.skinName = CSetSkin$Skin15;
+		return t;
+	};
+	_proto.btnSurrender_i = function () {
+		var t = new eui.Button();
+		this.btnSurrender = t;
+		t.label = "";
+		t.x = 270;
+		t.y = 0;
+		t.skinName = CSetSkin$Skin16;
+		return t;
+	};
+	_proto.btnHelp_i = function () {
+		var t = new eui.Button();
+		this.btnHelp = t;
+		t.label = "";
+		t.x = 540;
+		t.y = 0;
+		t.skinName = CSetSkin$Skin17;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["rectBG","btnClose","btnSurrender","btnHelp"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CSetSkin;
+})(eui.Skin);

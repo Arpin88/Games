@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PPropItemSkin" width="170" height="206" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupPI" width="170" height="206" x="0" y="0">
+		<e:Image x="0" y="0" source="hallImg0Sheet_json.a170x206" touchEnabled="false"/>
+		<e:Image id="imgItem" y="20" source="hallImg1Sheet_json.a128x128" horizontalCenter="0" touchEnabled="false"/>
+		<e:Label id="labItemName" text="经验书" y="160" horizontalCenter="0" width="150" textAlign="center" stroke="2" textColor="0xffdaba" size="32" fontFamily="SimHei" touchEnabled="false"/>
+		<e:Image y="11" horizontalCenter="1" touchEnabled="false" source="hallImg1Sheet_json.k128x129" x="20" scaleX="1" scaleY="1"/>
+		<e:Label id="labItemNum" text="1000" y="103" textColor="0xffffff" anchorOffsetX="0" width="110" textAlign="right" x="32" height="28" fontFamily="Microsoft YaHei" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

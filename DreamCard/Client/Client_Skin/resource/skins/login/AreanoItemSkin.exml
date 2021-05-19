@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AreanoItemSkin" width="450" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="rectBG" width="100%" height="100%" x="0" y="0" fillAlpha="0.9"/>
+	<e:Label id="lblContent" text="+86 中国（CN）" x="25" verticalCenter="0" fontFamily="SimHei" textColor="0x85a1bc" touchEnabled="false" size="28"/>
+	<e:Image id="imgChoose" x="388" source="loginSheet_json.xuanzhong" verticalCenter="0" touchEnabled="false" visible="false"/>
+</e:Skin>

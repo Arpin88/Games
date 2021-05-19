@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FilterItemSkin" width="780" height="84" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupFilterItem" width="780" x="0" height="84" y="42" anchorOffsetX="0" anchorOffsetY="42">
+		<e:Image id="imgBG" x="0" touchEnabled="false" anchorOffsetX="0" width="100%" source="hallImg1Sheet_json.a780x74" verticalCenter="0"/>
+		<e:Image id="imgBG1" x="0" y="0" touchEnabled="false" scale9Grid="12,11,76,68" anchorOffsetX="0" width="800" source="hallImg1Sheet_json.kuang01" visible="false"/>
+		<e:Label id="lblDes" text="6666666" size="34" fontFamily="SimHei" horizontalCenter="0" stroke="2" strokeColor="0x1a4f67" verticalCenter="0" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

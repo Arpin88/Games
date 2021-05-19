@@ -1,0 +1,43 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/res/res.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"libs/modules/socket/socket.js",
+		"libs/modules/promise/promise.js"
+	],
+	"game": [
+		"bin-debug/Combat/SettlementView.js",
+		"bin-debug/Combat.js",
+		"bin-debug/Combat/CDfdHeadView.js",
+		"bin-debug/Combat/CombatDataView.js",
+		"bin-debug/Combat/CombatView.js",
+		"bin-debug/Combat/CPopupView.js",
+		"bin-debug/Combat/CRBuffItemView.js",
+		"bin-debug/Combat/CRCardItemView.js",
+		"bin-debug/Combat/CRFetterItemView.js",
+		"bin-debug/Combat/CSCardItemView.js",
+		"bin-debug/Combat/CSetView.js",
+		"bin-debug/Combat/CSHeadView.js",
+		"bin-debug/Combat/CSSHeadView.js",
+		"bin-debug/Combat/CWaitStartView.js",
+		"bin-debug/Combat/CAtkHeadView.js",
+		"bin-debug/Combat/decoder/CombatCmdDef.js",
+		"bin-debug/Combat/decoder/CombatDecoder.js",
+		"bin-debug/Combat/Fight/CDebugConfig.js",
+		"bin-debug/Combat/Fight/CombatAction.js",
+		"bin-debug/Combat/Fight/CombatConfig.js",
+		"bin-debug/Combat/Fight/CombatConstants.js",
+		"bin-debug/Combat/Fight/CombatEffComp.js",
+		"bin-debug/Combat/Fight/CombatFactory.js",
+		"bin-debug/Combat/Fight/CombatParser.js",
+		"bin-debug/Combat/Fight/CombatSerial.js",
+		"bin-debug/Combat/Fight/CombatStructs.js",
+		"bin-debug/Combat/Fight/CombatUtils.js",
+		"bin-debug/Combat/Fight/CResManager.js",
+		"bin-debug/Combat/Fight/FightExpForm.js"
+	]
+}

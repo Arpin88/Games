@@ -1,0 +1,69 @@
+(function (_super) {
+	__extends(HeadItemSkin, _super);
+	function HeadItemSkin() {
+		_super.call(this);
+		
+		this.height = 120;
+		this.width = 120;
+		this.elementsContent = [this.groupPI_i()];
+	}
+	var _proto = HeadItemSkin.prototype;
+
+	_proto.groupPI_i = function () {
+		var t = new eui.Group();
+		this.groupPI = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.percentHeight = 100;
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.imgItem_i(),this.selceNormal_i(),this.selcetLight_i()];
+		return t;
+	};
+	_proto.imgItem_i = function () {
+		var t = new eui.Image();
+		this.imgItem = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.horizontalCenter = 0;
+		t.source = "headicon_json.head_01";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.selceNormal_i = function () {
+		var t = new eui.Image();
+		this.selceNormal = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 120;
+		t.horizontalCenter = 0;
+		t.source = "shezhisheet_json.txkuang";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 120;
+		return t;
+	};
+	_proto.selcetLight_i = function () {
+		var t = new eui.Image();
+		this.selcetLight = t;
+		t.anchorOffsetX = 0;
+		t.anchorOffsetY = 0;
+		t.height = 136;
+		t.horizontalCenter = 0;
+		t.source = "shezhisheet_json.xuanzhongtouxiang";
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 136;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["imgItem","selceNormal","selcetLight","groupPI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return HeadItemSkin;
+})(eui.Skin);

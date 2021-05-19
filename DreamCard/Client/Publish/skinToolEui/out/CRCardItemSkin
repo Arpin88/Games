@@ -1,0 +1,78 @@
+(function (_super) {
+	__extends(CRCardItemSkin, _super);
+	function CRCardItemSkin() {
+		_super.call(this);
+		
+		this.height = 206;
+		this.width = 138;
+		this.elementsContent = [this.groupCRCI_i()];
+	}
+	var _proto = CRCardItemSkin.prototype;
+
+	_proto.groupCRCI_i = function () {
+		var t = new eui.Group();
+		this.groupCRCI = t;
+		t.height = 206;
+		t.touchEnabled = false;
+		t.width = 138;
+		t.x = 0;
+		t.y = 0;
+		t.elementsContent = [this.groupBack_i(),this.groupCard_i(),this.groupBuffIcon_i(),this.groupFront_i()];
+		return t;
+	};
+	_proto.groupBack_i = function () {
+		var t = new eui.Group();
+		this.groupBack = t;
+		t.height = 206;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchChildren = false;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 138;
+		return t;
+	};
+	_proto.groupCard_i = function () {
+		var t = new eui.Group();
+		this.groupCard = t;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		return t;
+	};
+	_proto.groupBuffIcon_i = function () {
+		var t = new eui.Group();
+		this.groupBuffIcon = t;
+		t.height = 34;
+		t.horizontalCenter = 0;
+		t.touchEnabled = false;
+		t.touchThrough = false;
+		t.width = 128;
+		t.y = 146;
+		return t;
+	};
+	_proto.groupFront_i = function () {
+		var t = new eui.Group();
+		this.groupFront = t;
+		t.height = 206;
+		t.horizontalCenter = 0;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.touchChildren = false;
+		t.touchEnabled = false;
+		t.verticalCenter = 0;
+		t.width = 138;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["groupBack","groupCard","groupBuffIcon","groupFront","groupCRCI"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CRCardItemSkin;
+})(eui.Skin);

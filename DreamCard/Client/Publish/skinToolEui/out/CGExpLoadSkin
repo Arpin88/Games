@@ -1,0 +1,41 @@
+(function (_super) {
+	__extends(CGExpLoadSkin, _super);
+	function CGExpLoadSkin() {
+		_super.call(this);
+		
+		this.height = 22;
+		this.width = 160;
+		this.elementsContent = [this._a1_i(),this.thumb_i()];
+	}
+	var _proto = CGExpLoadSkin.prototype;
+
+	_proto._a1_i = function () {
+		var t = new eui.Image();
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(16,9,128,4);
+		t.source = "hallImg2Sheet_json.c160x22";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	_proto.thumb_i = function () {
+		var t = new eui.Image();
+		this.thumb = t;
+		t.percentHeight = 100;
+		t.scale9Grid = new egret.Rectangle(16,9,128,4);
+		t.source = "hallImg2Sheet_json.b160x22";
+		t.percentWidth = 100;
+		t.x = 0;
+		t.y = 0;
+		return t;
+	};
+	Object.defineProperty(_proto, "skinParts", {
+		get: function () {
+			return ["thumb"];
+		},
+		enumerable: true,
+		configurable: true
+	});
+	return CGExpLoadSkin;
+})(eui.Skin);

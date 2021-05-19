@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardRectangleSkin" width="382" height="572" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCR" width="382" height="572" x="0" y="0" touchChildren="false">
+		<e:Image id="imgBG" x="0" y="0" source="cardCommonImg0Sheet_json.tongyonga"/>
+		<e:Image id="imgIcon" x="0" y="0" source=""/>
+		<e:Image id="imgRarity" x="0" y="0" source="cardCommonImg1Sheet_json.r_rb1"/>
+		<e:Image id="levelbg" y="85" source="cardCommonImg0Sheet_json.r_dangban" horizontalCenter="0"/>
+		<e:Image id="imgElement" y="8" x="302" source="cardCommonImg2Sheet_json.r_e1"/>
+		<e:Label id="lblRound" text="6" x="21" y="22" size="52" fontFamily="SimHei" width="55" stroke="2" textAlign="center" textColor="0xffffff" verticalAlign="middle" height="55"/>
+		<e:Label id="lblName" text="诸葛村夫" y="30" textColor="0xFFFFFF" size="34" fontFamily="SimHei" width="200" stroke="2" textAlign="center" horizontalCenter="0"/>
+		<e:Label id="lblAtk" text="6666" y="514" textColor="0xFFFFFF" size="34" fontFamily="SimHei" stroke="2" textAlign="center" x="75" width="90" bold="true"/>
+		<e:Label id="lblHp" text="6666" y="514" textColor="0xFFFFFF" size="34" fontFamily="SimHei" stroke="2" textAlign="center" x="270" width="90" bold="true"/>
+		<e:Group id="groupLevel" x="80" y="85" anchorOffsetX="0" anchorOffsetY="0" width="230">
+			<e:Image id="imgGeneration" y="0" x="0" scaleX="1" scaleY="1" width="48" source="cardCommonText0Sheet_json.r_g1"/>
+			<e:Image id="imgLv1" x="50" y="0" scaleX="1" scaleY="1" source="cardCommonImg0Sheet_json.r_star" width="30"/>
+			<e:Image id="imgLv2" x="80" y="0" scaleX="1" scaleY="1" source="cardCommonImg0Sheet_json.r_star" width="30"/>
+            <e:Image id="imgLv3" x="110" y="0" scaleX="1" scaleY="1" source="cardCommonImg0Sheet_json.r_star" width="30"/>
+            <e:Image id="imgLv4" x="140" y="0" scaleX="1" scaleY="1" source="cardCommonImg0Sheet_json.r_star" width="30"/>
+            <e:Image id="imgLv5" x="170" y="0" scaleX="1" scaleY="1" source="cardCommonImg0Sheet_json.r_star" width="30"/>
+            <e:Image id="imgLv6" x="200" y="0" scaleX="1" scaleY="1" source="cardCommonImg0Sheet_json.r_star" width="30"/>
+		</e:Group>
+		<e:Image id="imgChoose" scaleX="1.85" scaleY="1.85" horizontalCenter="0" verticalCenter="0" x="463" y="132" touchEnabled="false" source="cardCommonImg2Sheet_json.a108x112" width="108" height="112" visible="false"/>
+	</e:Group>
+	<e:Group id="groupCRB" width="382" height="572" x="0" y="0" touchChildren="false" visible="false">
+		<e:Image x="0" y="0" scaleX="1" scaleY="1" source="cardCommonImg1Sheet_json.r_rb0"/>
+	</e:Group>
+</e:Skin>

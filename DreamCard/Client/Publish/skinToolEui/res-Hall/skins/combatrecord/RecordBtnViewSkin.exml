@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OptionBtnSkin" width="278" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="76">
+	<e:Group width="278" x="0" y="0" touchEnabled="false" height="76">
+		<e:Group id="groupOB" width="278" x="0" y="0" touchEnabled="false" height="76" scaleX="1" scaleY="1">
+			<e:Button id="btnRecord" label="" y="0" scaleX="1" scaleY="1" height="76" width="278" x="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="combatRecordSheet_json.zuoan00" source.down="combatRecordSheet_json.zuoan00"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image id="imgChooseState" y="0" touchEnabled="false" scale9Grid="22,10,176,66" anchorOffsetX="0" anchorOffsetY="0" height="76" source="combatRecordSheet_json.zuoan01" x="0" visible="false"/>
+			<e:Label id="labTm" text="Label" y="12" width="76" height="24" verticalAlign="middle" textAlign="left" fontFamily="SimHei" size="22"  stroke="1" x="186" scaleX="1" scaleY="1" touchEnabled="false" anchorOffsetY="0" anchorOffsetX="0" textColor="0xffffff"/>
+			<e:Label id="labTm0" text="Label" y="38" width="74" height="23" verticalAlign="middle" textAlign="left" fontFamily="SimHei" size="22" stroke="1" x="186" scaleX="1" scaleY="1" touchEnabled="false" anchorOffsetY="0" anchorOffsetX="0" textColor="0xffffff"/>
+			<e:Image id="imgReward" x="24" touchEnabled="false" source="hallImg0Sheet_json.a36x36" width="24" height="24" verticalCenter="0"/>
+			<e:Image id="imgJinYan" x="24" touchEnabled="false" source="combatRecordSheet_json.exp" width="24" height="24" verticalCenter="0" visible="false"/>
+			<e:Label id="labScore" text="+2500" x="55" verticalAlign="middle" width="88" height="74" size="28" stroke="1" fontFamily="SimHei" touchEnabled="false" verticalCenter="0" textColor="0xffe468"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

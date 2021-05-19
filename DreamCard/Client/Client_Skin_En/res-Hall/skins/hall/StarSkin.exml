@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StarSkin" width="525" height="54" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0" anchorOffsetX="0">
+		<e:Rect id="rectBG" width="214.5" height="43.5" x="23" y="5.5" fillAlpha="0.7" alpha="50" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+		<e:Rect id="rectBG0" width="214.5" height="43.5" x="296.5" y="5.5" fillAlpha="0.7" alpha="50" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image x="273.5" source="hallImg0Sheet_json.a36x36" verticalCenter="0"/>
+		<e:Image x="277" source="hallImg0Sheet_json.a36x36_1" verticalCenter="0" visible="false"/>
+		<e:Label id="txt" text="666,666" x="334" size="32" fontFamily="SimHei" verticalCenter="0" width="135.5" textAlign="left" textColor="0xffffff" anchorOffsetX="0"/>
+		<e:Button id="btnUserItem" label="" verticalCenter="0" x="476" name="btnUserItem">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallImg0Sheet_json.anniu00" source.down="hallImg0Sheet_json.anniu01" source.disabled="hallImg0Sheet_json.anniu01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnUserItem0" label="" x="204" verticalCenter="0" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hallImg0Sheet_json.anniu00" source.down="hallImg0Sheet_json.anniu00" source.disabled="hallImg0Sheet_json.anniu01"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="txt0" text="666,666" x="62" size="32" fontFamily="SimHei" verticalCenter="0" width="138" textAlign="left" textColor="0xffffff" anchorOffsetX="0" visible="false"/>
+	</e:Group>
+</e:Skin>

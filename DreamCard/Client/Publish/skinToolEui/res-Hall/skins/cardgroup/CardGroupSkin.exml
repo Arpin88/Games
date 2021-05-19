@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CardGroupSkin" width="1334" height="750" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupCardGroup" width="100%" height="100%" x="0" y="0">
+		<e:Image x="0" y="0" source="bj_jpg" width="100%" height="100%"/>
+		<e:Group width="100%" height="80" left="0" top="0">
+		<e:Image source="top_png" top="0" horizontalCenter="0" width="100%"/>
+		<e:Image horizontalCenter="0" verticalCenter="-5" source="hallText0Sheet_json.kazu"/>
+		<e:Button id="btnBack" label="" left="0" top="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a26x42_0" source.down="hallBtn1Sheet_json.a26x42_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		</e:Group>
+		<e:Group height="635" left="2" top="100" width="306">
+		<e:Image scaleX="1" scaleY="1" horizontalCenter="0" y="0" height="100%" width="100%" source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59"/>
+			<e:Group width="120" height="120" y="30" horizontalCenter="0">
+				<e:Group id="groupIcon" width="120" height="120" y="0" horizontalCenter="0">
+					<e:Image scaleX="1" scaleY="1" source="" horizontalCenter="0" verticalCenter="0" id="imgIcon" x="48" y="49"/>
+				</e:Group>
+				<e:Image touchEnabled="false" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="shezhisheet_json.headkuang"/>
+				<e:Image scaleX="1" scaleY="1" source="hallImg2Sheet_json.a42x44" right="-21" top="-22"/>
+				<e:Label id="lblLvl" text="0" size="24" fontFamily="SimHei" verticalAlign="middle" height="35" right="-20" textAlign="center" width="40" top="-20" textColor="0xfff096"/>
+			</e:Group>
+			<e:Group y="165" anchorOffsetX="0" horizontalCenter="0">
+				<e:Image scaleX="1" scaleY="1" y="0" x="5" source="hallText0Sheet_json.hp"/>
+				<e:ProgressBar id="prbHp" x="60" y="0" skinName="CGHpLoadSkin" value="100"/>
+				<e:Label id="lblHp" text="0" size="22" fontFamily="SimHei" x="60" y="0" stroke="1" width="160" textAlign="center" strokeColor="0x60140c" scaleX="1" scaleY="1" textColor="0xffffff"/>
+				<e:Image scaleX="1" scaleY="1" y="40" x="5" source="hallText0Sheet_json.exp"/>
+				<e:ProgressBar id="prbExp" x="60" y="40" skinName="CGExpLoadSkin"/>
+				<e:Label id="lblExpProgress" text="0" size="22" textColor="0xFFFFFF" fontFamily="SimHei" x="60" y="40" stroke="1" width="160" textAlign="center" strokeColor="0x60140C" scaleX="1" scaleY="1"/>
+				<e:Button id="btnAddLv" label="" x="220" y="25">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn1Sheet_json.a44x48_0" source.down="hallBtn1Sheet_json.a44x48_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Group id="groupAttribute" width="252" y="250" horizontalCenter="0" touchEnabled="false" height="360">
+				<e:Image scaleX="1" scaleY="1" y="0" horizontalCenter="0" width="100%" scale9Grid="14,14,67,70" source="hallImg1Sheet_json.tanchukuang2" height="360"/>
+				<e:Image scaleX="1" scaleY="1" y="10" x="5" source="hallText0Sheet_json.kazuming" touchEnabled="false"/>
+				<e:Label id="lblCGName" text="" y="10" size="22" fontFamily="SimHei" verticalAlign="middle" textAlign="left" height="30" scaleX="1" scaleY="1" right="5" textColor="0xffffff" touchEnabled="false" width="160"/>
+				<e:Scroller width="240" y="55" horizontalCenter="0" height="300">
+					<e:Group>
+						<e:Image scaleX="1" scaleY="1" y="0" horizontalCenter="0" width="240" source="hallImg2Sheet_json.a58x38" scale9Grid="23,27,24,3" x="0"/>
+						<e:Image scaleX="1" scaleY="1" y="5" x="24" source="hallText0Sheet_json.zongcost" touchEnabled="false"/>
+						<e:Label id="lblCCost" text="0/0" y="3" size="26" fontFamily="SimHei" textColor="0xFFFFFF" verticalAlign="middle" textAlign="center" height="30" scaleX="1" scaleY="1" touchEnabled="false" x="99" width="130"/>
+						<e:Image scaleX="1" scaleY="1" y="50" horizontalCenter="0" width="240" source="hallImg2Sheet_json.a58x38" scale9Grid="23,27,24,3" x="0"/>
+						<e:Image scaleX="1" scaleY="1" y="55" x="24" source="hallText0Sheet_json.zonghp" touchEnabled="false"/>
+						<e:Label id="lblCHp" text="0" y="53" size="26" fontFamily="SimHei" textColor="0xFFFFFF" verticalAlign="middle" textAlign="center" height="30" scaleX="1" scaleY="1" touchEnabled="false" x="99" width="130"/>
+						<e:Image scaleX="1" scaleY="1" y="100" horizontalCenter="0" width="240" source="hallImg2Sheet_json.a58x38" scale9Grid="23,27,24,3" x="0"/>
+						<e:Image scaleX="1" scaleY="1" y="105" x="24" source="hallText0Sheet_json.zongatk" touchEnabled="false"/>
+						<e:Label id="lblCAtk" text="0" y="103" size="26" fontFamily="SimHei" textColor="0xFFFFFF" verticalAlign="middle" textAlign="center" height="30" scaleX="1" scaleY="1" touchEnabled="false" width="130" x="99"/>
+						<e:Image scaleX="1" scaleY="1" y="150" horizontalCenter="0" width="240" source="hallImg2Sheet_json.a58x38" scale9Grid="23,27,24,3" x="0"/>
+						<e:Image scaleX="1" scaleY="1" y="155" x="24" touchEnabled="false" source="hallText0Sheet_json.zongzhanli"/>
+						<e:Label id="lblCCapacity" text="0" y="153" size="26" fontFamily="SimHei" textColor="0xFFFFFF" verticalAlign="middle" textAlign="center" height="30" scaleX="1" scaleY="1" touchEnabled="false" width="130" x="99"/>
+						<e:Image scaleX="1" scaleY="1" y="200" horizontalCenter="0" width="240" source="hallImg2Sheet_json.a58x38" height="76" scale9Grid="23,27,24,3" x="0"/>
+						<e:Image scaleX="1" scaleY="1" y="205" x="24" source="hallText0Sheet_json.wuxing1" touchEnabled="false"/>
+						<e:Label id="lblCEle" text="" y="208" size="26" fontFamily="SimHei" textColor="0xFFFFFF" verticalAlign="top" textAlign="left" scaleX="1" scaleY="1" width="140" touchEnabled="false" x="99" lineSpacing="10" height="70"/>
+						<e:Image scaleX="1" scaleY="1" y="285" horizontalCenter="0" width="240" source="hallImg2Sheet_json.a58x38" scale9Grid="23,27,24,3" x="0" height="190"/>
+						<e:Image scaleX="1" scaleY="1" y="290" x="24" touchEnabled="false" source="hallText0Sheet_json.jiban"/>
+						<e:Label id="lblCFetters" text="" y="293" size="26" fontFamily="SimHei" textColor="0xFFFFFF" verticalAlign="top" textAlign="left" scaleX="1" scaleY="1" width="140" touchEnabled="false" x="90" lineSpacing="10" height="170"/>
+					</e:Group>
+				</e:Scroller>
+			</e:Group>
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" top="100" height="635" left="308" right="12">
+			<e:Image source="commonImg0Sheet_json.a100x100" scale9Grid="21,17,59,59" width="100%" height="100%" left="0" top="0" x="0" y="0" scaleX="1" scaleY="1"/>
+			<e:Scroller id="scrCardItem" width="960" scrollPolicyH="off" scaleX="1" scaleY="1" y="20" height="405" horizontalCenter="0">
+				<e:Group id="groupCardItem"/>
+			</e:Scroller>
+			<e:Group scaleX="1" scaleY="1" right="25" bottom="25">
+				<e:Button id="btnCGChoose" label="" y="0" x="0" scaleX="0.7" scaleY="0.7">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.kazu_0" source.down="hallBtn2Sheet_json.kazu_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnCGEdit" label="" y="0" x="255" scaleX="0.7" scaleY="0.7">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="hallBtn2Sheet_json.peizhikazu_0" source.down="hallBtn2Sheet_json.peizhikazu_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>
