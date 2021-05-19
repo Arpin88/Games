@@ -17,7 +17,7 @@ Scarcity in Dream Cards exists on differents items:
 
   ● Limit cards have special skills in gaming
 
-<h2>Play level</h2>
+<h2>Technical level</h2>
 
   The front-end of dream crad is developed by egret engine. Our self-developed UI system and front-end resource difference packaging tool optimize the rendering engine of the game. 
   The back-end uses the distributed cluster technology developed with Java as the server language, which can meet the hot swap function of services, so as to realize the world service of the game (the service related security considered by the game is not open source at present, and whether it is open in the future depends on the specific situation).
