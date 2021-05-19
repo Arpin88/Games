@@ -11,8 +11,8 @@ class SelectHeadView extends BaseView{
     private btnCancel:eui.Button;
     private showTxt:eui.Label;
     private func:any = null;
-    private scrPropItem:eui.Scroller;   //道具下拉滚动区域 
-    private groupPropItem:eui.Group;    //道具下拉区域层
+    private scrPropItem:eui.Scroller; 
+    private groupPropItem:eui.Group; 
     private hIndex:number = 0;
     private vIndex:number = 0;
     private arrPropItem:Array<HeadItemView> = new Array<HeadItemView>();   
@@ -63,7 +63,6 @@ class SelectHeadView extends BaseView{
         }
     }
 
-    //设置道具
     private initView():void{
         var self = this;
         var hMaxCount:number = 5;
@@ -105,7 +104,7 @@ class SelectHeadView extends BaseView{
             SoundManager.getInstance().PlayClickSound();
             if(tar==self.btnConfirm){
                 self.hiden();
-              //  console.log(`确定被按下`);
+ 
                 if(this.func != null)
                 {
                     this.func(this.selectHeadStr);
@@ -113,7 +112,7 @@ class SelectHeadView extends BaseView{
                 
             }else if(tar==self.btnCancel){
                 self.hiden();
-                console.log(`取消被按下`);
+
             }
         }else if(tar instanceof eui.Rect){
             if(tar==self.rectBG){

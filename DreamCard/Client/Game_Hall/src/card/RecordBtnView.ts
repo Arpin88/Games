@@ -36,44 +36,44 @@ class RecordBtnView extends BaseView{
     }
 
 
-    //返回视图%
+
     public getViewWidth():number{
         return this.groupOB.width;
     }
 
-    //返回视图高度
+
     public getViewHeight():number{
         var self = this;
         var height:number = self.groupOB.height;
         return height;
     }
 
-    //设置按钮时间内容;
+
     public setBtnTmContent(str:string):void{
         this.labTm.text = str;
     }
 
-    //设置按钮时间内容;
+
     public setBtnTmContent1(str:string):void{
         this.labTm0.text = str;
     }
 
-    //返回按钮时间内容;
+
     public getBtnTmContent():string{
         return this.labTm.text;
     }
 
-    //设置按钮得分内容;
+
     public setBtnScoreContent(str:string):void{
         this.labScore.text = str;
     }
 
-    //返回按钮得分内容;
+
     public getBtnScoreContent():string{
         return this.labScore.text;
     }
 
-    //设置奖励图片;
+ 
     public setBtnRewardImg(index:number):void{
         if(index == 1)
             this.imgReward.source = "hallImg0Sheet_json.a36x36";
@@ -81,17 +81,16 @@ class RecordBtnView extends BaseView{
             this.imgReward.source = "combatRecordSheet_json.exp";
     }
 
-    //设置按钮name
+
     public setBtnName(name:string):void{
         this.btnRecord.name = name;
     }
 
-    //返回按钮name
     public getBtnName():string{
         return this.btnRecord.name;
     }
 
-    //设置当前是否为选择状态;0为正常状态,1为选中状态 按钮是否可以点击 
+
     public setCurChoose(state:number = 0,btnTouchEnabled:boolean = false):void{
         var self = this;
         if(self.curChooseState==state)
@@ -106,7 +105,7 @@ class RecordBtnView extends BaseView{
         // self.groupItem.visible = state==1;
     }
 
-    //返回当前选择状态
+
     public getCurChooseState():number{
         return this.curChooseState;
     }

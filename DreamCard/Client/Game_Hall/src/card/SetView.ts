@@ -7,16 +7,16 @@ class SetView extends BaseView{
         super(SetView.NAME);
     }
 
-    private btnBack:eui.Button;     //返回按钮
-    private BtnZhuXiao:eui.Button;  //注销并退出
+    private btnBack:eui.Button;
+    private BtnZhuXiao:eui.Button; 
     private changeIconBtn:eui.Button;
     private useridtxt:eui.Label;
     private nicknametxt:eui.Label;
-    private headgroup:eui.Component;      //头像
+    private headgroup:eui.Component;   
 
-    private SwitchSound:eui.ToggleSwitch;    //音效开关
-    private SwitchMusic:eui.ToggleSwitch;    //背景音乐开关
-    private SwitchNotify:eui.ToggleSwitch;   //通知开关
+    private SwitchSound:eui.ToggleSwitch;   
+    private SwitchMusic:eui.ToggleSwitch;    
+    private SwitchNotify:eui.ToggleSwitch;  
     private discDataist:Array<Object> = new Array<Object>();
 
     private kefuwxLabel:eui.Label;
@@ -28,11 +28,11 @@ class SetView extends BaseView{
 
     private soundtxt:eui.Label;
     private musictxt:eui.Label;
-    public headImg:eui.Image;   //右边背景
+    public headImg:eui.Image; 
     public soundImg:eui.Image;
     public musicImg:eui.Image;
     private iconUrl:string = "";
-    private nickTxt = "昵称：";
+    private nickTxt = "";
     protected week():void{
         var self = this;
         var tp = LanguageManager.getInstance().getCurLanguageType();
@@ -44,13 +44,13 @@ class SetView extends BaseView{
             self.addEventListener(egret.TouchEvent.TOUCH_TAP,self.touchTap,self);
         }
 
-        self.InitView(); // 初始化界面
-        self.requestInitDataFromSvr(); // 初始申请数据
+        self.InitView(); 
+        self.requestInitDataFromSvr(); 
     }
 
     private InitView():void{
         var self = this;
-        // 公共数据设置个人信息
+ 
         var account123 = GlobalDataManager.getInstance().getAccountData();
         self.useridtxt.text = "ID: " + account123["uname"];
         self.nicknametxt.text = self.nickTxt + account123["nick"];
@@ -58,7 +58,7 @@ class SetView extends BaseView{
         var iconUrl:string = account123.getHead_Url();
         this.setHeadIcon(iconUrl,false);
 
-        // 本地数据设置按钮
+
         self.SwitchSound.selected = true;
         if(localStorage.getItem("soundSet") == "off"){self.SwitchSound.selected = false;}
         self.SwitchMusic.selected = true;
@@ -73,13 +73,13 @@ class SetView extends BaseView{
          this.iconUrl = iconUrl;
          this.headImg.source = this.iconUrl;
 
-         // 发送到服务器
+
         if(isReset == true){
             this.requestSetHeadToSvr(this.headImg.source)
         }
     }
 
-    //发送更改头像请求
+
     private requestSetHeadToSvr(headStr:string):void{
         if(headStr == "") return;
 
@@ -89,10 +89,10 @@ class SetView extends BaseView{
         HttpManager.getInstance().send(centerServer.getSname(),HallCmdDef.CMD_SetHead,obj,true);
     }
 
-    //发送请求
+
     private requestInitDataFromSvr():void{
         let obj = new Object();
-        obj["param"] = "设置";
+        obj["param"] = "set";
         let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
         HttpManager.getInstance().send(centerServer.getSname(),HallCmdDef.CMD_SetConfig,obj,true);
     }
@@ -100,7 +100,8 @@ class SetView extends BaseView{
     public recvData(cmd:HallCmdDef,data:any):void{
         var self = this;
         switch(cmd){
-            case HallCmdDef.CMD_SetConfig:  //获取队伍配置
+            case HallCmdDef.CMD_SetConfig:  
+			
                 var num = data["length"]
                 for(var k:number = 0; k < num; k++)
                  {
@@ -165,8 +166,9 @@ class SetView extends BaseView{
                 self.hiden();
           }else if(tar == self.BtnZhuXiao)
           {
-            //  console.log(`注销退出`);
+ 
             PublicMethodManager.getInstance().loginOut();
+            UisManager.getInstance().revokeAccessToken();
 
              
           }else if(tar == self.changeIconBtn)
@@ -178,7 +180,7 @@ class SetView extends BaseView{
                 UIManager.getInstance().showUI(SelectHeadView,GameScene.VIEW_LAYER_NUMBER,-1,0,0,ShowViewEffectType.TYPE_NOR,data);
           }else if(tar == self.SwitchMusic)
           {
-              console.log(`背景音乐开关：${self.SwitchMusic.selected}`);
+
               this.freshMusicSet();
               SoundManager.getInstance().yinyue = self.SwitchMusic.selected;
               if(self.SwitchMusic.selected)
@@ -188,13 +190,13 @@ class SetView extends BaseView{
               
           }else if(tar == self.SwitchSound)
           {
-              console.log(`音效开关：${self.SwitchSound.selected}`);
+
               this.freshSoundSet();
               SoundManager.getInstance().yinxiao = self.SwitchSound.selected;
               
           }else if(tar == self.SwitchNotify)
           {
-              console.log(`通知开关：${self.SwitchNotify.selected}`);
+
           }
         }
     }
