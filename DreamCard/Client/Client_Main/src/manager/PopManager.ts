@@ -9,7 +9,7 @@ class PopManager{
     public showPromptBox(content:string,uiparam:number =1,callbackHandler:Handler = null,btnLbls:any = null,conColor?:number){
         SoundManager.getInstance().PlaySound("tanchukuang_mp3");
         UIManager.getInstance().showUI(PromptBoxView,GameScene.POP_LAYER_NUMBER,-1,0,0,ShowViewEffectType.TYPE_NOR,uiparam);
-        let pbv:PromptBoxView = UIManager.getInstance().getViewByName(PromptBoxView) as PromptBoxView;
+        let pbv:PromptBoxView = UIManager.getInstance().getView(PromptBoxView) as PromptBoxView;
         pbv.setContent(content,callbackHandler,btnLbls,conColor);
 
     }

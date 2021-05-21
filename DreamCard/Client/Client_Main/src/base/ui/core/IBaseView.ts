@@ -155,4 +155,8 @@ class IBaseView extends eui.Component implements GameProcedure{
         } 
     }
 
+    //返回视图状态
+    public getViewState():number{
+        return this.m_state;
+    }
 }

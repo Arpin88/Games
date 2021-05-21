@@ -80,10 +80,20 @@ class SystemDecoder extends BaseDecoder{
             account.setHp(hp);
             let cost:number = userInfo.cost;
             account.setCost(cost);
-            let guide_step = userInfo.guide_step;
+            let guide_step = GlobalDef.OPEN_GUIDE?userInfo.guide_step:"";
             account.setGuide_Step(guide_step);
-            //   GlobalDataManager.getInstance().setWalletAddress(userInfo.wallet);
-            GlobalDataManager.getInstance().setBindAddress(userInfo.wallet);
+            let ppsd:string = userInfo.ppsd;
+            account.setPSD(ppsd); // 支付密码
+            let token:string = userInfo.token;
+            account.setToken(token);
+            let wallet:string = userInfo.wallet;
+            account.setWallet(wallet);
+            let phone:string = userInfo.phone;
+            account.setPhone(phone); 
+            let areano:string = userInfo.areano;
+            account.setAreano(areano); 
+            let email:string = userInfo.email;
+            account.setEmail(email); 
         }
 
         var appConfig:any = msg.navigateTo;
@@ -191,10 +201,20 @@ class SystemDecoder extends BaseDecoder{
             account.setHp(hp);
             let cost:number = userInfo.cost;
             account.setCost(cost);
-            let guide_step = userInfo.guide_step;
+            let guide_step:string = GlobalDef.OPEN_GUIDE?userInfo.guide_step:"";
             account.setGuide_Step(guide_step);
-            //   GlobalDataManager.getInstance().setWalletAddress(userInfo.wallet);
-            GlobalDataManager.getInstance().setBindAddress(userInfo.wallet);
+            let ppsd:string = userInfo.ppsd;
+            account.setPSD(ppsd); // 支付密码
+            let token:string = userInfo.token;
+            account.setToken(token);
+            let wallet:string = userInfo.wallet;
+            account.setWallet(wallet);
+            let phone = userInfo.phone;
+            account.setPhone(phone); 
+            let areano:string = userInfo.areano;
+            account.setAreano(areano); 
+            let email:string = userInfo.email;
+            account.setEmail(email); 
         }
 
         var appConfig:any = msg.navigateTo;
@@ -283,15 +303,15 @@ class SystemDecoder extends BaseDecoder{
             return;
         var type:number = msg.type;
         if(type==0){
-            let loginView: LoginView = UIManager.getInstance().getViewByName(LoginView) as LoginView;
+            let loginView: LoginView = UIManager.getInstance().getView(LoginView) as LoginView;
             if(loginView)
                 loginView.setSMSCode(msg.code);
         }else if(type==1){
-            let registerView: RegisterView = UIManager.getInstance().getViewByName(RegisterView) as RegisterView;
+            let registerView: RegisterView = UIManager.getInstance().getView(RegisterView) as RegisterView;
             if(registerView)
                 registerView.setSMSCode(msg.code);
         }else if(type==2){
-            let forgotView: ForgotView = UIManager.getInstance().getViewByName(ForgotView) as ForgotView;
+            let forgotView: ForgotView = UIManager.getInstance().getView(ForgotView) as ForgotView;
             if(forgotView)
                 forgotView.setSMSCode(msg.code);
         }
@@ -302,7 +322,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
         
-        let forgotView: ForgotView = UIManager.getInstance().getViewByName(ForgotView) as ForgotView;
+        let forgotView: ForgotView = UIManager.getInstance().getView(ForgotView) as ForgotView;
         if(forgotView)
             forgotView.onResetPasswordComplete();
     }
@@ -356,10 +376,20 @@ class SystemDecoder extends BaseDecoder{
                 account.setHp(hp);
                 let cost:number = userInfo.cost;
                 account.setCost(cost);
-                let guide_step = userInfo.guide_step;
+                let guide_step = GlobalDef.OPEN_GUIDE?userInfo.guide_step:"";
                 account.setGuide_Step(guide_step);
-                //   GlobalDataManager.getInstance().setWalletAddress(userInfo.wallet);
-            GlobalDataManager.getInstance().setBindAddress(userInfo.wallet);
+                let ppsd:string = userInfo.ppsd;
+                account.setPSD(ppsd); // 支付密码
+                let token:string = userInfo.token;
+                account.setToken(token);
+                let wallet:string = userInfo.wallet;
+                account.setWallet(wallet);
+                let phone:string = userInfo.phone;
+                account.setPhone(phone); 
+                let areano:string = userInfo.areano;
+                account.setAreano(areano); 
+                let email:string = userInfo.email;
+                account.setEmail(email); 
             }
 
             var appConfig:any = msg.navigateTo;
@@ -445,10 +475,20 @@ class SystemDecoder extends BaseDecoder{
             account.setHp(hp);
             let cost:number = userInfo.cost;
             account.setCost(cost);
-            let guide_step = userInfo.guide_step;
+            let guide_step:string = GlobalDef.OPEN_GUIDE?userInfo.guide_step:"";
             account.setGuide_Step(guide_step);
-            //   GlobalDataManager.getInstance().setWalletAddress(userInfo.wallet);
-            GlobalDataManager.getInstance().setBindAddress(userInfo.wallet);
+            let ppsd:string = userInfo.ppsd;
+            account.setPSD(ppsd); // 支付密码
+            let token:string = userInfo.token;
+            account.setToken(token);
+            let wallet:string = userInfo.wallet;
+            account.setWallet(wallet);
+            let phone:string = userInfo.phone;
+            account.setPhone(phone); 
+            let areano:string = userInfo.areano;
+            account.setAreano(areano); 
+            let email:string = userInfo.email;
+            account.setEmail(email); 
         }
 
         var appConfig:any = msg.navigateTo;
@@ -501,15 +541,15 @@ class SystemDecoder extends BaseDecoder{
             return;
         var type:number = msg.type;
         if(type==0){
-            let loginView: LoginView = UIManager.getInstance().getViewByName(LoginView) as LoginView;
+            let loginView: LoginView = UIManager.getInstance().getView(LoginView) as LoginView;
             if(loginView)
                 loginView.setEmailVCode(msg.code);
         }else if(type==1){
-            let registerView: RegisterView = UIManager.getInstance().getViewByName(RegisterView) as RegisterView;
+            let registerView: RegisterView = UIManager.getInstance().getView(RegisterView) as RegisterView;
             if(registerView)
                 registerView.setEmailVCode(msg.code);
         }else if(type==2){
-            let forgotView: ForgotView = UIManager.getInstance().getViewByName(ForgotView) as ForgotView;
+            let forgotView: ForgotView = UIManager.getInstance().getView(ForgotView) as ForgotView;
             if(forgotView)
                 forgotView.setEmailVCode(msg.code);
         }
@@ -541,11 +581,12 @@ class SystemDecoder extends BaseDecoder{
     //绑定钱包;
     private method_300(data:any):void{
         if(ErrorMananger.getInstance().checkReqResult(data)){
-            XWG.SDK.disconnect();
+            // XWG.SDK.disconnect();
             return;
         }
 
-        GlobalDataManager.getInstance().setBindAddress(data.msg.address);
+        GlobalDataManager.getInstance().getAccountData().setWallet(data.msg.address);
+        GameEventManager.getInstance().dispatchEvent(GameEvent.UpdateBindAddress);
     }
     private method_301(data:any):void{
         if(ErrorMananger.getInstance().checkReqResult(data))
@@ -555,14 +596,14 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
     }
-    private method_303(data:any):void{
-        if(ErrorMananger.getInstance().checkReqResult(data))
-            return;
-    }
-    private method_304(data:any):void{
-        if(ErrorMananger.getInstance().checkReqResult(data))
-            return;
-    }
+    // private method_303(data:any):void{
+    //     if(ErrorMananger.getInstance().checkReqResult(data))
+    //         return;
+    // }
+    // private method_304(data:any):void{
+    //     if(ErrorMananger.getInstance().checkReqResult(data))
+    //         return;
+    // }
 
     private method_1000(data:any):void{
         if(ErrorMananger.getInstance().checkReqResult(data))
@@ -590,7 +631,7 @@ class SystemDecoder extends BaseDecoder{
 
             UIManager.getInstance().hideUI(LoadingRView);
             
-            if(UIManager.getInstance().checkHasViewByName("MatchingView"))
+            if(UIManager.getInstance().checkViewIsOpen("MatchingView"))
                 UIManager.getInstance().hideUI("MatchingView");
         }else{
             //这里写不能跳转的错误提示;
@@ -609,7 +650,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
         
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_SINGLE_CREATE_ROOM,data.msg);
     }
@@ -618,7 +659,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
         
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_CLOSE_ROOM,data.msg);
     }
@@ -627,7 +668,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
         
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_REQ_USER_COMBAT_STATE,data.msg);
     }
@@ -636,7 +677,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
         
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_MANY_CREATE_ROOM,data.msg);
     }
@@ -645,7 +686,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
         UIManager.getInstance().hideUI(LoadingRView);
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_GAME_CONNECT,data.msg);
     }
@@ -654,7 +695,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
         
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_GET_ROOM_DATA,data.msg);
     }
@@ -663,7 +704,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
         UIManager.getInstance().hideUI(LoadingRView);
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_GET_ROOM_DETAIL,data.msg);
     }
@@ -672,7 +713,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
 
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_GET_ROOM_RESERVE_DATA,data.msg);
     }
@@ -681,7 +722,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
 
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_REMOVE_ROOM_RECORD,data.msg);
     }
@@ -690,7 +731,7 @@ class SystemDecoder extends BaseDecoder{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
 
-        let debugView: DebugView = UIManager.getInstance().getViewByName(DebugView) as DebugView;
+        let debugView: DebugView = UIManager.getInstance().getView(DebugView) as DebugView;
         if(debugView)
             debugView.recvData(CmdDef.CMD_DEBUG_GET_BATTLE_INFO,data.msg);
     }

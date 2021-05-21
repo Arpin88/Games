@@ -30,7 +30,7 @@ module UITheme{
                 initFin.call(initTar);
             return;
         }
-        
+        var self = this;
         _initFin = initFin;
         _initTar = initTar;
         RES.getResByUrl(configURL,onConfigLoaded,self,RES.ResourceItem.TYPE_JSON);

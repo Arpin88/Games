@@ -10,15 +10,17 @@ class CardSquareView extends IBaseView{
     private imgBG:eui.Image;            //背景图片
     private imgIcon:eui.Image;          //图标图片
     private imgRarity:eui.Image;        //稀有度图片
-    private imgRound:eui.Image;         //回合图片
     private imgElement:eui.Image;       //五行图片
-    private flag:eui.Image;       //五行图片
-    
-    private lblRound:eui.Label;         //回合文本
-    private lblName:eui.Label;          //名称文本
-    private lblCost:eui.Label;          //Cost文本
+
+    private imgCostBG:eui.Image;        //cost背景图片
+    private bitRound:eui.BitmapLabel;   //回合图片文本
+    private bitCost:eui.BitmapLabel;    //Cost图片文本
+
+    // private lblName:eui.Label;          //名称文本
+    private imgName:eui.Image;          //名称图片
+    // private lblCost:eui.Label;          //Cost文本
     private imgGeneration:eui.Image;    //代数图片
-    private groupLevel:eui.Group;       //等级层
+    // private groupLevel:eui.Group;       //等级层
     private imgChoose:eui.Image;        //选中图片
     // private imgLv1:eui.Image;           //等级星星图片
     // private imgLv2:eui.Image;
@@ -27,8 +29,8 @@ class CardSquareView extends IBaseView{
     // private imgLv5:eui.Image;
     // private imgLv6:eui.Image;
 
-    private lblAtk:eui.Label;           //攻击力文本
-    private lblHp:eui.Label;            //血量文本
+    private bitAtk:eui.Label;           //攻击力图片文本
+    private bitHp:eui.Label;            //血量图片文本
 
     private groupCSB:eui.Group;     //正方形卡牌背面层
 
@@ -50,6 +52,7 @@ class CardSquareView extends IBaseView{
         //icon rarity element round generation name cost atk hp
         var icon:string = data.icon;
         self.setIcon(icon);
+        self.setName(icon);
         var rarity:string = data.rarity;
         self.setRarity(rarity);
         var element:string = data.element;
@@ -58,10 +61,12 @@ class CardSquareView extends IBaseView{
         self.setRound(att);
         var generation:number = data.generation;
         self.setGeneration(generation);
-        var level:number = data.level;
-        self.setLevel(level);
-        var name:string = data.name;
-        self.setName(name);
+        // var level:number = data.level;
+        // self.setLevel(level);
+        var star:number = data.star;
+        self.setStar(star);
+        // var name:string = data.name;
+        // self.setName(name);
         var cost:number = data.cost;
         self.setCost(cost);
         var atk:number = data.atk;
@@ -102,16 +107,17 @@ class CardSquareView extends IBaseView{
     }
 
     public showSimple():void{
-        this.flag.$setVisible(false);     
-        this.imgRound.$setVisible(false);        //回合图片
+        // this.flag.$setVisible(false);     
+        // this.imgRound.$setVisible(false);        //回合图片
         this.imgElement.$setVisible(false);      //五行图片
-        this.lblRound.$setVisible(false);       //回合文本
+        this.bitRound.$setVisible(false);       //回合文本
+
        // this.lblName.$setVisible(false);      //名称文本
-        this.lblCost.$setVisible(false);          //Cost文本
+        this.bitCost.$setVisible(false);          //Cost文本
         this.imgGeneration.$setVisible(false);    //代数图片
-        this.groupLevel.$setVisible(false);     //等级层
-        this.lblAtk.$setVisible(false);
-        this.lblHp.$setVisible(false);
+        // this.groupLevel.$setVisible(false);     //等级层
+        this.bitAtk.$setVisible(false);
+        this.bitHp.$setVisible(false);
     }
 
     //设置图标
@@ -144,7 +150,8 @@ class CardSquareView extends IBaseView{
         }
         var self = this;
         self.imgRarity.source = "cardCommonImg0Sheet_json.s_rb"+str;
-        self.imgRound.source = "cardCommonImg0Sheet_json.s_r"+str;
+        // self.imgRound.source = "cardCommonImg0Sheet_json.s_r"+str;
+        self.imgCostBG.source = "cardCommonImg2Sheet_json.s_ecb"+str;
     }
 
     //设置五行
@@ -188,48 +195,49 @@ class CardSquareView extends IBaseView{
         if(self.curRound==null||self.curRound==undefined)
             self.curRound = num;
 
-        self.lblRound.text = num.toString();
+        self.bitRound.text = num.toString();
     }
 
-    //设置星级
-    public setLevel(data:number):void{
-        let num:number = data==null||data==undefined?0:data;
-        num = (num-1)%5 + 1;
-        var self = this;
-        var showCount:number = 0;
-        for(var i:number=1;i<=6;i++){
-            var show:boolean = num>=i;
-            self["imgLv"+i].visible = show;
-            if(show)
-                showCount++;
-        }
-        var generationWidth:number = self.imgGeneration.width;
-        var starWidth:number = self["imgLv1"].width;
-        var totalWidth:number = generationWidth+showCount*starWidth;
-        var generationX:number = Number((self.groupLevel.width/2-totalWidth/2).toFixed(2));
-        self.imgGeneration.x = generationX;
-        for(var i:number=1;i<=6;i++){
-            self["imgLv"+i].x = generationX+generationWidth+starWidth*(i-1);
-        }
+    // //设置星级
+    // public setLevel(data:number):void{
+    //     let num:number = data==null||data==undefined?0:data;
+    //     num = (num-1)%5 + 1;
+    //     var self = this;
+    //     // var showCount:number = 0;
+    //     for(var i:number=1;i<=5;i++){
+    //         var show:boolean = num>=i;
+    //         self["imgLv"+i].visible = show;
+    //     }
+    // }
 
+    //设置星级
+    public setStar(data:number):void{
+        let num:number = data==null||data==undefined?0:data;
+        var self = this;
+        for(var i:number=1;i<=5;i++){
+            var show:boolean = num>=i;
+            self["imgStar"+i].visible = show;
+        }
     }
 
     //设置名称
-    private setName(name:string):void{
-        let str:string = name==null||name==undefined?"":name.toString();
-        this.lblName.text = str;
+    private setName(data:string):void{
+        // let str:string = name==null||name==undefined?"":name.toString();
+        let str:string = data==null||data==undefined?"":data;
+        this.imgName.source = "nameImg0Sheet_json."+str;
     }
+
 
     //设置Cost
     private setCost(data:number):void{
         let str:string = data==null||data==undefined?"0":data.toString();
-        this.lblCost.text = str;
+        this.bitCost.text = str;
     }
 
     //设置攻击力
     public setAtk(data:number):void{
         let str:string = data==null||data==undefined?"0":data.toString();
-        this.lblAtk.text = str;
+        this.bitAtk.text = str;
     }
 
     //设置血量
@@ -237,7 +245,7 @@ class CardSquareView extends IBaseView{
         var self = this;
         self.curHp = data;
         let str:string = data==null||data==undefined?"0":data.toString();
-        self.lblHp.text = str;
+        self.bitHp.text = str;
     }
 
     //设置层名称
@@ -265,7 +273,7 @@ class CardSquareView extends IBaseView{
             var item= view.getChildAt(i);
             if(item==null)
                 continue;
-            if(item instanceof eui.Image){
+            if(item instanceof eui.Image||item instanceof eui.BitmapLabel){
                 self.setImgColor(item,colorMatrix);
             }else{
                 self.setViewColor(item,grey);
@@ -274,15 +282,15 @@ class CardSquareView extends IBaseView{
     }
 
     //设置图片为灰色
-    private setImgColor(image: eui.Image,colorMatrix:any) {
-        if(image==null)
+    private setImgColor(component: egret.DisplayObject,colorMatrix:any) {
+        if(component==null)
             return;
         
         if(colorMatrix!=null){
             let colorFilter = new egret.ColorMatrixFilter(colorMatrix);
-            image.filters = [colorFilter];
+            component.filters = [colorFilter];
         }else{
-            image.filters = [];
+            component.filters = [];
         }
     }
 

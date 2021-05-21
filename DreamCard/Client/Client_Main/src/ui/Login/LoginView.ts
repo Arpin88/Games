@@ -46,6 +46,7 @@ class LoginView extends BaseView{
     private btnBackSLogin:eui.Button;   //返回选择登录按钮
 
     private groupSwitchLogin:eui.Group;     //选择登录层
+    private btnXWGLogin:eui.Button;         //XWG登录按钮
     private btnMetaMaskLogin:eui.Button;   //MetaMask登录按钮
     private btnBinanceLogin:eui.Button;    //Binance登录按钮
     private btnPhoneLogin:eui.Button;      //手机登录按钮
@@ -97,6 +98,9 @@ class LoginView extends BaseView{
 
         self.curAreano = egret.localStorage.getItem("areano");
         self.curAreano = self.curAreano!=null?self.curAreano:"86";
+
+        //初始化钱包名称为空
+        GlobalDataManager.getInstance().setWalletName("");
 
         self.initView();
 
@@ -355,8 +359,12 @@ class LoginView extends BaseView{
                     egret.localStorage.setItem("uemail",emailStr);
                 }else{
 
-                    if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_USER,self.editUsername.text)){
-                        // PopManager.getInstance().showPromptBox("用户名不符合要求!\n(6-22位数字或字母组合,不含特殊字符)",2);
+                    // if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_USER,self.editUsername.text)){
+                    //     // PopManager.getInstance().showPromptBox("用户名不符合要求!\n(6-22位数字或字母组合,不含特殊字符)",2);
+                    //     PopManager.getInstance().showPromptBox(self.labelObj["lbl_5"],2);
+                    //     return;
+                    // }
+                    if(self.editUsername.text==""){
                         PopManager.getInstance().showPromptBox(self.labelObj["lbl_5"],2);
                         return;
                     }
@@ -446,11 +454,13 @@ class LoginView extends BaseView{
                 self.curLoginType = 1;
                 self.updateCurEmailLoginType();
             }else if(tar==self.btnMetaMaskLogin){ //MetaMask登录按钮点击
-                PublicMethodManager.getInstance().walletLogin('Metamask');
-                egret.localStorage.setItem("walletName",'Metamask');
+                WalletManager.getInstance().walletLogin('Metamask');
+                // egret.localStorage.setItem("walletName",'Metamask');
             }else if(tar==self.btnBinanceLogin){ //Binance登录按钮点击
-                PublicMethodManager.getInstance().walletLogin('BinanceChain');
-                egret.localStorage.setItem("walletName",'BinanceChain');
+                WalletManager.getInstance().walletLogin('BinanceChain');
+                // egret.localStorage.setItem("walletName",'BinanceChain');
+            }else if(tar==self.btnXWGLogin){    //XWG登录按钮点击
+                WalletManager.getInstance().walletLogin('XWG');
             }
         }else if(tar instanceof eui.Label){
             if(tar==self.lblVCode){

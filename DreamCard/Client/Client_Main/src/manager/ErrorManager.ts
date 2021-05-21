@@ -23,7 +23,7 @@ class ErrorMananger{
                     if(msg==-5){    //session过期 需要重新登录
                         PopManager.getInstance().showPromptBox(context,2,Handler.create(self,function(confirm:boolean){
                             PublicMethodManager.getInstance().loginOut();
-                        }),["Back to login"]);
+                        }),[errors["-990"]==null?"返回登录":errors["-990"]]);
                     }else
                         PopManager.getInstance().showPromptBox(context,2,callbackHandler,null);
                 }

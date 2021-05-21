@@ -1,7 +1,4 @@
 // TypeScript file
-declare class XWG{
-    static SDK:any;
-};
 class PublicMethodManager{
     private static m_manager:PublicMethodManager = new PublicMethodManager();
     public static getInstance():PublicMethodManager{
@@ -118,87 +115,50 @@ class PublicMethodManager{
         return str;
     }
 
-    public openWallet():void{
-        var isInit = GlobalDataManager.getInstance().getWalletInit();
-        var lang = LanguageManager.getInstance().getCurLanguageType();
-        // var url = "http://wallet.xwgapi.com/";
-        var url = GlobalDataManager.getInstance().getGameConfig().walletUrl;
-        url += lang==0?"?chs":"?en";
-        var walletName = egret.localStorage.getItem('walletName');
-        if(walletName)
-        {
-            url += "/"+walletName
-        }
-        console.log(url);
-        if(isInit)
-        {
-            HTMLElementManager.getInstance().startLoadJson("walletConfig_json",function(){XWG.SDK.open();},this);
-        }else{
-            HTMLElementManager.getInstance().startLoadJson("walletConfig_json",function(){XWG.SDK.init(url, function(data){
-            let res = JSON.parse(data);
-            switch(res.cmd){
-                case "init":
-                    GlobalDataManager.getInstance().setWalletInit(true);
-                    XWG.SDK.open();
-                    break;
-                case "bind":
-                    var bindaddress = GlobalDataManager.getInstance().getBindAddress();
-                    if(bindaddress == res.data)
-                    {
-                        return;
-                    }
-                    var obj = new Object();
-                    obj["address"] = res.data;
-                    var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
-                    HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_BIND_CHAIN_WALLET,obj,true);
-                    break;
-                case "transfer":
-                    var obj = new Object();
-                    obj["hash"] = res.data.hash;
-                    obj["chain"] = res.data.chain;
-                    var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
-                    HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_WALLET_TRANSFER,obj,true);
-                    break;
-                case "transferResult":
-                    var obj = new Object();
-                    obj["hash"] = res.data;
-                    var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
-                    HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_WALLET_TRANSFER_RESULT,obj,true);
-                    break;
-                case "offLine":
-                    var obj = new Object();
-                    obj["tokenid"] = res.data;
-                    var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
-                    HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_CARD_OFFLINE,obj,true);
-                    break;
-                case "offLineResult":
-                    var obj = new Object();
-                    obj["tokenid"] = res.data;
-                    var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
-                    HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_CARD_OFFLINE_RESULT,obj,true);
-                    break;
-                case "getAddress":
-                    var address = GlobalDataManager.getInstance().getWalletAddress();
-                    XWG.SDK.setAddress(address);
-                    break;
-                }
-            });},this);
-        }
+    //————————————解决精确浮点数bug运算
+    //digitLength 获取到数字的小数部分的位数，这是变为整数的关键。
+    private digitLength(num: number): number {
+        // 1.11 -> eSplit: ['1.11']
+        // 1.11e-30 -> eSplit: ["1.11", "-30"]
+        const eSplit = num.toString().split(/[eE]/)
+        // 右边的 `|| ''` 为了防止 1e-30 -> eSplit: ["1", "-30"] 这种
+        // 左边 1.11 有两个小数，右边 e 后面有 -30，所以是 2 - (-30) 为 32
+        const len = (eSplit[0].split('.')[1] || '').length - Number(eSplit[1] || 0)
+        return len > 0 ? len : 0
     }
 
-    public walletLogin(walletName):void{
-        var time = Date.now();
-        var loginmsg = "login"+time;
-        HTMLElementManager.getInstance().startLoadJson("walletConfig_json",function(){XWG.SDK.login(loginmsg,walletName,function(result){
-            if(ErrorMananger.getInstance().checkReqResult(result)){
-                return;
-            }
-            var obj = new Object();
-            obj["address"] = result.account;
-            obj["sign"] = result.sign;
-            obj["time"] = time;
-            var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
-            HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_WALLET_LOGIN,obj,true);
-        });},this);
+    //baseNum 计算出让 num1、num2 都为整数的最小 10 的倍数
+    private baseNum(num1: number, num2: number): number {
+        return Math.pow(10, Math.max(this.digitLength(num1), this.digitLength(num2)))
     }
+
+    //加法计算
+    public plus(num1: number, num2: number): number {
+        const bn = this.baseNum(num1, num2)
+        return (num1 * bn + num2 * bn) / bn
+    }
+
+    //减法计算
+    public minus(num1: number, num2: number): number {
+        const bn = this.baseNum(num1, num2)
+        return (num1 * bn - num2 * bn) / bn
+    }
+
+    //乘法计算
+    public times(num1: number, num2: number): number {
+        const bn = this.digitLength(num1) + this.digitLength(num2)
+        const intNum1 = num1 * Math.pow(10, this.digitLength(num1))
+        const intNum2 = num2 * Math.pow(10, this.digitLength(num2))
+        return (intNum1 * intNum2) / Math.pow(10, bn)
+    }
+
+    //除法计算
+    public divide(num1: number, num2: number): number {
+        const bn = this.baseNum(num1, num2)
+        const intNum1 = num1 * bn
+        const intNum2 = num2 * bn
+        return intNum1 / intNum2
+    }
+    //————————————END————————————————
+
 }

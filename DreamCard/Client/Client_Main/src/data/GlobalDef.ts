@@ -7,4 +7,7 @@ class GlobalDef{
     //请求结果
     public static REQUEST_SUCCESS:number = 0;
     public static REQUEST_FAIL:number = 1;
+
+    //新手引导状态
+    public static OPEN_GUIDE:boolean = false;
 }

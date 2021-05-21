@@ -34,8 +34,9 @@ class GlobalDataManager{
     private gameover:boolean;
     //钱包初始化
     private walletinit:boolean;
-    //绑定钱包地址
-    private bindaddress:string;
+
+    //钱包名称
+    private walletName:string = "";
 
     private walletaddress:string;
     public setWalletAddress(walletaddress:any):void{
@@ -149,10 +150,19 @@ class GlobalDataManager{
         this.walletinit = isInit;
     }
 
-    public getBindAddress():string{
-        return this.bindaddress;
+
+    public getWalletName():string{
+        if(this.walletName==null)
+            return "";
+        if(this.walletName==""){
+            var wName:string = egret.localStorage.getItem("walletName");
+            if(wName!=null)
+                this.walletName = wName;
+        }
+        return this.walletName;
     }
-    public setBindAddress(address:string):void{
-        this.bindaddress = address;
+    public setWalletName(walletName:string):void{
+        egret.localStorage.setItem("walletName",walletName);
+        this.walletName = walletName;
     }
 }

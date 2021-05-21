@@ -36,7 +36,17 @@ class AccountData {
 	private sex:number = 0;	
 	//引导步骤
 	private guide_step:string = "";
-	
+	//电话
+	private phone:string = "";
+	//区号
+	private areano:string = "";
+	//邮箱
+	private email:string = "";
+	//钱包地址
+	private wallet:string = "";
+	//网关
+	private token:string = "";
+
 	public getUName():string {
 		return this.uname;
 	}
@@ -161,5 +171,40 @@ class AccountData {
 	}
 	public setGuide_Step(guide_step:string):void {
 		this.guide_step = guide_step;
+	}
+
+	public getToken():string {
+		return this.token;
+	}
+	public setToken(token:string):void {
+		this.token = token;
+	}
+
+	public getEmail():string {
+		return this.email;
+	}
+	public setEmail(email:string):void {
+		this.email = email;
+	}
+
+	public getAreano():string {
+		return this.areano;
+	}
+	public setAreano(areano:string):void {
+		this.areano = areano;
+	}
+
+	public getPhone():string {
+		return this.phone;
+	}
+	public setPhone(phone:string):void {
+		this.phone = phone;
+	}
+
+	public getWallet():string {
+		return this.wallet;
+	}
+	public setWallet(wallet:string):void {
+		this.wallet = wallet;
 	}
 }

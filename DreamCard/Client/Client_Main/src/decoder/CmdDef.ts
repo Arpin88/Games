@@ -40,6 +40,6 @@ enum CmdDef{
     CMD_BIND_CHAIN_WALLET = 300,    //绑定钱包
     CMD_WALLET_TRANSFER = 301,  //钱包转账通知
     CMD_WALLET_TRANSFER_RESULT = 302,  //钱包转账结果通知
-    CMD_CARD_OFFLINE = 303, //钱包卡牌下链通知
-    CMD_CARD_OFFLINE_RESULT = 304,  //钱包卡牌下链结果通知
+    // CMD_CARD_OFFLINE = 303, //钱包卡牌下链通知
+    // CMD_CARD_OFFLINE_RESULT = 304,  //钱包卡牌下链结果通知
 }

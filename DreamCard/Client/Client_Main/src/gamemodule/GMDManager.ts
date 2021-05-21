@@ -130,7 +130,7 @@ module GMDManager{
                 modInfo.ori = egret.OrientationMode.LANDSCAPE_FLIPPED;
             }
         }
-
+        var self = this;
         _loadProgress = UIManager.getInstance().showLoading(modInfo.ori,null);
         _loadProgress.setStepInfo({spt:10,thm:30,res:40,ares:20},loadGMDFined,self);
         _loadSt = LoadStep.none;
@@ -253,8 +253,10 @@ module GMDManager{
             RES.getResByUrl(resUrl,function(data:any,source:string){
                 if(_curGMD&& _curGMD.id==gid){
                     if(data){
-                        (<WebVerController>RES.getVersionController()).addWebVer(data);
-                        RES.destroyRes(source);
+                        if((<WebVerController>RES.getVersionController()).addWebVer){
+                            (<WebVerController>RES.getVersionController()).addWebVer(data);
+                            RES.destroyRes(source);
+                        }
                     }
                     _curGMD.verLoad = true;
                     loadThemeFin();

@@ -82,6 +82,8 @@ class LanguageManager{
     public getLabelLanguage(view:any):any{
         if(this.languagePackage_json==null){
             var configs:any = RES.getRes("languagePackage_json");
+            if(configs==null)
+                return;
             this.languagePackage_json = configs;
         }
         var json:Object = this.languagePackage_json["language"];//this.languagePackage_json["language" + this.curLType];

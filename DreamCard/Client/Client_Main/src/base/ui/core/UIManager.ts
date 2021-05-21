@@ -167,7 +167,7 @@ class UIManager{
         }
         
         uiname = this.GetAndRegView(loadView);
-        view = this.getViewByName(loadView);
+        view = this.getView(loadView);
         if(view&&view.visible){
             this.hideUI(view);
         }
@@ -203,18 +203,30 @@ class UIManager{
     }
 
     //根据名字返回视图;
-    public getViewByName(ui:any):IBaseView{
-        var uiname:string = this.GetAndRegView(ui);
-        var view:IBaseView = this.uiUsedContainer[uiname];
+    public getView(ui:any):IBaseView{
+        var self = this;
+        var uiname:string = self.GetAndRegView(ui);
+        var view:IBaseView = self.uiUsedContainer[uiname];
         if(view !=null){
             return view;
         }       
         return null;
     }
 
-    public checkHasViewByName(ui:any):boolean{
+    //检测是否包含视图
+    public checkHasView(ui:any):boolean{
         var uiname:string = this.GetUIName(ui);
         return this.uiUsedContainer.hasOwnProperty(uiname);
+    }
+
+    //检测视图是否打开
+    public checkViewIsOpen(ui:any):boolean{
+        var self = this;
+        var view:IBaseView = self.getView(ui);
+        if(view==null)
+            return false;
+            
+        return view.getViewState()==3;
     }
 
     //返回并注册视图;

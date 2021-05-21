@@ -10,22 +10,19 @@ class CardRectangleView extends IBaseView{
     private imgBG:eui.Image;            //背景图片
     private imgIcon:eui.Image;          //图标图片
     private imgRarity:eui.Image;        //稀有度图片
-    private levelbg:eui.Image; 
+    // private levelbg:eui.Image; 
     private imgElement:eui.Image;       //五行图片
-    private lblRound:eui.Label;         //回合文本
-    private lblName:eui.Label;          //名称文本
+    private bitRound:eui.BitmapLabel;   //回合图片文本
+    private imgName:eui.Image;          //名称图片
+
     private imgGeneration:eui.Image;    //代数图片
     private groupLevel:eui.Group;       //等级层
     private imgChoose:eui.Image;        //选中图片
-    // private imgLv1:eui.Image;           //等级星星图片
-    // private imgLv2:eui.Image;
-    // private imgLv3:eui.Image;
-    // private imgLv4:eui.Image;
-    // private imgLv5:eui.Image;
-    // private imgLv6:eui.Image;
 
-    private lblAtk:eui.Label;           //攻击力文本
-    private lblHp:eui.Label;            //血量文本
+    // private lblAtk:eui.Label;           //攻击力文本
+    // private lblHp:eui.Label;            //血量文本
+    private bitAtk:eui.Label;           //攻击力图片文本
+    private bitHp:eui.Label;            //血量图片文本
 
     private groupCRB:eui.Group;     //长方形卡牌背面层
 
@@ -46,6 +43,7 @@ class CardRectangleView extends IBaseView{
         //icon rarity element round generation level name atk hp
         var icon:string = data.icon;
         self.setIcon(icon);
+        self.setName(icon);
         var rarity:string = data.rarity;
         self.setRarity(rarity);
         var element:string = data.element;
@@ -54,10 +52,12 @@ class CardRectangleView extends IBaseView{
         self.setRound(att);
         var generation:number = data.generation;
         self.setGeneration(generation);
-        var level:number = data.level;
-        self.setLevel(level);
-        var name:string = data.name;
-        self.setName(name);
+        // var level:number = data.level;
+        // self.setLevel(level);
+        var star:number = data.star;
+        self.setStar(star);
+        // var name:string = data.name;
+        // self.setName(name);
         var atk:number = data.atk;
         self.setAtk(atk);
 
@@ -100,13 +100,13 @@ class CardRectangleView extends IBaseView{
         // this.imgRarity.$setVisible(false);      //稀有度图片
        // this.imgRound.$setVisible(false);        //回合图片
         this.imgElement.$setVisible(false);      //五行图片
-        this.lblRound.$setVisible(false);       //回合文本
+        this.bitRound.$setVisible(false);       //回合文本
        // this.lblName.$setVisible(false);      //名称文本
       //  this.lblCost.$setVisible(false);          //Cost文本
         this.imgGeneration.$setVisible(false);    //代数图片
         this.groupLevel.$setVisible(false);     //等级层
-        this.lblAtk.$setVisible(false);
-        this.lblHp.$setVisible(false);
+        this.bitAtk.$setVisible(false);
+        this.bitHp.$setVisible(false);
         this.imgChoose.$setVisible(false);
     }
 
@@ -182,45 +182,52 @@ class CardRectangleView extends IBaseView{
         if(self.curRound==null||self.curRound==undefined)
             self.curRound = num;
 
-        self.lblRound.text = num.toString();
+        self.bitRound.text = num.toString();
     }
 
+    // //设置星级
+    // private setLevel(data:number):void{
+    //     let num:number = data==null||data==undefined?0:data;
+    //     num = (num-1)%5 + 1;
+    //     var self = this;
+    //     var showCount:number = 0;
+    //     for(var i:number=1;i<=5;i++){
+    //         var show:boolean = num>=i;
+    //         self["imgStar"+i].visible = show;
+    //         if(show)
+    //             showCount++;
+    //     }
+    //     self.imgGeneration.x = (5-showCount)*30;
+    // }
+
     //设置星级
-    private setLevel(data:number):void{
+    private setStar(data:number):void{
         let num:number = data==null||data==undefined?0:data;
-        num = (num-1)%5 + 1;
         var self = this;
         var showCount:number = 0;
-        for(var i:number=1;i<=6;i++){
+        for(var i:number=1;i<=5;i++){
             var show:boolean = num>=i;
-            self["imgLv"+i].visible = show;
+            self["imgStar"+i].visible = show;
             if(show)
                 showCount++;
         }
-        var generationWidth:number = self.imgGeneration.width;
-        var starWidth:number = self["imgLv1"].width;
-        var totalWidth:number = generationWidth+showCount*starWidth;
-        var generationX:number = Number((self.groupLevel.width/2-totalWidth/2).toFixed(2));
-        self.imgGeneration.x = generationX;
-        for(var i:number=1;i<=6;i++){
-            self["imgLv"+i].x = generationX+generationWidth+starWidth*(i-1);
-        }
+        self.imgGeneration.x = (5-showCount)*30;
     }
 
     //设置名称
-    private setName(name:string):void{
-        let str:string = name==null||name==undefined?"":name.toString();
-        this.lblName.text = str;
+    private setName(data:string):void{
+        let str:string = data==null||data==undefined?"":data;
+        this.imgName.source = "nameImg0Sheet_json."+str;
     }
     
     //设置攻击力
     public setAtk(data:number):void{
         let str:string = data==null||data==undefined?"0":data.toString();
-        this.lblAtk.text = str;
+        this.bitAtk.text = str;
     }
 
     public getAtk():number{
-        return Number(this.lblAtk.text);;
+        return Number(this.bitAtk.text);;
     }
 
     //设置血量
@@ -228,7 +235,7 @@ class CardRectangleView extends IBaseView{
         var self = this;
         self.curHp = data;
         let str:string = data==null||data==undefined?"0":data.toString();
-        self.lblHp.text = str;
+        self.bitHp.text = str;
     }
 
     //返回血量
@@ -261,7 +268,7 @@ class CardRectangleView extends IBaseView{
             var item= view.getChildAt(i);
             if(item==null)
                 continue;
-            if(item instanceof eui.Image){
+            if(item instanceof eui.Image||item instanceof eui.BitmapLabel){
                 self.setImgColor(item,colorMatrix);
             }else{
                 self.setViewColor(item,grey);
@@ -270,15 +277,15 @@ class CardRectangleView extends IBaseView{
     }
 
     //设置图片为灰色
-    private setImgColor(image: eui.Image,colorMatrix:any) {
-        if(image==null)
+    private setImgColor(component: egret.DisplayObject,colorMatrix:any) {
+        if(component==null)
             return;
         
         if(colorMatrix!=null){
             let colorFilter = new egret.ColorMatrixFilter(colorMatrix);
-            image.filters = [colorFilter];
+            component.filters = [colorFilter];
         }else{
-            image.filters = [];
+            component.filters = [];
         }
     }
 
@@ -313,7 +320,7 @@ class CardRectangleView extends IBaseView{
     //外部调用修改生命上限
     public modifyAtk(atk:number):void{
         var self = this;
-        var curAtk:number = Number(self.lblAtk.text);
+        var curAtk:number = Number(self.bitAtk.text);
         curAtk+=atk;
         self.setAtk(curAtk);
     }

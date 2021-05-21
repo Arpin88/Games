@@ -84,6 +84,13 @@ class Main extends eui.UILayer {
 
             this.createGameScene();
         }
+        // if(event.groupName=="preload"){
+        //     RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE,this.onResourceLoadComplete,this);
+        //     RES.removeEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR,this.onResourceLoadError,this);
+        //     RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS,this.onResourceProgress,this);
+
+        //     UIManager.getInstance().showUI(ComingSoonView);
+        // }
     }
 
     private onResourceLoadError(event:RES.ResourceEvent):void{
