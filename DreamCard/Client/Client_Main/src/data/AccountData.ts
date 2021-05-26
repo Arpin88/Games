@@ -46,7 +46,10 @@ class AccountData {
 	private wallet:string = "";
 	//网关
 	private token:string = "";
+	//钱包加密
+	private walletSecret:string = "";
 
+	
 	public getUName():string {
 		return this.uname;
 	}
@@ -206,5 +209,12 @@ class AccountData {
 	}
 	public setWallet(wallet:string):void {
 		this.wallet = wallet;
+	}
+
+	public getWalletSecret():string {
+		return this.walletSecret;
+	}
+	public setWalletSecret(walletSecret:string):void {
+		this.walletSecret = walletSecret;
 	}
 }

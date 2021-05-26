@@ -39,6 +39,17 @@ class GlobalDataManager{
     private walletName:string = "";
 
     private walletaddress:string;
+
+    // 注册状态
+    private isRegist:number = 0;
+    public setIsRegist(isRegist:any):void{
+        this.isRegist = isRegist;
+    }
+
+    public getIsRegist(): number {
+        return this.isRegist;
+    }
+
     public setWalletAddress(walletaddress:any):void{
         this.walletaddress = walletaddress;
     }

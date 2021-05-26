@@ -149,12 +149,22 @@ class WalletManager{
                     if(address==null||address=="")
                     return;
                     var curAddress:string = GlobalDataManager.getInstance().getAccountData().getWallet();
+                    var curWalletSecret:string = GlobalDataManager.getInstance().getAccountData().getWalletSecret();
+                    var walletSecret:string = res.data.secret;
                     if(curAddress==""){
                         var obj = new Object();
                         obj["address"] = address;
+                        obj["secret"] = walletSecret;
                         var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
                         HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_BIND_CHAIN_WALLET,obj,true);
                     }else{
+                        if(curAddress == address && curWalletSecret != walletSecret){
+                            var obj = new Object();
+                            obj["address"] = address;
+                            obj["secret"] = walletSecret;
+                            var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
+                            HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_BIND_CHAIN_WALLET,obj,true);
+                        }
                         if(curAddress!=address){    //绑定地址跟本地地址不一致
                             ErrorMananger.getInstance().checkReqResult({result:GlobalDef.REQUEST_FAIL,msg:"-19000"});
                             Wallet.SDK.disconnect();
@@ -213,7 +223,9 @@ class WalletManager{
             if(walletName == 'XWG'){
                 var lang = LanguageManager.getInstance().getCurLanguageType();
                 var Lang = lang==0?"?chs":"?en";
-                Wallet.SDK.XWGconnect(self.onWalletListener,Lang);
+                var address = GlobalDataManager.getInstance().getAccountData().getWallet();
+                var walletSecret = GlobalDataManager.getInstance().getAccountData().getWalletSecret();
+                Wallet.SDK.XWGconnect(self.onWalletListener,Lang,address,walletSecret);
                 return;
             }
 

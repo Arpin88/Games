@@ -9,5 +9,5 @@ class GlobalDef{
     public static REQUEST_FAIL:number = 1;
 
     //新手引导状态
-    public static OPEN_GUIDE:boolean = false;
+    public static OPEN_GUIDE:boolean = true;
 }

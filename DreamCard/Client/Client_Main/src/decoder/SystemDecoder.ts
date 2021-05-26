@@ -93,7 +93,9 @@ class SystemDecoder extends BaseDecoder{
             let areano:string = userInfo.areano;
             account.setAreano(areano); 
             let email:string = userInfo.email;
-            account.setEmail(email); 
+            account.setEmail(email);
+            let wallet_secret:string = userInfo.wallet_secret;
+            account.setWalletSecret(wallet_secret);
         }
 
         var appConfig:any = msg.navigateTo;
@@ -215,6 +217,8 @@ class SystemDecoder extends BaseDecoder{
             account.setAreano(areano); 
             let email:string = userInfo.email;
             account.setEmail(email); 
+            let wallet_secret:string = userInfo.wallet_secret;
+            account.setWalletSecret(wallet_secret);
         }
 
         var appConfig:any = msg.navigateTo;
@@ -390,6 +394,8 @@ class SystemDecoder extends BaseDecoder{
                 account.setAreano(areano); 
                 let email:string = userInfo.email;
                 account.setEmail(email); 
+                let wallet_secret:string = userInfo.wallet_secret;
+                account.setWalletSecret(wallet_secret);
             }
 
             var appConfig:any = msg.navigateTo;
@@ -489,6 +495,8 @@ class SystemDecoder extends BaseDecoder{
             account.setAreano(areano); 
             let email:string = userInfo.email;
             account.setEmail(email); 
+            let wallet_secret:string = userInfo.wallet_secret;
+            account.setWalletSecret(wallet_secret);
         }
 
         var appConfig:any = msg.navigateTo;
