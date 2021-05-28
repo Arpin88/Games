@@ -16,6 +16,7 @@ class CashDailogView extends BaseView{
     private editCount:eui.EditableText;
     private oldString:string = "";
     private walletObj:Object;
+    private binaddr:string;
 
     protected week():void{
         var self = this;
@@ -27,21 +28,23 @@ class CashDailogView extends BaseView{
         self.editCount.addEventListener(eui.UIEvent.CHANGE, self.moveHandler, self);
         self.editCount.addEventListener(eui.UIEvent.CHANGE_END, self.outHandler, self);
 
+        this.editCount.text = "";
+        
         var data = super.getData();
         if(data==null)
             return;
         var type = data.name;
         this.func = data.fun;
         this.walletObj = data.walletObj;
-
+        this.binaddr = data.binaddr;
         self.setViewByData();
     }
 
     private setViewByData(): void
     {
-        this.addrlb.text = this.walletObj["chain_address"];
+        this.addrlb.text = this.binaddr;
 
-        var num = parseInt(this.walletObj["available"])/100000000;
+        var num = parseFloat(this.walletObj["available"])/100000000;
         var aaa = num.toFixed(2);
         this.walletnumlb.text = aaa;
         this.numlb.text = this.editCount.text;
@@ -94,7 +97,7 @@ class CashDailogView extends BaseView{
 
     private outHandler(evt:eui.UIEvent):void{
         var self = this;
-        var num = parseInt(this.editCount.text);
+        var num = parseFloat(this.editCount.text);
     }
 
     protected sleep():void{
@@ -120,7 +123,6 @@ class CashDailogView extends BaseView{
                 
             }else if(tar==self.btnBack){
                 self.hiden();
-                console.log(`取消被按下`);
             }
         }else if(tar instanceof eui.Rect){
             if(tar==self.rectBG){
