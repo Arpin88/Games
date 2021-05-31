@@ -8,6 +8,7 @@ class GameEvent extends egret.Event{
     public static BinanceAccountsChanged:string =  "binanceAccountsChanged";       //binance切换用户
     // public static ConnectWalletComplete:string = "connectWalletComplete"            //链接钱包完成
     
+    public static OnConnectWebSocketComplete:string = "onConnectWebSocketComplete";   //当链接socket完成
     // public static Bi
 
     public constructor(type: string,bubbles: boolean = false,cancelable: boolean = false) {

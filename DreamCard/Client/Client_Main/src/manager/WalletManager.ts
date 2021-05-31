@@ -90,7 +90,7 @@ class WalletManager{
             UIManager.getInstance().showUI(LoadingRView,GameScene.POP_LAYER_NUMBER,0.5);
         if(walletName == 'XWG'){
             var lang = LanguageManager.getInstance().getCurLanguageType();
-            var Lang = lang==0?"?chs":"?en";
+            var Lang = lang==0?"zh-CN":"en";
             HTMLElementManager.getInstance().startLoadJson("walletConfig_json",function(){
                 Wallet.SDK.XWGconnect(self.onWalletListener,Lang);
             },this);
@@ -211,6 +211,13 @@ class WalletManager{
 		}
     }
     
+    public walletClose(){
+        if (typeof(Wallet) == 'undefined') {
+            return;
+        }else{
+            Wallet.SDK.XWGClose();
+        }
+    }
 
     //钱包连接
     public walletConnect(walletName:string,callBack:Handler,showModel:boolean=true):void{
@@ -222,7 +229,7 @@ class WalletManager{
                 UIManager.getInstance().hideUI(LoadingRView);
             if(walletName == 'XWG'){
                 var lang = LanguageManager.getInstance().getCurLanguageType();
-                var Lang = lang==0?"?chs":"?en";
+                var Lang = lang==0?"zh-CN":"en";
                 var address = GlobalDataManager.getInstance().getAccountData().getWallet();
                 var walletSecret = GlobalDataManager.getInstance().getAccountData().getWalletSecret();
                 Wallet.SDK.XWGconnect(self.onWalletListener,Lang,address,walletSecret);

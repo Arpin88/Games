@@ -310,6 +310,10 @@ class SystemDecoder extends BaseDecoder{
             let loginView: LoginView = UIManager.getInstance().getView(LoginView) as LoginView;
             if(loginView)
                 loginView.setSMSCode(msg.code);
+            
+            let LoginPhonView1: LoginPhonView = UIManager.getInstance().getView(LoginPhonView) as LoginPhonView;
+            if(LoginPhonView1)
+                LoginPhonView1.setSMSCode(msg.code);
         }else if(type==1){
             let registerView: RegisterView = UIManager.getInstance().getView(RegisterView) as RegisterView;
             if(registerView)
@@ -343,7 +347,12 @@ class SystemDecoder extends BaseDecoder{
         var state:number = msg.state;
         if(state!=null&&state==0){
             egret.localStorage.setItem("ticket","");
-            UIManager.getInstance().showUI(LoginView);
+            var type = PublicMethodManager.getInstance().getOSType()
+            if(type != 1){
+                UIManager.getInstance().showUI(LoginPhonView);  
+            }else{
+                UIManager.getInstance().showUI(LoginView);  // pc
+            }
         }else{
             var userInfo:any = msg.userInfo;
             if(userInfo){
@@ -552,6 +561,11 @@ class SystemDecoder extends BaseDecoder{
             let loginView: LoginView = UIManager.getInstance().getView(LoginView) as LoginView;
             if(loginView)
                 loginView.setEmailVCode(msg.code);
+
+                let LoginPhonView1: LoginPhonView = UIManager.getInstance().getView(LoginPhonView) as LoginPhonView;
+            if(LoginPhonView1)
+                LoginPhonView1.setSMSCode(msg.code);
+                
         }else if(type==1){
             let registerView: RegisterView = UIManager.getInstance().getView(RegisterView) as RegisterView;
             if(registerView)
@@ -618,10 +632,12 @@ class SystemDecoder extends BaseDecoder{
             return;
         
         var obj:any = data.msg;
-        // var gameInfo:any = obj.gameInfo;
+        // var gameInfo:any = obj.gameInfo;^
         var appConfig:any = obj.navigateTo;
         if(appConfig){
             GMDManager.closeGMD();
+            UIManager.getInstance().hideUI(LoadingRView);
+            GameEventManager.getInstance().dispatchEvent(GameEvent.OnConnectWebSocketComplete);
 
             //跳转信息
             let id:number = appConfig.id;
@@ -636,11 +652,6 @@ class SystemDecoder extends BaseDecoder{
             let obj = new Object();
             obj["param"] = {playBGM:true};//gameInfo;
             GMDManager.startGMD(id,obj);
-
-            UIManager.getInstance().hideUI(LoadingRView);
-            
-            if(UIManager.getInstance().checkViewIsOpen("MatchingView"))
-                UIManager.getInstance().hideUI("MatchingView");
         }else{
             //这里写不能跳转的错误提示;
         }

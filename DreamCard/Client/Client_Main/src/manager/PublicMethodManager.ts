@@ -7,15 +7,27 @@ class PublicMethodManager{
 
 
     public getOSType():number{
-        var type:string = egret.Capabilities.os;
-        var ret:number = -1;
-        switch(type){
-            case "Unknow":ret =0;
-            case "Windows PC":ret =1;
-            case "iOS": ret =2;
-            case "Android": ret = 3;
-            case "Windows Phone": ret =4;
-            case "Mac OS": ret = 5;
+        var type = egret.Capabilities.os;
+        var ret = -1;
+        switch (type) {
+            case "Unknow": 
+            ret = 0;
+            break;
+            case "Windows PC": 
+            ret = 1;
+            break;
+            case "iOS": 
+            ret = 2;
+            break;
+            case "Android": 
+            ret = 3;
+            break;
+            case "Windows Phone": 
+            ret = 4;
+            break;
+            case "Mac OS": 
+            ret = 1;
+            break;
         }
         return ret;
     }
@@ -37,7 +49,12 @@ class PublicMethodManager{
         egret.localStorage.setItem("ticket","");
         GMDManager.closeGMD();
         UIManager.getInstance().removeAllLayerUI();
-        UIManager.getInstance().showUI(LoginView);
+        var type = PublicMethodManager.getInstance().getOSType()
+            if(type != 1){
+                UIManager.getInstance().showUI(LoginPhonView);  
+            }else{
+                UIManager.getInstance().showUI(LoginView);  // pc
+            }
     }
 
     //获取卡牌品质

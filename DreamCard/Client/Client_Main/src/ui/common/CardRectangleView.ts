@@ -170,8 +170,8 @@ class CardRectangleView extends IBaseView{
     
     //设置代数
     private setGeneration(data:number):void{
-        let str:string  = data==null||data==undefined?"1":data.toString();
-        this.imgGeneration.source = "cardCommonText0Sheet_json.r_g"+str;
+        let str:string  = data==null||data==undefined?"":"cardCommonText0Sheet_json.s_g"+data.toString();
+        this.imgGeneration.source = str;
     }
 
     //设置回合
@@ -216,8 +216,8 @@ class CardRectangleView extends IBaseView{
 
     //设置名称
     private setName(data:string):void{
-        let str:string = data==null||data==undefined?"":data;
-        this.imgName.source = "nameImg0Sheet_json."+str;
+        let str:string = data==null||data==undefined?"":"nameImg0Sheet_json."+data;
+        this.imgName.source = str;
     }
     
     //设置攻击力

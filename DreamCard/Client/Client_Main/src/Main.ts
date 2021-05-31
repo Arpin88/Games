@@ -114,9 +114,14 @@ class Main extends eui.UILayer {
 
         //检测自动登录
         var ticket:string = egret.localStorage.getItem("ticket");
-        if(ticket==null||ticket=="")
-            UIManager.getInstance().showUI(LoginView);
-        else{
+        if(ticket==null||ticket==""){
+            var type = PublicMethodManager.getInstance().getOSType()
+            if(type != 1){
+                UIManager.getInstance().showUI(LoginPhonView);  
+            }else{
+                UIManager.getInstance().showUI(LoginView);  // pc
+            }
+        }else{
             GameConfig.ticket = ticket;
             let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
             HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_CHECK_LOGIN,{},true);
