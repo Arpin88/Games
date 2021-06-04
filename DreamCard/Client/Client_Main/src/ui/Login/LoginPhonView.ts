@@ -99,7 +99,7 @@ class LoginPhonView extends BaseView{
         self.curPWInputType = 0;
 
         self.curAreano = egret.localStorage.getItem("areano");
-        self.curAreano = self.curAreano!=null?self.curAreano:"86";
+        self.curAreano = self.curAreano!=null?self.curAreano:"65";
 
         //初始化钱包名称为空
         GlobalDataManager.getInstance().setWalletName("");
@@ -133,7 +133,7 @@ class LoginPhonView extends BaseView{
         
 
         var areanoStr:string = egret.localStorage.getItem("areanoStr");
-        areanoStr = areanoStr!=null?areanoStr:"+86 (CN)";
+        areanoStr = areanoStr!=null?areanoStr:"+65 (SG)";
         self.lblAreano.text = areanoStr;
 
         self.editEmailVCode.text =
@@ -456,13 +456,33 @@ class LoginPhonView extends BaseView{
                 self.curLoginType = 1;
                 self.updateCurEmailLoginType();
             }else if(tar==self.btnMetaMaskLogin){ //MetaMask登录按钮点击
-                WalletManager.getInstance().walletLogin('Metamask');
+                if(typeof window["ethereum"] == 'undefined'){
+                    // 错误提示
+                    PopManager.getInstance().showPromptBox(self.labelObj["lbl_8"],2);
+                }else{
+                    WalletManager.getInstance().walletLogin('Metamask');
+                }
+                
                 // egret.localStorage.setItem("walletName",'Metamask');
             }else if(tar==self.btnBinanceLogin){ //Binance登录按钮点击
-                WalletManager.getInstance().walletLogin('BinanceChain');
+               // WalletManager.getInstance().walletLogin('BinanceChain');
                 // egret.localStorage.setItem("walletName",'BinanceChain');
+
+                if(typeof window["ethereum"] == 'undefined'){
+                    // 错误提示
+                    PopManager.getInstance().showPromptBox(self.labelObj["lbl_8"],2);
+                }else{
+                    WalletManager.getInstance().walletLogin('Metamask');
+                }
             }else if(tar==self.btnXWGLogin){    //XWG登录按钮点击
-                WalletManager.getInstance().walletLogin('XWG');
+               // WalletManager.getInstance().walletLogin('XWG');
+
+               if(typeof window["ethereum"] == 'undefined'){
+                    // 错误提示
+                    PopManager.getInstance().showPromptBox(self.labelObj["lbl_8"],2);
+                }else{
+                    WalletManager.getInstance().walletLogin('Metamask');
+                }
             }
         }else if(tar instanceof eui.Label){
             if(tar==self.lblVCode){
@@ -692,7 +712,7 @@ class LoginPhonView extends BaseView{
             var item:any = list[i];
             if(item==null)
                 continue;
-            //+86 中国（CN）
+            //+65 新加坡（SG）
             var data = {content:item,index:i};
             var areanoItemView:AreanoItemView = new AreanoItemView();
             areanoItemView.initData(data);

@@ -97,7 +97,7 @@ class LoginView extends BaseView{
         self.curPWInputType = 0;
 
         self.curAreano = egret.localStorage.getItem("areano");
-        self.curAreano = self.curAreano!=null?self.curAreano:"86";
+        self.curAreano = self.curAreano!=null?self.curAreano:"65";
 
         //初始化钱包名称为空
         GlobalDataManager.getInstance().setWalletName("");
@@ -131,7 +131,7 @@ class LoginView extends BaseView{
         
 
         var areanoStr:string = egret.localStorage.getItem("areanoStr");
-        areanoStr = areanoStr!=null?areanoStr:"+86 (CN)";
+        areanoStr = areanoStr!=null?areanoStr:"+65 (SG)";
         self.lblAreano.text = areanoStr;
 
         self.editEmailVCode.text =
@@ -690,7 +690,7 @@ class LoginView extends BaseView{
             var item:any = list[i];
             if(item==null)
                 continue;
-            //+86 中国（CN）
+            //+65 新加坡（SG）
             var data = {content:item,index:i};
             var areanoItemView:AreanoItemView = new AreanoItemView();
             areanoItemView.initData(data);
