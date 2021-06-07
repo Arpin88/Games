@@ -10,13 +10,13 @@ class RecordView extends BaseView{
     private rectBG:eui.Rect;
     private btnBack:eui.Button;
 
-    private scrPropItem:eui.Scroller;      //技能滚动区域
-    private groupPropItem:eui.Group;       //技能滚动层
+    private scrPropItem:eui.Scroller;     
+    private groupPropItem:eui.Group;     
     private jbList:Object = []
-    private pageId:number = 1; //下标从0开始，为了*方便，0代表第一个页面
+    private pageId:number = 1; 
     private pageSize:number = 15;
     private mallName:Object = []
-    private recordItemViewList:Array<RecordItemView> = new Array<RecordItemView>();    //羁绊选项视图集合
+    private recordItemViewList:Array<RecordItemView> = new Array<RecordItemView>();  
 
     protected week():void{
         var self =this;
@@ -49,9 +49,9 @@ class RecordView extends BaseView{
     switch(cmd){
         case HallCmdDef.CMD_ChangeRecord:
             var obj = data["data"]
-            self.pageId = parseInt(data["pageId"]) // 页面id
+            self.pageId = parseInt(data["pageId"])
 
-                var num = data["msg"]["length"]   // 10 条记录
+                var num = data["msg"]["length"]   
                 for(var k:number = 0; k < num; k++)
                 {
                     var obj = data["msg"][k]
@@ -104,7 +104,7 @@ class RecordView extends BaseView{
     }
 
     
-    //更新选项按钮坐标信息
+
     private updateOptionBtnPos():void{
         var self = this;
         var posY:number = 0;

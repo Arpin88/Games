@@ -26,8 +26,20 @@ class RecordItemView extends BaseView{
     private statelb:eui.Label;
 
 
+
     protected week():void{
         var self = this;
+
+        var tp = LanguageManager.getInstance().getCurLanguageType();
+        if(tp == 1){
+           this.turnStr1 = "In";
+           this.turnStr2 = "Out";
+           this.statuStr1 = "Success";
+           this.statuStr2 = "Fail";
+           this.cashStr = "Cash";
+           this.changeStr = "Charge";
+        }
+
         var data = super.getData();
         if(data==null)
             return;
@@ -42,34 +54,45 @@ class RecordItemView extends BaseView{
      this.ordoridlb.text = obj.orderNo;
      
      if(obj.type == "TRANS"){
-         this.typelb.text = "转出";
+         this.typelb.text = this.turnStr1;
      }else if(obj.type == "CASHOUT"){
-         this.typelb.text = "提现";
+         this.typelb.text = this.cashStr;
     }else if(obj.type == "CHARGE"){
-         this.typelb.text = "充值";
+         this.typelb.text = this.changeStr;
      }else{
-         this.typelb.text = "转入";
+         this.typelb.text = this.turnStr2;
      }
      
      if(obj.status == "SUCCESS"){
-         this.statelb.text = "成功";
+         this.statelb.text = this.statuStr1;
          this.statelb.textColor = 0x6AEF51;
      }else{
-         this.statelb.text = "失败";
+         this.statelb.text = this.statuStr2;
          this.statelb.textColor = 0xF92549;
      }
      
      var dateString = obj.createdAt;
-     var dateStart:Date = new Date(dateString);
-     var secondStr = ExternalFun.prototype.add0(dateStart.getSeconds().toString(),2);
-     var miniStr = ExternalFun.prototype.add0(dateStart.getMinutes().toString(),2);
-     var hourStr = ExternalFun.prototype.add0(dateStart.getHours().toString(),2);
-     var monthStr = ExternalFun.prototype.add0((dateStart.getMonth() + 1),2)
-     var dayStr = ExternalFun.prototype.add0(dateStart.getDate(),2)
-     this.timelb.text = monthStr + "-" + dayStr + " " + hourStr + ":" + miniStr + ":" + secondStr;
+
+         
+        var dateStart:Date = new Date(dateString);
+        
+        var secondStr = ExternalFun.prototype.add0(dateStart.getSeconds().toString(),2);
+        var miniStr = ExternalFun.prototype.add0(dateStart.getMinutes().toString(),2);
+        var hourStr = ExternalFun.prototype.add0(dateStart.getHours().toString(),2);
+        var monthStr = ExternalFun.prototype.add0((dateStart.getMonth() + 1),2)
+        var dayStr = ExternalFun.prototype.add0(dateStart.getDate(),2)
+       /* if(monthStr == null) monthStr = " ";
+        if(dayStr == null) dayStr = " ";
+        if(hourStr == null) hourStr = " ";
+        if(miniStr == null) miniStr = " ";
+        if(secondStr == null) secondStr = " ";*/
+        this.timelb.text = monthStr + "-" + dayStr + " " + hourStr + ":" + miniStr + ":" + secondStr;
+
+
+     
 
      this.numlb.text = (obj.payableAmount/100000000).toFixed(2);
-     this.ranyoulb.text = obj.feeAmount;
+     this.ranyoulb.text = (obj.feeAmount/100000000).toFixed(2);
      this.shouxulb.text = (obj.rate/100000000).toFixed(2);
     }
 
@@ -82,17 +105,17 @@ class RecordItemView extends BaseView{
         
     }
 
-    //返回视图宽度
+
     public getViewWidth():number{
         return this.groupPI.width;
     }
 
-    //返回视图高度
+
     public getViewHeight():number{
         return this.groupPI.height;
     }
 
-    //设置层级name
+
     public setBtnName(str:string):void{
       //  this.btnBuy.name = str;
     }
