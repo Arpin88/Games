@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="CardSquareSkin" width="196" height="196" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Group id="groupCS" width="196" height="196" x="0" y="0" touchChildren="false">
-		<e:Image id="imgBG" x="0" y="0" source="cardCommonImg0Sheet_json.tongyongb"/>
+		<e:Image id="imgBG" x="0" y="0" source="cardCommonImg0Sheet_json.s_tongyong"/>
 		<e:Image id="imgIcon" x="0" y="0" source=""/>
 		<e:Image id="imgRarity" x="0" y="0" source="cardCommonImg0Sheet_json.s_rb1"/>
-		<e:Image id="flag" x="10" y="35" source="cardCommonImg0Sheet_json.s_cost"/>
-		<e:Image id="imgRound" source="cardCommonImg0Sheet_json.s_r1" x="0" y="0"/>
-		<e:Image id="imgElement" x="155" y="5.4" source="cardCommonImg2Sheet_json.s_e1" scaleX="0.8" scaleY="0.8"/>
-		<e:Label id="lblRound" text="6" x="7" y="4" size="26" fontFamily="SimHei" width="33" textAlign="center" stroke="2" height="34" verticalAlign="middle"/>
-		<e:Label id="lblName" text="诸葛匹夫" x="45" y="12" size="22" fontFamily="SimHei" width="110" textAlign="center" stroke="2"/>
-		<e:Label id="lblCost" text="66" x="10" y="44" size="18" fontFamily="SimHei" width="30" textAlign="center" stroke="1"/>
-		<e:Group id="groupLevel" x="40" y="35" anchorOffsetX="0" anchorOffsetY="0" width="134">
-			<e:Image id="imgGeneration" x="0" y="0" width="32" source="cardCommonText0Sheet_json.s_g1"/>
-			<e:Image id="imgLv1" x="32" y="2" scaleX="1" scaleY="1" source="cardCommonImg0Sheet_json.s_star" width="17"/>
-			<e:Image id="imgLv2" source="cardCommonImg0Sheet_json.s_star" x="49" y="2" scaleX="1" scaleY="1" width="17"/>
-			<e:Image id="imgLv3" source="cardCommonImg0Sheet_json.s_star" x="66" y="2" scaleX="1" scaleY="1" width="17"/>
-			<e:Image id="imgLv4" source="cardCommonImg0Sheet_json.s_star" x="83" y="2" scaleX="1" scaleY="1" width="17"/>
-			<e:Image id="imgLv5" source="cardCommonImg0Sheet_json.s_star" x="100" y="2" scaleX="1" scaleY="1" width="17"/>
-			<e:Image id="imgLv6" source="cardCommonImg0Sheet_json.s_star" x="117" y="2" scaleX="1" scaleY="1" width="17"/>
+		<e:Group width="52" x="0" y="0">
+			<e:Image id="imgCostBG" y="25" source="cardCommonImg2Sheet_json.s_ecb1" horizontalCenter="0"/>
+			<e:Image x="0" y="0" source="cardCommonImg2Sheet_json.s_lvl"/>
+			<e:BitmapLabel id="bitRound" y="14" text="6" scaleX="0.62" scaleY="0.62" horizontalCenter="0" font="cardCommon3Font_fnt"/>
+			<e:BitmapLabel id="bitCost" y="46" text="8" scaleX="1.2" scaleY="1.2" horizontalCenter="-1" font="cardCommon2Font_fnt"/>
 		</e:Group>
-		<e:Label id="lblAtk" text="6666" y="166" size="21" fontFamily="SimHei" width="50" textAlign="center" stroke="1" bold="true" x="30"/>
-		<e:Label id="lblHp" text="6666" x="115" y="166" size="21" fontFamily="SimHei" width="50" textAlign="center" stroke="1" bold="true"/>
+		<e:Image id="imgElement" source="cardCommonImg2Sheet_json.s_e1" scaleX="0.8" scaleY="0.8" right="2" top="2"/>
+		<e:Image id="imgName" y="4.4" scaleX="0.56" scaleY="0.56" source="nameImg0Sheet_json.COL00000000" horizontalCenter="0"/>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" right="4" bottom="5">
+			<e:Image id="imgGeneration" y="94" source="cardCommonText0Sheet_json.s_g1" horizontalCenter="0"/>
+			<e:Image id="imgStar1" source="cardCommonImg2Sheet_json.s_star" y="72" scaleX="1" scaleY="1" right="0"/>
+			<e:Image id="imgStar2" source="cardCommonImg2Sheet_json.s_star" y="54" scaleX="1" scaleY="1" right="0"/>
+			<e:Image id="imgStar3" source="cardCommonImg2Sheet_json.s_star" y="36" scaleX="1" scaleY="1" right="0"/>
+			<e:Image id="imgStar4" source="cardCommonImg2Sheet_json.s_star" y="18" scaleX="1" scaleY="1" right="0"/>
+			<e:Image id="imgStar5" source="cardCommonImg2Sheet_json.s_star" y="0" scaleX="1" scaleY="1" right="0"/>
+		</e:Group>
+		<e:Group width="56" x="20" y="160" touchEnabled="false">
+			<e:BitmapLabel id="bitAtk" text="666" scaleY="0.54" font="cardCommon0Font_fnt" scaleX="0.54" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group width="56" x="100" y="160" touchEnabled="false">
+			<e:BitmapLabel id="bitHp" text="666" scaleY="0.54" scaleX="0.54" verticalCenter="0" horizontalCenter="0" font="cardCommon1Font_fnt"/>
+		</e:Group>
 		<e:Image id="imgChoose" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" x="-7" y="-7" touchEnabled="false" source="cardCommonImg2Sheet_json.a108x112" width="108" height="112" visible="false"/>
 	</e:Group>
 	<e:Group id="groupCSB" width="196" height="196" x="0" y="0" touchChildren="false" visible="false">

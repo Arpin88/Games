@@ -1,11 +1,11 @@
 {
 	"groups": [
 		{
-			"keys": "gameConfig_json,combatDebug_json,error_json",
+			"keys": "gameConfig_json,error_json,comingsoon_png,logo_png,bg0_jpg",
 			"name": "preload"
 		},
 		{
-			"keys": "commonBtn0Sheet_json,commonImg0Sheet_json,bjt_jpg,l2_png,l1_png,loginSheet_json,bg0_jpg,languagePackage_json,tanchukuang_mp3,click_mp3,walletConfig_json,areanoConfig_json",
+			"keys": "commonBtn0Sheet_json,commonImg0Sheet_json,bjt_jpg,l2_png,l1_png,loginSheet_json,tanchukuang_mp3,click_mp3,walletConfig_json,areanoConfig_json,languagePackage_json",
 			"name": "login"
 		}
 	],
@@ -40,19 +40,19 @@
 			"url": "res/card/common/cardCommonImg2Sheet.json",
 			"type": "sheet",
 			"name": "cardCommonImg2Sheet_json",
-			"subkeys": "a108x112,r_e1,r_e2,r_e3,r_e4,r_e5,r_eb1,r_eb2,r_eb3,r_eb4,r_eb5,s_e1,s_e2,s_e3,s_e4,s_e5,s_eb1,s_eb2,s_eb3,s_eb4,s_eb5"
+			"subkeys": "a108x112,r_e1,r_e2,r_e3,r_e4,r_e5,r_eb1,r_eb2,r_eb3,r_eb4,r_eb5,r_star,s_e1,s_e2,s_e3,s_e4,s_e5,s_eb1,s_eb2,s_eb3,s_eb4,s_eb5,s_ecb1,s_ecb2,s_ecb3,s_ecb4,s_ecb5,s_lvl,s_star"
 		},
 		{
 			"url": "res/card/common/cardCommonImg1Sheet.json",
 			"type": "sheet",
 			"name": "cardCommonImg1Sheet_json",
-			"subkeys": "r_rb0,r_rb1,r_rb2,r_rb3,r_rb4,r_rb5"
+			"subkeys": "r_rb0,r_rb1,r_rb2,r_rb3,r_rb4,r_rb5,r_tongyong"
 		},
 		{
 			"url": "res/card/common/cardCommonImg0Sheet.json",
 			"type": "sheet",
 			"name": "cardCommonImg0Sheet_json",
-			"subkeys": "r_dangban,r_star,s_cost,s_r1,s_r2,s_r3,s_r4,s_r5,s_rb0,s_rb1,s_rb2,s_rb3,s_rb4,s_rb5,s_star,tongyonga,tongyongb"
+			"subkeys": "s_rb0,s_rb1,s_rb2,s_rb3,s_rb4,s_rb5,s_tongyong"
 		},
 		{
 			"url": "res/card/head/headImg0Sheet.json",
@@ -80,7 +80,7 @@
 			"url": "res/loginSheet.json",
 			"type": "sheet",
 			"name": "loginSheet_json",
-			"subkeys": "ba00,ba01,back00,back01,bb00,bb01,biyan,dq,huoqu,jiantou00,jiantou01,jt00,jt01,kaishiyouxi00,kaishiyouxi01,kaiyan,kuang,l1,l2,line,logo,mm,queding00,queding01,shuru,sjdl00,sjdl01,sjh,smxz,wjmm00,wjmm01,xuankuang00,xuankuang01,xuanzhong,yonghuming,yx,yxdl00,yxdl01,yzm,zczh,zczh00,zczh01,zhezhao,zhmm,zhuce00,zhuce01"
+			"subkeys": "back00,back01,bin00,bin01,biyan,dq,hengtiao,huoqu,jiantou00,jiantou01,jt00,jt01,kaishiyouxi00,kaishiyouxi01,kaiyan,kuang,line,math00,math01,me00,me01,mm,pbian00,pbian01,phuli00,phuli01,queding00,queding01,shuru,sjdl00,sjdl01,sjh,smxz,wjmm00,wjmm01,xuankuang00,xuankuang01,xuanzhong,xwg00,xwg01,yonghuming,yx,yxdl00,yxdl01,yzm,zczh,zczh00,zczh01,zhezhao,zhmm,zhuce00,zhuce01"
 		},
 		{
 			"url": "res/bg0.jpg",
@@ -392,6 +392,62 @@
 			"url": "res/linshitouxiang.jpg",
 			"type": "image",
 			"name": "linshitouxiang_jpg"
+		},
+		{
+			"url": "res/card/name/nameImg0Sheet.json",
+			"type": "sheet",
+			"name": "nameImg0Sheet_json",
+			"subkeys": "COL00000000,COL00000001,COL00000002,COL00000003,COL00000004,COL00000005,COL00000006,COL00000007,COL00000008,COL00000009,COL00000010,COL00000011,COL00000012,COL00000013,COL00000014,COL00000015,COL00000016,COL00000017,COL00000018,COL00000019,COL00000020,COL00000021,COL00000022,COL00000023,COL00000024,COL00000025,COL00000026,COL00000027,COL00000028,COL00000029,COL00000030,COL00000031,COL00000032,COL00000033,COL00000034,COL00000035,COL00000036,COL00000037,COL00000038,COL00000039"
+		},
+		{
+			"url": "res/card/common/cardCommon0Font.fnt",
+			"type": "font",
+			"name": "cardCommon0Font_fnt"
+		},
+		{
+			"url": "res/card/common/cardCommon0Font.png",
+			"type": "image",
+			"name": "cardCommon0Font_png"
+		},
+		{
+			"url": "res/card/common/cardCommon1Font.fnt",
+			"type": "font",
+			"name": "cardCommon1Font_fnt"
+		},
+		{
+			"url": "res/card/common/cardCommon1Font.png",
+			"type": "image",
+			"name": "cardCommon1Font_png"
+		},
+		{
+			"url": "res/card/common/cardCommon2Font.fnt",
+			"type": "font",
+			"name": "cardCommon2Font_fnt"
+		},
+		{
+			"url": "res/card/common/cardCommon2Font.png",
+			"type": "image",
+			"name": "cardCommon2Font_png"
+		},
+		{
+			"url": "res/card/common/cardCommon3Font.fnt",
+			"type": "font",
+			"name": "cardCommon3Font_fnt"
+		},
+		{
+			"url": "res/card/common/cardCommon3Font.png",
+			"type": "image",
+			"name": "cardCommon3Font_png"
+		},
+		{
+			"url": "res/comingsoon.png",
+			"type": "image",
+			"name": "comingsoon_png"
+		},
+		{
+			"url": "res/logo.png",
+			"type": "image",
+			"name": "logo_png"
 		}
 	]
 }

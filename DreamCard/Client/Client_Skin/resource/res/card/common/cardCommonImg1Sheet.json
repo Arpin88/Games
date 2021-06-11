@@ -1,7 +1,8 @@
 {"file":"cardCommonImg1Sheet.png","frames":{
-"r_rb0":{"x":384,"y":1148,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
-"r_rb1":{"x":0,"y":1148,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
-"r_rb2":{"x":384,"y":574,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
-"r_rb3":{"x":0,"y":574,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
-"r_rb4":{"x":384,"y":0,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
-"r_rb5":{"x":0,"y":0,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572}}}
+"r_rb1":{"x":384,"y":1148,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
+"r_rb2":{"x":768,"y":0,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
+"r_rb3":{"x":384,"y":574,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
+"r_rb4":{"x":0,"y":1148,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
+"r_rb5":{"x":384,"y":0,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
+"r_tongyong":{"x":0,"y":574,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572},
+"r_rb0":{"x":0,"y":0,"w":382,"h":572,"offX":0,"offY":0,"sourceW":382,"sourceH":572}}}

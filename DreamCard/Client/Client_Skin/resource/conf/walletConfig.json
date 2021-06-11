@@ -2,27 +2,27 @@
     "HTMLElementObj":[
         {
             "type":"HTMLLink",
-            "path":"libs/wallet/css/panel.css?v=1.0.0",
+            "path":"libs/wallet/css/panel.css?v=1.0.0.210531",
             "model":"WIN,PHONE"
         },
         {
             "type":"HTMLScript",
-            "path":"libs/wallet/lib/sdk.js?v=1.0.0",
+            "path":"libs/wallet/lib/decimal.min.js?v=1.0.0.210527",
             "model":"WIN,PHONE"
         },
         {
             "type":"HTMLScript",
-            "path":"libs/wallet/lib/jquery-1.12.4.min.js?v=1.0.0",
+            "path":"libs/wallet/lib/ethers-5.0.umd.min.js?v=1.0.0.210527",
             "model":"WIN,PHONE"
         },
         {
             "type":"HTMLScript",
-            "path":"libs/wallet/lib/md5.js?v=1.0.0",
+            "path":"libs/wallet/lib/sdk.js?v=1.0.2.210529",
             "model":"WIN,PHONE"
         },
         {
             "type":"HTMLScript",
-            "path":"libs/wallet/lib/web3.min.js?v=1.0.0",
+            "path":"libs/wallet/lib/web3.min.js?v=1.0.0.210527",
             "model":"WIN,PHONE"
         }
     ]

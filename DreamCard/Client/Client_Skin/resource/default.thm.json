@@ -31,10 +31,12 @@
 		"resource/skins/load/LoadingSSkin.exml",
 		"resource/skins/load/TextSkin.exml",
 		"resource/skins/login/AreanoItemSkin.exml",
+		"resource/skins/login/ComingSoonSkin.exml",
 		"resource/skins/login/DebugItemSkin.exml",
 		"resource/skins/login/DebugSkin.exml",
 		"resource/skins/login/ForgotSkin.exml",
 		"resource/skins/login/LoginSkin.exml",
+		"resource/skins/login/LoginSkinNew.exml",
 		"resource/skins/login/RegisterSkin.exml"
 	],
 	"path": "resource/default.thm.json"

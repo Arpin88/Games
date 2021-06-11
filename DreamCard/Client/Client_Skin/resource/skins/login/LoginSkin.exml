@@ -11,12 +11,12 @@
 
 				<e:Group width="560" height="576" horizontalCenter="0" touchEnabled="false" verticalCenter="0" x="387" y="87" scaleX="1" scaleY="1">
 					<e:Image x="0" y="0" source="loginSheet_json.zhezhao" touchEnabled="false"/>
-					<e:Image y="-90" source="loginSheet_json.logo" horizontalCenter="0" scaleX="0.56" scaleY="0.56" touchEnabled="false"/>
+					<e:Image y="-90" source="logo_png" horizontalCenter="0" scaleX="0.56" scaleY="0.56" touchEnabled="false"/>
 					<e:Image y="130" source="loginSheet_json.kuang" width="450" scale9Grid="12,10,76,60" horizontalCenter="0"/>
 					<e:Image y="220" source="loginSheet_json.kuang" width="450" scale9Grid="12,10,76,60" horizontalCenter="0" x="0" scaleX="1" scaleY="1"/>
 					<e:Group id="groupPhone" width="450" y="130" horizontalCenter="0">
-						<e:EditableText id="editPhone" width="255" y="0" size="28" fontFamily="SimHei" textAlign="center" prompt="请输入手机号" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" verticalAlign="middle" height="80" maxChars="11" right="0" text=""/>
-						<e:EditableText id="editVCode" width="360" height="80" y="90" size="28" fontFamily="SimHei" textAlign="center" verticalAlign="middle" prompt="请输入验证码" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="-43" x="2" maxChars="8"/>
+						<e:EditableText id="editPhone" width="245" y="0" size="28" fontFamily="SimHei" textAlign="left" prompt="请输入手机号" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" verticalAlign="middle" height="80" maxChars="11" right="0" text=""/>
+						<e:EditableText id="editVCode" width="320" height="80" y="90" size="28" fontFamily="SimHei" textAlign="left" verticalAlign="middle" prompt="请输入验证码" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="-40" x="2" maxChars="8"/>
 						<e:Button id="btnGetVCode" label="" y="115" right="20">
 						<e:skinName>
 							<e:Skin states="up,down,disabled">
@@ -33,8 +33,8 @@
 						</e:Group>
 					</e:Group>
 					<e:Group id="groupEmail" width="450" y="130" horizontalCenter="0" visible="false">
-						<e:EditableText id="editEmail" width="450" y="0" size="28" fontFamily="SimHei" textAlign="center" prompt="请输入邮箱" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="0" verticalAlign="middle" height="80"/>
-						<e:EditableText id="editEmailVCode" width="360" height="80" y="90" size="28" fontFamily="SimHei" textAlign="center" verticalAlign="middle" prompt="请输入验证码" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="-43" x="2" maxChars="8"/>
+						<e:EditableText id="editEmail" width="400" y="0" size="28" fontFamily="SimHei" textAlign="left" prompt="请输入邮箱" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="0" verticalAlign="middle" height="80"/>
+						<e:EditableText id="editEmailVCode" width="320" height="80" y="90" size="28" fontFamily="SimHei" textAlign="left" verticalAlign="middle" prompt="请输入验证码" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="-40" x="2" maxChars="8"/>
 						<e:Button id="btnGetEmailVCode" label="" y="115" right="20">
 						<e:skinName>
 							<e:Skin states="up,down,disabled">
@@ -46,8 +46,8 @@
 						<e:Label id="lblEmailVCodeTime" text="60S" y="117" textColor="0x09DB22" fontFamily="SimHei" size="28" width="60" bold="true" right="20" height="30" verticalAlign="middle" textAlign="center" touchEnabled="false"/>
 					</e:Group>
 					<e:Group id="groupPassword" width="450" height="80" y="130" horizontalCenter="0" visible="false">
-						<e:EditableText id="editUsername" width="450" height="80" y="0" size="28" fontFamily="SimHei" textAlign="center" prompt="请输入用户名" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="0" verticalAlign="middle" maxChars="22"/>
-						<e:EditableText id="editPassword" width="360" height="80" y="90" size="28" fontFamily="SimHei" textAlign="center" verticalAlign="middle" prompt="请输入密码" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="-43" x="2" maxChars="18"/>
+						<e:EditableText id="editUsername" width="400" height="80" y="0" size="28" fontFamily="SimHei" textAlign="left" prompt="请输入账号" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="0" verticalAlign="middle" maxChars="22"/>
+						<e:EditableText id="editPassword" width="320" height="80" y="90" size="28" fontFamily="SimHei" textAlign="left" verticalAlign="middle" prompt="请输入密码" promptColor="0xD8D8D8" scaleX="1" scaleY="1" textColor="0xFFFFFF" horizontalCenter="-40" x="2" maxChars="18"/>
 						<e:Image id="imgWatch" y="115" right="20" source="loginSheet_json.biyan"/>
 					</e:Group>
 					<e:Button id="btnLogin" label="" anchorOffsetX="0" horizontalCenter="0" y="335">
@@ -107,32 +107,34 @@
 				<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0.4"/>
 				<e:Label id="lblVersion" text="版本号：0.0.0.1" size="22" fontFamily="SimHei" left="20" top="20" stroke="2" x="20" y="20" scaleX="1" scaleY="1"/>
 				<e:Group horizontalCenter="0" width="605" verticalCenter="0" height="750">
-					<e:Image y="0" source="loginSheet_json.logo" scaleX="0.75" scaleY="0.75" touchEnabled="false" x="0"/>
-					<e:Group width="394" height="90" y="300" touchEnabled="false" horizontalCenter="0.5" x="105" scaleX="1" scaleY="1">
-						<e:Button id="btnMetaMaskLogin" label="" anchorOffsetX="0" y="0" scaleX="1" scaleY="1" x="0" width="100%" height="100%">
+					<e:Image y="0" scaleX="0.75" scaleY="0.75" touchEnabled="false" x="0" source="logo_png"/>
+					<e:Button id="btnXWGLogin" label="" anchorOffsetX="0" y="280" scaleX="1" scaleY="1" horizontalCenter="0.5" visible="false">
 						<e:skinName>
 							<e:Skin states="up,down,disabled">
-							<e:Image width="100%" height="100%" source="loginSheet_json.ba00" source.down="loginSheet_json.ba01" scale9Grid="11,11,68,68"/>
+							<e:Image width="100%" height="100%" source="loginSheet_json.xwg00" source.down="loginSheet_json.xwg01"/>
 							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
 							</e:Skin>
 						</e:skinName>
-						</e:Button>
-						<e:Label text="MetaMask" fontFamily="SimHei" touchEnabled="false" verticalCenter="0" size="40" x="170"/>
-						<e:Image x="75" source="loginSheet_json.l2" verticalCenter="0" touchEnabled="false"/>
-					</e:Group>
-					<e:Group width="394" height="90" y="420" touchEnabled="false" horizontalCenter="0.5" x="105" scaleX="1" scaleY="1">
-						<e:Button id="btnBinanceLogin" label="" anchorOffsetX="0" y="0" scaleX="1" scaleY="1" x="0" width="100%" height="100%">
+					</e:Button>
+					<e:Button id="btnMetaMaskLogin" label="" anchorOffsetX="0" y="320" scaleX="1" scaleY="1" horizontalCenter="0.5">
 						<e:skinName>
-							<e:Skin states="up,down,disabled">
-							<e:Image width="100%" height="100%" source="loginSheet_json.bb00" source.down="loginSheet_json.bb01" scale9Grid="11,11,68,68"/>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="loginSheet_json.me00" source.down="loginSheet_json.me01"/>
 							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-							</e:Skin>
+						</e:Skin>
 						</e:skinName>
-						</e:Button>
-						<e:Label text="Binance" x="170" fontFamily="SimHei" touchEnabled="false" verticalCenter="0" size="40"/>
-						<e:Image x="75" verticalCenter="0" source="loginSheet_json.l1" touchEnabled="false"/>
-					</e:Group>
-					<e:Group id="groupBtnPhoneLogin" y="600" scaleX="1" scaleY="1" horizontalCenter="-84.5">
+					</e:Button>
+					<e:Button id="btnBinanceLogin" label="" anchorOffsetX="0" y="430" scaleX="1" scaleY="1" horizontalCenter="0.5">
+						<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="loginSheet_json.bin00" source.down="loginSheet_json.bin01"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+						</e:skinName>
+					</e:Button>
+
+
+					<e:Group id="groupBtnPhoneLogin" y="610" scaleX="1" scaleY="1" horizontalCenter="-84.5">
 						<e:Button id="btnPhoneLogin" label="" anchorOffsetX="0" y="0" scaleX="1" scaleY="1" horizontalCenter="0">
 							<e:skinName>
 								<e:Skin states="up,down,disabled">
@@ -143,7 +145,7 @@
 						</e:Button>
 						<e:Label text="手机登录" fontFamily="SimHei" touchEnabled="false" size="18" horizontalCenter="0" y="85" textColor="0xa6acb1"/>
 					</e:Group>
-					<e:Group id="groupBtnEmailLogin" y="600" scaleX="1" scaleY="1" horizontalCenter="85.5">
+					<e:Group id="groupBtnEmailLogin" y="610" scaleX="1" scaleY="1" horizontalCenter="85.5">
 						<e:Button id="btnEmailLogin" label="" anchorOffsetX="0" y="0" scaleX="1" scaleY="1" horizontalCenter="0">
 							<e:skinName>
 								<e:Skin states="up,down,disabled">
@@ -154,7 +156,9 @@
 						</e:Button>
 						<e:Label text="邮箱登录" fontFamily="SimHei" touchEnabled="false" size="18" y="85" horizontalCenter="0" textColor="0xa6acb1"/>
 					</e:Group>
-					<e:Label text="——————  其他登录方式  ——————" y="550" size="20" fontFamily="SimHei" textColor="0xa6acb1" horizontalCenter="0"/>
+					<e:Image y="580" source="loginSheet_json.hengtiao" scale9Grid="6,0,42,2" width="80" horizontalCenter="-115"/>
+					<e:Image y="580" source="loginSheet_json.hengtiao" scale9Grid="6,0,42,2" width="80" horizontalCenter="115"/>
+					<e:Label text="其他登录方式" y="570" size="20" fontFamily="SimHei" textColor="0xa6acb1" horizontalCenter="0"/>
 				</e:Group>
 			</e:Group>
 

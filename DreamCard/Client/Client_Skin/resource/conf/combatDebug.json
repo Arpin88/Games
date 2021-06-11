@@ -28,7 +28,7 @@
     "cardNote":{
         "code":{"note":"编码:(不能一样 用户0为10-19,用户1为20-29)"},
         "icon":{"note":"图标:(英雄名字拼音)"},
-        "rarity":{"note":"品质:","common":"普通","rare":"稀有","epic":"史诗","legendary":"传说","mythical":"神话"},
+        "rarity":{"note":"品质:","common":"普通","rare":"稀有","epic":"史诗","legendary":"传奇","mythical":"神话"},
         "element":{"note":"五行:","metal":"金","wood":"木","water":"水","fire":"火","earth":"土"},
         "generation":{"note":"代数"},
         "name":{"note":"英雄名字"},

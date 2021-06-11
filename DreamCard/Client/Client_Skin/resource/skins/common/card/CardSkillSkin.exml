@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="CardSkillSkin" width="72" height="72" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Group id="groupCSK" width="100%" height="100%" x="0" y="0">
-		<e:Image id="imgIcon" horizontalCenter="0" verticalCenter="0" touchEnabled="false" width="100%" height="100%" source="skillSheet_json.baoji"/>
+		<e:Image id="imgIcon" horizontalCenter="0" verticalCenter="0" touchEnabled="false" source="skillSheet_json.baoji" scaleX="0.88" scaleY="0.88" width="72" height="72"/>
 		<e:Image id="imgBG" touchEnabled="false" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" source="skillCommonImg0Sheet_json.jineng1"/>
 	</e:Group>
 </e:Skin>
