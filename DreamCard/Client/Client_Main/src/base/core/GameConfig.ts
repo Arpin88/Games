@@ -5,6 +5,7 @@ module GameConfig{
 
     export var isOnLine:boolean = navigator.onLine;
     export var ticket: string = "cwt_123456789";
+    export var serverId:number = 0;
     export var key = "8818181818181898";
     export var vi = "8818181818181898";
 

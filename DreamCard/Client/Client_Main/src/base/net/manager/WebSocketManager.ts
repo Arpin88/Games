@@ -253,9 +253,11 @@ class WebSocketManager extends NetBase{
     public reconnect():void{
         var self = this;
         self.recordServerTime=-1;
-        if(self.reconnectHandler==null)
+        if(self.reconnectHandler==null){
+            self.connectServer(this.m_sname,true);
             return;
-        
+        }
         self.reconnectHandler.run();
     }
+
 }

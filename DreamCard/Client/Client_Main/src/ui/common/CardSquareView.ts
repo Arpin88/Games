@@ -131,27 +131,34 @@ class CardSquareView extends IBaseView{
         if(data==null||data==undefined)
             return;
         var str:string = "1";
+        var strbg = "5";
         switch(data){
             case "common":
                 str="1";
+                strbg = "5";
             break;
             case "rare":
                 str="2";
+                strbg = "2";
             break;
             case "epic":
                 str="3";
+                strbg = "3";
             break;
             case "legendary":
                 str="4";
+                strbg = "4";
             break;
             case "mythical":
                 str="5";
+                strbg = "1";
             break;
         }
         var self = this;
         self.imgRarity.source = "cardCommonImg0Sheet_json.s_rb"+str;
         // self.imgRound.source = "cardCommonImg0Sheet_json.s_r"+str;
         self.imgCostBG.source = "cardCommonImg2Sheet_json.s_ecb"+str;
+        self.imgBG.source = "cardCommonImg2Sheet_json.s_eb"+strbg;
     }
 
     //设置五行
@@ -178,7 +185,7 @@ class CardSquareView extends IBaseView{
         }
         var self = this;
         self.imgElement.source = "cardCommonImg2Sheet_json.s_e"+str;
-        self.imgBG.source = "cardCommonImg2Sheet_json.s_eb"+str;
+       // self.imgBG.source = "cardCommonImg2Sheet_json.s_eb"+str;
     }
     
     //设置代数

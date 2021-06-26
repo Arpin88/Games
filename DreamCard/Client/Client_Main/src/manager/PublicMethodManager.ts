@@ -47,6 +47,9 @@ class PublicMethodManager{
         let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
         HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_GAME_LOGOUT,{});
         egret.localStorage.setItem("ticket","");
+        egret.localStorage.setItem("server_id","0");
+        GameConfig.ticket = "";
+        GameConfig.serverId = 0;
         GMDManager.closeGMD();
         UIManager.getInstance().removeAllLayerUI();
         var type = PublicMethodManager.getInstance().getOSType()

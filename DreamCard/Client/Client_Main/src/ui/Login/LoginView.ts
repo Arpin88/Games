@@ -87,6 +87,7 @@ class LoginView extends BaseView{
 
         self.scrAreanoList.addEventListener(egret.TouchEvent.TOUCH_CANCEL,self.onCancelHandler,self);
         self.scrAreanoList.addEventListener(egret.TouchEvent.TOUCH_END,self.onEndHandler,self);
+        GameEventManager.getInstance().addEventListener(GameEvent.NeedGetLoginData,self,self.getLoginData);
         // self.editPasswordText.displayAsPassword = true;
 
         var lptype = egret.localStorage.getItem("lptype");
@@ -97,7 +98,8 @@ class LoginView extends BaseView{
         self.curPWInputType = 0;
 
         self.curAreano = egret.localStorage.getItem("areano");
-        self.curAreano = self.curAreano!=null?self.curAreano:"65";
+        var defaultAreano:string = LanguageManager.getInstance().getCurLanguageType()==0?"86":"65"; //如果是中文则直接默认选中区号为86
+        self.curAreano = self.curAreano!=null?self.curAreano:defaultAreano;
 
         //初始化钱包名称为空
         GlobalDataManager.getInstance().setWalletName("");
@@ -131,7 +133,8 @@ class LoginView extends BaseView{
         
 
         var areanoStr:string = egret.localStorage.getItem("areanoStr");
-        areanoStr = areanoStr!=null?areanoStr:"+65 (SG)";
+        var defaultAreanoStr:string = LanguageManager.getInstance().getCurLanguageType()==0?"+86 (CN)":"+65 (SG)"; //如果是中文则直接默认选中区号为86
+        areanoStr = areanoStr!=null?areanoStr:defaultAreanoStr;
         self.lblAreano.text = areanoStr;
 
         self.editEmailVCode.text =
@@ -294,6 +297,8 @@ class LoginView extends BaseView{
         self.scrAreanoList.removeEventListener(egret.TouchEvent.TOUCH_CANCEL,self.onCancelHandler,self);
         self.scrAreanoList.removeEventListener(egret.TouchEvent.TOUCH_END,self.onEndHandler,self);
 
+        GameEventManager.getInstance().removeEventListener(GameEvent.NeedGetLoginData,self,self.getLoginData);
+
         self.labelObj = null;
     }
     
@@ -447,19 +452,27 @@ class LoginView extends BaseView{
                 self.groupSwitchLogin.visible = false;
                 self.groupNormalLogin.visible = true;
                 self.curLoginType = 0;
+                egret.localStorage.setItem("curLoginType",self.curLoginType+"");
                 self.updateCurPhoneLoginType();
             }else if(tar==self.btnEmailLogin){ //邮箱登录按钮点击
                 self.groupSwitchLogin.visible = false;
                 self.groupNormalLogin.visible = true;
                 self.curLoginType = 1;
+                egret.localStorage.setItem("curLoginType",self.curLoginType+"");
                 self.updateCurEmailLoginType();
             }else if(tar==self.btnMetaMaskLogin){ //MetaMask登录按钮点击
+                self.curLoginType = 2;
+                egret.localStorage.setItem("curLoginType",self.curLoginType+"");
                 WalletManager.getInstance().walletLogin('Metamask');
                 // egret.localStorage.setItem("walletName",'Metamask');
             }else if(tar==self.btnBinanceLogin){ //Binance登录按钮点击
+                self.curLoginType = 3;
+                egret.localStorage.setItem("curLoginType",self.curLoginType+"");
                 WalletManager.getInstance().walletLogin('BinanceChain');
                 // egret.localStorage.setItem("walletName",'BinanceChain');
             }else if(tar==self.btnXWGLogin){    //XWG登录按钮点击
+                self.curLoginType = 4;
+                egret.localStorage.setItem("curLoginType",self.curLoginType+"");
                 WalletManager.getInstance().walletLogin('XWG');
             }
         }else if(tar instanceof eui.Label){
@@ -539,12 +552,14 @@ class LoginView extends BaseView{
                 self.groupSwitchLogin.visible = false;
                 self.groupNormalLogin.visible = true;
                 self.curLoginType = 0;
+                egret.localStorage.setItem("curLoginType",self.curLoginType+"");
                 self.updateCurPhoneLoginType();
             }else if(tar==self.groupBtnEmailLogin){
                 SoundManager.getInstance().PlayClickSound();
                 self.groupSwitchLogin.visible = false;
                 self.groupNormalLogin.visible = true;
                 self.curLoginType = 1;
+                egret.localStorage.setItem("curLoginType",self.curLoginType+"");
                 self.updateCurEmailLoginType();
             }
         }
@@ -676,6 +691,11 @@ class LoginView extends BaseView{
     //     var self = this;
     //     self.lblVCodeTime.text = self.timeCounter+"S"; 
     // }
+
+    private getLoginData():void{
+        let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
+        HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_LOGIN_DATA,new Object(),true);
+    }
 
     private initAreanoShow():void{
         var self = this;

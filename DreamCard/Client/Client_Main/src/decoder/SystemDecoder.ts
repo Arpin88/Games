@@ -48,6 +48,9 @@ class SystemDecoder extends BaseDecoder{
         var userInfo:any = msg.userInfo;
         if(userInfo){
             var account:AccountData = GlobalDataManager.getInstance().getAccountData();
+            let s_id:number = userInfo.s_id;
+            GameConfig.serverId = s_id;
+            egret.localStorage.setItem("server_id",s_id+"");
             let ticket:string = userInfo.ticket;
             account.setTicket(ticket);
             GameConfig.ticket = ticket;
@@ -98,65 +101,47 @@ class SystemDecoder extends BaseDecoder{
             account.setWalletSecret(wallet_secret);
         }
 
-        var appConfig:any = msg.navigateTo;
-        if(appConfig!=null){
-            //跳转信息
-            let id:number = appConfig.id;
-            let name:string= appConfig.name;
-            let ori:number = appConfig.ori;
-            let jsVer:string = appConfig.jsVer;
-            let resVer:string = appConfig.resVer;
-            let attRes:string = appConfig.attRes;
-            let pathStr:string = appConfig.path;
-            //直接进游戏,后面需要合并其他游戏的时候再做处理;
-            GMDManager.addGMDInfo(id,name,ori,jsVer,resVer,pathStr,attRes);
-            let obj = new Object();
-            obj["param"] = {playBGM:true};
-            GMDManager.startGMD(id,obj);
-        }else{
-            var reconnect:any = msg.reconnect;
-            if(reconnect!=null){
-                var ruuid:string = reconnect.ruuid;
-                GlobalDataManager.getInstance().setRUUID(ruuid);
-                var room:string = reconnect.room;
-                GlobalDataManager.getInstance().setRoom(room);
+        GameEventManager.getInstance().dispatchEvent(GameEvent.NeedGetLoginData);
 
-                GlobalDataManager.getInstance().setThredID(0);
-                var scode:string = reconnect.scode;
-                GlobalDataManager.getInstance().setGameServerName(scode);
-                GlobalDataManager.getInstance().setGameOver(false);
+        // var appConfig:any = msg.navigateTo;
+        // if(appConfig!=null){
+        //     //跳转信息
+        //     let id:number = appConfig.id;
+        //     let name:string= appConfig.name;
+        //     let ori:number = appConfig.ori;
+        //     let jsVer:string = appConfig.jsVer;
+        //     let resVer:string = appConfig.resVer;
+        //     let attRes:string = appConfig.attRes;
+        //     let pathStr:string = appConfig.path;
+        //     //直接进游戏,后面需要合并其他游戏的时候再做处理;
+        //     GMDManager.addGMDInfo(id,name,ori,jsVer,resVer,pathStr,attRes);
+        //     let obj = new Object();
+        //     obj["param"] = {playBGM:true};
+        //     GMDManager.startGMD(id,obj);
+        // }else{
+        //     var reconnect:any = msg.reconnect;
+        //     if(reconnect!=null){
+        //         var ruuid:string = reconnect.ruuid;
+        //         GlobalDataManager.getInstance().setRUUID(ruuid);
+        //         var room:string = reconnect.room;
+        //         GlobalDataManager.getInstance().setRoom(room);
 
-                var surl:string = reconnect.surl;
-                let server: ServerData = new ServerData();
-                server.setSname(scode);
-                server.setSurl(surl);
-                server.setResolver(WebSocketManager.getInstance().getResolver(JsonResolver.NAME));
-                WebSocketManager.getInstance().registerServer(server);
-                WebSocketManager.getInstance().connectServer(scode, true);
-            }
-        }
+        //         GlobalDataManager.getInstance().setThredID(0);
+        //         var scode:string = reconnect.scode;
+        //         GlobalDataManager.getInstance().setGameServerName(scode);
+        //         GlobalDataManager.getInstance().setGameOver(false);
 
-        UIManager.getInstance().hideUI(LoginView);
-
-        
-
-
-        
-        // GameConfig.uid = ticket;
-
-        // let sid:string = data.sid;
-        // let surl:string = data.surl;
-        // var server:ServerData = new ServerData();
-        // server.setSname(sid);
-        // GlobalDataManager.getInstance().setGameServerSID(sid);
-        // server.setSurl(surl);
-        // server.setResolver(WebSocketManager.getInstance().getResolver(JsonResolver.NAME));
-        // WebSocketManager.getInstance().registerServer(server);
-        // if(WebSocketManager.getInstance().isConnect(sid)){
-        //     WebSocketManager.getInstance().close(sid);
+        //         var surl:string = reconnect.surl;
+        //         let server: ServerData = new ServerData();
+        //         server.setSname(scode);
+        //         server.setSurl(surl);
+        //         server.setResolver(WebSocketManager.getInstance().getResolver(JsonResolver.NAME));
+        //         WebSocketManager.getInstance().registerServer(server);
+        //         WebSocketManager.getInstance().connectServer(scode, true);
+        //     }
         // }
-        
-        // WebSocketManager.getInstance().connectServer(server.getSname(),true);
+
+        // UIManager.getInstance().hideUI(LoginView);
 
     }
 
@@ -171,6 +156,9 @@ class SystemDecoder extends BaseDecoder{
         var userInfo:any = msg.userInfo;
         if(userInfo){
             var account:AccountData = GlobalDataManager.getInstance().getAccountData();
+            let s_id:number = userInfo.s_id;
+            GameConfig.serverId = s_id;
+            egret.localStorage.setItem("server_id",s_id+"");
             let ticket:string = userInfo.ticket;
             account.setTicket(ticket);
             GameConfig.ticket = ticket;
@@ -221,80 +209,48 @@ class SystemDecoder extends BaseDecoder{
             account.setWalletSecret(wallet_secret);
         }
 
-        var appConfig:any = msg.navigateTo;
-        if(appConfig!=null){
-            //跳转信息
-            let id:number = appConfig.id;
-            let name:string= appConfig.name;
-            let ori:number = appConfig.ori;
-            let jsVer:string = appConfig.jsVer;
-            let resVer:string = appConfig.resVer;
-            let attRes:string = appConfig.attRes;
-            let pathStr:string = appConfig.path;
-            //直接进游戏,后面需要合并其他游戏的时候再做处理;
-            GMDManager.addGMDInfo(id,name,ori,jsVer,resVer,pathStr,attRes);
-            let obj = new Object();
-            obj["param"] = {playBGM:true};
-            GMDManager.startGMD(id,obj);
-        }else{
-            var reconnect:any = msg.reconnect;
-            if(reconnect!=null){
-                var ruuid:string = reconnect.ruuid;
-                GlobalDataManager.getInstance().setRUUID(ruuid);
-                var room:string = reconnect.room;
-                GlobalDataManager.getInstance().setRoom(room);
+         GameEventManager.getInstance().dispatchEvent(GameEvent.NeedGetLoginData);
+        // var appConfig:any = msg.navigateTo;
+        // if(appConfig!=null){
+        //     //跳转信息
+        //     let id:number = appConfig.id;
+        //     let name:string= appConfig.name;
+        //     let ori:number = appConfig.ori;
+        //     let jsVer:string = appConfig.jsVer;
+        //     let resVer:string = appConfig.resVer;
+        //     let attRes:string = appConfig.attRes;
+        //     let pathStr:string = appConfig.path;
+        //     //直接进游戏,后面需要合并其他游戏的时候再做处理;
+        //     GMDManager.addGMDInfo(id,name,ori,jsVer,resVer,pathStr,attRes);
+        //     let obj = new Object();
+        //     obj["param"] = {playBGM:true};
+        //     GMDManager.startGMD(id,obj);
+        // }else{
+        //     var reconnect:any = msg.reconnect;
+        //     if(reconnect!=null){
+        //         var ruuid:string = reconnect.ruuid;
+        //         GlobalDataManager.getInstance().setRUUID(ruuid);
+        //         var room:string = reconnect.room;
+        //         GlobalDataManager.getInstance().setRoom(room);
 
-                GlobalDataManager.getInstance().setThredID(0);
-                var scode:string = reconnect.scode;
-                GlobalDataManager.getInstance().setGameServerName(scode);
-                GlobalDataManager.getInstance().setGameOver(false);
+        //         GlobalDataManager.getInstance().setThredID(0);
+        //         var scode:string = reconnect.scode;
+        //         GlobalDataManager.getInstance().setGameServerName(scode);
+        //         GlobalDataManager.getInstance().setGameOver(false);
 
-                var surl:string = reconnect.surl;
-                let server: ServerData = new ServerData();
-                server.setSname(scode);
-                server.setSurl(surl);
-                server.setResolver(WebSocketManager.getInstance().getResolver(JsonResolver.NAME));
-                WebSocketManager.getInstance().registerServer(server);
-                WebSocketManager.getInstance().connectServer(scode, true);
-            }
-        }
-
-        UIManager.getInstance().hideUI(LoginView);
-        UIManager.getInstance().hideUI(RegisterView);
-        // if(data.result==undefined||data.result!=GlobalDef.REQUEST_SUCCESS){
-        //     var errors:any = RES.getRes("error_json");
-        //     if(errors!=null&&errors!=undefined){
-        //         var context:string = errors[data.result];
-        //         if(context==null||context==undefined){
-        //             context = "亲!发生未知错误,请重新尝试!";
-        //         }
-        //         PopManager.getInstance().showPromptBox(context,2,null,null);
+        //         var surl:string = reconnect.surl;
+        //         let server: ServerData = new ServerData();
+        //         server.setSname(scode);
+        //         server.setSurl(surl);
+        //         server.setResolver(WebSocketManager.getInstance().getResolver(JsonResolver.NAME));
+        //         WebSocketManager.getInstance().registerServer(server);
+        //         WebSocketManager.getInstance().connectServer(scode, true);
         //     }
-        //     return;
         // }
 
-        // var account:AccountData = GlobalDataManager.getInstance().getAccountData();
-        // let ticket:string = data.ticket;
-        // account.setTicket(ticket);
-        // GameConfig.uid = ticket;
-
-        // egret.localStorage.setItem("uname",GlobalDataManager.getInstance().getAccountText());
-        // egret.localStorage.setItem("password",GlobalDataManager.getInstance().getPassWordText());
-
+        // UIManager.getInstance().hideUI(LoginView);
+        // UIManager.getInstance().hideUI(RegisterView);
         
-
-        // let sid:string = data.sid;
-        // let surl:string = data.surl;
-        // var server:ServerData = new ServerData();
-        // server.setSname(sid);
-        // GlobalDataManager.getInstance().setGameServerSID(sid);
-        // server.setSurl(surl);
-        // server.setResolver(WebSocketManager.getInstance().getResolver(JsonResolver.NAME));
-        // WebSocketManager.getInstance().registerServer(server);
-        // if(WebSocketManager.getInstance().isConnect(sid)){
-        //     WebSocketManager.getInstance().close(sid);
-        // }
-        // WebSocketManager.getInstance().connectServer(server.getSname(),true);
 
     }
 
@@ -347,6 +303,9 @@ class SystemDecoder extends BaseDecoder{
         var state:number = msg.state;
         if(state!=null&&state==0){
             egret.localStorage.setItem("ticket","");
+            egret.localStorage.setItem("server_id","0");
+            GameConfig.ticket = "";
+            GameConfig.serverId = 0;
             var type = PublicMethodManager.getInstance().getOSType()
             if(type != 1){
                 UIManager.getInstance().showUI(LoginPhonView);  
@@ -357,6 +316,9 @@ class SystemDecoder extends BaseDecoder{
             var userInfo:any = msg.userInfo;
             if(userInfo){
                 var account:AccountData = GlobalDataManager.getInstance().getAccountData();
+                let s_id:number = userInfo.s_id;
+                GameConfig.serverId = s_id;
+                egret.localStorage.setItem("server_id",s_id+"");
                 let ticket:string = userInfo.ticket;
                 account.setTicket(ticket);
                 GameConfig.ticket = ticket;
@@ -458,6 +420,9 @@ class SystemDecoder extends BaseDecoder{
         var userInfo:any = msg.userInfo;
         if(userInfo){
             var account:AccountData = GlobalDataManager.getInstance().getAccountData();
+            let s_id:number = userInfo.s_id;
+            GameConfig.serverId = s_id;
+            egret.localStorage.setItem("server_id",s_id+"");
             let ticket:string = userInfo.ticket;
             account.setTicket(ticket);
             GameConfig.ticket = ticket;
@@ -508,6 +473,85 @@ class SystemDecoder extends BaseDecoder{
             account.setWalletSecret(wallet_secret);
         }
 
+        GameEventManager.getInstance().dispatchEvent(GameEvent.NeedGetLoginData);
+        // var appConfig:any = msg.navigateTo;
+        // if(appConfig!=null){
+        //     //跳转信息
+        //     let id:number = appConfig.id;
+        //     let name:string= appConfig.name;
+        //     let ori:number = appConfig.ori;
+        //     let jsVer:string = appConfig.jsVer;
+        //     let resVer:string = appConfig.resVer;
+        //     let attRes:string = appConfig.attRes;
+        //     let pathStr:string = appConfig.path;
+        //     //直接进游戏,后面需要合并其他游戏的时候再做处理;
+        //     GMDManager.addGMDInfo(id,name,ori,jsVer,resVer,pathStr,attRes);
+        //     let obj = new Object();
+        //     obj["param"] = {playBGM:true};
+        //     GMDManager.startGMD(id,obj);
+        // }else{
+        //     var reconnect:any = msg.reconnect;
+        //     if(reconnect!=null){
+        //         var ruuid:string = reconnect.ruuid;
+        //         GlobalDataManager.getInstance().setRUUID(ruuid);
+        //         var room:string = reconnect.room;
+        //         GlobalDataManager.getInstance().setRoom(room);
+
+        //         GlobalDataManager.getInstance().setThredID(0);
+        //         var scode:string = reconnect.scode;
+        //         GlobalDataManager.getInstance().setGameServerName(scode);
+        //         GlobalDataManager.getInstance().setGameOver(false);
+
+        //         var surl:string = reconnect.surl;
+        //         let server: ServerData = new ServerData();
+        //         server.setSname(scode);
+        //         server.setSurl(surl);
+        //         server.setResolver(WebSocketManager.getInstance().getResolver(JsonResolver.NAME));
+        //         WebSocketManager.getInstance().registerServer(server);
+        //         WebSocketManager.getInstance().connectServer(scode, true);
+        //     }
+        // }
+
+        // UIManager.getInstance().hideUI(LoginView);
+    }
+
+    private method_8(data:any):void{
+        if(ErrorMananger.getInstance().checkReqResult(data))
+            return;
+        
+        var msg = data.msg;
+        if(msg==null||msg.type==null)
+            return;
+        var type:number = msg.type;
+        if(type==0){
+            let loginView: LoginView = UIManager.getInstance().getView(LoginView) as LoginView;
+            if(loginView)
+                loginView.setEmailVCode(msg.code);
+
+                let LoginPhonView1: LoginPhonView = UIManager.getInstance().getView(LoginPhonView) as LoginPhonView;
+            if(LoginPhonView1)
+                LoginPhonView1.setSMSCode(msg.code);
+                
+        }else if(type==1){
+            let registerView: RegisterView = UIManager.getInstance().getView(RegisterView) as RegisterView;
+            if(registerView)
+                registerView.setEmailVCode(msg.code);
+        }else if(type==2){
+            let forgotView: ForgotView = UIManager.getInstance().getView(ForgotView) as ForgotView;
+            if(forgotView)
+                forgotView.setEmailVCode(msg.code);
+        }
+    }
+
+    //注册;
+    private method_11(data:any):void{
+        if(ErrorMananger.getInstance().checkReqResult(data))
+            return;
+
+        var msg = data.msg;
+        if(msg==null)
+            return;
+        
         var appConfig:any = msg.navigateTo;
         if(appConfig!=null){
             //跳转信息
@@ -547,36 +591,25 @@ class SystemDecoder extends BaseDecoder{
         }
 
         UIManager.getInstance().hideUI(LoginView);
+        UIManager.getInstance().hideUI(RegisterView);
     }
 
-    private method_8(data:any):void{
+
+    //更新用户金额
+    private method_12(data:any):void{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
-        
-        var msg = data.msg;
-        if(msg==null||msg.type==null)
-            return;
-        var type:number = msg.type;
-        if(type==0){
-            let loginView: LoginView = UIManager.getInstance().getView(LoginView) as LoginView;
-            if(loginView)
-                loginView.setEmailVCode(msg.code);
-
-                let LoginPhonView1: LoginPhonView = UIManager.getInstance().getView(LoginPhonView) as LoginPhonView;
-            if(LoginPhonView1)
-                LoginPhonView1.setSMSCode(msg.code);
-                
-        }else if(type==1){
-            let registerView: RegisterView = UIManager.getInstance().getView(RegisterView) as RegisterView;
-            if(registerView)
-                registerView.setEmailVCode(msg.code);
-        }else if(type==2){
-            let forgotView: ForgotView = UIManager.getInstance().getView(ForgotView) as ForgotView;
-            if(forgotView)
-                forgotView.setEmailVCode(msg.code);
+            
+        var msg:any = data.msg;
+        if(msg!=null){
+            var gold:number = msg.gold;
+            var account:AccountData = GlobalDataManager.getInstance().getAccountData();
+            if(account!=null&&gold!=null){
+                GlobalDataManager.getInstance().getAccountData().setGold(gold);
+                GameEventManager.getInstance().dispatchEvent(GameEvent.updateGold);
+            }
         }
     }
-
     // private method_100(data:any):void{
     //     if(ErrorMananger.getInstance().checkReqResult(data))
     //         return;
@@ -617,6 +650,16 @@ class SystemDecoder extends BaseDecoder{
     private method_302(data:any):void{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
+        var msg:any = data.msg;
+        if(msg!=null){
+            var gold:number = msg.gold;
+            var account:AccountData = GlobalDataManager.getInstance().getAccountData();
+            if(account!=null&&gold!=null){
+                GlobalDataManager.getInstance().getAccountData().setGold(gold);
+                GameEventManager.getInstance().dispatchEvent(GameEvent.updateGold);
+            }
+        }
+
     }
     // private method_303(data:any):void{
     //     if(ErrorMananger.getInstance().checkReqResult(data))

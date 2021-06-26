@@ -120,25 +120,34 @@ class CardRectangleView extends IBaseView{
     private setRarity(data:string):void{
         if(data==null||data==undefined)
             return;
-        var str:string = "1";
-        switch(data){
+        var str = "1";
+        var strbg = "5";
+        switch (data) {
             case "common":
-                str="1";
-            break;
+                str = "1";
+                strbg = "5";
+                break;
             case "rare":
-                str="2";
-            break;
+                str = "2";
+                strbg = "2";
+                break;
             case "epic":
-                str="3";
-            break;
+                str = "3";
+                strbg = "3";
+                break;
             case "legendary":
-                str="4";
-            break;
+                str = "4";
+                strbg = "4";
+                break;
             case "mythical":
-                str="5";
-            break;
+                str = "5";
+                strbg = "1";
+                break;
         }
-        this.imgRarity.source = "cardCommonImg1Sheet_json.r_rb"+str;
+
+
+        this.imgRarity.source = "cardCommonImg1Sheet_json.r_rb" + str;
+        this.imgBG.source = "cardCommonImg2Sheet_json.r_eb" + strbg;
     }
 
     //设置五行
@@ -165,7 +174,7 @@ class CardRectangleView extends IBaseView{
         }
         var self = this;
         self.imgElement.source = "cardCommonImg2Sheet_json.r_e"+str;
-        self.imgBG.source = "cardCommonImg2Sheet_json.r_eb"+str;
+        
     }
     
     //设置代数

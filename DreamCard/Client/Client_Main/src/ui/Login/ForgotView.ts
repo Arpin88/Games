@@ -72,7 +72,8 @@ class ForgotView extends BaseView{
         self.labelObj = LanguageManager.getInstance().getLabelLanguage(this);
 
         self.curAreano = egret.localStorage.getItem("areano");
-        self.curAreano = self.curAreano!=null?self.curAreano:"65";
+        var defaultAreano:string = LanguageManager.getInstance().getCurLanguageType()==0?"86":"65"; //如果是中文则直接默认选中区号为86
+        self.curAreano = self.curAreano!=null?self.curAreano:defaultAreano;
 
         self.initView();
 
@@ -103,7 +104,8 @@ class ForgotView extends BaseView{
         self.editPassword3.text = "";
 
         var areanoStr:string = egret.localStorage.getItem("areanoStr");
-        areanoStr = areanoStr!=null?areanoStr:"+65 (SG)";
+        var defaultAreanoStr:string = LanguageManager.getInstance().getCurLanguageType()==0?"+86 (CN)":"+65 (SG)"; //如果是中文则直接默认选中区号为86
+        areanoStr = areanoStr!=null?areanoStr:defaultAreanoStr;
         self.lblAreano.text = areanoStr;
 
         self.updatePWInputTypeShow();

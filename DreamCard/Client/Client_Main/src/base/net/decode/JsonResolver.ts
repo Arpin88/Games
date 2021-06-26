@@ -28,16 +28,17 @@ class JsonResolver extends BaseResolver{
         var jsonObj:Object = new Object();
         jsonObj["cmd"] = cmd;
         jsonObj["t"] = GameConfig.ticket;
+        jsonObj["sindex"] = GameConfig.serverId;
         jsonObj["trd"] = trd;
         jsonObj["data"] = data;
         var str:string = JSON.stringify(jsonObj);
-        if(m){
-            var res = new newaes();
-            str = res.ex(str,GameConfig.key,GameConfig.vi);
-            str = "1@~m@".concat(str);
-        }else{
-            str = "0@~m@".concat(str);
-        }
+        // if(m){
+        //     var res = new newaes();
+        //     str = res.ex(str,GameConfig.key,GameConfig.vi);
+        //     str = "1@~m@".concat(str);
+        // }else{
+        //     str = "0@~m@".concat(str);
+        // }
         return str;
     }
 }

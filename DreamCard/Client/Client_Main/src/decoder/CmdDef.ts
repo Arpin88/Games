@@ -16,6 +16,9 @@ enum CmdDef{
     CMD_WALLET_LOGIN = 7,   //钱包登录
     CMD_GAME_EMAILVCODE =8,    //获取邮箱验证码
 
+    CMD_LOGIN_DATA = 11,    //登录信息
+    CMD_UPDATE_ACCOUNT_GOLD = 12,   //更新用户金额
+
     CMD_GAME_LOGOUT = 99,    //退出登录
 
     // CMD_Hall = 100,  //大厅CMD;

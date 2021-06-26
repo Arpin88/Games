@@ -123,6 +123,9 @@ class Main extends eui.UILayer {
             }
         }else{
             GameConfig.ticket = ticket;
+            var serverId:string = egret.localStorage.getItem("server_id");
+            if(serverId!=null&&serverId!="")
+                GameConfig.serverId = Number(serverId);
             let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
             HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_CHECK_LOGIN,{},true);
         }
@@ -158,7 +161,7 @@ class Main extends eui.UILayer {
         resolver.registerPackageData(new TextPackageData());
         HttpManager.getInstance().registerResolver(resolver);
         WebSocketManager.getInstance().registerResolver(resolver);
-        DebugWebSocketManager.getInstance().registerResolver(resolver);
+        // DebugWebSocketManager.getInstance().registerResolver(resolver);
         //新的服务器设置开始,以后弄个文件下载;
         var server:ServerData = new ServerData();
         server.setSname(config.sname);

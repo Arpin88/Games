@@ -554,18 +554,18 @@ class DebugView extends BaseView{
             return;
         GameConfig.ticket = user.ticket;
 
-        GlobalDataManager.getInstance().setRUUID("1234567890");
-        GlobalDataManager.getInstance().setRoom("999999");
-        var scode:string = "192.168.0.48";
-        GlobalDataManager.getInstance().setThredID(0);
-        GlobalDataManager.getInstance().setGameServerName(scode);
-        var surl:string = "ws://"+scode+":5000/GameServer/gateway";
-        let server: ServerData = new ServerData();
-        server.setSname(scode);
-        server.setSurl(surl);
-        server.setResolver(DebugWebSocketManager.getInstance().getResolver(JsonResolver.NAME));
-        DebugWebSocketManager.getInstance().registerServer(server);
-        DebugWebSocketManager.getInstance().connectServer(scode, true);
+        // GlobalDataManager.getInstance().setRUUID("1234567890");
+        // GlobalDataManager.getInstance().setRoom("999999");
+        // var scode:string = "192.168.0.48";
+        // GlobalDataManager.getInstance().setThredID(0);
+        // GlobalDataManager.getInstance().setGameServerName(scode);
+        // var surl:string = "ws://"+scode+":5000/GameServer/gateway";
+        // let server: ServerData = new ServerData();
+        // server.setSname(scode);
+        // server.setSurl(surl);
+        // server.setResolver(DebugWebSocketManager.getInstance().getResolver(JsonResolver.NAME));
+        // DebugWebSocketManager.getInstance().registerServer(server);
+        // DebugWebSocketManager.getInstance().connectServer(scode, true);
     }
 
     
@@ -1143,15 +1143,15 @@ class DebugView extends BaseView{
     }
 
     private sendRequst(reqCmd:CmdDef,data:any = {},showModel:boolean=false):void{
-        var server: ServerData = DebugWebSocketManager.getInstance().getServerByName(GlobalDataManager.getInstance().getGameServerName());
-        if(server == null)
-            return;
-        var obj = new Object();
-        obj["cmd"] = reqCmd;
-        obj["data"] = data;
-        obj["ruuid"] = GlobalDataManager.getInstance().getRUUID();
-        obj["room"] = GlobalDataManager.getInstance().getRoom();
-        DebugWebSocketManager.getInstance().sendMessage(server.getSname(),reqCmd,obj,showModel);
+        // var server: ServerData = DebugWebSocketManager.getInstance().getServerByName(GlobalDataManager.getInstance().getGameServerName());
+        // if(server == null)
+        //     return;
+        // var obj = new Object();
+        // obj["cmd"] = reqCmd;
+        // obj["data"] = data;
+        // obj["ruuid"] = GlobalDataManager.getInstance().getRUUID();
+        // obj["room"] = GlobalDataManager.getInstance().getRoom();
+        // DebugWebSocketManager.getInstance().sendMessage(server.getSname(),reqCmd,obj,showModel);
     }
 }
 

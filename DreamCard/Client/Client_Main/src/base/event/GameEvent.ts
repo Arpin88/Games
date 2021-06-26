@@ -9,7 +9,13 @@ class GameEvent extends egret.Event{
     // public static ConnectWalletComplete:string = "connectWalletComplete"            //链接钱包完成
     
     public static OnConnectWebSocketComplete:string = "onConnectWebSocketComplete";   //当链接socket完成
-    // public static Bi
+
+    public static NeedInputPayPassword:string = "needInputPayPassword";         //需要输入支付密码
+
+    public static NeedGetLoginData:string = "needGetLoginData";         //需要获取登录信息
+
+   
+    public static updateGold:string = "updateGold";  //更新金币
 
     public constructor(type: string,bubbles: boolean = false,cancelable: boolean = false) {
         super(type,bubbles,cancelable);
