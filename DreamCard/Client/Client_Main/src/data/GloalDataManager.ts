@@ -40,6 +40,9 @@ class GlobalDataManager{
 
     private walletaddress:string;
 
+    // card 类型数据 40个
+    private cardConfigList = [];
+
     // 注册状态
     private isRegist:number = 0;
     public setIsRegist(isRegist:any):void{
@@ -48,6 +51,14 @@ class GlobalDataManager{
 
     public getIsRegist(): number {
         return this.isRegist;
+    }
+
+    public setCardConfig(key:string,obj:any){
+        this.cardConfigList[key] = obj;
+    }
+
+    public getCardConfig(key:string):any{
+        return this.cardConfigList[key];
     }
 
     public setWalletAddress(walletaddress:any):void{

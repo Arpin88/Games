@@ -38,26 +38,20 @@ class PublicMethodManager{
     public static REGEX_TO_NICK:string = "^[0-9a-zA-Z\u4e00-\u9fa5]{1,16}$";
     public static REGEX_TO_PSD:string = "^[a-zA-Z0-9_-]{6,18}$";
     public static REGEX_TO_EMAIL:string = "^[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*\.[a-z]{2,}$";
+    public static REGEX_NUMBER:string = "^[0-9]*$";
     public checkRegex(regex:string,param:string):boolean{
         var reg:RegExp = new RegExp(regex);
         return reg.test(param);
     }
 
-    public loginOut():void{
-        let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
-        HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_GAME_LOGOUT,{});
+    public logout():void{
         egret.localStorage.setItem("ticket","");
         egret.localStorage.setItem("server_id","0");
         GameConfig.ticket = "";
         GameConfig.serverId = 0;
         GMDManager.closeGMD();
         UIManager.getInstance().removeAllLayerUI();
-        var type = PublicMethodManager.getInstance().getOSType()
-            if(type != 1){
-                UIManager.getInstance().showUI(LoginPhonView);  
-            }else{
-                UIManager.getInstance().showUI(LoginView);  // pc
-            }
+        UIManager.getInstance().showUI(LoginView);
     }
 
     //获取卡牌品质

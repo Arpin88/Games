@@ -34,6 +34,7 @@ class Main extends eui.UILayer {
     public static url:string = "";
     public static res:string = "resource";
     public static gRes:string = "res-";
+    public static platform:string="";  //默认平台为空
 
     public constructor(){
         super();
@@ -115,12 +116,7 @@ class Main extends eui.UILayer {
         //检测自动登录
         var ticket:string = egret.localStorage.getItem("ticket");
         if(ticket==null||ticket==""){
-            var type = PublicMethodManager.getInstance().getOSType()
-            if(type != 1){
-                UIManager.getInstance().showUI(LoginPhonView);  
-            }else{
-                UIManager.getInstance().showUI(LoginView);  // pc
-            }
+            UIManager.getInstance().showUI(LoginView);
         }else{
             GameConfig.ticket = ticket;
             var serverId:string = egret.localStorage.getItem("server_id");

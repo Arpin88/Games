@@ -46,11 +46,15 @@ class LoginView extends BaseView{
     private btnBackSLogin:eui.Button;   //返回选择登录按钮
 
     private groupSwitchLogin:eui.Group;     //选择登录层
+    private groupPhoneLogin:eui.Group;
     private btnXWGLogin:eui.Button;         //XWG登录按钮
+    private btnMaiziLogin:eui.Button;       //麦子钱包登录
     private btnMetaMaskLogin:eui.Button;   //MetaMask登录按钮
     private btnBinanceLogin:eui.Button;    //Binance登录按钮
     private btnPhoneLogin:eui.Button;      //手机登录按钮
     private btnEmailLogin:eui.Button;      //邮箱登录按钮
+    private btnPhoneLoginNew:eui.Button;    
+    private btnEmailLoginNew:eui.Button;     
     private groupBtnPhoneLogin:eui.Group;
     private groupBtnEmailLogin:eui.Group;
 
@@ -70,6 +74,7 @@ class LoginView extends BaseView{
     private timer1:egret.Timer;      //定时器
 
     private movingState:boolean = false;   //移动状态
+    private isAndroid:boolean = false;  //安卓类型
     
     private labelObj:any;   //语言包
 
@@ -104,10 +109,12 @@ class LoginView extends BaseView{
         //初始化钱包名称为空
         GlobalDataManager.getInstance().setWalletName("");
 
+        self.initPlatform();
         self.initView();
 
-        self.autoLogin();
-        self.autoDebug();
+        // self.autoLogin();
+        // self.autoDebug();
+        
     }
 
     private initView():void{
@@ -115,6 +122,11 @@ class LoginView extends BaseView{
 
         self.groupSwitchLogin.visible = true;
         self.groupNormalLogin.visible = false;
+        self.groupPhoneLogin.visible = false;
+        if (self.isAndroid) {
+            self.groupSwitchLogin.visible = false;
+            self.groupPhoneLogin.visible = true;
+        }
 
         var agreementUrl:string = "";
         var gameConfig:any = GlobalDataManager.getInstance().getGameConfig();
@@ -129,8 +141,6 @@ class LoginView extends BaseView{
         self.lblAgreement.textFlow = [
             { text: self.lblAgreement.text, style: {underline: true ,"href" : agreementUrl} }
         ];
-
-        
 
         var areanoStr:string = egret.localStorage.getItem("areanoStr");
         var defaultAreanoStr:string = LanguageManager.getInstance().getCurLanguageType()==0?"+86 (CN)":"+65 (SG)"; //如果是中文则直接默认选中区号为86
@@ -166,6 +176,18 @@ class LoginView extends BaseView{
         
         self.lblBottom.text = self.labelObj["lbl_0"];
         // self.lblBottom.text = "抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防上当受骗。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。"
+
+        var type = PublicMethodManager.getInstance().getOSType();
+        var platform = Main.platform;
+        if(type!=1){    //如果不是pc就显示麦子钱包
+            self.btnMaiziLogin.visible = true;
+            self.btnMetaMaskLogin.y =385;
+            self.btnBinanceLogin.y = 485;
+        }else{
+            self.btnMaiziLogin.visible =false;
+            self.btnMetaMaskLogin.y =320;
+            self.btnBinanceLogin.y = 430;
+        }
     }
 
     private updateCurPhoneLoginType():void{
@@ -231,32 +253,65 @@ class LoginView extends BaseView{
     //     self.lblVCodeTime.visible = showVCodeCD;
     // }
 
-    //自动登录 后期删除
-    private autoLogin():void{
-        if (window.location) {
-            let search = location.search;
-            if (search == "") {
-                return;
-            }
-            search = search.slice(1);
-            var self = this;
-            let searchArr = search.split("&");
-            let length = searchArr.length;
-            for (let i:number = 0; i < length; i++) {
-                let str = searchArr[i];
-                let arr = str.split("=");
-                if (arr[0] == "account") {
-                    let obj = new Object();
-                    obj["username"] = arr[1];
-                    let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
-                    HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_GAME_AUTO_LOGIN,obj,true);
-                }
-            }
-        }
-    }
+    // //自动登录 后期删除
+    // private autoLogin():void{
+    //     if (window.location) {
+    //         let search = location.search;
+    //         if (search == "") {
+    //             return;
+    //         }
+    //         search = search.slice(1);
+    //         var self = this;
+    //         let searchArr = search.split("&");
+    //         let length = searchArr.length;
+    //         for (let i:number = 0; i < length; i++) {
+    //             let str = searchArr[i];
+    //             let arr = str.split("=");
+    //             if (arr[0] == "account") {
+    //                 let obj = new Object();
+    //                 obj["username"] = arr[1];
+    //                 let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
+    //                 HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_GAME_AUTO_LOGIN,obj,true);
+    //             }
+    //         }
+    //     }
+    // }
 
-    //自动跳转调试模式
-    private autoDebug():void{
+    // //自动跳转调试模式
+    // private autoDebug():void{
+    //     if (window.location) {
+    //         let search = location.search;
+    //         if (search == "") {
+    //             return;
+    //         }
+    //         search = search.slice(1);
+    //         var self = this;
+    //         let searchArr = search.split("&");
+    //         let length = searchArr.length;
+    //         for (let i:number = 0; i < length; i++) {
+    //             let str = searchArr[i];
+    //             let arr = str.split("=");
+    //             if (arr[0] == "debug")
+    //                 UIManager.getInstance().showUI(DebugView,GameScene.VIEW_LAYER_NUMBER,-1,0,0,ShowViewEffectType.TYPE_NOR,{type:Number(arr[1])});
+    //             else if(arr[0]=="combat"){
+    //                 let gkid:number = 2;
+    //                 let gameName:string= "Combat";
+    //                 let attData:string = '{"gName":"CardRes","arr2Res":["cardCommonImg0Sheet_json","cardCommonImg1Sheet_json","cardCommonImg2Sheet_json","cardCommonImg3Sheet_json","cardCommonImg4Sheet_json","headImg0Sheet_json"]}';
+    //                 //直接进游戏,后面需要合并其他游戏的时候再做处理;
+    //                 GMDManager.addGMDInfo(gkid,gameName,2,null,"0","",attData);
+    //                 let obj = new Object();
+    //                 obj["dt"] = 2;
+    //                 obj["param"] = {debug:true};
+    //                 obj["gdir"] =2;
+    //                 GMDManager.startGMD(gkid,obj);
+    //                 UIManager.getInstance().hideUI(LoginView);
+    //             }
+    //         }
+    //     }
+    // }
+
+
+    private initPlatform():void{
         if (window.location) {
             let search = location.search;
             if (search == "") {
@@ -269,20 +324,18 @@ class LoginView extends BaseView{
             for (let i:number = 0; i < length; i++) {
                 let str = searchArr[i];
                 let arr = str.split("=");
-                if (arr[0] == "debug")
-                    UIManager.getInstance().showUI(DebugView,GameScene.VIEW_LAYER_NUMBER,-1,0,0,ShowViewEffectType.TYPE_NOR,{type:Number(arr[1])});
-                else if(arr[0]=="combat"){
-                    let gkid:number = 2;
-                    let gameName:string= "Combat";
-                    let attData:string = '{"gName":"CardRes","arr2Res":["cardCommonImg0Sheet_json","cardCommonImg1Sheet_json","cardCommonImg2Sheet_json","cardCommonImg3Sheet_json","cardCommonImg4Sheet_json","headImg0Sheet_json"]}';
-                    //直接进游戏,后面需要合并其他游戏的时候再做处理;
-                    GMDManager.addGMDInfo(gkid,gameName,2,null,"0","",attData);
-                    let obj = new Object();
-                    obj["dt"] = 2;
-                    obj["param"] = {debug:true};
-                    obj["gdir"] =2;
-                    GMDManager.startGMD(gkid,obj);
-                    UIManager.getInstance().hideUI(LoginView);
+                if (arr.length>=2) {
+                    if(arr[0] == "platform"){
+                        var platform:string= arr[1];
+                        if(platform!=null&&platform!="")
+                            Main.platform = platform;
+                    }else if(arr[0]=="android"){
+                        var android:string= arr[1];
+                        if(android!=null&&android!="")
+                            self.isAndroid = true;
+                            // Main.platform = platform;
+                    }
+                    
                 }
             }
         }
@@ -327,7 +380,13 @@ class LoginView extends BaseView{
                 var codeStr:string = "";
                 var countryCode:string = "";
                 if(type==0){
-                    if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                    // if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                    //     // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
+                    //     PopManager.getInstance().showPromptBox(self.labelObj["lbl_3"],2);
+                    //     return;
+                    // }
+                    var str:string = self.editPhone.text;
+                    if(str.length<5||!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_NUMBER,str)){
                         // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
                         PopManager.getInstance().showPromptBox(self.labelObj["lbl_3"],2);
                         return;
@@ -398,13 +457,19 @@ class LoginView extends BaseView{
                     obj["email"] = emailStr;
                 obj["code"] = codeStr;
                 obj["type"] = type;
-                
+                obj["platform"] = Main.platform;
                 let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
                 HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_GAME_LOGIN,obj,true);
 
                 
             }else if(tar==self.btnGetVCode){
-                if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                // if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                //     // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
+                //     PopManager.getInstance().showPromptBox(self.labelObj["lbl_3"],2);
+                //     return;
+                // }
+                var str:string = self.editPhone.text;
+                if(str.length<5||!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_NUMBER,str)){
                     // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
                     PopManager.getInstance().showPromptBox(self.labelObj["lbl_3"],2);
                     return;
@@ -448,32 +513,88 @@ class LoginView extends BaseView{
             }else if(tar==self.btnBackSLogin){ //返回选择登录按钮点击
                 self.groupSwitchLogin.visible = true;
                 self.groupNormalLogin.visible = false;
-            }else if(tar==self.btnPhoneLogin){ //手机登录按钮点击
+                if (self.isAndroid) {
+                    self.groupSwitchLogin.visible = false;
+                    self.groupPhoneLogin.visible = true;
+                }
+            }else if(tar==self.btnPhoneLogin || tar==self.btnPhoneLoginNew){ //手机登录按钮点击
                 self.groupSwitchLogin.visible = false;
+                self.groupPhoneLogin.visible = false;
                 self.groupNormalLogin.visible = true;
                 self.curLoginType = 0;
                 egret.localStorage.setItem("curLoginType",self.curLoginType+"");
                 self.updateCurPhoneLoginType();
-            }else if(tar==self.btnEmailLogin){ //邮箱登录按钮点击
+            }else if(tar==self.btnEmailLogin || tar==self.btnEmailLoginNew){ //邮箱登录按钮点击
                 self.groupSwitchLogin.visible = false;
+                self.groupPhoneLogin.visible = false;
                 self.groupNormalLogin.visible = true;
                 self.curLoginType = 1;
                 egret.localStorage.setItem("curLoginType",self.curLoginType+"");
                 self.updateCurEmailLoginType();
             }else if(tar==self.btnMetaMaskLogin){ //MetaMask登录按钮点击
+                // self.curLoginType = 2;
+                // egret.localStorage.setItem("curLoginType",self.curLoginType+"");
+                // WalletManager.getInstance().walletLogin('Metamask');
+                // // egret.localStorage.setItem("walletName",'Metamask');
                 self.curLoginType = 2;
                 egret.localStorage.setItem("curLoginType",self.curLoginType+"");
-                WalletManager.getInstance().walletLogin('Metamask');
-                // egret.localStorage.setItem("walletName",'Metamask');
+                var type = PublicMethodManager.getInstance().getOSType();
+                if(type!=1){
+                    if(typeof window["ethereum"] == 'undefined')    // 错误提示
+                        PopManager.getInstance().showPromptBox(self.labelObj["lbl_8"],2);
+                    else
+                        WalletManager.getInstance().walletLogin('Metamask');
+                }else
+                    WalletManager.getInstance().walletLogin('Metamask');
+
+                
             }else if(tar==self.btnBinanceLogin){ //Binance登录按钮点击
+                // self.curLoginType = 3;
+                // egret.localStorage.setItem("curLoginType",self.curLoginType+"");
+                // WalletManager.getInstance().walletLogin('BinanceChain');
+                // // egret.localStorage.setItem("walletName",'BinanceChain');
                 self.curLoginType = 3;
                 egret.localStorage.setItem("curLoginType",self.curLoginType+"");
-                WalletManager.getInstance().walletLogin('BinanceChain');
-                // egret.localStorage.setItem("walletName",'BinanceChain');
+                var type = PublicMethodManager.getInstance().getOSType();
+                if(type!=1){
+                    if(typeof window["ethereum"] == 'undefined')   // 错误提示
+                        PopManager.getInstance().showPromptBox(self.labelObj["lbl_8"],2);
+                    else
+                        WalletManager.getInstance().walletLogin('Metamask');
+                }else
+                    WalletManager.getInstance().walletLogin('BinanceChain');
+                
+                
             }else if(tar==self.btnXWGLogin){    //XWG登录按钮点击
+                // self.curLoginType = 4;
+                // egret.localStorage.setItem("curLoginType",self.curLoginType+"");
+                // WalletManager.getInstance().walletLogin('XWG');
                 self.curLoginType = 4;
                 egret.localStorage.setItem("curLoginType",self.curLoginType+"");
-                WalletManager.getInstance().walletLogin('XWG');
+                var type = PublicMethodManager.getInstance().getOSType();
+                if(type!=1){
+                    if(typeof window["ethereum"] == 'undefined') // 错误提示
+                        PopManager.getInstance().showPromptBox(self.labelObj["lbl_8"],2);
+                    else
+                        WalletManager.getInstance().walletLogin('Metamask');
+                }else
+                    WalletManager.getInstance().walletLogin('XWG');
+
+            }else if(tar==self.btnMaiziLogin){    //麦子钱包按钮点击
+                // self.curLoginType = 4;
+                // egret.localStorage.setItem("curLoginType",self.curLoginType+"");
+                // WalletManager.getInstance().walletLogin('XWG');
+                self.curLoginType = 4;
+                egret.localStorage.setItem("curLoginType",self.curLoginType+"");
+                var type = PublicMethodManager.getInstance().getOSType();
+                if(type!=1){
+                    if(typeof window["ethereum"] == 'undefined') // 错误提示
+                        PopManager.getInstance().showPromptBox(self.labelObj["lbl_8"],2);
+                    else
+                        WalletManager.getInstance().walletLogin('Metamask');
+                }else
+                    WalletManager.getInstance().walletLogin('XWG');
+
             }
         }else if(tar instanceof eui.Label){
             if(tar==self.lblVCode){

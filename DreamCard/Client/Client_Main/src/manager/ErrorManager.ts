@@ -22,7 +22,7 @@ class ErrorMananger{
                     
                     if(msg==-5){    //session过期 需要重新登录
                         PopManager.getInstance().showPromptBox(context,2,Handler.create(self,function(confirm:boolean){
-                            PublicMethodManager.getInstance().loginOut();
+                            PublicMethodManager.getInstance().logout();
                         }),[errors["-990"]==null?"返回登录":errors["-990"]]);
                     }if(msg==-99){    //需要输入支付密码
                         GameEventManager.getInstance().dispatchEvent(GameEvent.NeedInputPayPassword,data.reqData);

@@ -182,7 +182,13 @@ class RegisterView extends BaseView{
                         return;
                     }
 
-                    if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                    // if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                    //     // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
+                    //     PopManager.getInstance().showPromptBox(self.labelObj["lbl_1"],2);
+                    //     return;
+                    // }
+                    var str:string = self.editPhone.text;
+                    if(str.length<5||!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_NUMBER,str)){
                         // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
                         PopManager.getInstance().showPromptBox(self.labelObj["lbl_1"],2);
                         return;
@@ -256,8 +262,7 @@ class RegisterView extends BaseView{
 
                     egret.localStorage.setItem("uname",accountStr);
                     egret.localStorage.setItem("uemail",emailStr);
-                }
-                
+                }                
                 
                 let obj = new Object();
                 obj["uname"] = accountStr;
@@ -270,6 +275,7 @@ class RegisterView extends BaseView{
                 obj["vcode"] = vcodeStr;
                 obj["pw0"] = pw0Str;
                 obj["pw1"] = pw1Str;
+                obj["platform"] = Main.platform;
                 let centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
                 HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_GAME_REGISTER,obj,true);
 
@@ -297,7 +303,13 @@ class RegisterView extends BaseView{
                 //     GlobalDataManager.getInstance().setPassWordText(passwordStr);
                 // }
             }else if(tar==self.btnGetVCode){
-                if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                // if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                //     // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
+                //     PopManager.getInstance().showPromptBox(self.labelObj["lbl_1"],2);
+                //     return;
+                // }
+                var str:string = self.editPhone.text;
+                if(str.length<5||!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_NUMBER,str)){
                     // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
                     PopManager.getInstance().showPromptBox(self.labelObj["lbl_1"],2);
                     return;

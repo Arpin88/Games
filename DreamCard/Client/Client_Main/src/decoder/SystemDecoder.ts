@@ -266,10 +266,6 @@ class SystemDecoder extends BaseDecoder{
             let loginView: LoginView = UIManager.getInstance().getView(LoginView) as LoginView;
             if(loginView)
                 loginView.setSMSCode(msg.code);
-            
-            let LoginPhonView1: LoginPhonView = UIManager.getInstance().getView(LoginPhonView) as LoginPhonView;
-            if(LoginPhonView1)
-                LoginPhonView1.setSMSCode(msg.code);
         }else if(type==1){
             let registerView: RegisterView = UIManager.getInstance().getView(RegisterView) as RegisterView;
             if(registerView)
@@ -306,12 +302,7 @@ class SystemDecoder extends BaseDecoder{
             egret.localStorage.setItem("server_id","0");
             GameConfig.ticket = "";
             GameConfig.serverId = 0;
-            var type = PublicMethodManager.getInstance().getOSType()
-            if(type != 1){
-                UIManager.getInstance().showUI(LoginPhonView);  
-            }else{
-                UIManager.getInstance().showUI(LoginView);  // pc
-            }
+            UIManager.getInstance().showUI(LoginView);
         }else{
             var userInfo:any = msg.userInfo;
             if(userInfo){
@@ -527,11 +518,6 @@ class SystemDecoder extends BaseDecoder{
             let loginView: LoginView = UIManager.getInstance().getView(LoginView) as LoginView;
             if(loginView)
                 loginView.setEmailVCode(msg.code);
-
-                let LoginPhonView1: LoginPhonView = UIManager.getInstance().getView(LoginPhonView) as LoginPhonView;
-            if(LoginPhonView1)
-                LoginPhonView1.setSMSCode(msg.code);
-                
         }else if(type==1){
             let registerView: RegisterView = UIManager.getInstance().getView(RegisterView) as RegisterView;
             if(registerView)
@@ -543,7 +529,7 @@ class SystemDecoder extends BaseDecoder{
         }
     }
 
-    //注册;
+    //获取登录信息;
     private method_11(data:any):void{
         if(ErrorMananger.getInstance().checkReqResult(data))
             return;
@@ -610,6 +596,14 @@ class SystemDecoder extends BaseDecoder{
             }
         }
     }
+
+    //退出登录
+    private method_99(data:any):void{
+        if(ErrorMananger.getInstance().checkReqResult(data))
+            return;
+        
+        GameEventManager.getInstance().dispatchEvent(GameEvent.OnLogout,data.msg);
+    }
     // private method_100(data:any):void{
     //     if(ErrorMananger.getInstance().checkReqResult(data))
     //         return;
@@ -653,10 +647,15 @@ class SystemDecoder extends BaseDecoder{
         var msg:any = data.msg;
         if(msg!=null){
             var gold:number = msg.gold;
+            var status:string = msg.status;
             var account:AccountData = GlobalDataManager.getInstance().getAccountData();
             if(account!=null&&gold!=null){
                 GlobalDataManager.getInstance().getAccountData().setGold(gold);
                 GameEventManager.getInstance().dispatchEvent(GameEvent.updateGold);
+            }
+
+            if(status = "SUCCESS"){
+                GameEventManager.getInstance().dispatchEvent(GameEvent.chargesucc);
             }
         }
 

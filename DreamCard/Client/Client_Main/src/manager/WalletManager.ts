@@ -109,6 +109,7 @@ class WalletManager{
                 obj["address"] = result.account;
                 obj["sign"] = result.sign;
                 obj["time"] = time;
+                obj["platform"] = Main.platform;
                 var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
                 HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_WALLET_LOGIN,obj,true);
                 GlobalDataManager.getInstance().setWalletName(walletName);
@@ -145,68 +146,80 @@ class WalletManager{
                     var loginmsg = "login"+time;
                     Wallet.SDK.login(loginmsg,'XWG');
                 }else{
-                    var address:string = res.data.address;
+                    var address:string = res.data.data.address;
                     if(address==null||address=="")
                     return;
                     var curAddress:string = GlobalDataManager.getInstance().getAccountData().getWallet();
                     var curWalletSecret:string = GlobalDataManager.getInstance().getAccountData().getWalletSecret();
-                    var walletSecret:string = res.data.secret;
+                    var walletSecret:string = res.data.data.secret;
                     if(curAddress==""){
                         var obj = new Object();
                         obj["address"] = address;
-                        obj["secret"] = walletSecret;
+                        if(walletSecret)
+                            obj["secret"] = walletSecret;
                         var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
                         HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_BIND_CHAIN_WALLET,obj,true);
                     }else{
-                        if(curAddress == address && curWalletSecret != walletSecret){
+                        if(curAddress.toLowerCase() == address.toLowerCase() && walletSecret && curWalletSecret != walletSecret){
                             var obj = new Object();
                             obj["address"] = address;
                             obj["secret"] = walletSecret;
                             var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
                             HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_BIND_CHAIN_WALLET,obj,true);
+                            break;
                         }
-                        if(curAddress!=address){    //绑定地址跟本地地址不一致
+                        if(curAddress.toLowerCase()!=address.toLowerCase()){    //绑定地址跟本地地址不一致
                             ErrorMananger.getInstance().checkReqResult({result:GlobalDef.REQUEST_FAIL,msg:"-19000"});
                             Wallet.SDK.disconnect();
+                            break;
                         }
+                        GameEventManager.getInstance().dispatchEvent(GameEvent.XWGWalletConnect);
                     }
                 }
                 break;
-            case "login":
-                var obj = new Object();
-                obj["address"] = res.data.address;
-                obj["sign"] = res.data.signdata;
-                obj["time"] = res.data.msg.substr(5);
-                var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
-                HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_WALLET_LOGIN,obj,true);
-                GlobalDataManager.getInstance().setWalletName('XWG');
+            case "sign": //签名
                 break;
             case "onErc20TransferCallback": //erc20转账
-                var txhash = res.data.txhash;
-
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onErc20TransferCallback,res.data.data);
                 break;
             case "onErc20TransferReceipt": //erc20转账完成
-                var receipt = res.data;
-
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onErc20TransferReceipt,res.data.data);
                 break;
-            case "onSetNftApprovalCallback"://nft授权
-                var obj = new Object();
-                obj["txhash"] = res.data.txhash;
-
+            case "onSetNFTSwapApprovalCallback"://nft授权
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onSetNFTSwapApprovalCallback,res.data.data);
                 break;
-            case "onSetNftApprovalRectipt"://nft授权完成
-                var receipt = res.data;
-
+            case "onSetNFTSwapApprovalReceipt"://nft授权完成
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onSetNFTSwapApprovalReceipt,res.data.data);
                 break;
             case "onOffLineListCallback"://卡牌下链
-                var tokenIdList = res.data.tokenIdList;
-                var txhash = res.data.txhash;
-
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onOffLineListCallback,res.data.data);
                 break;
-            case "onOffLineListRectipt"://卡牌下链完成
-                var tokenIdList = res.data.tokenIdList;
-                var receipt = res.data.receipt;
-
+            case "onOffLineListReceipt"://卡牌下链完成
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onOffLineListReceipt,res.data.data);
+                break;
+            case "onSetNFTMineApprovalCallback"://授权远征回调
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onSetNFTMineApprovalCallback,res.data.data);
+                break;
+            case "onSetNFTMineApprovalReceipt"://授权远征结果
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onSetNFTMineApprovalReceipt,res.data.data);
+                break;
+            case "onNftMineLockCallback"://发起远征回调
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onNftMineLockCallback,res.data.data);
+                break;
+            case "onNftMineLockReceipt"://发起远征结果
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onNftMineLockReceipt,res.data.data);
+                break;
+            case "onNftMineWithdrawalRewardCallback"://领取远征奖励回调
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onNftMineWithdrawalRewardCallback,res.data.data);
+                break;
+            case "onNftMineWithdrawalRewardReceipt"://领取远征奖励结果
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onNftMineWithdrawalRewardReceipt);
+                break;
+            case "onNftMineUnlockCallback"://结束远征回调
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onNftMineUnlockCallback);
+                break;
+            case "onNftMineUnlockReceipt"://结束远征结果
+                GameEventManager.getInstance().dispatchEvent(GameEvent.onNftMineUnlockReceipt);
                 break;
 		}
     }
@@ -248,14 +261,17 @@ class WalletManager{
                     obj["address"] = address;
                     var centerServer:ServerData = GlobalDataManager.getInstance().getCenterServer();
                     HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_BIND_CHAIN_WALLET,obj,true);
+                    return;
                 }else{
                     if(curAddress!=address){    //绑定地址跟本地地址不一致
                         ErrorMananger.getInstance().checkReqResult({result:GlobalDef.REQUEST_FAIL,msg:"-19000"});
                         return;
                     }
                 }
+                GlobalDataManager.getInstance().setWalletName(walletName);
                 if(callBack!=null)
                     callBack.run();
+                
             });
         },this);
     }

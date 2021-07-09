@@ -179,7 +179,13 @@ class ForgotView extends BaseView{
                 var pw0Str:string = "";
                 var pw1Str:string = "";
                 if(self.curForgotType==0){
-                    if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                    // if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                    //     // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
+                    //     PopManager.getInstance().showPromptBox(self.labelObj["lbl_1"],2);
+                    //     return;
+                    // }
+                    var str:string = self.editPhone.text;
+                    if(str.length<5||!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_NUMBER,str)){
                         // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
                         PopManager.getInstance().showPromptBox(self.labelObj["lbl_1"],2);
                         return;
@@ -260,7 +266,13 @@ class ForgotView extends BaseView{
                 HttpManager.getInstance().send(centerServer.getSname(),CmdDef.CMD_GAME_FORGOT,obj,true);
 
             }else if(tar==self.btnGetVCode){
-                if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                // if(!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_TO_PHONE,self.editPhone.text)){
+                //     // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
+                //     PopManager.getInstance().showPromptBox(self.labelObj["lbl_1"],2);
+                //     return;
+                // }
+                var str:string = self.editPhone.text;
+                if(str.length<5||!PublicMethodManager.getInstance().checkRegex(PublicMethodManager.REGEX_NUMBER,str)){
                     // PopManager.getInstance().showPromptBox("手机号码不符合要求!",2);
                     PopManager.getInstance().showPromptBox(self.labelObj["lbl_1"],2);
                     return;
